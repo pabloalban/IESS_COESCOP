@@ -24,7 +24,7 @@ parametros$opsys <- Sys.info()[[1]]
 parametros$hostname <- Sys.info()[[4]]
 
 #Servidor de datos
-parametros$data_server <- 'Y:/IESS_2020/'
+parametros$data_server <- 'Y:/IESS_COESCOP/'
 
 # local
 #parametros$data_server <- paste0( getwd(), '/' )
