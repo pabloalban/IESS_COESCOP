@@ -29,9 +29,9 @@ REP_bib_lib <- 'bibliografia_libros.bib'
 REP_bib_art <- 'bibliografia_articulos.bib'
 REP_bib_ley <- 'bibliografia_leyes.bib'
 
-REP_tit <- 'Estudio Actuarial del impacto de la aplicación de la Sentencia del Caso No. 1024-19-JP/21 y 66-20-JP, de la Corte Constitucional, al Fondo del Seguro General de Riesgos del Trabajo'
-REP_nom_seg <- 'Seguro de Riesgos del Trabajo'
-REP_seg <- c('RTR' = 'Seguro General de Riesgos del Trabajo')
+REP_tit <- 'Estudio Actuarial para el cumplimiento de la Disposición Transitoria Segunda del Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público'
+REP_nom_seg <- 'Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público'
+REP_seg <- c('COESCOP' = 'Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público')
 
 paste( 'Seguro', parametros$seguro )
 REP_fec_fin <- format( parametros$fec_fin, '%Y-%m-%d' )
@@ -78,6 +78,7 @@ source( paste0( parametros$reporte_seguro, 'auto_informacion.R' ), encoding = 'U
 
 # Kniting reporte ----------------------------------------------------------------------------------
 setwd( parametros$reporte_seguro ) 
+
 knit( input = "reporte.Rnw", 
       output = paste0( REP_rep_dir, REP_rep_latex ),
       quiet = REP_knit_quiet, encoding = 'utf8' )

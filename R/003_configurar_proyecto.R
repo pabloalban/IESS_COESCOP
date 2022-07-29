@@ -52,7 +52,7 @@ message( '\tEstableciendo directorios globales' )
 parametros$empresa <- 'IESS'
 
 message( '\tConfiguración seguro' )
-parametros$seguro <- c("RTR")
+parametros$seguro <- c("COESCOP")
 parametros$hacer_ana_dem <- FALSE
 parametros$calcular_balance <- FALSE
 
@@ -85,8 +85,8 @@ parametros$resultados <- paste0( parametros$work_dir, 'Resultados/' )
 parametros$reporte_seguro <- paste0( parametros$work_dir, 'Reportes/Reporte_', 
                                      parametros$seguro, '/' )
 
-parametros$calculo_balance <- paste0( parametros$work_dir, 'R/rtr/305_calculo_escenarios_balance_rtr.R' )
-parametros$reporte_genera <- paste0( parametros$work_dir, 'R/rtr/600_reporte_latex_rtr.R' )
+parametros$calculo_balance <- paste0( parametros$work_dir, 'R/COESCOP/305_calculo_escenarios_balance.R' )
+parametros$reporte_genera <- paste0( parametros$work_dir, 'R/COESCOP/600_reporte_latex.R' )
 
 
 parametros$reporte_script <- paste0( parametros$reporte_seguro, 'reporte.R' )
