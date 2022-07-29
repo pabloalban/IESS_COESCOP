@@ -1,0 +1,58 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Base legal}
+\label{chp_baselegal}
+
+%---------------------------------------------------------------------------------------------------
+
+\section{Ley de Seguridad Social}
+\label{chp_seguridadsocial}
+
+De acuerdo al Art.94 de la Ley de Seguridad Social, Sobre la cual la Dirección Actuarial, de Investigación y Estadística basa su trabajo se establece que:
+
+\begin{quote}
+
+\textit{Art. 94.- RESPONSABILIDAD PATRONAL.- Si por culpa de un patrono el IESS no pudiere conceder a un trabajador o a sus deudos las prestaciones en dinero que fueran reclamadas y a las que habrían podido tener derecho, o si resultaren disminuidas dichas prestaciones por falta de cumplimiento de las obligaciones del empleador, este será responsable de los perjuicios causados al asegurado o a sus deudos, responsabilidad que el Instituto hará efectiva mediante la coactiva. El IESS concederá tales prestaciones, en la parte debida a la omisión o culpa del empleador, solamente cuando se haga efectiva la responsabilidad de éste, a menos que el patrono rinda garantía satisfactoria para el pago de lo que debiere por aquel concepto.}
+\end{quote}
+
+En el Art.233 de la Ley de seguridad Social, se establece lo referente a la elaboración de estudios actuariales, el cual fue publicado en el Registro Oficial Suplemento 465 de fecha 30 de noviembre de 2011, y en el que se manifiesta: 
+\begin{quote}
+\textit{" (...)CAMBIOS EN EL RÉGIMEN PRESTACIONAL.-No se creará prestación alguna ni se mejorarán las existentes a cargo del Seguro Social Obligatorio aplicado por el IESS, si no se encontraren debidamente financiadas y respaldadas en los resultados de estudios actuariales que demuestren su solvencia y sostenibilidad."}
+\end{quote}
+
+\section{Reglamento Orgánico Funcional del Instituto Ecuatoriano de Seguridad Social}
+\label{chp_reglamento_org_funcional}
+
+
+En el punto 2.3 del artículo 10 de la resolución C.D.535 emitida por el Consejo Directivo del IESS de fecha 8 de septiembre de 2016, se establecen: la misión, atribuciones y responsabilidades de la Dirección Actuarial, de Investigación y Estadística. Entre las cuales se establece la siguiente atribución y responsabilidad:
+
+\newpage
+
+\begin{quote}
+\textit{"2.3 GESTIÓN ACTUARIAL, DE INVESTIGACIÓN Y ESTADÍSTICA\\
+DIRECCIÓN ACTUARIAL, DE INVESTIGACIÓN Y ESTADÍSTICA\\
+(...)\\
+ATRIBUCIONES Y RESPONSABILIDADES\\
+(...)\\
+b) Desarrollar y revisar estudios e informes técnicos sobre la situación financiera actuarial de los regímenes de aseguramiento para la prestación de las contingencias del seguro universal obligatorio de los afiliados al IESS; y, para la prestación de contingencias del régimen especial establecido para el Seguro Social Campesino, y requerido por el Consejo Directivo y la Dirección General;(..)"}
+\end{quote}
+
+y su misión:
+
+\begin{quote}
+
+\textit{"(...) Preparar los balances actuariales de cada uno de los regímenes de protección del Seguro Obligatorio, la elaboración de los estudios técnicos y los informes periódicos sobre la situación de dichos regímenes y sus proyecciones  para mantener el equilibrio financiero de los seguros administrados por el IESS; realizarninvestigaciones y estudios en el campo de la seguridad social; y, preparar de manera sistemática, periódica y oportuna la memoria estadística del IESS en los términos establecidos en la Ley (...)"}
+
+\end{quote}
+
+
+
+
+
+
+
+
+
+
+
+
+

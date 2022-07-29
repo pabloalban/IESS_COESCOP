@@ -1,0 +1,497 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Análisis del contexto económico}
+\label{chp_contexto}
+% %------------------------------------------------------------------------------
+\section{Análisis de las tasas históricas relevantes para el estudio}
+% 
+% %----------------------------------------------------------------------------------
+\subsection{Evolución de la inflación en el Ecuador}
+
+Una de las hipótesis importantes a considerar en los modelos matemáticos – actuariales es la inflación, que mide el aumento generalizado y sostenido de los precios de bienes y servicios en un país, cuya medición consiste en el cálculo de los incrementos que presenta el Índice de Precios al Consumidor (IPC). Es por ello que se pone especial atención en dicho fenómeno económico en razón de que este afecta tanto las tasas de interés como al incremento salarial, que es la base del crecimiento de las reservas y del crecimiento salarial en el tiempo, referente tanto de aportes como de beneficios.
+
+A continuación, se muestra la evolución histórica del índice de precios en la tabla \ref{tab:iess_IPC_ivm} y la figura \ref{fig:iess_ipc_hist}.
+
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del índice de precios (IPC)}
+\label{fig:iess_ipc_hist}
+\includegraphics[scale=1]{graficos/iess_ipc_hist.png}
+\caption*{\scriptsize {\bf Fuente:} Instituto Nacional de Estadísticas y Censos. \\
+            {\bf Elaborado:} DAIE.}
+\end{figure}
+
+\begin{table}[H]
+\begin{center}
+\caption{IPC (período 2000-2020)}
+\label{tab:iess_IPC_ivm}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{ccc}
+\toprule
+     Año & IPC              & Inflación acumulada\\
+         & (a diciembre)    & anual (\%) \\
+\midrule
+\input{tablas/iess_IPC_ivm.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Instituto Nacional de Estadísticas y Censos. \\
+{\bf Elaborado:} DAIE}
+\end{center}
+\end{table}
+
+El Ecuador registró la inflación más alta de su historia en el año 2000 (91\%). A partir de la implementación de la dolarización, la inflación se redujo paulatinamente, considerando que la inflación está ligada a la política monetaria y fiscal de una economía.
+
+En la tabla \ref{tab:iess_IPC_ivm} se observa que la inflación se redujo desde 22,4\% en el 2001 al -0,93 en el 2020, siendo el menor registro desde la adopción del sistema monetario “dolarización”. Los años con mayor inflación interanual fueron 2000, 2001, 2002 y 2008 con valores superiores al 8\%; por el contrario la deflación se dio en los años 2017, 2019 y 2020 con valores de -0,20\%, -0,07\% y -0,93\% respectivamente.
+
+
+% % ---------------------------------------------------------------------------------
+
+\subsection{Evolución del salario básico unificado}
+
+Otra de las hipótesis a considerarse en los modelos matemáticos – actuariales es el comportamiento del salario básico unificado (SBU) y su crecimiento en el futuro. El SBU está directamente influenciado por el comportamiento de la inflación.
+
+A continuación, se muestra la evolución del salario básico unificado en la tabla \ref{tab:iess_sbu_hist} y la figura \ref{fig:iess_sbu}.
+
+\begin{figure}[H]
+\centering
+\caption{Serie histórica del Salario Básico Unificado}
+\label{fig:iess_sbu}
+\includegraphics[scale=1.0]{graficos/iess_sbu.png}
+\caption*{\scriptsize {\bf Fuente:} Ministerio de Trabajo. \\
+  {\bf Elaborado:} DAIE.}
+\end{figure}
+
+\begin{table}[H]
+\begin{center}
+\caption{Salario Básico Unificado (período 2002-2021)}
+\label{tab:iess_sbu_hist}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{ccc}
+\toprule
+      Año & SBU   & Tasa de         \\
+          & (USD) & crecimiento (\%) \\
+\midrule
+\input{tablas/iess_SBU_ivm.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Ministerio del Trabajo. \\
+{\bf Elaborado:} DAIE}
+\end{center}
+\end{table}
+
+En la tabla \ref{tab:iess_sbu_hist} , se presenta la evolución histórica del SBU en dólares desde el año 2002 hasta el 2021. Como se observa, el SBU hasta diciembre de 2021 fue de USD. 400; es decir con respecto al 2020 no tuvo incremento (mantuvo constante) significando una tasa de variación del 0,00\% (la más baja del período).
+
+Se destaca una desaceleración paulatina de las tasas de crecimiento del SBU en los últimos años. En el año 2008 se registró el mayor incremento en el SBU con una tasa de variación del 17,65\%; sin embargo los dos últimos años registraron el menor incremento del 1,52\% y 0,00\% respectivamente. Por último, el SBU creció 7,40\% en promedio durante el período analizado; para los próximos años se prevé una tasa de crecimiento constante o con crecimiento desacelerado del SBU debido a los siguientes hechos: no se espera nuevamente altos precios del crudo, existe gran incertidumbre económica en el país, el dólar se cotiza muy fuerte en comparación a otras monedas de la región y la existencia de una fuerte crisis sanitaria.
+
+% % ---------------------------------------------------------------------------------
+\subsection{Evolución histórica de los salarios}
+
+Los ingresos mensuales por aportes que recibe el Fondo del Seguro IVM es un porcentaje fijo de la materia gravada. Una de las variables claves de este estudio es la tasa de crecimiento de los salarios; pues de esta, se determina de cierta manera el ingreso futuro por concepto de aportes.
+
+A continuación, se muestra la evolución histórica de los salarios en la tabla \ref{tab:iess_spd_hist} y la figura \ref{fig:iess_spd_hist}.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del salario nominal promedio aportado}
+\label{fig:iess_spd_hist}
+\includegraphics[scale=1.0]{graficos/iess_spd_hist.png}
+\caption*{\scriptsize {\bf Fuente:} Estados Financieros IESS del fondo administrado del Seguro IVM \\
+  {\bf Elaborado:} DAIE.}
+\end{figure}
+
+
+El salario declarado promedio de los afiliados activos del SGO se incrementó un 42\% entre 2010 y 2020, pasando de USD 520,56 a USD 737,23 con un crecimiento promedio anual de 3,58\%. En el año 2011 se registró el crecimiento nominal anual más alto del salario con un 9,06\%, es decir un crecimiento de USD 47,18 respecto al año anterior; sin embargo en el 2020 se registró un decrecimiento del -0,63\% (USD 4,67 menos que el 2019).
+
+\begin{table}[H]
+\begin{center}
+\caption{Evolución de salarios promedio anual declarados}
+\label{tab:iess_spd_hist}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{*{4}{c}}
+\toprule
+       Año & Salario declarado      & Incremento     & Tasa de \\
+           & promedio (USD)         & anual (USD)    & crecimiento (\%) \\
+\midrule
+\input{tablas/iess_Salprom_ivm.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} IESS-Planillas. \\
+  {\bf Elaborado:} DAIE.}
+\end{center}
+\end{table}
+
+% % % % --------------------------------------------------------------------------------
+\subsection{Evolución histórica de la tasa de crecimiento real del PIB del Ecuador}
+
+A continuación, se muestra la evolución histórica de la tasa de crecimiento real del PIB, misma que fue obtenida de la página del Banco Mundial \footnote{\url{https://datos.bancomundial.org/pais/ecuador}} (ver tabla \ref{tab:iess_pib_hist} y figura \ref{fig:iess_pib_hist}).
+
+% \begin{figure}[H]
+% \centering
+% \caption{Evolución histórica del crecimiento real del PIB del Ecuador}
+% \label{fig:iess_pib_hist}
+% \includegraphics[scale=1.0]{graficos/iess_pib_hist.png}
+% \caption*{\scriptsize Fuente: Banco Mundial. \\
+%   Elaborado: DAIE.}
+% \end{figure}
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{crcr}
+\caption{Evolución de la tasa de crecimiento real del PIB desde 1961 a 2020} \\
+\label{tab:iess_pib_hist} \\
+\toprule
+Año & Crecimiento Real & Año & Crecimiento Real \\
+    & PIB (\%)         &     &  PIB (\%)  \\
+\midrule
+\endfirsthead
+
+\toprule
+Año & Crecimiento Real & Año & Crecimiento Real \\
+    & PIB (\%)         &     &  PIB (\%)  \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{4}{c}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize {\bf Fuente:} Banco Mundial. \\
+  {\bf Elaborado:} DAIE.}
+\endlastfoot
+  \input{tablas/iess_PIB_ivm.tex}
+\end{longtable}
+}
+
+Las mayores tasas de crecimiento del PIB se registraron durante la bonanza petrolera de los años setenta, mientras que los decrecimientos más significativos se dieron en el año 2020 (8,86\%) y en el año 1999 (4,74\%).
+
+A partir del año 2000 el crecimiento del PIB fue impulsado por los altos precios del crudo hasta diciembre 2014, posterior a ello se han registrado menores tasas de crecimiento; llegando incluso a decrecimientos marcados en el 2016 y 2020 debido a la situación económica vivida en el país. En los últimos 60 años el PIB registró una tasa real de crecimiento igual a 3,57\%.
+
+% % % ---------------------------------------------------------------------------------
+\subsection{Evolución histórica de la tasa de crecimiento de las pensiones}
+
+% Con la dolarización se perdió el valor adquisitivo de las pensiones, por lo que el IESS procedió a conceder aumentos, de hasta dos y tres veces al año, a fin de que la pensión cubra las necesidades de los pensionistas. Para los aumentos se consideraban varios parámetros como: valor total de renta, la fecha del derecho de la prestación o el número de imposiciones; adicionalmente se establecía diversos tipos de incrementos dependiendo si se trata del Seguro General o del Seguro del Trabajo Doméstico.
+%
+% El Consejo Directivo del IESS a través de la Resolución No. C.D. 338 de 18 de noviembre de 2010, unifica el Seguro General y el Seguro del Trabajador Doméstico; y, estandariza el procedimiento de incremento de las pensiones, en base a una tabla de porcentajes, considerando el valor de la renta conforme a un porcentaje del salario básico unificado.
+%
+% Con la expedición de la Ley Orgánica para la Justicia Laboral y el Reconocimiento del Trabajo en el Hogar; a partir del año 2016 las pensiones se incrementan en base a la tasa de inflación promedio anual del año anterior. En la tabla \ref{tab:iess_aumento_pensiones}, se presenta los parámetros para el aumento de las pensiones, desde el año 2010 al 2015; y, del año 2016 al 2020.
+
+En la tabla \ref{tab:iess_aumento_pensiones}, se presenta el aumento de pensiones para el período 2010 al 2020.
+
+\begin{table}[H]
+\centering
+\caption{Aumento de pensiones}
+\label{tab:iess_aumento_pensiones}
+ \scalebox{0.8}{
+ \begin{tabular}{p{9.45em}|c|c|c|c|c|c}
+    \toprule
+    \multicolumn{7}{c}{\textbf{Aumento de Pensiones}} \\
+    \midrule
+    \textbf{AÑO} & \multicolumn{1}{p{6.43em}|}{\textbf{Desde 2010 al 2015}} & \textbf{2016} & \textbf{2017} & \textbf{2018} & \textbf{2019} & \textbf{2020}\\
+    \midrule
+    \multirow{2}[0]{*}{Rango de pensión en} & \multirow{2}[0]{*}{Coeficiente} & \multicolumn{5}{c}{\multirow{2}[0]{*}{Inflación promedio}}\\[0.3cm]
+    rangos del SBU & crecimiento& \multicolumn{5}{c}{anual} \\
+    \midrule
+    \multicolumn{1}{c|}{0,50} & 16,16\% & \multirow{6}[11]{*}{3,97\%} & \multirow{6}[11]{*}{1,73\%} & \multirow{6}[11]{*}{0,42\%} & \multirow{6}[11]{*}{0,00\%} & \multirow{6}[11]{*}{0,27\%}\\
+\cmidrule{1-2}  Más de 0,50 A 1,00 & 12,41\% &       &       &  & & \\
+\cmidrule{1-2}  Más de 1,00 A 1,50 & 9,53\% &       &       &  &  &\\
+\cmidrule{1-2}  Más de 1,50 A 2,00 & 7,31\% &       &       &  &  &\\
+\cmidrule{1-2}  Más de 2,00 A 2,50 & 5,61\% &       &       &  &  &\\
+\cmidrule{1-2}  Más de 2,50 & 4,31\%        &       &       &  &  &\\
+\bottomrule
+\end{tabular}
+ }
+\caption*{\scriptsize {\bf Elaborado:} DAIE.}
+\end{table}
+
+En la tabla \ref{tab:iess_pen_min_max_ivm}, se presenta su evolución histórica de las pensiones mínimas y máximas para el período 2010 al 2020.
+
+\begin{table}[H]
+\centering
+\caption{Evolución histórica de las pensiones mínimas y máximas}
+\label{tab:iess_pen_min_max_ivm}
+\scalebox{0.7}{
+\begin{tabular}{r|r|rrrrrrrrrrr}
+\toprule
+\multicolumn{13}{c}{\textbf{Pensiones Mínimas}} \\ \midrule
+\multicolumn{1}{c|}{\multirow{2}[4]{*}{\textbf{Años de imposiciones}}} & \multicolumn{1}{c|}{\multirow{2}[4]{*}{\textbf{\% SBU}}} & \multicolumn{11}{c}{\textbf{Año}} \\
+\cmidrule{3-13}          &       & \textbf{2010} & \textbf{2011} & \textbf{2012} & \textbf{2013} & \textbf{2014} & \textbf{2015} & \textbf{2016} & \textbf{2017} & \textbf{2018} & \textbf{2019} & \textbf{2020} \\
+\midrule
+\input{tablas/iess_penmin_ivm.tex}
+\midrule
+\multicolumn{13}{c}{\textbf{Pensiones Máximas}} \\ \midrule
+\multicolumn{1}{c|}{\multirow{2}[4]{*}{\textbf{Años de imposiciones}}} & \multicolumn{1}{c|}{\multirow{2}[4]{*}{\textbf{\% SBU}}} & \multicolumn{11}{c}{\textbf{Año}} \\
+\cmidrule{3-13}          &       & \textbf{2010} & \textbf{2011} & \textbf{2012} & \textbf{2013} & \textbf{2014} & \textbf{2015} & \textbf{2016} & \textbf{2017} & \textbf{2018} & \textbf{2019} & \textbf{2020}\\
+\midrule
+\input{tablas/iess_penmax_ivm.tex}
+\bottomrule
+\end{tabular}}
+\caption*{\scriptsize {\bf Elaborado:} DAIE.}
+\end{table}
+
+
+% % %---------------------------------------------------------------------------------------------------
+\subsection{Comparativo de las variables económicas más representativas de una economía }
+
+En la Figura \ref {tab:iess_hist_pib_ipc}, se presenta la evolución y comportamiento de las variables económicas denominadas “PIB” e “Inflación”, correspondiente al período 2000 al 2020.
+
+
+\begin{figure}[H]
+\centering
+\caption{Evolución y comportamiento del PIB y la Inflación}
+\label{fig:iess_pib_hist}
+\includegraphics[scale=1.0]{graficos/iess_ipcpib_hist.png}
+\caption*{\scriptsize {\bf Fuente:} Instituto Nacional de Estadísticas y Censos/Banco Mundial. \\
+  {\bf Elaborado:} DAIE.}
+\end{figure}
+
+\begin{table}[H]
+\begin{center}
+\caption{Comportamiento del PIB y la Inflación desde 2000 al 2020}
+\label{tab:iess_hist_pib_ipc}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{*{3}{c}}
+\toprule
+       Año & Crecimiento real   & Inflación acumulada     \\
+           & del PIB (\%)       & anual (\%)               \\
+\midrule
+\input{tablas/iess_PIBvsIPC_ivm.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Instituto Nacional de Estadísticas y Censos/Banco Mundial \\
+  {\bf Elaborado:} DAIE.}
+\end{center}
+\end{table}
+
+% % En la Figura \ref{} , se observa que la inflación en el año 2000 fue la más alta del período analizado, esto debido a la política monetaria expansiva sin precedentes; misma que dio como resultado una inflación del 60\% en 1999 y del 91\% en el 2000.
+%
+Ante dicho panorama, en el año 2000 se decide optar por el dólar estadounidense como moneda de curso legal en el país; producto de la dolarización se conjugó un período de inflación muy alto durante los tres primeros años de su implementación, lo que ocasionó la pérdida de la capacidad del poder adquisitivo. Es así que una alta inflación puede inducir a demandar un incremento en el salario para mantener los precios del consumidor, situación que se puede ver reflejada en las tasas de crecimiento significativas de los primero años del SBU (ver tabla \ref{tab:iess_sbu_hist}).
+
+Del mismo modo se evidencia que el PIB guarda relación directa con la inflación, pues este se recupera después de la crisis, manteniendo un crecimiento anual real en el año en que se instauró la dolarización. En el 2000 crece 1.09\%, 4.02\% en el 2001 y 4.1\% en 2002, claramente denota un crecimiento y recuperación de la economía ecuatoriana; a partir del año 2005 se observa un comportamiento muy parejo entre las dos variables económicas analizadas.
+
+Sin embargo, el Ecuador cerr\'{o} el 2020 con una deflación de -0.93\%; es decir cuando la inflación alcanza niveles negativos, muestra que la economía no está creciendo y que los precios de los productos caen por la falta de consumo (caída de la demanda agregada), debido en gran medida a la crisis sanitaria y situación económica del país.
+
+
+\section{Proyección de las tasas utilizadas en el estudio}
+
+\subsection{Descripción del modelo macroeconómico}
+
+El modelo macroeconómico emplea una serie temporal multivariante, esto lo hemos realizado con la finalidad de incluir la interacción entre diferentes variables económicas a través del tiempo y así superar las falencias de otros modelos macroeconómicos que obvian la dinámica y estrecha correlación de diferentes variables económicas.
+
+En la actualidad y cada vez más encontramos excelente literatura al respecto de modelos
+de series temporales multivariantes; en particular hemos fundamentado nuestra aproximación basados en la teoría y metodología propuesta en Madsen [28] y Tsay [37], Hemos seleccionado el modelo MARIMA por sus cualidades estadísticas y amplia aceptación, para más detalle el modelo está expuesto en el Madscn [28, cap 9], el mismo depende de tres parámetros: $p$ para especificar el orden de auto regresión, $d$ el orden de diferenciación y $q$ para el orden de medias móviles.
+
+
+\begin{definition}[Proceso MARIMA]
+El proceso vectorial ($Y_t$) de dimensión $n$, $Y_t \in  \mathbb{R}^n$, se lo denomina "Multivariante Integrated Autoregressive Moving Average" (MARIMA) en ordenes $p\in \mathbb{N}$, $d\in \mathbb{N}^n$, $q\in \mathbb{N}$, si a partir de un ruido blanco ($\epsilon_t$) de dimensión $n$, se satisface la siguiente relación:
+	\[ \varphi(B)\delta(B) Y_{t} = \theta(B) \epsilon_{t}
+\]
+
+\begin{enumerate}
+	\item $B$ es el operador de retroceso
+
+		\[B Y_{t} = Y_{t-1}
+	\]
+
+	\item La parte auto regresiva dada por el operador $\varphi(B)$
+
+		\[\varphi(B) = \sum_{k=0}^{p} \varphi_{k} B^{k}
+	\]
+	donde para cada $k$, $\varphi_{k}\in\mathbb{R}^{n\times n}$.
+
+	\item La parte de medias móviles dada por el operador $\theta(B)$
+
+		\[ \theta(B) = \sum_{t=0}^{q} \theta_{k} B^{k}
+	\]
+	donde para cada $l$, $\theta_{l} \in \mathbb{R}^{n\times n}$
+
+	\item La parte de diferenciación dada por el operador $\delta(B)$
+
+			\begin{equation}
+			Y = \left[\begin{matrix}
+			(1-B)^{d_1} &   0          & \ldots &   0		\\
+			 0					&  (1-B)^{d_2} & \ldots &   0		\\
+			\vdots			&		\vdots     &   \ddots &   \vdots   \\
+			 0					&   0          & \ldots &  (1-B)^{d_n}	\\
+			 \end{matrix}\right]
+			\label{eq:parte_dif}
+		\end{equation}
+
+	\end{enumerate}
+\end{definition}
+	La metodología para la sección del modelo MARIMA se encuentra detallada en Tsay[37].
+
+
+\subsection{Pruebas estadísticas de validación de supuestos del modelo macroeconómico}
+
+\subsubsection{Pruebas de Normalidad de los errores}
+
+El Test de Shapiro–Wilk se usa para contrastar la normalidad de un conjunto de datos. Se considera uno de los test más potentes para el contraste de normalidad. La prueba de normalidad de Shapiro-Wilk es aplicable cuando se analizan muestras compuestas por menos de 50 elementos (muestras pequeñas).
+
+Las hipótesis estadísticas son las siguientes:
+\textit{H_0}: La variable presenta una distribución normal.
+\textit{H_1}: La variable presenta una distribución no normal.
+
+Al realizar la prueba de normalidad a los residuos del modelo presentado en la sección anterior, se obtiene que todas las series de residuos tienen un p – valor mayor al nivel de significancia de 5\%. Por lo tanto, no se rechaza la hipótesis nula.
+
+\begin{table}[]
+\begin{tabular}{lll}
+\hline
+\textbf{Modelo:} & \multicolumn{1}{c}{\textbf{Estadístico - W}} & \multicolumn{1}{c}{\textbf{p - valor}} \\ \hline
+PIB              & 0,95131                                      & 0,5813                                 \\
+Tasa activa      & 0,96988                                      & 0,8751                                 \\
+Tasa pasiva      & 0,89918                                      & 0,1098                                 \\
+Salario Promedio & 0,9539                                       & 0,6228                                 \\
+SBU              & 0,95757                                      & 0,683                                  \\
+Inflación        & 0,92074                                      & 0,2254                                 \\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Pruebas de independecia de errores}
+
+La prueba de Box - Ljung (a veces llamada Box-Pierce modificada, o simplemente prueba de caja) es una forma de probar la ausencia de autocorrelación serial, hasta un retraso $k$ especificado. La prueba determina si los errores son o no independientes idénticamente distribuidos (es decir, ruido blanco) o si hay algo más detrás de ellos; si las autocorrelaciones para los errores o residuos son distintas de cero o no. 
+Esencialmente, es una prueba de falta de ajuste: si las autocorrelaciones de los residuos son muy pequeñas, decimos que el modelo no muestra una "falta de ajuste significativa". Las hipótesis estadísticas son las siguientes:
+\textit{H_0}: Los residuos del modelo se distribuyen de forma independiente (es decir, las correlaciones en la población de la que se toma la muestra son 0, por lo que cualquier correlación observada en los datos resulta de la aleatoriedad del proceso de muestreo).
+\textit{H_1}: Los datos no se distribuyen de forma independiente; exhiben correlación serial.
+Un valor p significativo en esta prueba rechaza la hipótesis nula de que la serie temporal no está autocorrelacionada.
+
+
+\begin{table}[]
+\begin{tabular}{llll}
+\hline
+\textbf{m} & \textbf{Q(m)} & \textbf{Grados de libertad} & \textbf{p-valor} \\ \hline
+1          & 33,90         & 36,00                       & 0,57             \\
+2          & 70,10         & 72,00                       & 0,54             \\
+3          & 102,20        & 108,00                      & 0,64             \\
+4          & 138,40        & 144,00                      & 0,62             \\
+5          & 179,40        & 180,00                      & 0,50             \\
+6          & 214,10        & 216,00                      & 0,52             \\
+7          & 252,80        & 252,00                      & 0,47             \\
+8          & 285,90        & 288,00                      & 0,52             \\
+9          & 330,30        & 324,00                      & 0,39             \\
+10         & 379,30        & 360,00                      & 0,23             \\
+11         & 441,00        & 396,00                      & 0,06             \\
+12         & 483,00        & 432,00                      & 0,05             \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\begin{center}
+\caption{Gráfica de los p - valores para las estadísticas $Q_k(m)$ para las 6 dimensiones del modelo, la línea discontinua indica un error de tipo I del 5\%.}
+\label{fig:iess_test_modelo}
+\includegraphics[scale=1]{graficos/iess_test_modelo.png}
+\caption*{\scriptsize \centering {\bf Elaborado:} DAIE.}
+\end{center}
+\end{figure}
+
+Al utilizar el comando mq del paquete MTS del software estadístico R, se estiman los p – valores de los estadísticos para las 6 dimensiones del modelo propuesto, y no se rechaza la hipótesis nula, los residuos del modelo son independientes, al nivel de significancia igual a 5\%. 
+
+\subsubsection{Pruebas de homocedasticidad}
+
+Una de las principales suposiciones del modelo de series de tiempo VARMA es la heterocedasticidad de los errores; es decir, los errores deben seguir una distribución con una varianza constante a través del tiempo. Para desarrollar esta prueba, se utiliza la función MarchTest del paquete MTS del software estadístico R, el cual realiza las pruebas para comprobar la heterocedasticidad condicional en una serie temporal vectorial.
+
+Se utilizan varias pruebas. Primero, la serie vectorial $z_t$ se transforma en $r_t = t(z_t)$ y se realiza la prueba. La segunda prueba se basa en los rangos de la serie $r_t$ transformada. La tercera prueba es la estadística multivariante Ljung-Box para la serie de vectores al cuadrado $z_t^2$. La cuarta prueba es el estadístico Ljung-Box multivariante aplicado a la serie recortada al 5\% de la serie transformada $r_t$. La hipótesis nula es idéntica para todas estas pruebas, la varianza de los residuos del modelo es constante.
+
+\begin{table}[]
+\begin{tabular}{lll}
+\hline
+\textbf{Prueba:}                 & \textbf{Estadístico} & \textbf{p-valor} \\ \hline
+LM Test                          & 9,14662              & 0,5182478        \\
+Test basado en rango             & 5,93386              & 0,8207892        \\
+$Q_k(m)$ de la serie al cuadrado & 345,38300            & 0,7010288        \\
+Test robustez (5\%)              & 339,71440            & 0,7720816        \\ \hline
+\end{tabular}
+\end{table}
+
+Realizadas las cuatro pruebas de homocedasticidad, se tienen p valores mayores al nivel de significancia igual a 5\%. Por lo tanto, no se rechaza la hipótesis nula.
+
+\subsection{Resultados del modelo macroeconómico}
+La tabla \ref{tab:pob_proy_tot} presenta los resultados del modelo multivariante de series temporales utilizado para obtener una proyección de las variables económicas utilizadas en el presente estudio.
+
+
+
+\begin{table}[H]
+\begin{center}
+\caption{Proyección las variables macroeconómicas}
+\label{tab:pob_proy_tot}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{*{7}{c}}
+\toprule
+Año &
+PIB Nominal &
+Tasa activa &
+Tasa pasiva &
+Salario anual &
+SBU &
+Inflación promedio\\
+\midrule
+\input{tablas/iess_tasas_macro_prediccion.tex}
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Elaborado:} DAIE.}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[H]
+\begin{center}
+\caption{Predicciones del PIB nominal (en millones de dólares)}
+\label{fig:iess_pib_pred}
+\includegraphics[scale=1]{graficos/iess_pib_pred.png}
+\caption*{\scriptsize \centering {\bf Elaborado:} DAIE.}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}[H]
+\begin{center}
+\caption{Predicciones del salario promedio anual (en dólares)}
+\label{fig:iess_sal_pred}
+\includegraphics[scale=1]{graficos/iess_sal_pred.png}
+\caption*{\scriptsize {\bf Elaborado:} DAIE.}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\caption{Predicciones del SBU (en dólares)}
+\label{fig:iess_sbu_pred}
+\includegraphics[scale=1]{graficos/iess_sbu_pred.png}
+  \caption*{\scriptsize {\bf Elaborado:} DAIE.}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\caption{Predicciones de la tasa activa referencial}
+\label{fig:iess_ta_pred}
+\includegraphics[scale=1]{graficos/iess_ta_pred.png}
+  \caption*{\scriptsize {\bf Elaborado:} DAIE.}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\caption{Predicciones de la tasa pasiva referencial}
+\label{fig:iess_tp_pred}
+\includegraphics[scale=1]{graficos/iess_tp_pred.png}
+  \caption*{\scriptsize {\bf Elaborado:} DAIE.}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\caption{Predicciones de la inflación promedio}
+\label{fig:iess_inf_pred}
+\includegraphics[scale=1]{graficos/iess_inf_pred.png}
+\caption*{\scriptsize {\bf Elaborado:} DAIE.}
+\end{center}
+\end{figure}
+

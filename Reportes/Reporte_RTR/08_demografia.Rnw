@@ -1,0 +1,879 @@
+%---------------------------------------------------------------------------------------------------
+\chapter[Análisis demográfico, de salarios y pensiones]{Análisis demográfico, de salarios y pensiones}
+\label{chp_demog}
+%--------------------------------------------------------------------------------------------------
+% Población Afiliada y Pensionistas del SGO
+
+ A continuación presentamos un análisis tabular y gráfico de las principales variables demográficas, salariales, aportaciones y montos de pensiones pagadas, de la población asegurada y beneficiaria.
+
+\section{Estructura demográfica de la población afiliada}
+
+% %---------------------------------------------------------------------------------------------------
+\subsection{Afiliados}
+\label{chp_demog:afi}
+
+%---------------------------------------------------------------------------------------------------
+Para el presente estudio se considera el número de afiliados activos a diciembre de cada año; en la
+tabla \ref{tab:iess_pob_afi_ini} y figura \ref{fig:iess_pob_afi_ini} se muestra a la población
+afiliada en el período 2005 - 2020, observándose un crecimiento promedio del 5,99\% anual.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Evolución de la población afiliada}
+\label{tab:iess_pob_afi_ini}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{rrrrr}
+\toprule
+Año	& Afiliado Activos  & Afiliados Activos & Total Afiliados & Porcentaje \\
+    & Masculinos        & Femeninos         &                 & Incremento \\
+\midrule
+\input{tablas/iess_pob_afi_ini.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Portal BI. Cubo Historia Laboral Activos. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+A diciembre de 2020 existen 2.847.077 afiliados activos, que representa un crecimiento del 130,81\%
+en comparación al año 2005. Entre el 2005 y el  2014 se observa un crecimiento sostenido de los afiliados. En los años 2015 y 2016 se evidencia un decremento del número de afiliados producto de la disminución de más del 50\% del precio del crudo, la apreciación del dólar y el terremoto de abril de 2016. Si bien la población afiliada se recuperó lentamente entre el año 2017 y 2019, sin embargo en el 2020 se observa nuevamente una caida importante del 8,51\% producto de la crisis sanitaria, económica y social producida por la pandemia COVID-19.
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Evolución de la población afiliada al SGO}
+\label{fig:iess_pob_afi_ini}
+\includegraphics[scale=0.8]{graficos/iess_pob_afi_ini.png}
+\caption*{\scriptsize {\bf Fuente:} Portal BI. Cubo Historia Laboral Activos. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la figura \ref{fig:iess_pir_afiliados} se presenta la distribución por edad y sexo de población afiliada.
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo de la población afiliada}
+\label{fig:iess_pir_afiliados}
+\includegraphics[scale=0.8]{graficos/iess_pir_afiliados.png}
+\caption*{\scriptsize {\bf Fuente:} Portal BI. Cubo Historia Laboral Activos. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+Del total de afiliados a diciembre de 2020, el 42,7\% son mujeres y el 57,3\% son hombres. La edad
+promedio de la población femenina es de 41,3 años, mientras que la  población masculina es de 39,7
+años.
+
+\begin{landscape}
+\subsection{Masa salarial}
+\label{chp_masa:salarial}
+
+En la tabla \ref{tab:iess_masa_salarial_ini} y figura \ref{fig:iess_masa_salarial_ini} se presenta
+la evolución anual de la masa salarial y la correspondiente al mes de diciembre para el período 2005
+al 2020.
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Evolución de la masa salarial (Período 2005 – 2020)}
+\label{tab:iess_masa_salarial_ini}
+\scalebox{0.8}{
+\begin{tabular}{*{9}{r}}
+\toprule
+Año	& Masa salarial anual & Masa salarial anual & Masa salarial anual & Masa salarial      & Masa salarial      & Masa salarial      & Crecimiento de la           & Porcentaje de\\
+    & (USD) Masculino     & (USD) Femenino      & (USD)               & de diciembre (USD) & de diciembre (USD) & de diciembre (USD) & masa salarial anual (USD)   & crecimiento\\
+     &     &      &                                                   & Masculino          & Femenino &        &      &     \\
+\midrule
+\input{tablas/iess_masa_salarial_ini.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Base de datos de planillas. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+\end{landscape}
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Masa salarial anual en el período 2005 – 2020 }
+\label{fig:iess_masa_salarial_ini}
+\includegraphics[scale=0.7]{graficos/iess_masa_salarial_ini.png}
+\caption*{\scriptsize {\bf Fuente:} Base de datos de planillas. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+
+
+Para el año 2020, la masa salarial tiene un valor de USD  25.688.790.710,51, que
+representa un crecimiento del 526,29\% en comparación al año 2005.
+
+Se observa un rápido crecimiento de la masa salarial en el período 2005 al 2015, con una tasa promedio anual del 20,50\%. En el año 2016 se evidencia una disminución de la masa salarial producto de la caída de más del 50\% del precio del petróleo en el 2015 y del terremoto de abril de 2016. Si bien la masa salarial se recuperó lentamente entre el año 2017 y 2019; sin embargo en el 2020 se observa nuevamente un decremento importante del 7,33\% debido a la crisis sanitaria, económica y social producida por la pandemia COVID-19, que incrementó la tasa de desempleo en el país provocando una enorme cantidad de desafiliaciones.
+
+
+
+
+
+En la figura \ref{fig:iess_pir_masa_salarial} se muestra la distribución por sexo del salario declarado de los afiliados a diciembre de 2020.
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por sexo del salario declarado de los afiliados a diciembre de 2020}
+\label{fig:iess_pir_masa_salarial}
+\includegraphics[scale=.7]{graficos/iess_pir_masa_salarial.png}
+\caption*{\scriptsize {\bf Fuente:} Base de datos de planillas. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+El promedio declarado por parte de las mujeres a diciembre 2020 es USD  742,93 y para los
+hombres es de USD 772,29.El promedio total es de USD 756,48.
+
+En la tabla \ref{tab:iess_afi_tiempo_aportacion} se presenta la cantidad de afiliados activos a la fecha corte de este estudio, clasificados por edad, tiempo de aportes en años y el valor promedio del sueldo sobre el que se aporta. En esta matriz se detectan afiliados con edades superiores a los 90 años y se observa que el 28,5\% de la población afiliada tiene entre 0 y 5 años aportados; más del 50\% de la población afiliada está comprendida entre 26 y 45 años de edad; y, que las personas que más
+años aportados tienen les corresponden los salarios promedios más altos. La población entre 41 y 45 años tiene el promedio de sueldos más altos (USD 870,12 en promedio de sueldos).
+
+\begin{landscape}
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Población afiliada al IESS por rangos de edad, número de aportaciones y sueldo promedio a diciembre de 2020}
+\label{tab:iess_afi_tiempo_aportacion}
+\scalebox{0.6}{
+\begin{tabular}{r|crrrrrrrrrr|c}
+\toprule
+\multicolumn{1}{c|}{\multirow{2}[4]{*}{Edad}} & \multicolumn{11}{p{20em}|}{Tiempo de afiliación} & \multicolumn{1}{c}{\multirow{2}[4]{*}{Total}} \\
+\cmidrule{2-12} & [0 , 5] & [6 , 10] & [11 , 15] & [16 , 20] & [21 , 25] & [26 ,30] & [31 , 35] & [36 , 40] & [41 , 45]  & [46 , 50]& \text{$>50$} &  \\
+\midrule
+\input{tablas/iess_afi_tiempo_aportacion.tex}
+\bottomrule
+\end{tabular}
+}
+
+\caption*{\scriptsize {\bf Fuente:} Base de datos de planillas. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+\vspace{-1cm}
+
+%{\small La matriz precedente detalla la cantidad de afiliados activos a la fecha corte de este estudio,
+%clasificados por edad, tiempo de aportes en años y el valor promedio del sueldo sobre el que se aporta.
+%En esta matriz se detectan afiliados con edades superiores a los 90 años.}
+
+%{\scriptsize Además se observa que el 28,5\% de la población afiliada tiene entre 0 y 5 años aportados, que más del 50\% de la población afiliada está comprendida entre 26 y 45 años de edad; y,  que las personas que más
+%años aportados tienen les corresponden los salarios promedios más altos
+%La población entre 41 y 45 años tiene el promedio de sueldos más altos (USD 870,12 en promedio de sueldos).}
+\end{landscape}
+
+
+% %-------------------------------------------------------------------- Tiempo de aportación afiliados hombres
+% \begin{landscape}
+% \begin{table}[H]
+% \centering
+% \captionsetup{justification=centering}
+% \caption{Población de hombres afiliados al IESS por rangos de edad, número de aportaciones y sueldo promedio a diciembre de 2020}
+% \label{tab:iess_afi_tiempo_aportacion_h}
+% \scalebox{0.6}{
+% \begin{tabular}{r|crrrrrrrrrr|c}
+% \toprule
+% \multicolumn{1}{c|}{\multirow{2}[4]{*}{Edad}} & \multicolumn{11}{p{20em}|}{Tiempo de afiliación} & \multicolumn{1}{c}{\multirow{2}[4]{*}{Total}} \\
+% \cmidrule{2-12} & [0 , 5] & [6 , 10] & [11 , 15] & [16 , 20] & [21 , 25] & [26 ,30] & [31 , 35] & [36 , 40] & [41 , 45]  & [46 , 50]& \text{$>50$} &  \\
+% \midrule
+% \input{tablas/iess_afi_tiempo_aportacion_h.tex}
+% \bottomrule
+% \end{tabular}
+% }
+% 
+% \caption*{\scriptsize {\bf Fuente:} Base de datos de planillas. \\
+% {\bf Elaborado:} DAIE.}
+% \end{table}
+% \vspace{-1cm}
+% \end{landscape}
+% 
+% %-------------------------------------------------------------------- Tiempo de aportación afiliadas mujeres
+% \begin{landscape}
+% \begin{table}[H]
+% \centering
+% \captionsetup{justification=centering}
+% \caption{Población de mujeres afiliadas al IESS por rangos de edad, número de aportaciones y sueldo promedio a diciembre de 2020}
+% \label{tab:iess_afi_tiempo_aportacion_m}
+% \scalebox{0.6}{
+% \begin{tabular}{r|crrrrrrrrrr|c}
+% \toprule
+% \multicolumn{1}{c|}{\multirow{2}[4]{*}{Edad}} & \multicolumn{11}{p{20em}|}{Tiempo de afiliación} & \multicolumn{1}{c}{\multirow{2}[4]{*}{Total}} \\
+% \cmidrule{2-12} & [0 , 5] & [6 , 10] & [11 , 15] & [16 , 20] & [21 , 25] & [26 ,30] & [31 , 35] & [36 , 40] & [41 , 45]  & [46 , 50]& \text{$>50$} &  \\
+% \midrule
+% \input{tablas/iess_afi_tiempo_aportacion_m.tex}
+% \bottomrule
+% \end{tabular}
+% }
+% 
+% \caption*{\scriptsize {\bf Fuente:} Base de datos de planillas. \\
+% {\bf Elaborado:} DAIE.}
+% \end{table}
+% \vspace{-1cm}
+% \end{landscape}
+
+%---------------------------------------------------------------------------------------------------
+\section{Estructura demográfica de la población de beneficiarios}
+A continuación, se detalla la población beneficiaria por cada una de las prestaciones que otorga el
+\Sexpr{REP_seg}.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Subsidios por incapacidad temporal}
+En la siguiente tabla y gráfica, se expone la serie histórica a partir del año 2009 del número de
+beneficiarios de subsidios de Seguro de Riesgos del Trabajo y el monto pagado anualmente.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de los beneficiarios de subsidios del \Sexpr{REP_seg}}
+\label{fig:iess_subsidios_rtr}
+%\includegraphics[width=1\textwidth]{graficos/iess_subsidios_rtr.png}
+\includegraphics[scale=1]{graficos/iess_subsidios_rtr.png}
+\caption*{\scriptsize Fuente: Base de subsidios de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+El mayor número de afiliados con derecho a subsidios se presenta en el año 2015 con 15.019 personas
+beneficiarias. A partir del 2016, se observa que la cifra ha ido decreciendo, llegando a tener un
+número inferior de subsidios en el año 2020 con referencia al año 2019, comportamiento que se
+presenta en la figura \ref{fig:iess_subsidios_rtr}.
+
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{ccccc}
+\caption{Evolución histórica de la población beneficiaria y beneficios pagados por subsidios del \Sexpr{REP_seg}}
+\label{tab:iess_subsidios_rtr}\\
+\toprule
+\multirow{2}[0]{*}{Año} & \multirow{2}[0]{*}{Beneficiarios } & Porcentaje & Beneficio anual & Porcentaje de\\
+& & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{2}[0]{*}{Año} & \multirow{2}[0]{*}{Beneficiarios } & Porcentaje & Beneficio anual & Porcentaje de\\
+& & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{5}{r}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: Base de subsidios de Riesgos del Trabajo. \\
+  Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_subsidios_rtr.tex}
+\end{longtable}
+}
+
+La distribución de los beneficiarios de subsidios en 2020, por edad y sexo, se muestra en la figura
+\ref{fig:iess_subsidios_edad_sexo_rtr}.
+\begin{figure}[H]
+\centering
+\caption{Distribución de beneficiarios de subsidios, por edad y sexo.}
+\label{fig:iess_subsidios_edad_sexo_rtr}
+\includegraphics[scale=1]{graficos/iess_subsidios_edad_sexo_rtr.png}
+\caption*{\scriptsize Fuente: Base de subsidios de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+De los 4.119 beneficiarios por subsidios que existen en el año 2020, el 17,1\% son mujeres y el
+82,9\% son hombres. La edad promedio de mujeres pertenecientes a este grupo es de 39,9 años;
+mientras que la edad promedio de hombres es de 37,4 años.
+
+La distribución de los montos pagados a diciembre por sexo de los beneficiarios de subsidios se
+muestra en la tabla \ref{tab:iess_montos_subsidios_sexo_rtr}.
+
+Para el año 2020, el beneficio mensual promedio por subsidios para las mujeres es de USD 364,30 y
+para los hombres de USD 421,45.
+
+{\fontsize{9}{11}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+\caption{Distribución de los montos pagados en subsidios en 2020}
+\label{tab:iess_montos_subsidios_sexo_rtr}\\
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Fuente: Base de subsidios de Riesgos del Trabajo. \\
+  Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_subsidios_monto_dist_rtr.tex}
+\end{longtable}
+}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Indemnización por incapacidad permanente parcial}
+A partir de la expedición de la Resolución No. C.D. 390, la misma que es ratificada en la Resolución
+No. C.D. 513, Artículo 29, se suspende la entrega de pensiones vitalicias, por incapacidad
+permanente parcial, en su remplazo se entrega indemnizaciones. Esta prestación se entregó en el año
+2019 a 370 beneficiarios y a 300 en el año 2020, con gastos anuales de USD 3.757.165,55 y USD
+2.288.812,44, respectivamente.
+\begin{table}[H]
+\centering
+\caption{Evolución histórica de la población beneficiaria y montos pagados por indemnizaciones del \Sexpr{REP_seg}}
+\label{tab:iess_indemnizaciones_rtr}
+%\scalebox{0.6}{
+{\fontsize{10}{12}\selectfont
+%\resizebox{\columnwidth}{!}{%
+\begin{tabular}{ccccc}
+\toprule
+\multirow{2}[0]{*}{Año} & \multirow{2}[0]{*}{Beneficiarios } & Porcentaje & Beneficio anual & Porcentaje de\\
+& & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\ \midrule
+\input{tablas/iess_indemnizaciones_rtr.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Base de indemnizaciones de Riesgos del Trabajo. \\
+  Elaborado: DAIE.}
+\end{table}
+% El mayor número de afiliados con derecho a indemnizaciones se presenta en el año 2015, con 1.175
+% beneficiarios. A partir del año 2016, se observa que la cifra ha ido decreciendo, llegando a tener
+% un número 555 beneficiarios en el año 2018.
+
+El desarrollo de esta serie se presenta en la figura \ref{fig:iess_indemnizaciones_rtr}. En cambio,
+en la figura \ref{fig:iess_indemnizaciones_edad_sexo_rtr} se muestra la distribución de los
+beneficiarios, por edad y sexo.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de la población beneficiaria de indemnizaciones del \Sexpr{REP_seg}}
+\label{fig:iess_indemnizaciones_rtr}
+\includegraphics[scale=1]{graficos/iess_indemnizaciones_rtr.png}
+\caption*{\scriptsize Fuente: Base de indemnizaciones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Distribución de la población beneficiaria de indemnizaciones, por edad y sexo, en 2020}
+\label{fig:iess_indemnizaciones_edad_sexo_rtr}
+\includegraphics[scale=1]{graficos/iess_indemnizaciones_edad_sexo_rtr.png}
+\caption*{\scriptsize Fuente: Base de indemnizaciones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+Del total de beneficiarios, el 14,2\% son mujeres y el son 85,8\% hombres. La edad promedio de las
+mujeres es de 45,5 años, mientras que la de los hombres es de 39,4 años.
+
+La distribución de los montos pagados por indemnizaciones para cada sexo en 2020 se presenta en la
+tabla \ref{tab:iess_montos_indemnizaciones_sexo_rtr}.
+
+{\fontsize{9}{11}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+\caption{Distribución de los montos pagados por indemnizaciones, para cada sexo, en 2020}
+\label{tab:iess_montos_indemnizaciones_sexo_rtr}\\
+\toprule
+\multirow{2}[2]{*}{Rango:}
+& \multicolumn{2}{c}{Masculino}
+& \multicolumn{2}{c}{Femenino}
+& \multicolumn{2}{c}{Total} \\
+\cmidrule(r){2-3} \cmidrule(r){4-5} \cmidrule(r){6-7}
+& \multicolumn{1}{c}{Beneficiarios}
+& \multicolumn{1}{c}{Porcentaje (\%)}
+& \multicolumn{1}{c}{Beneficiarias}
+& \multicolumn{1}{c}{Porcentaje (\%)}
+& \multicolumn{1}{c}{Beneficiarios}
+& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{2}[2]{*}{Rango:}
+& \multicolumn{2}{c}{Masculino}
+& \multicolumn{2}{c}{Femenino}
+& \multicolumn{2}{c}{Total} \\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+& \multicolumn{1}{c}{Beneficiarios}
+& \multicolumn{1}{c}{Porcentaje (\%)}
+& \multicolumn{1}{c}{Beneficiarias}
+& \multicolumn{1}{c}{Porcentaje (\%)}
+& \multicolumn{1}{c}{Beneficiarios}
+& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Fuente: Base de indemnizaciones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_indemnizaciones_monto_dist_rtr.tex}
+\end{longtable}
+}
+
+El valor del monto promedio pagado por indemnizaciones, del año 2020, de mujeres es USD 7.950,70 y
+para los hombres es de USD 8.183,54.
+
+A continuación, se presenta la serie histórica de beneficiarios de pensiones vitalicias por
+incapacidad: permanente parcial, temporal, permanente total, permanente absoluta; además de los
+pensionistas de montepío.  \subsection{Pensionistas por incapacidad permanente parcial} El número de
+pensionistas por incapacidad permanente parcial, a diciembre de cada año, junto con el crecimiento
+anual del beneficio pagado, se presenta en la tabla \ref{tab:iess_incapacidad_parcial_rtr} y figura
+\ref{fig:iess_incapacidad_parcial_rtr}.
+
+
+{\fontsize{10}{11}\selectfont
+\begin{longtable}[H]{ccccc}
+\caption{Evolución histórica de la población beneficiaria y beneficios por incapacidad permanente parcial del \Sexpr{REP_seg}}
+\label{tab:iess_incapacidad_parcial_rtr}\\
+\toprule
+\multirow{2}[0]{*}{Año}
+& \multirow{2}[0]{*}{Beneficiarios}
+& Porcentaje
+& Beneficio anual
+& Porcentaje de\\
+& & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{2}[0]{*}{Año}
+& \multirow{2}[0]{*}{Beneficiarios }
+& Porcentaje
+& Beneficio anual
+& Porcentaje de\\
+& & de crecimiento (\%)
+& pagado (USD) & crecimiento (\%)\\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{5}{r}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo. \\
+  Elaborado: DAIE.}
+\endlastfoot
+  \input{tablas/iess_incapacidad_parcial_rtr.tex}
+\end{longtable}
+}
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de la población beneficiaria de rentas vitalicias por incapacidad permanente parcial del \Sexpr{REP_seg}}
+\label{fig:iess_incapacidad_parcial_rtr}
+\includegraphics[scale=1]{graficos/iess_incapacidad_parcial_rtr.png}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+
+{\fontsize{9}{11}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+\caption{Distribución de las rentas mensuales por incapacidad permanente parcial, para cada sexo, en 2020}
+\label{tab:iess_monto_incapacidad_parcial_sexo_rtr}\\
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_pp_monto_dist_rtr.tex}
+\end{longtable}
+}
+
+A diciembre del 2020 existen 4.982 beneficiarios de pensiones vitalicias por incapacidad permanente
+parcial, de los cuales 9\% son mujeres y el 91\% son hombres. Y, durante el mismo año, se entregaron
+USD 1.256.268,75  por este beneficio.
+
+La edad promedio de las mujeres es de 56,4 años; mientras, la edad media de los hombres es de 57,4
+años. La distribución de los beneficios pagados por este tipo de prestación se presenta en la tabla
+\ref{tab:iess_monto_incapacidad_parcial_sexo_rtr}.
+El valor del monto promedio pagado por incapacidad permanente parcial, del año 2020, de mujeres es
+USD 382,40 y para los hombres es de USD 399,89.
+
+\begin{figure}[H]
+\centering
+\caption{Distribución de la población pensionistas por incapacidad permanente parcial, por edad y sexo, en 2020}
+\label{fig:iess_incapacidad_parcial_edad_sexo_rtr}
+\includegraphics[scale=1]{graficos/iess_incapacidad_parcial_edad_sexo_rtr.png}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+% %---------------------------------------------------------------------------------------------------
+% \subsection{Pensionistas provisionales por incapacidad temporal} El número de pensiones
+% provisionales por incapacidad temporal, a diciembre de cada año, junto con el monto anual pagado se
+% presenta en la tabla \ref{tab:iess_ pensiones_provisionales_inc_tem_rtr} y figura
+% \ref{fig:iess_pensiones_provisionales_inc_tem_rtr}.
+%
+% {\fontsize{10}{12}\selectfont
+% \begin{longtable}[H]{ccccc}
+% \caption{Evolución histórica de la población beneficiaria y beneficios por rentas provisionales por incapacidad temporal del \Sexpr{REP_seg}}
+% \label{tab:iess_ pensiones_provisionales_inc_tem_rtr}\\
+% \toprule
+% \multirow{2}[0]{*}{Año} & \multirow{2}[0]{*}{Beneficiarios } & Porcentaje & Beneficio anual & Porcentaje de\\
+% & & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\
+% \midrule
+% \endfirsthead
+%
+% \toprule
+% \multirow{2}[0]{*}{Año} & \multirow{2}[0]{*}{Beneficiarios } & Porcentaje & Beneficio anual & Porcentaje de\\
+% & & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\
+% \midrule
+% \endhead
+%
+% \bottomrule \multicolumn{5}{r}{continúa...} \\
+% \endfoot
+% \bottomrule
+% \caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo. \\
+%   Elaborado: DAIE.}
+% \endlastfoot
+%   \input{tablas/iess_pensiones_provisionales_inc_tem_rtr.tex}
+% \end{longtable}
+% }
+%
+% Entre los años 2014 a 2018, los beneficiarios de este tipo de renta presentan un comportamiento con
+% un rápido decrecimiento. Su cifra más baja alcanza el valor de 16 para el año 2018; y dada su
+% tendencia, este tipo de beneficiarios en el corto plazo tendrán a desaparecer. Lo expresado
+% anteriormente es apreciable en la figura \ref{fig:iess_pensiones_provisionales_inc_tem_rtr}.
+% \begin{figure}[H]
+% \centering
+% \caption{Evolución histórica de la población beneficiaria por pensiones provisionales de incapacidad
+% temporal del \Sexpr{REP_seg}}
+% \label{fig:iess_pensiones_provisionales_inc_tem_rtr}
+% \includegraphics[scale=1]{graficos/iess_pensiones_provisionales_inc_tem_rtr.png}
+% \caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+% \\Elaborado: DAIE}
+% \end{figure}
+% A diciembre de 2018, las mujeres, que representan el 6,3\%, alcanzan la edad promedio de 34,8 años;
+% mientras que para los hombres, que representan el 93,7\%, es de 43,9 años. Por otra parte, el monto
+% promedio pagado a mujeres llega a USD 378,38 y para los hombres a USD 608,11.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Pensionistas por incapacidad permanente total}
+A diciembre del 2020 existen 1.208 pensionistas por incapacidad permanente total, de los cuales
+13,3\% son mujeres y el 86,7\% son hombres.
+\begin{table}[H]
+\centering
+\caption{Evolución histórica de la población beneficiaria y beneficios por rentas por incapacidad permanente total del \Sexpr{REP_seg}}
+\label{tab:iess_incapacidad_total_rtr}
+%\scalebox{0.6}{
+{\fontsize{10}{12}\selectfont
+%\resizebox{\columnwidth}{!}{%
+\begin{tabular}{ccccc}
+\toprule
+\multirow{2}[0]{*}{Año} & \multirow{2}[0]{*}{Beneficiarios } & Porcentaje & Beneficio anual & Porcentaje de\\
+& & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\ \midrule
+\input{tablas/iess_incapacidad_total_rtr.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo. \\
+  Elaborado: DAIE.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de la población beneficiaria por incapacidad permanente total del \Sexpr{REP_seg}}
+\label{fig:iess_incapacidad_total_rtr}
+\includegraphics[scale=1]{graficos/iess_incapacidad_total_rtr.png}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+La edad promedio de las mujeres es de 56,3 años; mientras, la edad media de los hombres es de 56,8 años.
+\begin{figure}[H]
+\centering
+\caption{Distribución de la población de pensionistas por incapacidad permanente total, por edad y sexo, en 2020}
+\label{fig:iess_incapacidad_total_edad_sexo_rtr}
+\includegraphics[scale=1]{graficos/iess_incapacidad_total_edad_sexo_rtr.png}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+
+La pensión mensual promedio de mujeres y hombres por incapacidad permanente total es de USD 983,86 y
+USD 957,75 respectivamente. La tabla \ref{tab:iess_iess_monto_incapacidad_total_sexo_rtr} muestra la
+distribución de la pensión mensual por sexo de los pensionistas por incapacidad permanente total.
+
+
+{\fontsize{9}{11}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+\caption{Distribución de las rentas mensuales por incapacidad permanente total, para cada sexo, en 2020}
+\label{tab:iess_iess_monto_incapacidad_total_sexo_rtr}\\
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_pt_monto_dist_rtr.tex}
+\end{longtable}
+}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Pensionistas por incapacidad permanente absoluta}
+A diciembre del 2020 existen 148 pensionistas por incapacidad permanente absoluta, de los cuales
+4,8\% son mujeres y el 95,2\% son hombres.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de pensionistas por incapacidad permanente absoluta del \Sexpr{REP_seg}}
+\label{fig:iess_incapacidad_absoluta_rtr}
+\includegraphics[scale=1]{graficos/iess_incapacidad_absoluta_rtr.png}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+
+\begin{table}[H]
+\centering
+\caption{Evolución histórica de la población beneficiaria y beneficios por pensiones por incapacidad permanente absoluta del \Sexpr{REP_seg}}
+\label{tab:iess_incapacidad_absoluta_rtr}
+%\scalebox{0.6}{
+{\fontsize{10}{12}\selectfont
+%\resizebox{\columnwidth}{!}{%
+\begin{tabular}{ccccc}
+\toprule
+\multirow{2}[0]{*}{Año} & \multirow{2}[0]{*}{Beneficiarios } & Porcentaje & Beneficio anual & Porcentaje de\\
+& & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\ \midrule
+\input{tablas/iess_incapacidad_absoluta_rtr.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo. \\
+  Elaborado: DAIE.}
+\end{table}
+
+
+La edad promedio de las mujeres es de 46 años; mientras que, la edad media de los hombres es de 44 años.
+\begin{figure}[H]
+\centering
+\caption{Distribución de la población de pensionistas por incapacidad permanente absoluta, por edad y sexo, en 2020}
+\label{fig:iess_incapacidad_absoluta_edad_sexo_rtr}
+\includegraphics[scale=1]{graficos/iess_incapacidad_absoluta_edad_sexo_rtr.png}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+La pensión mensual promedio de mujeres y hombres por incapacidad permanente absoluta es de USD
+803,85 y USD 852,12, respectivamente. La tabla \ref{tab:iess_monto_incapacidad_absoluta_sexo_rtr}
+muestra la distribución de la pensión mensual por sexo de los pensionistas por incapacidad
+permanente absoluta.
+
+
+{\fontsize{9}{11}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+\caption{Distribución de las rentas mensuales por incapacidad permanente absoluta, para cada sexo, en 2020}
+\label{tab:iess_monto_incapacidad_absoluta_sexo_rtr}\\
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_pa_monto_dist_rtr.tex}
+\end{longtable}
+}
+
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Pensionistas por orfandad}
+A diciembre del 2020 existen 3.388 pensionistas por orfandad, de los cuales 64,8\% son mujeres y el
+35,2\% son hombres.
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de pensionistas por orfandad del \Sexpr{REP_seg}}
+\label{fig:iess_pensionistas_orfadad_rtr}
+\includegraphics[scale=1]{graficos/iess_pensionistas_orfadad_rtr.png}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+
+{\fontsize{10}{11}\selectfont
+\begin{longtable}[H]{ccccc}
+\caption{Evolución histórica de la población beneficiaria y beneficios pagados por pensiones de orfandad del \Sexpr{REP_seg}}
+\label{tab:iess_pensionistas_orfadad_rtr}\\
+\toprule
+\multirow{2}[0]{*}{Año} & \multirow{2}[0]{*}{Beneficiarios } & Porcentaje & Beneficio anual & Porcentaje de\\
+& & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{2}[0]{*}{Año} & \multirow{2}[0]{*}{Beneficiarios } & Porcentaje & Beneficio anual & Porcentaje de\\
+& & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\ \midrule
+\endhead
+
+\bottomrule \multicolumn{5}{r}{continúa...} \\
+\endfoot
+\bottomrule
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_pensionistas_orfadad_rtr.tex}
+\end{longtable}
+}
+
+La edad media de hombres y mujeres es de 13,8 y 34,1 años, respectivamente.
+
+\begin{figure}[H]
+\centering
+\caption{Distribución de la población de pensionistas por orfandad, por edad y sexo, en 2020}
+\label{fig:iess_pensionistas_orfandad_edad_sexo_rtr}
+\includegraphics[scale=1]{graficos/iess_pensionistas_orfandad_edad_sexo_rtr.png}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+{\fontsize{9}{11}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+\caption{Distribución de las rentas mensuales por orfandad, para cada sexo, en 2020}
+\label{tab:iess_monto_pensionistas_orfandad_sex_rtr}\\
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_mo_monto_dist_rtr.tex}
+\end{longtable}
+}
+
+La pensión mensual promedio de hombres y mujeres por orfandad es de USD 179,59 y USD 251,72,
+respectivamente. La tabla \ref{tab:iess_monto_pensionistas_orfandad_sex_rtr} muestra la distribución
+de la pensión mensual por sexo de los pensionistas por orfandad.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Pensionistas por viudedad}
+A diciembre del 2020 existen 4.140 pensionistas por viudedad, de los cuales 98,9\% son mujeres y
+apenas el 1,1\% son hombres.
+\begin{table}[H]
+\centering
+\caption{Evolución histórica de la población beneficiaria y beneficios por pensiones de viudedad del \Sexpr{REP_seg}}
+\label{tab:iess_pensionistas_viudedad_rtr}
+%\scalebox{0.6}{
+{\fontsize{10}{12}\selectfont
+%\resizebox{\columnwidth}{!}{%
+\begin{tabular}{ccccc}
+\toprule
+\multirow{2}[0]{*}{Año} & \multirow{2}[0]{*}{Beneficiarios } & Porcentaje & Beneficio anual & Porcentaje de\\
+& & de crecimiento (\%) & pagado (USD) & crecimiento (\%)\\ \midrule
+\input{tablas/iess_pensionistas_viudedad_rtr.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo. \\
+  Elaborado: DAIE.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica de pensionistas por viudedad del \Sexpr{REP_seg}}
+\label{fig:iess_pensionistas_viudedad_rtr}
+\includegraphics[scale=1]{graficos/iess_pensionistas_viudedad_rtr.png}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+La edad media de hombres y mujeres es de 49,7 y 57,7 años, respectivamente.
+\begin{figure}[H]
+\centering
+\caption{Distribución de la población de pensionista por viudedad, por edad y sexo, en 2020}
+\label{fig:iess_pensionistas_viudedad_edad_sexo_rtr}
+\includegraphics[scale=1]{graficos/iess_pensionistas_viudedad_edad_sexo_rtr.png}
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\end{figure}
+
+
+{\fontsize{9}{11}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+\caption{Distribución de las rentas mensuales por viudedad, para cada sexo, en 2020}
+\label{tab:iess_monto_pensionistas_viudedad_sex_rtr}\\
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{2}[2]{*}{Rango:} & \multicolumn{2}{c}{Masculino} & \multicolumn{2}{c}{Femenino} & \multicolumn{2}{c}{Total}\\
+\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+   & \multicolumn{1}{c}{Beneficiarios}   & \multicolumn{1}{c}{Porcentaje (\%)}   & \multicolumn{1}{c}{Beneficiarias}   & \multicolumn{1}{c}{Porcentaje (\%)} & \multicolumn{1}{c}{Beneficiarios}& \multicolumn{1}{c}{Porcentaje (\%)} \\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Fuente: Base nómina de pensiones de Riesgos del Trabajo.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_mv_monto_dist_rtr.tex}
+\end{longtable}
+}
+
+La pensión mensual promedio de hombres y mujeres por viudedad es de USD 469,61 y USD 505,52,
+respectivamente. La tabla \ref{tab:iess_monto_pensionistas_viudedad_sex_rtr} muestra la distribución
+de la pensión mensual por sexo de los pensionistas por viudedad.
