@@ -1,0 +1,82 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Conclusiones y recomendaciones}
+\label{chp_conclusion}
+
+%---------------------------------------------------------------------------------------------------
+\section{Situación actual}
+\label{chp_conclusion:sitactual}
+Conforme a los estados financieros con corte al 31 de diciembre de 2018, el \Sexpr{REP_seg} cuenta
+con un patrimonio de USD \Sexpr{REP$cap_ini}, el mismo que registró una reducción de su crecimiento,
+debido a la reducción de su prima de 0,55\% a 0,20\%, establecido en la Resolución No. C.D. 501.
+%---------------------------------------------------------------------------------------------------
+\section{Conclusiones}
+\label{chp_conclusion:conclusiones}
+Del presente estudio se obtienen las siguientes conclusiones:
+\begin{enumerate}[itemsep=0mm, topsep=0pt]
+\item Bajo el escenario base, el superávit actuarial alcanza USD \Sexpr{REP$bal_act_esc_1}, su prima
+suficiente que mantiene el equilibrio financiero en el tiempo es \Sexpr{REP$pri_med_niv_esc_1}\%, 
+resultado que se obtiene con una tasa de actualización de \Sexpr{REP$tasa_act_esc_1}\%.
+
+
+\item Se establece que se realizaron desinversiones por un valor de USD 25.000.000,00 que causaron
+un lucro cesante de USD 1.035.057,65 entre los años 2015 y 2020.
+
+
+\item  El Estado ecuatoriano dejó de contribuir USD 91.340.621,83 al \Sexpr{REP_seg}, por el período abril de 2015 a 31 de diciembre de 2018, para el financiamiento de las pensiones y las decimotercera y decimocuarta pensiones, lo cual generó un lucro cesante de USD 18.424.615,68 como rendimiento de estos valores, dando un total de USD 109.765.237,51 los valores que dejó de percibir el fondo. A partir del 01 de enero de 2019, el Estado empezó a contribuir.
+
+\item Del análisis de los estados financieros, no se observan transferencias de valores al Seguro
+General de Salud Individual y Familiar por concepto de tratamiento de enfermedades
+profesionales, ni tampoco por tratamiento de accidentes de trabajo.
+
+\item No existe control de gastos médicos, ni tampoco de los beneficios entregados por parte del 
+Seguro de IVM por el auxilio de funerales.
+
+\item Los beneficios de auxilios de funerales causados por fallecimientos, tanto de afiliados
+activos producidos por accidentes laborales y pensionistas de este seguro no son entregados por parte
+de este, son concedidos por el Seguro de Invalidez, Vejez y Muerte.
+
+\item No existe un departamento de medicina del trabajo que en coordinación con el Seguro General de
+Salud Individual y Familiar controlen los accidentes de trabajo y enfermedades profesionales, es por
+ello por lo que no se puede formar estadísticas de estos siniestros.
+
+\end{enumerate}
+
+%---------------------------------------------------------------------------------------------------
+\section{Recomendaciones}
+\label{chp_conclusion:recomendacion}
+Sobre la base del análisis efectuado y los resultados obtenidos en el presente estudio, se emiten
+las siguientes recomendaciones, con la finalidad de que se adopten las medidas correctivas.
+
+\begin{enumerate}
+% \item Establecer el aporte patronal igual a \Sexpr{REP$tasa_aporte_esc_3}\% para el
+% \Sexpr{REP_seg} y \Sexpr{REP$pri_med_niv_cesantia}\% al Seguro de Cesantía, de esta manera, se
+% estaría regresando \Sexpr{REP$complemento}\% a las cuentas individuales de los afiliados y a su
+% vez se estaría garantizando el \Sexpr{REP_seg}.
+
+
+\item Tomar las medidas necesarias para que se registre adecuadamente los siniestros derivados de
+Riesgos del Trabajo y la entrega de beneficios de salud, para alcanzar niveles reales de
+siniestralidad comparables a nivel regional; evitando de esta manera afectar los fondos de
+Pensiones y Salud.  Luego de contar con un registro adecuado de estos eventos, se deberá
+evaluar nuevamente si la tasa de aportes para financiar los beneficios que ofrece el Seguro
+de Riesgos del Trabajo estipulado en la resolución C.D. 261, es la que debe financiar las
+prestaciones de este seguro.
+
+
+\item La Dirección General de Salud Individual y Familiar debe mantener un control adecuado de los
+costos y atenciones médicas, ocasionados por enfermedades profesionales y accidentes de trabajo con 
+el fin de emitir las correspondientes facturas por el coste de las atenciones médicas al Seguro
+General de Riesgos del Trabajo para que asuma el costo de las prestaciones en servicios de salud. 
+Con ello se liberaría de una carga financiera al Seguro de Salud Individual y Familiar.
+
+% \item Garantizar el financiamiento de las decimas tercera y cuarta pensiones en el largo plazo, si
+% se elimina alguna de sus fuentes de ingresos o si éstas no son suficientes.
+
+\item Exigir que el Estado transfiera en forma oportuna las obligaciones por concepto del 40\%
+para el financiamiento de las pensiones, evitando la generación de cuentas por cobrar.
+
+\item Disponer al BIESS que todas las inversiones que realice recuperen al menos la tasa de interés
+actuarial establecida en el presente estudio.
+
+
+\end{enumerate}
