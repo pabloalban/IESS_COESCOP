@@ -5,59 +5,28 @@ message( '\tLectura de registro civil' )
 #Cargando de archivo txt--------------------------------------------------------
 file<-paste0(parametros$Data, 'KSPCOTREGCIV.txt' )
 
-rc <- read.table(file,
-                  sep = ";",
-                  dec = ".",
-                  na = "",
-                  header = TRUE,
-                  skip = 0,
-                 fill = TRUE,
-                 #nrows = 1000,
-                 colClasses = c('character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character',
-                                
-                                'character')
-) %>%
+dat1 <- fread(file,
+              fill=TRUE,
+              sep=";",
+              nrows = 9858082,
+              select = c(1:7)
+) %>% 
+  as_tibble() %>% clean_names()
+
+
+
+dat2 <- fread(file,
+             fill=TRUE,
+             sep=";",
+             skip=9858083,
+             select = c(1:7)
+             ) %>% as_tibble() %>%
   clean_names()
 
+colnames(dat2) <- colnames(dat1)
 
-
-
+rc <- rbind( dat1,
+             dat2 )
       
 # Guardando en un Rdata------------------------------------------------------------------------------
 message("\tGuardando Rdatas")
