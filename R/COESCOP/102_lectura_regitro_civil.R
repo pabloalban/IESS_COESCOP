@@ -26,7 +26,22 @@ dat2 <- fread(file,
 colnames(dat2) <- colnames(dat1)
 
 rc <- rbind( dat1,
-             dat2 )
+             dat2 ) %>%
+  mutate(fecnacper = as.Date(fecnacper,"%d/%m/%Y")) %>%
+  mutate(fecdefper = as.Date(fecdefper,"%d/%m/%Y")) %>%
+  mutate( genper = ifelse( genper == '2', 'F', 'M' )) %>%
+  dplyr::select( cedula:= cedideusu,
+                 nombre:= nomper,
+                 sexo := genper,
+                 fecha_nacimiento:= fecnacper,
+                 nacionalidad := nacper,
+                 estado_civil := estcivper,
+                 fecha_defuncion := fecdefper )
+
+rc$nombre <- str_replace(rc$nombre, c("Ã‘"), "Ñ")
+rc$nombre <- str_replace(rc$nombre, c("Ã‘"), "Ñ")
+rc$nombre <- str_replace(rc$nombre, c("Ã‘"), "Ñ")
+rc$nombre <- str_replace(rc$nombre, c("Ã‘"), "Ñ")
       
 # Guardando en un Rdata------------------------------------------------------------------------------
 message("\tGuardando Rdatas")
