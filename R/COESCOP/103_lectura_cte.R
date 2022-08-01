@@ -17,7 +17,7 @@ transito <- read_excel(file,
 #Guardando en un Rdata----------------------------------------------------------
 message( '\tGuardando en data.frame' )
 
-save( bomberos,
+save( transito,
       file = paste0( parametros$RData, 'COESCOP_cte.RData' ) )
 
 #Borrando data.frames-----------------------------------------------------------
