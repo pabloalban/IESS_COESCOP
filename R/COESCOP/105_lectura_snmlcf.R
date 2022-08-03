@@ -14,6 +14,16 @@ snmlcf <- read_excel(file,
                        na = "",
                        skip = 0) %>% clean_names()
 
+#Cargando base del RC-------------------------------------------------------------------------------
+
+load(paste0(parametros$RData, "IESS_Reg_Civil.RData"))
+
+#Cruce con base del Registro civil------------------------------------------------------------------
+
+snmlcf <- left_join( snmlcf , rc, by = c("nombre"="nombre") )
+
+
+
 #Guardando en un Rdata------------------------------------------------------------------------------
 message( '\tGuardando en data.frame' )
 

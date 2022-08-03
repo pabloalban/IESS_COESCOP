@@ -1,6 +1,6 @@
 message( paste( rep('-', 100 ), collapse = '' ) )
 
-message( '\Lectura del cuerpo de vigilancia de la comisión de tránsito' )
+message( '\tLectura del cuerpo de vigilancia de la comisión de tránsito' )
 
 #Cargando información financiera------------------------------------------------
 file<-paste0(parametros$Data, 'COESCOP_cte.xlsx' )
@@ -13,6 +13,14 @@ transito <- read_excel(file,
                        col_types = NULL,
                        na = "",
                        skip = 0) %>% clean_names()
+
+#Cargando base del RC-------------------------------------------------------------------------------
+
+load(paste0(parametros$RData, "IESS_Reg_Civil.RData"))
+
+#Cruce con base del Registro civil------------------------------------------------------------------
+
+transito <- left_join( transito , rc, by = c("nombre"="nombre") )
 
 #Guardando en un Rdata----------------------------------------------------------
 message( '\tGuardando en data.frame' )

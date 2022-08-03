@@ -6,7 +6,7 @@ message( '\tLectura del cuerpo de vigilancia aduanera' )
 file<-paste0(parametros$Data, 'COESCOP_aduaneros.xlsx' )
 
 
-#Carga de bomberos por ciudad---------------------------------------------------
+#Carga de aduaneros-------------------------------------------------------------
 aduaneros <- read_excel(file,
                        sheet = 1,
                        col_names = TRUE,
@@ -14,13 +14,23 @@ aduaneros <- read_excel(file,
                        na = "",
                        skip = 0) %>% clean_names()
 
-#Guardando en un Rdata------------------------------------------------------------------------------
+#Cargando base del RC-------------------------------------------------------------------------------
+
+load(paste0(parametros$RData, "IESS_Reg_Civil.RData"))
+
+#Cruce con base del Registro civil------------------------------------------------------------------
+
+aduaneros <- left_join(aduaneros , rc, by = c("apellidos_y_nombres_de_los_servidores_y_servidoras"="nombre") )
+
+
+
+#Guardando en un Rdata----------------------------------------------------------
 message( '\tGuardando en data.frame' )
 
 save( aduaneros,
       file = paste0( parametros$RData, 'COESCOP_aduaneros.RData' ) )
 
-#Borrando data.frames-------------------------------------------------------------------------------
+#Borrando data.frames-----------------------------------------------------------
 message( paste( rep('-', 100 ), collapse = '' ) )
 rm( list = ls()[ !( ls() %in% 'parametros' ) ]  )
 gc()
