@@ -23,7 +23,6 @@ load(paste0(parametros$RData, "IESS_Reg_Civil.RData"))
 
 snai <- left_join( snai , rc, by = c("nombre"="nombre") )
 
-
 #Guardando en un Rdata------------------------------------------------------------------------------
 message( '\tGuardando en data.frame' )
 

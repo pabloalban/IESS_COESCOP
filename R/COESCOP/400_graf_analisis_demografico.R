@@ -14,15 +14,15 @@ load( file = paste0( parametros$RData, 'IESS_tablas_contingencia.RData' ) )
 
 
 #Gráfico pirámide poblacional SNAI------------------------------------------------------------------
+
 message( '\tGraficando pirámide poblacional SNAI' )
-aux<-( tabla_snai_edad_sexo %>% select( sexo,
-                                                     edad,
-                                                     n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
-  mutate( N = sum( n, na.rm = TRUE) ) %>%
-  mutate( n = n/N) %>%
-  ungroup() %>%
-  mutate( n = ifelse( sexo == 'M', -n, n) )
+aux<-( tabla_snai_edad_sexo %>% 
+       select( sexo, edad, n:= frecuencia) ) %>%
+       group_by( sexo ) %>%
+       mutate( N = sum( n, na.rm = TRUE) ) %>%
+       mutate( n = n/N) %>%
+       ungroup() %>%
+       mutate( n = ifelse( sexo == 'M', -n, n) )
 
 
 max_edad<-100
@@ -56,6 +56,176 @@ iess_pir_snai<-ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
 ggsave( plot = iess_pir_snai, 
         filename = paste0( parametros$resultado_graficos, 'iess_pir_snai', parametros$graf_ext ),
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
+
+#Gráfico pirámide poblacional SNMLCF----------------------------------------------------------------
+
+message( '\tGraficando pirámide poblacional SNMLCF' )
+aux<-( tabla_snmlcf_edad_sexo %>% 
+         select( sexo, edad, n:= frecuencia) ) %>%
+         group_by( sexo ) %>%
+         mutate( N = sum( n, na.rm = TRUE) ) %>%
+         mutate( n = n/N) %>%
+         ungroup() %>%
+         mutate( n = ifelse( sexo == 'M', -n, n) )
+
+
+iess_pir_snmlcf<-ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
+  xlab( 'Edad' ) +
+  ylab( '' ) +
+  geom_bar( data = aux %>% filter(sexo == 'F'), stat = 'identity',colour="white", size=0.1) +
+  geom_bar( data = aux %>% filter( sexo == 'M' ), stat = 'identity',colour="white", size=0.1) +
+  scale_y_continuous(breaks = brks_y, labels = lbls_y) +
+  scale_x_continuous(breaks = brks_x, labels = lbls_x) +
+  coord_flip() +
+  #theme_tufte()+
+  theme_bw() +
+  plt_theme +
+  guides(fill = guide_legend(title = NULL,label.position = "right",
+                             label.hjust = 0, label.vjust = 0.5))+
+  theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
+  scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
+                    labels = c("Mujeres", "Hombres"))
+
+ggsave( plot = iess_pir_snmlcf, 
+        filename = paste0( parametros$resultado_graficos, 'iess_pir_snmlcf', parametros$graf_ext ),
+        width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
+
+
+#Gráfico pirámide poblacional METROPOLITANOS-----------------------------------------------------------
+
+message( '\tGraficando pirámide poblacional metropolitanos' )
+aux<-( tabla_metropolitanos_edad_sexo %>% 
+         select( sexo, edad, n:= frecuencia) ) %>%
+         group_by( sexo ) %>%
+         mutate( N = sum( n, na.rm = TRUE) ) %>%
+         mutate( n = n/N) %>%
+         ungroup() %>%
+         mutate( n = ifelse( sexo == 'M', -n, n) )
+
+
+iess_pir_metropolitanos<-ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
+  xlab( 'Edad' ) +
+  ylab( '' ) +
+  geom_bar( data = aux %>% filter(sexo == 'F'), stat = 'identity',colour="white", size=0.1) +
+  geom_bar( data = aux %>% filter( sexo == 'M' ), stat = 'identity',colour="white", size=0.1) +
+  scale_y_continuous(breaks = brks_y, labels = lbls_y) +
+  scale_x_continuous(breaks = brks_x, labels = lbls_x) +
+  coord_flip() +
+  #theme_tufte()+
+  theme_bw() +
+  plt_theme +
+  guides(fill = guide_legend(title = NULL,label.position = "right",
+                             label.hjust = 0, label.vjust = 0.5))+
+  theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
+  scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
+                    labels = c("Mujeres", "Hombres"))
+
+ggsave( plot = iess_pir_metropolitanos, 
+        filename = paste0( parametros$resultado_graficos, 'iess_pir_metropolitanos', parametros$graf_ext ),
+        width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
+
+
+#Gráfico pirámide poblacional CTE-------------------------------------------------------------------
+
+message( '\tGraficando pirámide poblacional CTE' )
+aux<-( tabla_cte_edad_sexo %>% 
+         select( sexo, edad, n:= frecuencia) ) %>%
+         group_by( sexo ) %>%
+         mutate( N = sum( n, na.rm = TRUE) ) %>%
+         mutate( n = n/N) %>%
+         ungroup() %>%
+         mutate( n = ifelse( sexo == 'M', -n, n) )
+
+
+iess_pir_cte<-ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
+  xlab( 'Edad' ) +
+  ylab( '' ) +
+  geom_bar( data = aux %>% filter(sexo == 'F'), stat = 'identity',colour="white", size=0.1) +
+  geom_bar( data = aux %>% filter( sexo == 'M' ), stat = 'identity',colour="white", size=0.1) +
+  scale_y_continuous(breaks = brks_y, labels = lbls_y) +
+  scale_x_continuous(breaks = brks_x, labels = lbls_x) +
+  coord_flip() +
+  #theme_tufte()+
+  theme_bw() +
+  plt_theme +
+  guides(fill = guide_legend(title = NULL,label.position = "right",
+                             label.hjust = 0, label.vjust = 0.5))+
+  theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
+  scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
+                    labels = c("Mujeres", "Hombres"))
+
+ggsave( plot = iess_pir_cte, 
+        filename = paste0( parametros$resultado_graficos, 'iess_pir_cte', parametros$graf_ext ),
+        width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
+
+#Gráfico pirámide poblacional BOMBEROS----------------------------------------------------------------
+
+message( '\tGraficando pirámide poblacional BOMBEROS' )
+aux<-( tabla_bomberos_edad_sexo %>% 
+         select( sexo, edad, n:= frecuencia) ) %>%
+         group_by( sexo ) %>%
+         mutate( N = sum( n, na.rm = TRUE) ) %>%
+         mutate( n = n/N) %>%
+         ungroup() %>%
+         mutate( n = ifelse( sexo == 'M', -n, n) )
+
+
+iess_pir_bomberos<-ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
+  xlab( 'Edad' ) +
+  ylab( '' ) +
+  geom_bar( data = aux %>% filter(sexo == 'F'), stat = 'identity',colour="white", size=0.1) +
+  geom_bar( data = aux %>% filter( sexo == 'M' ), stat = 'identity',colour="white", size=0.1) +
+  scale_y_continuous(breaks = brks_y, labels = lbls_y) +
+  scale_x_continuous(breaks = brks_x, labels = lbls_x) +
+  coord_flip() +
+  #theme_tufte()+
+  theme_bw() +
+  plt_theme +
+  guides(fill = guide_legend(title = NULL,label.position = "right",
+                             label.hjust = 0, label.vjust = 0.5))+
+  theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
+  scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
+                    labels = c("Mujeres", "Hombres"))
+
+ggsave( plot = iess_pir_bomberos, 
+        filename = paste0( parametros$resultado_graficos, 'iess_pir_bomberos', parametros$graf_ext ),
+        width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
+
+
+#Gráfico pirámide poblacional ADUANEROS-------------------------------------------------------------
+
+message( '\tGraficando pirámide poblacional aduaneros' )
+aux<-( tabla_aduaneros_edad_sexo %>% 
+         select( sexo, edad, n:= frecuencia) ) %>%
+         group_by( sexo ) %>%
+         mutate( N = sum( n, na.rm = TRUE) ) %>%
+         mutate( n = n/N) %>%
+         ungroup() %>%
+         mutate( n = ifelse( sexo == 'M', -n, n) )
+
+
+iess_pir_aduaneros<-ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
+  xlab( 'Edad' ) +
+  ylab( '' ) +
+  geom_bar( data = aux %>% filter(sexo == 'F'), stat = 'identity',colour="white", size=0.1) +
+  geom_bar( data = aux %>% filter( sexo == 'M' ), stat = 'identity',colour="white", size=0.1) +
+  scale_y_continuous(breaks = brks_y, labels = lbls_y) +
+  scale_x_continuous(breaks = brks_x, labels = lbls_x) +
+  coord_flip() +
+  #theme_tufte()+
+  theme_bw() +
+  plt_theme +
+  guides(fill = guide_legend(title = NULL,label.position = "right",
+                             label.hjust = 0, label.vjust = 0.5))+
+  theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
+  scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
+                    labels = c("Mujeres", "Hombres"))
+
+ggsave( plot = iess_pir_aduaneros, 
+        filename = paste0( parametros$resultado_graficos, 'iess_pir_aduaneros', parametros$graf_ext ),
+        width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
+
+
 
 # Limpiar Memoria RAM--------------------------------------------------------------------------------
 message( paste( rep('-', 100 ), collapse = '' ) )

@@ -8,6 +8,7 @@ load(paste0(parametros$RData, "COESCOP_cte.RData")) #cte
 load(paste0(parametros$RData, "COESCOP_snai.RData")) #snai
 load(paste0(parametros$RData, "COESCOP_snmlcf.RData")) #snmlcf
 load(paste0(parametros$RData, "COESCOP_metropolitanos.RData")) #metropolitanos
+load(paste0(parametros$RData, "COESCOP_aduaneros.RData")) #aduaneros
 
 
 #-------------------------------------BOMBEROS------------------------------------------------------
@@ -212,9 +213,41 @@ metropolitanos <- metropolitanos %>%
   mutate( cargo_coescop = ifelse(is.na( cargo_coescop ), "Administrativo", cargo_coescop ))
 
 save( metropolitanos,
-      file = paste0( parametros$RData, 'COESCOP_snmlcf_cargos.RData' ) )
+      file = paste0( parametros$RData, 'COESCOP_metropolitanos_cargos.RData' ) )
+
+#-------------------------------------------ADUANEROS------------------------------------------------
+
+aduaneros["cargo_coescop"] <- NA
+aduaneros$cargo <- tolower(aduaneros$cargo) #transformar a minúsculas
+#aduaneros$grado <- tolower(aduaneros$grado) #transformar a minúsculas
+
+#aduaneros[grep(c("abogado"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+#aduaneros[grep(c("analista"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+#aduaneros[grep(c("asesor"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+#aduaneros[grep(c("asistente"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+#aduaneros[grep(c("administrativo"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+#aduaneros[grep(c("chofer"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+#aduaneros[grep(c("conserje"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+#aduaneros[grep(c("oficinista"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+#aduaneros[grep(c("secretaria"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+#aduaneros[grep(c("servidor publico"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+#aduaneros[grep(c("tesorero"), aduaneros$cargo),]$cargo_coescop <- ('Administrativo') #Administrativo
+
+aduaneros[grep(c("inspector de vigilancia 1"), aduaneros$cargo),]$cargo_coescop <- ('Inspector de Vigilancia 1') #Inspector de Vigilancia 1
+aduaneros[grep(c("inspector de vigilancia 2"), aduaneros$cargo),]$cargo_coescop <- ('Inspector de Vigilancia 2') #Inspector de Vigilancia 1
+aduaneros[grep(c("inspector de vigilancia 3"), aduaneros$cargo),]$cargo_coescop <- ('Inspector de Vigilancia 3') #Inspector de Vigilancia 1
+
+aduaneros[grep(c("vigilante aduanero 1"), aduaneros$cargo),]$cargo_coescop <- ('Vigilante Aduanero 1') #Vigilante Aduanero 1
+aduaneros[grep(c("vigilante aduanero 2"), aduaneros$cargo),]$cargo_coescop <- ('Vigilante Aduanero 2') #Vigilante Aduanero 2
+
+aduaneros <- aduaneros %>%
+  mutate( cargo_coescop = ifelse(is.na( cargo_coescop ), "Administrativo", cargo_coescop ))
+
+save( aduaneros,
+      file = paste0( parametros$RData, 'COESCOP_aduaneros_cargos.RData' ) )
 
 # Borrar elementos restantes -----------------------------------------------------------------------
 message(paste(rep("-", 100), collapse = ""))
 rm(list = ls()[!(ls() %in% c("parametros"))])
 gc()
+

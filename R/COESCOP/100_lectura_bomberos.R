@@ -13,6 +13,7 @@ bomberos <- read_excel(file,
                                col_types = NULL,
                                na = "",
                                skip = 0) %>% clean_names()
+bomberos$nombre <- toupper(bomberos$nombre) #transformar a mayusculas
 
 #Cargando base del RC-------------------------------------------------------------------------------
 

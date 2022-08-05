@@ -20,7 +20,7 @@ load(paste0(parametros$RData, "IESS_Reg_Civil.RData"))
 
 #Cruce con base del Registro civil------------------------------------------------------------------
 
-aduaneros <- left_join(aduaneros , rc, by = c("apellidos_y_nombres_de_los_servidores_y_servidoras"="nombre") )
+aduaneros <- left_join(aduaneros , rc, by = c("nombre"="nombre") )
 
 
 

@@ -6,7 +6,7 @@ message( '\tLectura del Cuerpo de Agentes de Control Municipal o Metropolitano' 
 file<-paste0(parametros$Data, 'COESCOP_metropolitanos.xlsx' )
 
 
-#Carga de snai por ciudad-----------------------------------------------------------------------
+#Carga de metropolitanos por ciudad-----------------------------------------------------------------------
 metropolitanos <- read_excel(file,
                    sheet = 1,
                    col_names = TRUE,
