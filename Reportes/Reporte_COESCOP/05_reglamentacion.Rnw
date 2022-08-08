@@ -3,18 +3,50 @@
 \label{chp_baselegal}
 
 %---------------------------------------------------------------------------------------------------
+\section{Constitución de la República del Ecuador}
+\label{chp_constitucion}
+
+Los artículos 368, 369 y 371 de la Constitución de la República del Ecuador, norma jurídica suprema vigente del Ecuador, indican lo siguiente:
+
+\begin{quote}
+
+\textit{Art. 368.- El sistema de seguridad social comprenderá las entidades públicas, normas, políticas, recursos, servicios y prestaciones de seguridad social, y funcionará con base en criterios de sostenibilidad, eficiencia, celeridad y transparencia (…)}
+\end{quote}
+
+\begin{quote}
+
+\textit{Art. 369.- El seguro universal obligatorio cubrirá las contingencias de enfermedad, maternidad, paternidad, riesgos de trabajo, cesantía, desempleo, vejez, invalidez, discapacidad, muerte y aquellas que defina la ley (…). La creación de nuevas prestaciones estará debidamente financiada.}
+\end{quote}
+
+\begin{quote}
+\textit{Art. 371.- Las prestaciones de la seguridad social se financiarán con el aporte de las personas aseguradas en relación de dependencia y de sus empleadoras o empleadores; con los aportes de las personas independientes aseguradas; con los aportes voluntarios de las ecuatorianas y ecuatorianos domiciliados en el exterior; y con los aportes y contribuciones del Estado. Los recursos del Estado destinados para el seguro universal obligatorio constarán cada año en el Presupuesto General del Estado y serán transferidos de forma oportuna (…)}
+\end{quote}
 
 \section{Ley de Seguridad Social}
 \label{chp_seguridadsocial}
 
-De acuerdo al Art.94 de la Ley de Seguridad Social, Sobre la cual la Dirección Actuarial, de Investigación y Estadística basa su trabajo se establece que:
+De acuerdo al Art.8 de la Ley de Seguridad Social, Sobre la cual la Dirección Actuarial, de Investigación y Estadística basa su trabajo se establece que:
+
+\begin{quote}
+
+\textit{Art. 8.- PROHIBICIONES.- Prohíbase el establecimiento y el cobro de contribuciones ajenas a los fines del Seguro General Obligatorio, el reconocimiento de otros beneficios distintos a los señalados en esta Ley y sus reglamentos, y la entrega de prestaciones carentes de financiamiento o extrañas a la protección debida por el Seguro General Obligatorio (…).}
+\end{quote}
+
+El Art.94 de la Ley de Seguridad Social declara que:
 
 \begin{quote}
 
 \textit{Art. 94.- RESPONSABILIDAD PATRONAL.- Si por culpa de un patrono el IESS no pudiere conceder a un trabajador o a sus deudos las prestaciones en dinero que fueran reclamadas y a las que habrían podido tener derecho, o si resultaren disminuidas dichas prestaciones por falta de cumplimiento de las obligaciones del empleador, este será responsable de los perjuicios causados al asegurado o a sus deudos, responsabilidad que el Instituto hará efectiva mediante la coactiva. El IESS concederá tales prestaciones, en la parte debida a la omisión o culpa del empleador, solamente cuando se haga efectiva la responsabilidad de éste, a menos que el patrono rinda garantía satisfactoria para el pago de lo que debiere por aquel concepto.}
 \end{quote}
 
-En el Art.233 de la Ley de seguridad Social, se establece lo referente a la elaboración de estudios actuariales, el cual fue publicado en el Registro Oficial Suplemento 465 de fecha 30 de noviembre de 2011, y en el que se manifiesta: 
+En el Art. 231 de la Ley de Seguridad Social se indica lo siguiente respecto a la jubilación de trabajadores en actividades insalubres:
+
+\begin{quote}
+
+\textit{Art. 231.- JUBILACIÓN DE TRABAJADORES EN ACTIVIDADES INSALUBRES.- Los afiliados que trabajaren en actividades calificadas, como insalubres, tendrán derecho, para efecto del Seguro de Vejez, a que se les rebaje, del límite mínimo de edad para jubilación, un año (1) de edad por cada cinco (5) años de imposiciones que tengan en esta clase de actividades. Los afiliados comprendidos en este artículo sus patronos estarán obligados a aportar para el financiamiento de un seguro adicional con el IESS que aumente su pensión jubilar en el cero punto cincuenta por ciento (0,50\%) del promedio mensual de los cinco (5) mejores años de imposiciones, por cada año de servicio en dicha actividad. La aportación adicional necesaria para financiar el contrato será cubierta en el setenta y cinco por ciento (75\%) por el patrono y en el veinte y cinco por ciento (25\%) por el afiliado. Para el cálculo de las pensiones de los seguros de invalidez y de muerte de los afiliados comprendidos en este artículo, se tomarán en cuenta los aumentos de pensión al seguro de vejez previsto en el inciso precedente (…).}
+\end{quote}
+
+En el Art.233 de la Ley de Seguridad Social, se establece lo referente a la elaboración de estudios actuariales, el cual fue publicado en el Registro Oficial Suplemento 465 de fecha 30 de noviembre de 2011, y en el que se manifiesta: 
 \begin{quote}
 \textit{" (...)CAMBIOS EN EL RÉGIMEN PRESTACIONAL.-No se creará prestación alguna ni se mejorarán las existentes a cargo del Seguro Social Obligatorio aplicado por el IESS, si no se encontraren debidamente financiadas y respaldadas en los resultados de estudios actuariales que demuestren su solvencia y sostenibilidad."}
 \end{quote}
@@ -24,8 +56,6 @@ En el Art.233 de la Ley de seguridad Social, se establece lo referente a la elab
 
 
 En el punto 2.3 del artículo 10 de la resolución C.D.535 emitida por el Consejo Directivo del IESS de fecha 8 de septiembre de 2016, se establecen: la misión, atribuciones y responsabilidades de la Dirección Actuarial, de Investigación y Estadística. Entre las cuales se establece la siguiente atribución y responsabilidad:
-
-\newpage
 
 \begin{quote}
 \textit{"2.3 GESTIÓN ACTUARIAL, DE INVESTIGACIÓN Y ESTADÍSTICA\\
@@ -44,8 +74,16 @@ y su misión:
 
 \end{quote}
 
+\section{Código Orgánico de las Entidades de Seguridad Ciudadana y Orden Público}
+\label{chp_coescop}
 
+En concordancia con la Disposición Transitoria Segunda del Código Orgánico de las Entidades de Seguridad Ciudadana y Orden Público - COESCOP, la cual declara que:
 
+\begin{quote}
+
+\textit{" El Ministerio rector en materia laboral y el Instituto Ecuatoriano de Seguridad Social realizarán los estudios técnicos y actuariales con el objetivo de detectar particularidades laborales respecto de las funciones que cumplen los servidores sujetos a este Código, en un plazo no mayor a trescientos sesenta días. De determinarse pertinente, las condiciones prestacionales para este grupo se otorgarán siempre que se encuentren debidamente financiadas por el empleador y el servidor, y se modificarán mediante la reforma de la normativa correspondiente"}
+
+\end{quote}
 
 
 
