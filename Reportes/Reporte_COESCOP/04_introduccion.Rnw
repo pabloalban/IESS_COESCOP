@@ -20,7 +20,6 @@ Con memorando Nro. IESS-DAIE-2017-0488-M, de fecha 01 de septiembre de 2017, el 
     \item	Los procedimientos para la elaboración del Estudio Actuarial en aplicación de esta normativa, y;
     \item	El diagnóstico del Servicio de Aduana del Ecuador (SENAE) en relación a la elaboración del Plan de Carrera y explicación de la información necesaria para la preparación del Estudio Actuarial.
   \end{itemize}
-
 Por lo expuesto, el Servicio de Aduana del Ecuador deberá remitir el Plan de Carrera, los registros y estadística de la población actual y anterior (histórico) del SENAE; así como, todos los insumos necesarios conforme lo establecido en el Acta No.1, documentos habilitantes para la elaboración del Estudio Actuarial por parte de esta Dirección."}
 
 \end{quote}
@@ -34,7 +33,6 @@ A través del memorando Nro. IESS-DG-2018-0227-OF, de fecha 10 de mayo de 2018, 
     \item	Los procedimientos para la elaboración del Estudio Actuarial en aplicación de esta normativa, y;
     \item	El diagnóstico del Cuerpo de Seguridad y Vigilancia Penitenciaria por parte del Ministerio de Justicia, Derechos y Cultos, en relación a la elaboración del Plan de Carrera y explicación de la información necesaria para la preparación del Estudio Actuarial.
   \end{itemize}
-
 Por lo expuesto, el Ministerio de Justicia, Derechos Humanos y Cultos deberá remitir el Plan de Carrera del Cuerpo de Seguridad y Vigilancia Penitenciaria aprobado por el Ministerio del Trabajo; los registros y estadística de la población actual y anterior (histórico lo más atrás posible); así como, todos los insumos necesarios conforme lo establecido en el Acta No. 1, documentos habilitantes para la elaboración del Estudio Actuarial por parte de la Dirección Actuarial, de Investigación y Estadística. (...)"}
 
 \end{quote}
@@ -48,16 +46,15 @@ Con memorando Nro. IESS-DAIE-2018-0007-OF, de fecha 17 de mayo de 2018, el Mat. 
     \item	Los procedimientos para la elaboración del Estudio Actuarial en aplicación de esta normativa, y;
     \item	Las acciones realizadas por la Dirección Actuarial, de Investigación y Estadística (DAIE), al mantener reuniones de trabajo con: Comisión de Tránsito del Ecuador, Servicio Nacional de Medicina Legal y Ciencias Forenses, Servicio Nacional de Aduana del Ecuador (Cuerpo de Vigilancia Aduanera) y Ministerio de Justicia, Derechos Humanos y Cultos (Cuerpo de Seguridad y Vigilancia Penitenciaria), en las que se explicó el procedimiento para la elaboración de los Estudios Actuariales y todos los documentos habilitantes para la consecución del mismo, a fin de dar cumplimiento a lo que dispone el referido cuerpo legal.
     \item Definición de la hoja de ruta, en donde se detalló la documentación necesaria para la elaboración del Estudio Actuarial, que comprende:
-    \begin{tabular}{|l|l|}
+    \begin{tabular}{|p{7.5cm}|p{6cm}|}
       \hline
       \textbf{DOCUMENTO} & \textbf{RESPONSABLE}\\\hline
-      Plan de Carrera aprobado por el Ministerio de\\Trabajo & Entidades Seguridad Ciudadana/MDT\\\hline
+      Plan de Carrera aprobado por el Ministerio de Trabajo & Entidades Seguridad Ciudadana/MDT\\\hline
       Estudio comparativo internacional por grupo & MDT\\\hline
-      Información de los registros y estadística de la\\población actual y anterior & Entidades Seguridad Ciudadana\\\hline
-      Elaboración del Estudio Actuarial una vez que\\se obtenga toda la información & DAIE\\\hline
+      Información de los registros y estadística de la población actual y anterior & Entidades Seguridad Ciudadana\\\hline
+      Elaboración del Estudio Actuarial una vez que se obtenga toda la información & DAIE\\\hline
     \end{tabular}
   \end{itemize}
-
 Por lo expuesto, el Ministerio de Trabajo y esta Dirección, desde sus competencias coordinarán y darán seguimiento al estado de aprobación del Plan de Carrera de las entidades de seguridad ciudadana y orden público, entre otros, lo que permitirá una adecuada planificación para la elaboración de los Estudios Actuariales en aplicación del COESCOP"}
 \end{quote}
 
@@ -79,10 +76,10 @@ A través del memorando Nro. IESS.DAIE-2019-0551-M, de fecha 07 de agosto de 201
   \textit{"(…) Por lo indicado, al no existir información sobre el riesgo del personal de las referidas entidades de seguridad ciudadana; y, que el Ministerio del Trabajo no elaborará el Plan de Carrera, la DAIE no puede elaborar el estudio actuarial, pues no cuenta con los elementos necesarios y suficientes para el mismo, ya que es indispensable conocer el riesgo que se va a cubrir y por lo menos la edad de la población, edad que permanecerá en esa actividad y composición del grupo familiar. Es indispensable señalar que la competencia de determinar un riesgo de trabajo es del MDT (…)".}
 \end{quote}
 
-Con memorando Nro. IESS-DAIE-2019-0562-M, de fecha 13 de agosto de 2019, sumillado por el Lcdo. Gilberto Ramiro Vega Suárez, Director Actuarial, de Investigación y Estadística del IESS, dirigido a Mgs. David Alexander Ruales Mosquera, Subdirector General del Instituto Ecuatoriano de Seguridad Social, se emite el pronunciamiento de esta Dirección respecto a los informes técnicos elaborados por el Ministerio del Trabajo respecto al tema y sumillados a través del oficio Nro. MDT.MD-20J9-0258-, de 24 de junio de 2019, señalando lo siguiente:
+Con memorando Nro. IESS-DAIE-2019-0562-M, de fecha 13 de agosto de 2019, sumillado por el Lcdo. Gilberto Ramiro Vega Suárez, Director Actuarial, de Investigación y Estadística del IESS, dirigido a Mgs. David Alexander Ruales Mosquera, Subdirector General del Instituto Ecuatoriano de Seguridad Social, se emite el pronunciamiento de esta Dirección respecto a los informes técnicos elaborados por el Ministerio del Trabajo respecto al tema y sumillados a través del oficio Nro. MDT-MD-2019-0258- de 24 de junio de 2019, señalando lo siguiente:
 
 \begin{quote}
-  \textit{"Luego de analizar cada uno de los informes enviados por el Ministerio del Trabajo se desprende que no es posible iniciar con la elaboración del estudio actuarial. por las siguientes consideraciones:
+  \textit{"Luego de analizar cada uno de los informes enviados por el Ministerio del Trabajo se desprende que no es posible iniciar con la elaboración del estudio actuarial, por las siguientes consideraciones:
     \begin{enumerate}
       \item Los informes presentados son generales y a simple vista se determina que no existe diferenciación con la población que actualmente se encuentra afiliada al IESS, por lo que se presumiría que no requieren condiciones especiales para la jubilación de este sector.
       \item No existe información sobre el riesgo del personal de las referidas entidades de seguridad ciudadana, lo que imposibilita diseñar la cobertura que se va a proteger.
