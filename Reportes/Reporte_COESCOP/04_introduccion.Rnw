@@ -46,7 +46,7 @@ Con memorando Nro. IESS-DAIE-2018-0007-OF, de fecha 17 de mayo de 2018, el Mat. 
     \item	Los procedimientos para la elaboración del Estudio Actuarial en aplicación de esta normativa, y;
     \item	Las acciones realizadas por la Dirección Actuarial, de Investigación y Estadística (DAIE), al mantener reuniones de trabajo con: Comisión de Tránsito del Ecuador, Servicio Nacional de Medicina Legal y Ciencias Forenses, Servicio Nacional de Aduana del Ecuador (Cuerpo de Vigilancia Aduanera) y Ministerio de Justicia, Derechos Humanos y Cultos (Cuerpo de Seguridad y Vigilancia Penitenciaria), en las que se explicó el procedimiento para la elaboración de los Estudios Actuariales y todos los documentos habilitantes para la consecución del mismo, a fin de dar cumplimiento a lo que dispone el referido cuerpo legal.
     \item Definición de la hoja de ruta, en donde se detalló la documentación necesaria para la elaboración del Estudio Actuarial, que comprende:
-    \begin{tabular}{|p{7.5cm}|p{6cm}|}
+    \begin{tabular}{|p{7.5cm}|p{4cm}|}
       \hline
       \textbf{DOCUMENTO} & \textbf{RESPONSABLE}\\\hline
       Plan de Carrera aprobado por el Ministerio de Trabajo & Entidades Seguridad Ciudadana/MDT\\\hline

@@ -43,9 +43,9 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-Del total del personal del SNMLCF a marzo de 2022, el 44,51\% son mujeres y el 55,49\% son hombres. La mayoría de población femenina, así como la masculina, se encuentra entre los 30 y 40 años.\\
+A marzo del 2022, el total del personal del SNMLCF es de 182 servidores públicos, de los cuales el 44,51\% son mujeres y el 55,49\% son hombres. La mayoría de población femenina, así como la masculina, se encuentra entre los 30 y 40 años.\\
 
-Seguidamente, en la tabla \ref{tab:iess_snmlcf_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos del SNMLCF, mientras que la figura \ref{fig:iess_bar_snmlcf} detalla la distribución por cargo de los mismos.
+En la tabla \ref{tab:iess_snmlcf_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos del SNMLCF, mientras que la figura \ref{fig:iess_bar_snmlcf} detalla la distribución por cargo de los mismos.
 
 \begin{table}[H]
 \centering
@@ -65,6 +65,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+A excepción del Cargo COESCOP \textit{Administrativo}, el porcentaje de mujeres y hombres en cada cargo se encuentra nivelado.
 
 \begin{figure}[H]
 \centering
@@ -75,6 +76,10 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Servicio Nacional de Medicina Legal y Ciencias Forenses. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El cargo que ocupa el mayor porcentaje de la población de servidores públicos del SNMLCF es el de \textit{Administrador}, con 92 servidores, seguido por \textit{Analista 2} con 52. Los cargos con menor porcentaje de servidores públicos son \textit{Especialista} y \textit{Directivo} con 10 y 2 servidores respectivamente.
+
+
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpo de Vigilancia Aduanera}
 \label{chp_demog:aduaneros}
@@ -111,7 +116,41 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-Del total del personal del Cuerpo de Vigilancia Aduanera a marzo de 2022, el 31,02\% son mujeres y el 68,98\% son hombres.
+A marzo del 2022, el total del personal del Cuerpo de Vigilancia Aduanera es de 1625 servidores públicos, de los cuales el 31,02\% son mujeres y el 68,98\% son hombres. Adicionalmente, la mayoría de la población femenina se encuentra entre los 30 y 40 años, mientras que la mayoría de población masculina tiene entre 50 y 60 años.\\
+
+En la tabla \ref{tab:iess_aduaneros_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Vigilancia Aduanera, mientras que la figura \ref{fig:iess_bar_aduaneros} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Vigilancia Aduanera}
+\label{tab:iess_aduaneros_cargo_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_aduaneros_cargo_sexo.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Cuerpo de Vigilancia Aduanera. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+En los cargos \textit{Inspector de Vigilancia} 2 y 3 no existe población femenina, mientras que en los cargos \textit{Vigilante Aduanero} 1 y 2 existe una clara mayoría de población masculina sobre la femenina. 
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Vigilancia Aduanera}
+\label{fig:iess_bar_aduaneros}
+\includegraphics[scale=0.8]{graficos/iess_bar_aduaneros.png}
+\caption*{\scriptsize {\bf Fuente:} Cuerpo de Vigilancia Aduanera. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+El cargo que contempla la mayor cantidad de servidores públicos del Cuerpo de Vigilancia Aduanera es \textit{Administrativo} con 864 servidores, seguido de \textit{Vigilante Aduanero 1} con 400 servidores. Por otro lado, los cargos que representan una minoría en la población de trabajadores son \textit{Inspector de Vigilancia 3} e \textit{Inspector de Vigilancia 1}, con 32 y 23 servidores respectivamente. 
 
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpo de Vigilancia de la Comisión de Tránsito del Ecuador}
@@ -149,8 +188,42 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-Del total del personal de la CTE a marzo de 2022, el 10,41\% son mujeres y el 89,59\% son hombres.
+El total del personal de la CTE a marzo de 2022 es de 1.527 servidores públicos, de los cuales el 10,41\% son mujeres y el 89,59\% son hombres. La población femenina, en su mayoría, se encuentra entre los 30 y 40 años; al igual que la mayoría de la población masculina.\\
 
+En la tabla \ref{tab:iess_cte_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos de la Comisión de Tránsito del Ecuador, mientras que la figura \ref{fig:iess_bar_cte} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal de la CTE}
+\label{tab:iess_cte_cargo_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_cte_cargo_sexo.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Comisión de Tránsito del Ecuador. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+En los cargos \textit{Agente de Tránsito 1, Agente de Tránsito 4, Prefecto, Prefecto Jefe, Subinspector de Tránsito 1} y \textit{Subinspector de Tránsito 2} no existe población femenina. También, en el cargo \textit{Agente de Tránsito 3} se visualiza una mayoría poblacional masculina.
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal de la CTE}
+\label{fig:iess_bar_cte}
+\includegraphics[scale=0.8]{graficos/iess_bar_cte.png}
+\caption*{\scriptsize {\bf Fuente:} Comisión de Tránsito del Ecuador. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+El cargo que concentra la mayor cantidad de servidores públicos de la CTE es \textit{Agente de Tránsito 3} con un total de 680 servidores; seguidamente se encuentra el cargo \textit{Administrativo} con 220 servidores. Los cargos con menor cantidad de servidores son \textit{Prefecto} y \textit{Prefecto Jefe}, con 13 y 27 servidores respectivamente.
 
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpo de Seguridad y Vigilancia Penitenciaria}
@@ -188,7 +261,41 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-Del total del personal del SNAI a marzo de 2022, el 37,22\% son mujeres y el 62,78\% son hombres.
+El total del personal del SNAI a marzo de 2022 es de 2.945 servidores públicos, de los cuales el 37,22\% son mujeres y el 62,78\% son hombres. Tanto la mayoría de hombres como la de mujeres se encuentra entre los 30 y 40 años de edad.\\
+
+En la tabla \ref{tab:iess_snai_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos del SNAI, mientras que la figura \ref{fig:iess_bar_snai} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del SNAI}
+\label{tab:iess_snai_cargo_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_snai_cargo_sexo.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Servicio Nacional de Atención Integral a Personas Adultas Privadas de la Libertad y a Adolescentes Infractores. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+En todos los cargos existe una mayoría de población masculina, siendo \textit{Agente de Seguridad Penitenciaria} 1 y 3 los cargos donde esta diferencia de población masculina y femenina es mayor.
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del SNAI}
+\label{fig:iess_bar_snai}
+\includegraphics[scale=0.8]{graficos/iess_bar_snai.png}
+\caption*{\scriptsize {\bf Fuente:} Servicio Nacional de Atención Integral a Personas Adultas Privadas de la Libertad y a Adolescentes Infractores.\\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+El cargo que contiene a la mayoría de servidores públicos del SNAI es \textit{Administrativo} con 1.244 servidores, seguido por \textit{Agente de Seguridad Penitenciaria 2}, con 734 servidores. Después, los cargos que concentran una minoría de servidores del SNAI son \textit{Subjefe de Seguridad Penitenciaria} e \textit{Inspector de Seguridad Penitenciaria}, con 3 y 50 servidores respectivamente.
 
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpos de Control Municipales o Metropolitanos}
@@ -226,7 +333,41 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-Del total del personal de los Cuerpos de Control Municipales o Metropolitanos a marzo de 2022, el 28,01\% son mujeres y el 71,99\% son hombres.
+A marzo de 2022, el total del personal de los Cuerpos de Control Municipales o Metropolitanos es de 5.580 servidores públicos, de los cuales el 28,01\% son mujeres y el 71,99\% son hombres. La mayoría de población femenina, así como de la masculina, se encuentra entre los 30 y 40 años.\\
+
+En la tabla \ref{tab:iess_metropolitanos_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos, mientras que la figura \ref{fig:iess_bar_metropolitanos} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos}
+\label{tab:iess_metropolitanos_cargo_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_cargo_sexo.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+En los cargos \textit{Agente de Control Metropolitano 3, Agente de Control Metropolitano 4, Jefe de Control Metropolitano} no se tiene registro de población femenina, mientras que en los cargos restantes existe una mayoría poblacional masculina.
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos}
+\label{fig:iess_bar_metropolitanos}
+\includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+\textit{Administrativo} es el cargo con mayor cantidad de servidores públicos de los Cuerpos de Control Municipales o Metropolitanos, con 3.390 servidores; a continuación se encuentra \textit{Agente de Control Metropolitano 1} con un total de 1.588 servidores. En cuanto a los cargos con menor cantidad de servidores, se encuentran \textit{Jefe de Control Metropolitano} y \textit{Subjefe de Control Metropolitano} con 2 y 15 servidores respectivamente.
 
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpos de Bomberos}
@@ -264,4 +405,38 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-Del total del personal de los Cuerpos de Bomberos a marzo de 2022, el 21,30\% son mujeres y el 78,70\% son hombres.
+A marzo del 2022, el total del personal de los Cuerpos de Bomberos es 3.390 servidores públicos, de donde el 21,30\% son mujeres y el 78,70\% son hombres. Además, la mayoría de población femenina y masculina tiene entre 30 y 40 años.\\
+
+En la tabla \ref{tab:iess_bomberos_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Bomberos, mientras que la figura \ref{fig:iess_bar_bomberos} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal de los Cuerpos de Bomberos}
+\label{tab:iess_bomberos_cargo_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_cargo_sexo.tex}
+\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+En todos los cargos, y en el total de hombres y mujeres, se visibiliza una mayoría poblacional masculina.
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal de los Cuerpos de Bomberos}
+\label{fig:iess_bar_bomberos}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+{\bf Elaborado:} DAIE.}
+
+El cargo que acumula a la mayoría de servidores públicos del Cuerpo de Bomberos es \textit{Administrativo} con un total de 1.460 servidores, seguido por \textit{Bombero 1} con 1.438 servidores. Por otra parte, los cargos que concentran la menor cantidad de trabajadores son \textit{Subinspector de Estación} y \textit{Subjefe de Bomberos}, con 14 y 1 servidores respectivamente.
+\end{figure}

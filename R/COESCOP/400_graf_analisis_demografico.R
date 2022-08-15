@@ -148,7 +148,7 @@ iess_bar_snmlcf <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                             size=4.0) + 
                    labs(x = "Cargo COESCOP", y = "Número de Servidores")
 
-ggsave( plot = iess_bar_snai, 
+ggsave( plot = iess_bar_snmlcf, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_snmlcf', parametros$graf_ext ),
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
@@ -214,7 +214,7 @@ iess_bar_metropolitanos <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                                     size=4.0) + 
                            labs(x = "Cargo COESCOP", y = "Número de Servidores")
 
-ggsave( plot = iess_bar_snai, 
+ggsave( plot = iess_bar_metropolitanos, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_metropolitanos', parametros$graf_ext ),
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
@@ -281,7 +281,7 @@ iess_bar_cte <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                           size=4.0) + 
                 labs(x = "Cargo COESCOP", y = "Número de Servidores")
 
-ggsave( plot = iess_bar_snai, 
+ggsave( plot = iess_bar_cte, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_cte', parametros$graf_ext ),
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
@@ -347,7 +347,7 @@ iess_bar_bomberos <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                                 size=4.0) + 
                      labs(x = "Cargo COESCOP", y = "Número de Servidores")
 
-ggsave( plot = iess_bar_snai, 
+ggsave( plot = iess_bar_bomberos, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_bomberos', parametros$graf_ext ),
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
@@ -414,9 +414,9 @@ iess_bar_aduaneros <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                                 size=4.0) + 
                       labs(x = "Cargo COESCOP", y = "Número de Servidores")
 
-ggsave( plot = iess_bar_snai, 
+ggsave( plot = iess_bar_aduaneros, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_aduaneros', parametros$graf_ext ),
-        width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
+        width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi)
 
 
 

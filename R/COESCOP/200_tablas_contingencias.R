@@ -12,7 +12,6 @@ load(paste0(parametros$RData, "COESCOP_cte_cargos.RData")) #cte
 load(paste0(parametros$RData, "COESCOP_bomberos_cargos.RData")) #bomberos
 load(paste0(parametros$RData, "COESCOP_aduaneros_cargos.RData")) #aduaneros
 
-load(paste0(parametros$RData, "IESS_tablas_contingencia.RData")) #aduaneros
 
 #Tablas de contingencia por edad y sexo-------------------------------------------------------------
 message( paste( rep('-', 100 ), collapse = '' ) )
@@ -46,13 +45,13 @@ tabla_snai_cargo <- snai %>%
                                enddate = as.Date("31/03/2022","%d/%m/%Y"),
                                units = "years",
                                precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
-
 
 #-----------------------------------------SNMLCF----------------------------------------------------
 
@@ -80,6 +79,7 @@ tabla_snmlcf_cargo <- snmlcf %>%
                                enddate = as.Date("31/03/2022","%d/%m/%Y"),
                                units = "years",
                                precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -113,6 +113,7 @@ tabla_metropolitanos_cargo <- metropolitanos %>%
                                enddate = as.Date("31/03/2022","%d/%m/%Y"),
                                units = "years",
                                precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -147,6 +148,7 @@ tabla_cte_cargo <- transito %>%
                                enddate = as.Date("31/03/2022","%d/%m/%Y"),
                                units = "years",
                                precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -181,6 +183,7 @@ tabla_bomberos_cargo <- bomberos %>%
                                enddate = as.Date("31/03/2022","%d/%m/%Y"),
                                units = "years",
                                precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -216,6 +219,7 @@ tabla_aduaneros_cargo <- aduaneros %>%
                                enddate = as.Date("31/03/2022","%d/%m/%Y"),
                                units = "years",
                                precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
