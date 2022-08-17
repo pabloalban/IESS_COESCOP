@@ -47,7 +47,7 @@ iess_pir_snai<-ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
                theme_bw() +
                plt_theme +
                guides(fill = guide_legend(title = NULL,label.position = "right",
-                                         label.hjust = 0, label.vjust = 0.5))+
+                                         label.hjust = 0, label.vjust = 0.5, reverse = TRUE))+
                theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
                scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
                                  labels = c("Mujeres", "Hombres"))
@@ -76,13 +76,14 @@ iess_bar_snai <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                  theme_bw() +
                  plt_theme +
                  geom_text(aes(label=N), 
-                              vjust=-0.9, 
+                              vjust=-0.2, 
                               color="black", 
                               hjust=0.5,
                               position = position_dodge(0.9),  
                               angle=0, 
-                              size=4.0) + 
-                 labs(x = "Cargo COESCOP", y = "Número de Servidores")
+                              size=3.0) + 
+                 labs(x = "Cargo COESCOP", y = "Número de Servidores")+
+                 theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
   
 ggsave( plot = iess_bar_snai, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_snai', parametros$graf_ext ),
@@ -111,7 +112,7 @@ iess_pir_snmlcf <- ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
                    theme_bw() +
                    plt_theme +
                    guides(fill = guide_legend(title = NULL,label.position = "right",
-                                              label.hjust = 0, label.vjust = 0.5))+
+                                              label.hjust = 0, label.vjust = 0.5, reverse = TRUE))+
                    theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
                    scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
                                      labels = c("Mujeres", "Hombres"))
@@ -140,13 +141,14 @@ iess_bar_snmlcf <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                    theme_bw() +
                    plt_theme +
                    geom_text(aes(label=N), 
-                            vjust=-0.9, 
+                            vjust=-0.2, 
                             color="black", 
                             hjust=0.5,
                             position = position_dodge(0.9),  
                             angle=0, 
-                            size=4.0) + 
+                            size=3.0) + 
                    labs(x = "Cargo COESCOP", y = "Número de Servidores")
+
 
 ggsave( plot = iess_bar_snmlcf, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_snmlcf', parametros$graf_ext ),
@@ -177,7 +179,7 @@ iess_pir_metropolitanos <- ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
                            theme_bw() +
                            plt_theme +
                            guides(fill = guide_legend(title = NULL,label.position = "right",
-                                                      label.hjust = 0, label.vjust = 0.5))+
+                                                      label.hjust = 0, label.vjust = 0.5, reverse = TRUE))+
                            theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
                            scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
                                              labels = c("Mujeres", "Hombres"))
@@ -206,13 +208,15 @@ iess_bar_metropolitanos <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                            theme_bw() +
                            plt_theme +
                            geom_text(aes(label=N), 
-                                    vjust=-0.9, 
+                                    vjust=-0.2, 
                                     color="black", 
                                     hjust=0.5,
                                     position = position_dodge(0.9),  
                                     angle=0, 
-                                    size=4.0) + 
-                           labs(x = "Cargo COESCOP", y = "Número de Servidores")
+                                    size=3.0) + 
+                           labs(x = "Cargo COESCOP", y = "Número de Servidores")+
+                           theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+
 
 ggsave( plot = iess_bar_metropolitanos, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_metropolitanos', parametros$graf_ext ),
@@ -244,7 +248,7 @@ iess_pir_cte <- ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
                 theme_bw() +
                 plt_theme +
                 guides(fill = guide_legend(title = NULL,label.position = "right",
-                                           label.hjust = 0, label.vjust = 0.5))+
+                                           label.hjust = 0, label.vjust = 0.5, reverse = TRUE))+
                 theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
                 scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
                                   labels = c("Mujeres", "Hombres"))
@@ -253,7 +257,7 @@ ggsave( plot = iess_pir_cte,
         filename = paste0( parametros$resultado_graficos, 'iess_pir_cte', parametros$graf_ext ),
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
-#Gráfico de barras cargo SNAI------------------------------------------------------------------
+#Gráfico de barras cargo CTE------------------------------------------------------------------
 
 message( '\tGráfico de barras por cargo CTE' )
 
@@ -273,13 +277,15 @@ iess_bar_cte <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                 theme_bw() +
                 plt_theme +
                 geom_text(aes(label=N), 
-                          vjust=-0.9, 
+                          vjust=-0.2, 
                           color="black", 
                           hjust=0.5,
                           position = position_dodge(0.9),  
                           angle=0, 
-                          size=4.0) + 
-                labs(x = "Cargo COESCOP", y = "Número de Servidores")
+                          size=3.0) + 
+                labs(x = "Cargo COESCOP", y = "Número de Servidores")+
+                theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+
 
 ggsave( plot = iess_bar_cte, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_cte', parametros$graf_ext ),
@@ -309,7 +315,7 @@ iess_pir_bomberos <- ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
                      theme_bw() +
                      plt_theme +
                      guides(fill = guide_legend(title = NULL,label.position = "right",
-                                                label.hjust = 0, label.vjust = 0.5))+
+                                                label.hjust = 0, label.vjust = 0.5, reverse = TRUE))+
                      theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
                      scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
                                        labels = c("Mujeres", "Hombres"))
@@ -339,13 +345,15 @@ iess_bar_bomberos <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                      theme_bw() +
                      plt_theme +
                      geom_text(aes(label=N), 
-                                vjust=-0.9, 
+                                vjust=-0.2, 
                                 color="black", 
                                 hjust=0.5,
                                 position = position_dodge(0.9),  
                                 angle=0, 
-                                size=4.0) + 
-                     labs(x = "Cargo COESCOP", y = "Número de Servidores")
+                                size=3.0) + 
+                     labs(x = "Cargo COESCOP", y = "Número de Servidores")+
+                     theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+
 
 ggsave( plot = iess_bar_bomberos, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_bomberos', parametros$graf_ext ),
@@ -376,7 +384,7 @@ iess_pir_aduaneros<-ggplot(aux, aes(x = edad, y = n, fill = sexo)) +
                     theme_bw() +
                     plt_theme +
                     guides(fill = guide_legend(title = NULL,label.position = "right",
-                                               label.hjust = 0, label.vjust = 0.5))+
+                                               label.hjust = 0, label.vjust = 0.5, reverse = TRUE))+
                     theme(legend.position="bottom")+   #legend.position = c(0.8, 0.2)
                     scale_fill_manual(values = c(parametros$iess_blue, parametros$iess_green),
                                       labels = c("Mujeres", "Hombres"))
@@ -406,13 +414,15 @@ iess_bar_aduaneros <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
                       theme_bw() +
                       plt_theme +
                       geom_text(aes(label=N), 
-                                vjust=-0.9, 
+                                vjust=-0.2, 
                                 color="black", 
                                 hjust=0.5,
                                 position = position_dodge(0.9),  
                                 angle=0, 
-                                size=4.0) + 
-                      labs(x = "Cargo COESCOP", y = "Número de Servidores")
+                                size=3.0) + 
+                      labs(x = "Cargo COESCOP", y = "Número de Servidores")+
+                      theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+
 
 ggsave( plot = iess_bar_aduaneros, 
         filename = paste0( parametros$resultado_graficos, 'iess_bar_aduaneros', parametros$graf_ext ),
