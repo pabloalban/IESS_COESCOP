@@ -77,7 +77,7 @@ A excepción del Cargo COESCOP \textit{Administrativo}, el porcentaje de mujeres
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-El cargo que ocupa el mayor porcentaje de la población de servidores públicos del SNMLCF es el de \textit{Administrador}, con 92 servidores, seguido por \textit{Analista 2} con 52. Los cargos con menor porcentaje de servidores públicos son \textit{Especialista} y \textit{Directivo} con 10 y 2 servidores respectivamente.
+El cargo que ocupa el mayor porcentaje de la población de servidores públicos del SNMLCF es el de \textit{Administrativo}, con 87 servidores, seguido por \textit{Analista 2} con 52. Los cargos con menor porcentaje de servidores públicos son \textit{Especialista} y \textit{Directivo} con 10 y 2 servidores respectivamente.
 
 
 % %---------------------------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ En los cargos \textit{Inspector de Vigilancia} 2 y 3 no existe población femeni
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-El cargo que contempla la mayor cantidad de servidores públicos del Cuerpo de Vigilancia Aduanera es \textit{Administrativo} con 864 servidores, seguido de \textit{Vigilante Aduanero 1} con 400 servidores. Por otro lado, los cargos que representan una minoría en la población de trabajadores son \textit{Inspector de Vigilancia 3} e \textit{Inspector de Vigilancia 1}, con 32 y 23 servidores respectivamente. 
+El cargo que contempla la mayor cantidad de servidores públicos del Cuerpo de Vigilancia Aduanera es \textit{Administrativo} con 859 servidores, seguido de \textit{Vigilante Aduanero 1} con 399 servidores. Por otro lado, los cargos que representan una minoría en la población de trabajadores son \textit{Inspector de Vigilancia 3} e \textit{Inspector de Vigilancia 1}, con 32 y 23 servidores respectivamente. 
 
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpo de Vigilancia de la Comisión de Tránsito del Ecuador}
@@ -223,7 +223,7 @@ En los cargos \textit{Agente de Tránsito 1, Agente de Tránsito 4, Prefecto, Pr
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-El cargo que concentra la mayor cantidad de servidores públicos de la CTE es \textit{Agente de Tránsito 3} con un total de 680 servidores; seguidamente se encuentra el cargo \textit{Administrativo} con 220 servidores. Los cargos con menor cantidad de servidores son \textit{Prefecto} y \textit{Prefecto Jefe}, con 13 y 27 servidores respectivamente.
+El cargo que concentra la mayor cantidad de servidores públicos de la CTE es \textit{Agente de Tránsito 3} con un total de 668 servidores; seguidamente se encuentra el cargo \textit{Administrativo} con 220 servidores. Los cargos con menor cantidad de servidores son \textit{Prefecto} y \textit{Prefecto Jefe}, con 13 y 27 servidores respectivamente.
 
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpo de Seguridad y Vigilancia Penitenciaria}
@@ -295,7 +295,7 @@ En todos los cargos existe una mayoría de población masculina, siendo \textit{
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-El cargo que contiene a la mayoría de servidores públicos del SNAI es \textit{Administrativo} con 1.244 servidores, seguido por \textit{Agente de Seguridad Penitenciaria 2}, con 734 servidores. Después, los cargos que concentran una minoría de servidores del SNAI son \textit{Subjefe de Seguridad Penitenciaria} e \textit{Inspector de Seguridad Penitenciaria}, con 3 y 50 servidores respectivamente.
+El cargo que contiene a la mayoría de servidores públicos del SNAI es \textit{Administrativo} con 1.232 servidores, seguido por \textit{Agente de Seguridad Penitenciaria 3}, con 768 servidores. Después, los cargos que concentran una minoría de servidores del SNAI son \textit{Subjefe de Seguridad Penitenciaria} e \textit{Inspector de Seguridad Penitenciaria}, con 2 y 46 servidores respectivamente.
 
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpos de Control Municipales o Metropolitanos}
@@ -367,7 +367,7 @@ En los cargos \textit{Agente de Control Metropolitano 3, Agente de Control Metro
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-\textit{Administrativo} es el cargo con mayor cantidad de servidores públicos de los Cuerpos de Control Municipales o Metropolitanos, con 3.390 servidores; a continuación se encuentra \textit{Agente de Control Metropolitano 1} con un total de 1.588 servidores. En cuanto a los cargos con menor cantidad de servidores, se encuentran \textit{Jefe de Control Metropolitano} y \textit{Subjefe de Control Metropolitano} con 2 y 15 servidores respectivamente.
+\textit{Administrativo} es el cargo con mayor cantidad de servidores públicos de los Cuerpos de Control Municipales o Metropolitanos, con 3.346 servidores; a continuación se encuentra \textit{Agente de Control Metropolitano 1} con un total de 1.577 servidores. En cuanto a los cargos con menor cantidad de servidores, se encuentran \textit{Jefe de Control Metropolitano} y \textit{Subjefe de Control Metropolitano} con 2 y 15 servidores respectivamente.
 
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpos de Bomberos}
@@ -437,6 +437,7 @@ En todos los cargos, y en el total de hombres y mujeres, se visibiliza una mayor
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos.png}
 \caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
-
-El cargo que acumula a la mayoría de servidores públicos del Cuerpo de Bomberos es \textit{Administrativo} con un total de 1.460 servidores, seguido por \textit{Bombero 1} con 1.438 servidores. Por otra parte, los cargos que concentran la menor cantidad de trabajadores son \textit{Subinspector de Estación} y \textit{Subjefe de Bomberos}, con 14 y 1 servidores respectivamente.
 \end{figure}
+
+El cargo que acumula a la mayoría de servidores públicos del Cuerpo de Bomberos es \textit{Administrativo} con un total de 1.452 servidores, seguido por \textit{Bombero 1} con 1.427 servidores. Por otra parte, los cargos que concentran la menor cantidad de trabajadores son \textit{Subinspector de Estación} y \textit{Subjefe de Bomberos}, con 13 y 1 servidores respectivamente.
+

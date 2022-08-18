@@ -16,7 +16,7 @@ load(paste0(parametros$RData, "COESCOP_aduaneros_cargos.RData")) #aduaneros
 #Tablas de contingencia por edad y sexo-------------------------------------------------------------
 message( paste( rep('-', 100 ), collapse = '' ) )
 
-message( '\tResuminedo información en tablas de contingencia' )
+message( '\tResumiendo información en tablas de contingencia' )
 
 
 #-------------------------------------------SNAI----------------------------------------------------
@@ -28,6 +28,7 @@ tabla_snai_edad_sexo <- snai %>%
                                          enddate = as.Date("31/03/2022","%d/%m/%Y"),
                                          units = "years",
                                          precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -35,8 +36,7 @@ tabla_snai_edad_sexo <- snai %>%
   dplyr::select(sexo,
                 edad,
                 frecuencia) %>%
-  arrange( sexo, edad ) %>%
-  filter( edad > 17, edad < 70)
+  arrange( sexo, edad )
 
 tabla_snai_cargo <- snai %>%
   filter( !is.na(fecha_nacimiento)) %>%

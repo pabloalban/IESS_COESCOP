@@ -44,7 +44,7 @@ aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
 aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
-aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+aux_xtable <- xtable( aux )
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_snai_edad_sexo', '.tex' ),
        type = 'latex',
