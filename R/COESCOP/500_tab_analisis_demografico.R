@@ -2,6 +2,9 @@ message( paste( rep('-', 100 ), collapse = '' ) )
 
 message( '\tCreación de las tablas del análisis demográfico' )
 
+#Carga de función tildes a latex--------------------------------------------------------------------
+source( 'R/503_tildes_a_latex.R', encoding = 'UTF-8', echo = FALSE )
+
 #Carga de datos-----------------------------------------------------------------------
 load(paste0(parametros$RData, "IESS_tablas_contingencia.RData"))
 
@@ -9,10 +12,10 @@ load(paste0(parametros$RData, "IESS_tablas_contingencia.RData"))
 message( '\tTabla de servidores publicos del SNAI por rango de edad y sexo, en marzo 2022' )
 
 cortes_edad<-c(17,seq(20,70,10) )
-etiquetas_edad<-c(paste0( "[", formatC( c(18,seq(20,60,10)), 
+etiquetas_edad<-c(paste0( "\\[", formatC( c(18,seq(20,60,10)), 
                                           digits = 0, format = 'f', big.mark = '.', decimal.mark = ',' ),
                           "-",formatC( c(seq(20,70,10)), 
-                                          digits = 0, format = 'f', big.mark = '.', decimal.mark = ',' ),"]"))
+                                          digits = 0, format = 'f', big.mark = '.', decimal.mark = ',' ),"\\]"))
 aux  <- tabla_snai_edad_sexo %>%
         mutate(rango_edad=cut(edad, breaks = cortes_edad,
                                labels = etiquetas_edad,
@@ -360,6 +363,9 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
+aux_xtable <- tildes_a_latex(aux_xtable)
+
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_cte_cargo_sexo', '.tex' ),
        type = 'latex',
@@ -451,6 +457,9 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
+aux_xtable <- tildes_a_latex(aux_xtable)
+
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_cargo_sexo', '.tex' ),
        type = 'latex',
