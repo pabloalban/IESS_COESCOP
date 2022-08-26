@@ -25,7 +25,7 @@ Para el presente estudio se considera el número de servidores públicos del Ser
 Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_snmlcf_edad_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Servicio Nacional de Medicina Legal y Ciencias Forenses. \\
@@ -58,7 +58,7 @@ En la tabla \ref{tab:iess_snmlcf_cargo_sexo} se muestra la distribución por car
 Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_snmlcf_cargo_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Servicio Nacional de Medicina Legal y Ciencias Forenses. \\
@@ -98,7 +98,7 @@ Para el presente estudio se considera el número de servidores públicos del Cue
 Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_aduaneros_edad_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Cuerpo de Vigilancia Aduanera. \\
@@ -131,7 +131,7 @@ En la tabla \ref{tab:iess_aduaneros_cargo_sexo} se muestra la distribución por 
 Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_aduaneros_cargo_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Cuerpo de Vigilancia Aduanera. \\
@@ -170,7 +170,7 @@ Para el presente estudio se considera el número de servidores públicos de la C
 Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_cte_edad_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Comisión de Tránsito del Ecuador. \\
@@ -203,7 +203,7 @@ En la tabla \ref{tab:iess_cte_cargo_sexo} se muestra la distribución por cargo 
 Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_cte_cargo_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Comisión de Tránsito del Ecuador. \\
@@ -243,7 +243,7 @@ Para el presente estudio se considera el número de servidores públicos del Ser
 Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_snai_edad_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Servicio Nacional de Atención Integral a Personas Adultas Privadas de la Libertad y a Adolescentes Infractores. \\
@@ -276,7 +276,7 @@ En la tabla \ref{tab:iess_snai_cargo_sexo} se muestra la distribución por cargo
 Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_snai_cargo_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Servicio Nacional de Atención Integral a Personas Adultas Privadas de la Libertad y a Adolescentes Infractores. \\
@@ -315,7 +315,7 @@ Para el presente estudio se considera el número de servidores públicos de los 
 Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_metropolitanos_edad_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
@@ -348,7 +348,7 @@ En la tabla \ref{tab:iess_metropolitanos_cargo_sexo} se muestra la distribución
 Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_metropolitanos_cargo_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
@@ -367,7 +367,504 @@ En los cargos \textit{Agente de Control Metropolitano 3, Agente de Control Metro
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-\textit{Administrativo} es el cargo con mayor cantidad de servidores públicos de los Cuerpos de Control Municipales o Metropolitanos, con 3.346 servidores; a continuación se encuentra \textit{Agente de Control Metropolitano 1} con un total de 1.577 servidores. En cuanto a los cargos con menor cantidad de servidores, se encuentran \textit{Jefe de Control Metropolitano} y \textit{Subjefe de Control Metropolitano} con 2 y 15 servidores respectivamente.
+\textit{Administrativo} es el cargo con mayor cantidad de servidores públicos de los Cuerpos de Control Municipales o Metropolitanos, con 3.346 servidores; a continuación se encuentra \textit{Agente de Control Metropolitano 1} con un total de 1.577 servidores. En cuanto a los cargos con menor cantidad de servidores, se encuentran \textit{Jefe de Control Metropolitano} y \textit{Subjefe de Control Metropolitano} con 2 y 15 servidores respectivamente.\\
+
+A continuación, en la tabla \ref{tab:iess_metropolitanos_ciudad} se muestra la cantidad y porcentaje de hombres y mujeres que forman parte del Cuerpo de Control Municipal o Metropolitano de cada ciudad
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por ciudad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos}
+\label{tab:iess_metropolitanos_ciudad}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Ciudad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_ciudad.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+La ciudad que alberga la mayoría del personal del Cuerpo de de Control Municipales o Metropolitanos es \textit{Quito}, con 1.329 servidores. Por otro lado, la ciudad con la menor cantidad de servidores de este ente es \textit{Loja} con 24 de los mismos.\\
+
+Seguidamente, se procede a realizar un análisis demográfico por ciudad.
+
+%%------------------------------------------------------------------------------------
+
+\subsubsection{Quito}
+\label{chp_demog:metropolitanos_quito}
+
+En la tabla \ref{tab:iess_metropolitanos_quito_edad_sexo} y la figura \ref{fig:iess_pir_metropolitanos_quito} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo de los Cuerpos de Control Municipales o Metropolitanos de Quito}
+\label{tab:iess_metropolitanos_quito_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_quito_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Quito}
+\label{fig:iess_pir_metropolitanos_quito}
+\includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_quito.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_metropolitanos_quito_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos del Distrito Metopolitano de Quito, mientras que la figura \ref{fig:iess_bar_metropolitanos_quito} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Quito}
+\label{tab:iess_metropolitanos_quito_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_quito_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Quito}
+\label{fig:iess_bar_metropolitanos_quito}
+\includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_quito.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%%------------------------------------------------------------------------------------
+
+\subsubsection{Ambato}
+\label{chp_demog:metropolitanos_ambato}
+
+En la tabla \ref{tab:iess_metropolitanos_ambato_edad_sexo} y la figura \ref{fig:iess_pir_metropolitanos_ambato} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo de los Cuerpos de Control Municipales o Metropolitanos de Ambato}
+\label{tab:iess_metropolitanos_ambato_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_ambato_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Ambato}
+\label{fig:iess_pir_metropolitanos_ambato}
+\includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_ambato.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_metropolitanos_ambato_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Ambato, mientras que la figura \ref{fig:iess_bar_metropolitanos_ambato} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Ambato}
+\label{tab:iess_metropolitanos_ambato_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_ambato_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Ambato}
+\label{fig:iess_bar_metropolitanos_ambato}
+\includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_ambato.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%%------------------------------------------------------------------------------------
+
+\subsubsection{Cuenca}
+\label{chp_demog:metropolitanos_cuenca}
+
+En la tabla \ref{tab:iess_metropolitanos_cuenca_edad_sexo} y la figura \ref{fig:iess_pir_metropolitanos_cuenca} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo de los Cuerpos de Control Municipales o Metropolitanos de Cuenca}
+\label{tab:iess_metropolitanos_cuenca_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_cuenca_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Cuenca}
+\label{fig:iess_pir_metropolitanos_cuenca}
+\includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_cuenca.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_metropolitanos_cuenca_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Cuenca, mientras que la figura \ref{fig:iess_bar_metropolitanos_cuenca} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Cuenca}
+\label{tab:iess_metropolitanos_cuenca_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_cuenca_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Cuenca}
+\label{fig:iess_bar_metropolitanos_cuenca}
+\includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_cuenca.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%%------------------------------------------------------------------------------------
+
+\subsubsection{Guayaquil}
+\label{chp_demog:metropolitanos_gye}
+
+En la tabla \ref{tab:iess_metropolitanos_gye_edad_sexo} y la figura \ref{fig:iess_pir_metropolitanos_gye} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo de los Cuerpos de Control Municipales o Metropolitanos de Guayaquil}
+\label{tab:iess_metropolitanos_gye_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_gye_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Guayaquil}
+\label{fig:iess_pir_metropolitanos_gye}
+\includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_gye.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_metropolitanos_gye_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Guayaquil, mientras que la figura \ref{fig:iess_bar_metropolitanos_gye} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Guayaquil}
+\label{tab:iess_metropolitanos_gye_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_gye_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Guayaquil}
+\label{fig:iess_bar_metropolitanos_gye}
+\includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_gye.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+
+%%------------------------------------------------------------------------------------
+
+\subsubsection{Loja}
+\label{chp_demog:metropolitanos_loja}
+
+En la tabla \ref{tab:iess_metropolitanos_loja_edad_sexo} y la figura \ref{fig:iess_pir_metropolitanos_loja} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo de los Cuerpos de Control Municipales o Metropolitanos de Loja}
+\label{tab:iess_metropolitanos_loja_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_loja_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Loja}
+\label{fig:iess_pir_metropolitanos_loja}
+\includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_loja.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_metropolitanos_loja_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Loja, mientras que la figura \ref{fig:iess_bar_metropolitanos_loja} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Loja}
+\label{tab:iess_metropolitanos_loja_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_loja_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Loja}
+\label{fig:iess_bar_metropolitanos_loja}
+\includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_loja.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%%------------------------------------------------------------------------------------
+
+\subsubsection{Machala}
+\label{chp_demog:metropolitanos_machala}
+
+En la tabla \ref{tab:iess_metropolitanos_machala_edad_sexo} y la figura \ref{fig:iess_pir_metropolitanos_machala} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo de los Cuerpos de Control Municipales o Metropolitanos de Machala}
+\label{tab:iess_metropolitanos_machala_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_machala_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Machala}
+\label{fig:iess_pir_metropolitanos_machala}
+\includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_machala.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_metropolitanos_machala_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Machala, mientras que la figura \ref{fig:iess_bar_metropolitanos_machala} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Machala}
+\label{tab:iess_metropolitanos_machala_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_machala_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Machala}
+\label{fig:iess_bar_metropolitanos_machala}
+\includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_machala.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+
+%%------------------------------------------------------------------------------------
+
+\subsubsection{Portoviejo}
+\label{chp_demog:metropolitanos_prtvj}
+
+En la tabla \ref{tab:iess_metropolitanos_prtvj_edad_sexo} y la figura \ref{fig:iess_pir_metropolitanos_prtvj} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo de los Cuerpos de Control Municipales o Metropolitanos de Portoviejo}
+\label{tab:iess_metropolitanos_prtvj_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_prtvj_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Portoviejo}
+\label{fig:iess_pir_metropolitanos_prtvj}
+\includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_prtvj.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_metropolitanos_prtvj_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Portoviejo, mientras que la figura \ref{fig:iess_bar_metropolitanos_prtvj} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Portoviejo}
+\label{tab:iess_metropolitanos_prtvj_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_metropolitanos_prtvj_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Portoviejo}
+\label{fig:iess_bar_metropolitanos_prtvj}
+\includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_prtvj.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+
 
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpos de Bomberos}
@@ -387,7 +884,7 @@ Para el presente estudio se considera el número de servidores públicos de los 
 Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_bomberos_edad_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
@@ -420,7 +917,7 @@ En la tabla \ref{tab:iess_bomberos_cargo_sexo} se muestra la distribución por c
 Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
 \midrule
 \input{tablas/iess_bomberos_cargo_sexo.tex}
-\bottomrule
+ 
 \end{tabular}
 }
 \caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
@@ -439,5 +936,820 @@ En todos los cargos, y en el total de hombres y mujeres, se visibiliza una mayor
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-El cargo que acumula a la mayoría de servidores públicos del Cuerpo de Bomberos es \textit{Administrativo} con un total de 1.452 servidores, seguido por \textit{Bombero 1} con 1.427 servidores. Por otra parte, los cargos que concentran la menor cantidad de trabajadores son \textit{Subinspector de Estación} y \textit{Subjefe de Bomberos}, con 13 y 1 servidores respectivamente.
+El cargo que acumula a la mayoría de servidores públicos del Cuerpo de Bomberos es \textit{Administrativo} con un total de 1.452 servidores, seguido por \textit{Bombero 1} con 1.427 servidores. Por otra parte, los cargos que concentran la menor cantidad de trabajadores son \textit{Subinspector de Estación} y \textit{Subjefe de Bomberos}, con 13 y 1 servidores respectivamente.\\
 
+A continuación, en la tabla \ref{tab:iess_bomberos_ciudad} se muestra la cantidad y porcentaje de hombres y mujeres que forman parte del Cuerpo de Bomberos de cada ciudad
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por ciudad y sexo del personal del Cuerpo de Bomberos}
+\label{tab:iess_bomberos_ciudad}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Ciudad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_ciudad.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+La ciudad que alberga la mayoría del personal del Cuerpo de Bomberos es \textit{Quito}, con 1.378 servidores. Por otro lado, la ciudad con la menor cantidad de servidores de este ente es \textit{Milagro} con 94 de los mismos.\\
+
+Seguidamente, se procede a realizar un análisis demográfico por ciudad.
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Quito}
+\label{chp_demog:bomberos_quito}
+
+En la tabla \ref{tab:iess_bomberos_quito_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_quito} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Quito}
+\label{tab:iess_bomberos_quito_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_quito_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Quito}
+\label{fig:iess_pir_bomberos_quito}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_quito.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_quito_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos del Distrito Metopolitano de Quito, mientras que la figura \ref{fig:iess_bar_bomberos_quito} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Quito}
+\label{tab:iess_bomberos_quito_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_quito_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Quito}
+\label{fig:iess_bar_bomberos_quito}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_quito.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Ambato}
+\label{chp_demog:bomberos_ambato}
+
+En la tabla \ref{tab:iess_bomberos_ambato_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_ambato} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Ambato}
+\label{tab:iess_bomberos_ambato_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_ambato_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Ambato}
+\label{fig:iess_pir_bomberos_ambato}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_ambato.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_ambato_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Ambato, mientras que la figura \ref{fig:iess_bar_bomberos_ambato} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Ambato}
+\label{tab:iess_bomberos_ambato_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_ambato_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Ambato}
+\label{fig:iess_bar_bomberos_ambato}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_ambato.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Cuenca}
+\label{chp_demog:bomberos_cuenca}
+
+En la tabla \ref{tab:iess_bomberos_cuenca_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_cuenca} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Cuenca}
+\label{tab:iess_bomberos_cuenca_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_cuenca_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Cuenca}
+\label{fig:iess_pir_bomberos_cuenca}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_cuenca.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_cuenca_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Cuenca, mientras que la figura \ref{fig:iess_bar_bomberos_cuenca} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Cuenca}
+\label{tab:iess_bomberos_cuenca_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_cuenca_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Cuenca}
+\label{fig:iess_bar_bomberos_cuenca}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_cuenca.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Guayaquil}
+\label{chp_demog:bomberos_gye}
+
+En la tabla \ref{tab:iess_bomberos_gye_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_gye} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Guayaquil}
+\label{tab:iess_bomberos_gye_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_gye_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Guayaquil}
+\label{fig:iess_pir_bomberos_gye}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_gye.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_gye_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Guayaquil, mientras que la figura \ref{fig:iess_bar_bomberos_gye} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Guayaquil}
+\label{tab:iess_bomberos_gye_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_gye_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Guayaquil}
+\label{fig:iess_bar_bomberos_gye}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_gye.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Loja}
+\label{chp_demog:bomberos_loja}
+
+En la tabla \ref{tab:iess_bomberos_loja_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_loja} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Loja}
+\label{tab:iess_bomberos_loja_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_loja_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Loja}
+\label{fig:iess_pir_bomberos_loja}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_loja.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_loja_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Loja, mientras que la figura \ref{fig:iess_bar_bomberos_loja} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Loja}
+\label{tab:iess_bomberos_loja_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_loja_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Loja}
+\label{fig:iess_bar_bomberos_loja}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_loja.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Machala}
+\label{chp_demog:bomberos_machala}
+
+En la tabla \ref{tab:iess_bomberos_machala_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_machala} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Machala}
+\label{tab:iess_bomberos_machala_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_machala_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Machala}
+\label{fig:iess_pir_bomberos_machala}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_machala.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_machala_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Machala, mientras que la figura \ref{fig:iess_bar_bomberos_machala} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Machala}
+\label{tab:iess_bomberos_machala_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_machala_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Machala}
+\label{fig:iess_bar_bomberos_machala}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_machala.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Portoviejo}
+\label{chp_demog:bomberos_prtvj}
+
+En la tabla \ref{tab:iess_bomberos_prtvj_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_prtvj} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Portoviejo}
+\label{tab:iess_bomberos_prtvj_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_prtvj_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Portoviejo}
+\label{fig:iess_pir_bomberos_prtvj}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_prtvj.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_prtvj_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Portoviejo, mientras que la figura \ref{fig:iess_bar_bomberos_prtvj} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Portoviejo}
+\label{tab:iess_bomberos_prtvj_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_prtvj_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Portoviejo}
+\label{fig:iess_bar_bomberos_prtvj}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_prtvj.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Ibarra}
+\label{chp_demog:bomberos_ibarra}
+
+En la tabla \ref{tab:iess_bomberos_ibarra_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_ibarra} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Ibarra}
+\label{tab:iess_bomberos_ibarra_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_ibarra_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ibarra. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Ibarra}
+\label{fig:iess_pir_bomberos_ibarra}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_ibarra.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ibarra. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_ibarra_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Ibarra, mientras que la figura \ref{fig:iess_bar_bomberos_ibarra} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Ibarra}
+\label{tab:iess_bomberos_ibarra_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_ibarra_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ibarra. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Ibarra}
+\label{fig:iess_bar_bomberos_ibarra}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_ibarra.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ibarra. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Manta}
+\label{chp_demog:bomberos_manta}
+
+En la tabla \ref{tab:iess_bomberos_manta_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_manta} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Manta}
+\label{tab:iess_bomberos_manta_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_manta_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Manta. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Manta}
+\label{fig:iess_pir_bomberos_manta}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_manta.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Manta. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_manta_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Manta, mientras que la figura \ref{fig:iess_bar_bomberos_manta} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Manta}
+\label{tab:iess_bomberos_manta_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_manta_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Manta. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Manta}
+\label{fig:iess_bar_bomberos_manta}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_manta.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Manta. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Milagro}
+\label{chp_demog:bomberos_milagro}
+
+En la tabla \ref{tab:iess_bomberos_milagro_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_milagro} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Milagro}
+\label{tab:iess_bomberos_milagro_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_milagro_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Milagro. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Milagro}
+\label{fig:iess_pir_bomberos_milagro}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_milagro.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Milagro. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_milagro_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Milagro, mientras que la figura \ref{fig:iess_bar_bomberos_milagro} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Milagro}
+\label{tab:iess_bomberos_milagro_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_milagro_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Milagro. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Milagro}
+\label{fig:iess_bar_bomberos_milagro}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_milagro.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Milagro. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Riobamba}
+\label{chp_demog:bomberos_riobamba}
+
+En la tabla \ref{tab:iess_bomberos_riobamba_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_riobamba} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Riobamba}
+\label{tab:iess_bomberos_riobamba_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_riobamba_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Riobamba. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Riobamba}
+\label{fig:iess_pir_bomberos_riobamba}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_riobamba.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Riobamba. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_riobamba_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Riobamba, mientras que la figura \ref{fig:iess_bar_bomberos_riobamba} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Riobamba}
+\label{tab:iess_bomberos_riobamba_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_riobamba_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Riobamba. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Riobamba}
+\label{fig:iess_bar_bomberos_riobamba}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_riobamba.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Riobamba. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Santo Domingo}
+\label{chp_demog:bomberos_sto_dom}
+
+En la tabla \ref{tab:iess_bomberos_sto_dom_edad_sexo} y la figura \ref{fig:iess_pir_bomberos_sto_dom} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del Cuerpo de Bomberos de Santo Domingo}
+\label{tab:iess_bomberos_sto_dom_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_sto_dom_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Santo Domingo. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Santo Domingo}
+\label{fig:iess_pir_bomberos_sto_dom}
+\includegraphics[scale=0.8]{graficos/iess_pir_bomberos_sto_dom.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Santo Domingo. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+En la tabla \ref{tab:iess_bomberos_sto_dom_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Santo Domingo, mientras que la figura \ref{fig:iess_bar_bomberos_sto_dom} detalla la distribución por cargo de los mismos.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo del personal del Cuerpo de Bomberos de Santo Domingo}
+\label{tab:iess_bomberos_sto_dom_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_bomberos_sto_dom_cargo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Santo Domingo. \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo del personal del Cuerpo de Bomberos de Santo Domingo}
+\label{fig:iess_bar_bomberos_sto_dom}
+\includegraphics[scale=0.8]{graficos/iess_bar_bomberos_sto_dom.png}
+\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Santo Domingo. \\
+{\bf Elaborado:} DAIE.}
+\end{figure}

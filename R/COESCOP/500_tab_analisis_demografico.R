@@ -241,6 +241,333 @@ print( aux_xtable,
        add.to.row = list(pos = list(nrow(aux_xtable)-1),
                          command = c(paste("\\hline \n"))))
 
+## Tablas metropolitanos rangos de edad y sexo por ciudad---------------------------------------------
+
+### Quito---------------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_quito_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_quito_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+
+### Ambato------------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_ambato_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_ambato_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+
+### Cuenca-------------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_cuenca_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_cuenca_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Guayaquil--------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_gye_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_gye_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Loja--------------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_ambato_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_loja_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Machala----------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_machala_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_machala_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Portoviejo--------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_prtvj_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_prtvj_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+
 #Tabla METROPOLITANOS de sexo y cargos----------------------------------------------------------------
 message( '\tTabla de servidores publicos del Cuerpo de Agentes de Control Municipal o Metropolitano por cargo y sexo, en marzo 2022' )
 
@@ -283,6 +610,350 @@ print( aux_xtable,
        sanitize.text.function = identity,
        add.to.row = list(pos = list(nrow(aux_xtable)-1),
                          command = c(paste("\\hline \n"))))
+
+
+##Tabla METROPOLITANOS de sexo y cargos por ciudad--------------------------------------
+
+### Quito-------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_quito_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_quito_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Ambato-----------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_ambato_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_ambato_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Cuenca-------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_cuenca_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_cuenca_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Guayaquil-------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_gye_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_gye_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Loja--------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_loja_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_loja_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Machala----------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_machala_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_machala_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Portoviejo----------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_prtvj_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_prtvj_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+#Tabla METROPOLITANOS de sexo y ciudades------------------------------------------------------
+message( '\tTabla de servidores publicos del Cuerpo de Agentes Metropolitanos y Municipales por ciudad y sexo, en marzo 2022' )
+
+aux  <- tabla_metropolitanos_ciudad %>%
+  group_by(ciudad, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(ciudad, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,ciudad,dist) %>%
+  arrange(ciudad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(ciudad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(ciudad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='ciudad') %>%
+  select(ciudad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         ciudad=as.character(ciudad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
+aux_xtable <- tildes_a_latex(aux_xtable)
+
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_ciudad', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
 
 
 #Tabla CTE rangos de edad y sexo------------------------------------------------------
@@ -425,6 +1096,562 @@ print( aux_xtable,
        sanitize.text.function = identity,
        add.to.row = list(pos = list(nrow(aux_xtable)-1),
                          command = c(paste("\\hline \n"))))
+## Tabla BOMBEROS rangos de edad y sexo por ciudad----------------------------------------------
+
+### Quito---------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_quito_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_quito_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Ambato-------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_ambato_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_ambato_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Guayaquil------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_gye_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_gye_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Ibarra-------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_ibarra_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_ibarra_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Machala-------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_machala_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_machala_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Manta---------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_manta_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_manta_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Milagro-------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_milagro_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_milagro_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Portoviejo----------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_prtvj_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_prtvj_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Riobamba------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_riobamba_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_riobamba_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Santo Domingo--------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_sto_dom_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_sto_dom_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+
+### Loja------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_loja_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_loja_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+
+### Cuenca-----------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_cuenca_edad_sexo %>%
+  mutate(rango_edad=cut(edad, breaks = cortes_edad,
+                        labels = etiquetas_edad,
+                        #include.lowest = TRUE,
+                        right = TRUE)) %>%
+  group_by(sexo,rango_edad) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(sexo,rango_edad,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,rango_edad,dist) %>%
+  arrange(rango_edad,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(rango_edad,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(rango_edad,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='rango_edad') %>%
+  select(rango_edad,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         rango_edad=as.character(rango_edad))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_cuenca_edad_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
 
 #Tabla BOMBEROS de sexo y cargos----------------------------------------------------------------
 message( '\tTabla de servidores publicos del Cuerpo de Bomberos por cargo y sexo, en marzo 2022' )
@@ -471,6 +1698,561 @@ print( aux_xtable,
        sanitize.text.function = identity,
        add.to.row = list(pos = list(nrow(aux_xtable)-1),
                          command = c(paste("\\hline \n"))))
+
+## Tabla BOMBEROS de sexo y cargos por ciudad-----------------------------------------------
+
+### Quito-------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_quito_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_quito_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Ambato------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_ambato_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_ambato_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Guayaquil---------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_gye_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_gye_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Ibarra-----------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_ibarra_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_ibarra_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Machala-----------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_machala_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_machala_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Manta-------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_manta_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_manta_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Milagro-----------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_milagro_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_milagro_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Portoviejo---------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_prtvj_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_prtvj_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Riobamba----------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_riobamba_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_riobamba_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Santo Domingo---------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_sto_dom_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_sto_dom_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Loja------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_loja_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_loja_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+### Cuenca-------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_cuenca_cargo %>%
+  group_by(cargo_coescop, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(cargo_coescop, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,cargo_coescop,dist) %>%
+  arrange(cargo_coescop,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(cargo_coescop,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(cargo_coescop,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='cargo_coescop') %>%
+  select(cargo_coescop,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         cargo_coescop=as.character(cargo_coescop))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_cuenca_cargo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+
+#Tabla BOMBEROS de sexo y ciudades--------------------------------------------------------------
+message( '\tTabla de servidores publicos del Cuerpo de Bomberos por ciudad y sexo, en marzo 2022' )
+
+aux  <- tabla_bomberos_ciudad %>%
+  group_by(canton, sexo) %>%
+  mutate(beneficiarios= sum(frecuencia, na.rm = TRUE)) %>%
+  ungroup() %>%
+  distinct(canton, sexo ,.keep_all = TRUE) %>%
+  mutate(N= sum(beneficiarios, na.rm = TRUE )) %>%
+  mutate(dist=beneficiarios/N) %>%
+  select(sexo,beneficiarios,canton,dist) %>%
+  arrange(canton,sexo)
+
+
+auxa <- spread(select(aux,-dist),sexo,value = c(beneficiarios)) %>%
+  select(canton,M_ben:=M,F_ben:=F)
+auxb <- spread(select(aux,-beneficiarios),sexo,value = c(dist)) %>%
+  select(canton,M_dist:=M,F_dist:=F)
+
+aux<-left_join(auxa,auxb,by='canton') %>%
+  select(canton,M_ben,M_dist,F_ben,F_dist) %>%
+  mutate(M_dist=100*M_dist,
+         F_dist=100*F_dist,
+         canton=as.character(canton))
+aux[is.na(aux)] <- 0
+aux <- rbind((aux), c("Total", as.character(colSums(aux[,2:ncol(aux)]))))
+aux[2:ncol(aux)] <- lapply(aux[2:ncol(aux)], function(x) as.numeric(x))
+aux <- aux %>% mutate(T_ben=M_ben+F_ben,
+                      T_dist=M_dist+F_dist)
+
+aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
+aux_xtable <- tildes_a_latex(aux_xtable)
+
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_ciudad', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity,
+       add.to.row = list(pos = list(nrow(aux_xtable)-1),
+                         command = c(paste("\\hline \n"))))
+
+
 
 #Tabla ADUANEROS rangos de edad y sexo------------------------------------------------------
 message( '\tTabla de servidores publicos del Cuerpo de Vigilancia Aduanera por rango de edad y sexo, en marzo 2022' )
