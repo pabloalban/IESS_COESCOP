@@ -431,7 +431,7 @@ print( aux_xtable,
 
 ### Loja--------------------------------------------------------------------------------------------
 
-aux  <- tabla_metropolitanos_ambato_edad_sexo %>%
+aux  <- tabla_metropolitanos_loja_edad_sexo %>%
   mutate(rango_edad=cut(edad, breaks = cortes_edad,
                         labels = etiquetas_edad,
                         #include.lowest = TRUE,

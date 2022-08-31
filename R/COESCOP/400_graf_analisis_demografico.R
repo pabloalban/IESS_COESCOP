@@ -511,8 +511,8 @@ iess_bar_metropolitanos_ambato <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
             position = position_dodge(0.9),  
             angle=0, 
             size=3.0) + 
-  labs(x = "Cargo COESCOP", y = "Número de Servidores")+
-  theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+  labs(x = "Cargo COESCOP", y = "Número de Servidores")
+  #theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
 
 
 ggsave( plot = iess_bar_metropolitanos_ambato, 
@@ -613,8 +613,8 @@ iess_bar_metropolitanos_loja <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
             position = position_dodge(0.9),  
             angle=0, 
             size=3.0) + 
-  labs(x = "Cargo COESCOP", y = "Número de Servidores")+
-  theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+  labs(x = "Cargo COESCOP", y = "Número de Servidores")
+  #theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
 
 
 ggsave( plot = iess_bar_metropolitanos_loja, 
@@ -647,8 +647,8 @@ iess_bar_metropolitanos_machala <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
             position = position_dodge(0.9),  
             angle=0, 
             size=3.0) + 
-  labs(x = "Cargo COESCOP", y = "Número de Servidores")+
-  theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+  labs(x = "Cargo COESCOP", y = "Número de Servidores")
+  #theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
 
 
 ggsave( plot = iess_bar_metropolitanos_machala, 
@@ -681,8 +681,8 @@ iess_bar_metropolitanos_prtvj <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
             position = position_dodge(0.9),  
             angle=0, 
             size=3.0) + 
-  labs(x = "Cargo COESCOP", y = "Número de Servidores")+
-  theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+  labs(x = "Cargo COESCOP", y = "Número de Servidores")
+ # theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
 
 
 ggsave( plot = iess_bar_metropolitanos_prtvj, 
@@ -1375,8 +1375,8 @@ iess_bar_bomberos_machala <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
             position = position_dodge(0.9),  
             angle=0, 
             size=3.0) + 
-  labs(x = "Cargo COESCOP", y = "Número de Servidores")+
-  theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+  labs(x = "Cargo COESCOP", y = "Número de Servidores")
+  #theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
 
 
 ggsave( plot = iess_bar_bomberos_machala, 
@@ -1477,8 +1477,8 @@ iess_bar_bomberos_prtvj <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
             position = position_dodge(0.9),  
             angle=0, 
             size=3.0) + 
-  labs(x = "Cargo COESCOP", y = "Número de Servidores")+
-  theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+  labs(x = "Cargo COESCOP", y = "Número de Servidores")
+  #theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
 
 
 ggsave( plot = iess_bar_bomberos_prtvj, 

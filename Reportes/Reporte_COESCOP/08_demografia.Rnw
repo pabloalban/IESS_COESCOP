@@ -43,7 +43,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-A marzo del 2022, el total del personal del SNMLCF es de 182 servidores públicos, de los cuales el 44,51\% son mujeres y el 55,49\% son hombres. La mayoría de población femenina, así como la masculina, se encuentra entre los 30 y 40 años.\\
+A marzo del 2022, el total del personal del SNMLCF es de 182 servidores públicos, de los cuales el 44,51\% son mujeres y el 55,49\% son hombres. También, el 52,20\% del total de los empleados de esta entidad se encuentra entre los 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_snmlcf_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos del SNMLCF, mientras que la figura \ref{fig:iess_bar_snmlcf} detalla la distribución por cargo de los mismos.
 
@@ -116,7 +116,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-A marzo del 2022, el total del personal del Cuerpo de Vigilancia Aduanera es de 1625 servidores públicos, de los cuales el 31,02\% son mujeres y el 68,98\% son hombres. Adicionalmente, la mayoría de la población femenina se encuentra entre los 30 y 40 años, mientras que la mayoría de población masculina tiene entre 50 y 60 años.\\
+A marzo del 2022, el total del personal del Cuerpo de Vigilancia Aduanera es de 1.625 servidores públicos, de los cuales el 31,02\% son mujeres y el 68,98\% son hombres. Adicionalmente, el 31,88\% del total de empleados de esta entidad se encuentra entre los 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_aduaneros_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Vigilancia Aduanera, mientras que la figura \ref{fig:iess_bar_aduaneros} detalla la distribución por cargo de los mismos.
 
@@ -188,7 +188,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-El total del personal de la CTE a marzo de 2022 es de 1.527 servidores públicos, de los cuales el 10,41\% son mujeres y el 89,59\% son hombres. La población femenina, en su mayoría, se encuentra entre los 30 y 40 años; al igual que la mayoría de la población masculina.\\
+El total del personal de la CTE a marzo de 2022 es de 1.527 servidores públicos, de los cuales el 10,41\% son mujeres y el 89,59\% son hombres. Además, el 47,09\% de la población total de empleados de esta entidad tiene entre 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_cte_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos de la Comisión de Tránsito del Ecuador, mientras que la figura \ref{fig:iess_bar_cte} detalla la distribución por cargo de los mismos.
 
@@ -261,7 +261,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-El total del personal del SNAI a marzo de 2022 es de 2.945 servidores públicos, de los cuales el 37,22\% son mujeres y el 62,78\% son hombres. Tanto la mayoría de hombres como la de mujeres se encuentra entre los 30 y 40 años de edad.\\
+El total del personal del SNAI a marzo de 2022 es de 2.945 servidores públicos, de los cuales el 37,22\% son mujeres y el 62,78\% son hombres. Más aún, el 41,90\% del total de empleados de esta entidad tiene entre 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_snai_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos del SNAI, mientras que la figura \ref{fig:iess_bar_snai} detalla la distribución por cargo de los mismos.
 
@@ -318,7 +318,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -329,11 +329,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos}
 \label{fig:iess_pir_metropolitanos}
 \includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-A marzo de 2022, el total del personal de los Cuerpos de Control Municipales o Metropolitanos es de 5.580 servidores públicos, de los cuales el 28,01\% son mujeres y el 71,99\% son hombres. La mayoría de población femenina, así como de la masculina, se encuentra entre los 30 y 40 años.\\
+A marzo de 2022, el total del personal de los Cuerpos de Control Municipales o Metropolitanos es de 5.580 servidores públicos, de los cuales el 28,01\% son mujeres y el 71,99\% son hombres. Adicionalmente, el 34,96\% de los servidores públicos de esta entidad se encuentran entre los 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_metropolitanos_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos, mientras que la figura \ref{fig:iess_bar_metropolitanos} detalla la distribución por cargo de los mismos.
 
@@ -351,7 +351,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -363,7 +363,7 @@ En los cargos \textit{Agente de Control Metropolitano 3, Agente de Control Metro
 \caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos}
 \label{fig:iess_bar_metropolitanos}
 \includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
@@ -385,7 +385,7 @@ Ciudad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -414,7 +414,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Quito. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -425,9 +425,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Quito}
 \label{fig:iess_pir_metropolitanos_quito}
 \includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_quito.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Quito. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A agosto del 2019\footnote{documentación más actualizada respecto al literal c) de la Ley de Transparencia disponible en la página oficial del Cuerpo de Agentes de Control Quito.} el total de servidores públicos pertenecientes al Cuerpo de Agentes Metropolitanos de Quito es de 1.329, de los cuales el 18,28\% son mujeres y el 81,72\% son hombres. Adicionalmente, el 40,78\% del personal de la presente entidad tiene entre 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_metropolitanos_quito_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos del Distrito Metopolitano de Quito, mientras que la figura \ref{fig:iess_bar_metropolitanos_quito} detalla la distribución por cargo de los mismos.
 
@@ -445,10 +447,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Quito. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+Se observa una marcada mayoría de la población masculina sobe la femenina en cada uno de los cargos. Más aún, el cargo \textit{Jefe de Control Metopolitano} carece de trabajadores correspondientes al género femenino.
 
 \begin{figure}[H]
 \centering
@@ -456,9 +459,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Quito}
 \label{fig:iess_bar_metropolitanos_quito}
 \includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_quito.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Quito. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El cargo que acapara la mayoría de servidores públicos pertenecientes al Cuerpo de Agentes de Control Quito es \textit{Agente de Control Metropolitano 1} con 973 servidores, seguido por \textit{Administrativo} con 273 de los mismos. Por otro lado, los cargos con menor cantidad de miembros de esta entidad son \textit{Subjefe de Control Metropolitano} y \textit{Jefe de Control Metropolitano} con 15 y 2 servidores respectivamente.
 
 %%------------------------------------------------------------------------------------
 
@@ -481,7 +486,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ambato. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -492,9 +497,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Ambato}
 \label{fig:iess_pir_metropolitanos_ambato}
 \includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_ambato.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio Ambato. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A marzo del 2022, el total de servidores públicos pertenecientes al Cuerpo de Agentes Metropolitanos o Municipales de Ambato es de 1.068, de los cuales el 41,20\% son mujeres y el 58,80\% son hombres. Además, del total de empleados de esta entidad, el 41,67\% tienen entre 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_metropolitanos_ambato_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Ambato, mientras que la figura \ref{fig:iess_bar_metropolitanos_ambato} detalla la distribución por cargo de los mismos.
 
@@ -512,7 +519,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ambato. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -523,9 +530,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Ambato}
 \label{fig:iess_bar_metropolitanos_ambato}
 \includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_ambato.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ambato. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El cargo que alberga la gran mayoría de trabajadores de la presente entidad es \textit{Administrativo} con un total de 1035 servidores, mientras que \textit{Agente de Control Municipal 1} posee apenas 33.
 
 %%------------------------------------------------------------------------------------
 
@@ -548,7 +557,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Cuenca. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -559,9 +568,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Cuenca}
 \label{fig:iess_pir_metropolitanos_cuenca}
 \includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_cuenca.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Cuenca. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A marzo del 2022 el total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Municipales o Metropolitanos de Cuenca es de 315, de los cuales el 21,27\% son mujeres y el 78,73\% son hombres. También, del total del personal de esta entidad el 51,43\% tiene entre 20 y 30 años.\\
 
 En la tabla \ref{tab:iess_metropolitanos_cuenca_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Cuenca, mientras que la figura \ref{fig:iess_bar_metropolitanos_cuenca} detalla la distribución por cargo de los mismos.
 
@@ -579,9 +590,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Cuenca. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+Se logra visualizar una mayoría de trabajadores del género masculino sobre el género femenino en todos los cargos.
 
 
 \begin{figure}[H]
@@ -590,9 +603,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Cuenca}
 \label{fig:iess_bar_metropolitanos_cuenca}
 \includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_cuenca.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Cuenca. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El cargo que representa la mayor parte del total de trabajadores de esta entidad es \textit{Agente de Control Metropolitano 1} con 239 servidores, en tanto que \textit{Agente de Control Metropolitano 2} es el cargo con menor número de servidores, los cuales suman 34.
 
 %%------------------------------------------------------------------------------------
 
@@ -615,7 +630,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Guayaquil. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -626,9 +641,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Guayaquil}
 \label{fig:iess_pir_metropolitanos_gye}
 \includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_gye.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Guayaquil. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El total de servidores públicos trabajando en la presente entidad a marzo del 2022 es de 654, de los cuales el 10,24\% son mujeres y el 89,76\% son hombres. Además, el 41,44\% del total de trabajadores de esta entidad tienen entre 20 y 30 años.\\
 
 En la tabla \ref{tab:iess_metropolitanos_gye_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Guayaquil, mientras que la figura \ref{fig:iess_bar_metropolitanos_gye} detalla la distribución por cargo de los mismos.
 
@@ -646,10 +663,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Guayaquil. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+Los cargos \textit{Agente de Control Metropolitano 3} y \textit{Agente de Control Metropolitano 4} tienen un porcentaje de 0\% en cuanto a servidoras públicas, al tiempo que \textit{Administrativo} no cuenta con servidores públicos del género masculino.
 
 \begin{figure}[H]
 \centering
@@ -657,9 +675,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Guayaquil}
 \label{fig:iess_bar_metropolitanos_gye}
 \includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_gye.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Guayaquil. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+\textit{Agente de Control Metropolitano 1} es el cargo que concentra la mayor cantidad de trabajadores del Cuerpo de Control Municipal o Metropolitano de Guayaquil con 365 servidores, seguido de \textit{Agente de Control Metropolitano 3}, con 170 de los mismos. Por otro lado, \textit{Agente de Control Metropolitano 4} y \textit{Administrativo} son los cargos con menor personal de esta entidad, con 21 y 1 servidores respectivamente. 
 
 
 %%------------------------------------------------------------------------------------
@@ -683,7 +703,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Loja. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -694,9 +714,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Loja}
 \label{fig:iess_pir_metropolitanos_loja}
 \includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_loja.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Loja. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A marzo del 2022, el total de servidores públicos pertenecientes al Cuerpo de Agentes Metropolitanos de Quito es de 24, de los cuales el 41,67\% son mujeres y el 58,33\% son hombres. También, el 54,17\% del total de empleados de esta entidad está entre los 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_metropolitanos_loja_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Loja, mientras que la figura \ref{fig:iess_bar_metropolitanos_loja} detalla la distribución por cargo de los mismos.
 
@@ -714,7 +736,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Loja. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -725,9 +747,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Loja}
 \label{fig:iess_bar_metropolitanos_loja}
 \includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_loja.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Loja. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El cargo \textit{Agente de Control Municipal 1 } presenta la mayoría de servidores públicos de la presente entidad, con 21 de ellos, en tanto que \textit{Administrativo} concentra 3 de los mismos.
 
 %%------------------------------------------------------------------------------------
 
@@ -750,7 +774,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Machala. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -761,9 +785,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Machala}
 \label{fig:iess_pir_metropolitanos_machala}
 \includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_machala.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Machala. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El total de servidores públicos pertenecientes al Cuerpo de Agentes Municipales de Machala, a marzo del 2022, es de 1.047, de los cuales el 46,99\% son mujeres y el 53,01\% son hombres. Más aún, del total de empleados de la presente entidad tienen entre 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_metropolitanos_machala_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Machala, mientras que la figura \ref{fig:iess_bar_metropolitanos_machala} detalla la distribución por cargo de los mismos.
 
@@ -781,7 +807,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Machala. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -792,9 +818,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Machala}
 \label{fig:iess_bar_metropolitanos_machala}
 \includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_machala.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Machala. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El cargo con mayor cantidad de servidores públicos de la presente entidad es \textit{Administrativo} con 936, al tiempo que \textit{Agente de Control Municipal 1} tiene apenas 111 servidores.
 
 
 %%------------------------------------------------------------------------------------
@@ -818,7 +846,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Portoviejo. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -829,9 +857,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal de los Cuerpos de Control Municipales o Metropolitanos de Portoviejo}
 \label{fig:iess_pir_metropolitanos_prtvj}
 \includegraphics[scale=0.8]{graficos/iess_pir_metropolitanos_prtvj.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Portoviejo. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A marzo del 2022, el total de servidores públicos pertenecientes al Cuerpo de Agentes Municipales de Portoviejo es de 1.143, de los cuales el 21,35\% son mujeres y el 78,65\% son hombres. Además, del total del personal de esta entidad, el 28,35\% está entre los 40 y 50 años.\\
 
 En la tabla \ref{tab:iess_metropolitanos_prtvj_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Control Municipales o Metropolitanos de Portoviejo, mientras que la figura \ref{fig:iess_bar_metropolitanos_prtvj} detalla la distribución por cargo de los mismos.
 
@@ -849,7 +879,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Portoviejo. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -860,11 +890,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal de los Cuerpos de Control Municipales o Metropolitanos de Portoviejo}
 \label{fig:iess_bar_metropolitanos_prtvj}
 \includegraphics[scale=0.8]{graficos/iess_bar_metropolitanos_prtvj.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipo de Portoviejo. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-
+\textit{Administrativo} abarca gran parte de los servidores públicos de esta entidad, con 1.056 de los mismos, en tanto que \textit{Agente de Control Municipal 1} cuenta con 87 servidores.
 
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpos de Bomberos}
@@ -887,7 +917,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -898,11 +928,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal de los Cuerpos de Bomberos}
 \label{fig:iess_pir_bomberos}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-A marzo del 2022, el total del personal de los Cuerpos de Bomberos es 3.390 servidores públicos, de donde el 21,30\% son mujeres y el 78,70\% son hombres. Además, la mayoría de población femenina y masculina tiene entre 30 y 40 años.\\
+A marzo del 2022, el total del personal de los Cuerpos de Bomberos es 3.390 servidores públicos, de donde el 21,30\% son mujeres y el 78,70\% son hombres. Además, el 39,44\% del total de los servidores públicos de esta entidad tienen entre 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_bomberos_cargo_sexo} se muestra la distribución por cargo y sexo de las y los servidores públicos de los Cuerpos de Bomberos, mientras que la figura \ref{fig:iess_bar_bomberos} detalla la distribución por cargo de los mismos.
 
@@ -920,7 +950,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -932,7 +962,7 @@ En todos los cargos, y en el total de hombres y mujeres, se visibiliza una mayor
 \caption{Distribución por cargo del personal de los Cuerpos de Bomberos}
 \label{fig:iess_bar_bomberos}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
@@ -954,7 +984,7 @@ Ciudad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de cada ciudad. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -982,7 +1012,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Quito. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -993,9 +1023,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Quito}
 \label{fig:iess_pir_bomberos_quito}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_quito.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Quito. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A marzo del 2022 el total de servidores públicos pertenecientes al Cuerpo de Bomberos de Quito es de 1.378, de los cuales el 27,14\% son mujeres y el 72,86\% son hombres. También, del total del personal de esta entidad, el 34,91\% está entre loa 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_bomberos_quito_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos del Distrito Metopolitano de Quito, mientras que la figura \ref{fig:iess_bar_bomberos_quito} detalla la distribución por cargo de los mismos.
 
@@ -1013,9 +1045,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Quito. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+Los cargos \textit{Inspector de Brigada} y \textit{Subjefe de Bomberos} no presentan trabajadores del género femenino.
 
 
 \begin{figure}[H]
@@ -1024,9 +1058,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Quito}
 \label{fig:iess_bar_bomberos_quito}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_quito.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Quito. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Quito. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+\textit{Bombero 1} es el puesto que abarca una cantidad mayoritaria de servidores públicos de esta entidad, con un total de 661 servidores. Seguidamente se encuentra \textit{Administrativo} con 531 de los mismos. Po otro lado, \textit{Inspector de Brigada} y \textit{Subjefe de Bomberos} son los cargos con menor cantidad de trabajadores, con 1 cada uno.
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Ambato}
@@ -1048,7 +1084,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ambato. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1059,9 +1095,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Ambato}
 \label{fig:iess_pir_bomberos_ambato}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_ambato.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ambato. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El total de miembros del Cuerpo de Bomberos de Ambato, a marzo del 2022, es de 168 servidores; donde el 14,29\% corresponde a trabajadores del género femenino y el 85,71\% al género masculino. Además, del total de los empleados de la presente entidad, el 56,55\% tiene entre 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_bomberos_ambato_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Ambato, mientras que la figura \ref{fig:iess_bar_bomberos_ambato} detalla la distribución por cargo de los mismos.
 
@@ -1079,10 +1117,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ambato. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+\textit{Bombero 2, Bombero 4} e \textit{Inspector de Brigada} no cuentan con población femenina.
 
 \begin{figure}[H]
 \centering
@@ -1090,9 +1129,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Ambato}
 \label{fig:iess_bar_bomberos_ambato}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_ambato.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ambato. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ambato. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El cargo que abarca una mayor candad de trabajadores del Cuerpo de Bomberos de Ambato es \textit{Bombero 1} con 109 servidores, seguido de \textit{Administrativo}, con 28. En cambio, los cargos con la menor cantidad de trabajadores son \textit{Inspector de Brigada} y \textit{Bombero 4}, con 1 y 4 servidores respectivamente.
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Cuenca}
@@ -1114,7 +1155,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Cuenca. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1125,9 +1166,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Cuenca}
 \label{fig:iess_pir_bomberos_cuenca}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_cuenca.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Cuenca. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A marzo del 2022, el total de empleados del Cuerpo de Bomberos de Cuenca es de 191, del cual el 16,75\% son mujeres y el 83,25\% son hombres. Más aún, el 37,70\% del total del personal de la presente entidad se encuentra entre los 30 y 40 años.\\ 
 
 En la tabla \ref{tab:iess_bomberos_cuenca_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Cuenca, mientras que la figura \ref{fig:iess_bar_bomberos_cuenca} detalla la distribución por cargo de los mismos.
 
@@ -1145,9 +1188,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Cuenca. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+En los cargos \textit{Inspector de Brigada} y \textit{Subinspector de Estación} no se encuentra población del género femenino.
 
 
 \begin{figure}[H]
@@ -1156,9 +1201,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Cuenca}
 \label{fig:iess_bar_bomberos_cuenca}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_cuenca.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Cuenca. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Cuenca. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El cargo con mayor cantidad de trabajadores de la presente entidad es \textit{Administrativo} con 112 servidores, seguido de \textit{Bombero 1} con 49. Por otro lado, \textit{Inspector de Brigada} y \textit{Subinspector de Estación} son los puestos que acumulan la menor cantidad de empleados, con 2 cada uno.
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Guayaquil}
@@ -1180,7 +1227,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Guayaquil. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1191,9 +1238,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Guayaquil}
 \label{fig:iess_pir_bomberos_gye}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_gye.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Guayaquil. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El total de empleados del Cuerpo de Bomberos de Guayaquil, a marzo del 2022, es de 589 servidores, donde el 12,05\% corresponde a trabajadores del género femenino, mientras que el 87,95\% corresponde al género masculino. Además, del total del personal de la presente entidad, el 44,82\% tiene entre 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_bomberos_gye_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Guayaquil, mientras que la figura \ref{fig:iess_bar_bomberos_gye} detalla la distribución por cargo de los mismos.
 
@@ -1211,9 +1260,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Guayaquil. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+En los cargos \textit{Bombero 1, Bombero 2} y \textit{Subinspector de Estación} no existen empleados del género femenino. 
 
 
 \begin{figure}[H]
@@ -1222,9 +1273,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Guayaquil}
 \label{fig:iess_bar_bomberos_gye}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_gye.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Guayaquil. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Guayaquil. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+\textit{Administrativo} es el cargo que alberga a la mayor cantidad de servidores públicos, con 406 de ellos. Seguidamente se encuentra \textit{Bombero 1}, con 155 de los mismos. También, \textit{Bombero 2, Jefe de Bomberos} y \textit{Subinspecor de Estación} son los puestos con menos empleados de la presente entidad, el primero con 2 servidores y los dos últimos con 3 cada uno.
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Loja}
@@ -1246,7 +1299,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Loja. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1257,9 +1310,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Loja}
 \label{fig:iess_pir_bomberos_loja}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_loja.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Loja. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A marzo del 2022, el total del personal del Cuerpo de Bomberos de Loja es de 108 empleados, de los cuales el 25,93\% son mujeres y el 74,07\% son hombres. Más aún, del total de empleados de esta entidad, el 45,37\% se encuentra entre los 30 y 40 años.\\  
 
 En la tabla \ref{tab:iess_bomberos_loja_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Loja, mientras que la figura \ref{fig:iess_bar_bomberos_loja} detalla la distribución por cargo de los mismos.
 
@@ -1277,10 +1332,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Loja. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+Los cargos \textit{Bombero 3} y \textit{Bombero 4} no presentan población del género femenino.
 
 \begin{figure}[H]
 \centering
@@ -1288,9 +1344,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Loja}
 \label{fig:iess_bar_bomberos_loja}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_loja.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Loja. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Loja. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El cargo que contempla la mayor cantidad de empleados de esta entidad es \textit{Bombero 2} con 32 servidores, seguido de \textit{Bombero 1} con 30. En cambio, los puestos con menor cantidad de trabajadores son \textit{Subinspector de Estación, Bombero 3} y \textit{Jefe de Bomberos}, el primero con 1 empleado y los dos últimos con 2 empleados cada uno.
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Machala}
@@ -1312,7 +1370,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Machala. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1323,9 +1381,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Machala}
 \label{fig:iess_pir_bomberos_machala}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_machala.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Machala. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El total de servidores públicos del Cuerpo de Bomberos de Machala, a marzo del 2022, es de 113 empleados, de los cuales el 23,01\% son mujeres y el 76,99\% son hombres. Adicionalmente, el 37,17\% del total de servidores públicos que trabajan en esta entidad tienen entre 30 y 40 años.\\ 
 
 En la tabla \ref{tab:iess_bomberos_machala_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Machala, mientras que la figura \ref{fig:iess_bar_bomberos_machala} detalla la distribución por cargo de los mismos.
 
@@ -1343,10 +1403,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Machala. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+El cargo \textit{Jefe de Bomberos} carece de personal femenino.
 
 \begin{figure}[H]
 \centering
@@ -1354,9 +1415,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Machala}
 \label{fig:iess_bar_bomberos_machala}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_machala.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Machala. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Machala. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El cargo con mayor número de empleados de esta entidad es \textit{Bombero 1} con 74 servidores, seguido de \textit{Administrativo} con 26. Por su parte, \textit{Inspector de Brigada} y \textit{Jefe de Bomberos} son los cargos con menor cantidad de empleados, con 12 y 1 respectivamente.
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Portoviejo}
@@ -1378,7 +1441,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Portoviejo. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1389,9 +1452,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Portoviejo}
 \label{fig:iess_pir_bomberos_prtvj}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_prtvj.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Portoviejo. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A marzo del 2022, el total del personal del Cuerpo de Bomberos de Portoviejo es de 191 empleados, de donde el 18,85\% corresponde al personal femenino y el 81,15\% al personal masculino. Más aún, el 48,17\% del total del personal de la presente entidad tiene entre 30 y 40 años.\\  
 
 En la tabla \ref{tab:iess_bomberos_prtvj_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Portoviejo, mientras que la figura \ref{fig:iess_bar_bomberos_prtvj} detalla la distribución por cargo de los mismos.
 
@@ -1409,7 +1474,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Portoviejo. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1420,9 +1485,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Portoviejo}
 \label{fig:iess_bar_bomberos_prtvj}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_prtvj.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Portoviejo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Portoviejo. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+\textit{Administrativo} es el puesto con mayor cantidad de empleados con 94 de ellos, al tanto que \textit{Jefe de Bomberos} es el puesto con menor cantidad de trabajadores, acumulando 8 de los mismos.
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Ibarra}
@@ -1444,7 +1511,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ibarra. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ibarra. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1455,9 +1522,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Ibarra}
 \label{fig:iess_pir_bomberos_ibarra}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_ibarra.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ibarra. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ibarra. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El total de empleados del Cuerpo de Bomberos de Ibarra, a marzo del 2022, es de 152, de los cuales el 21,05\% son mujeres y el 78,95\% son hombres. También, del total de trabajadores de esta entidad, el 41,45\% se entruentra entre los 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_bomberos_ibarra_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Ibarra, mientras que la figura \ref{fig:iess_bar_bomberos_ibarra} detalla la distribución por cargo de los mismos.
 
@@ -1475,10 +1544,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ibarra. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ibarra. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+El cargo \textit{Inspector de Brigada} no posee empleados del género femenino.
 
 \begin{figure}[H]
 \centering
@@ -1486,9 +1556,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Ibarra}
 \label{fig:iess_bar_bomberos_ibarra}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_ibarra.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Ibarra. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Ibarra. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+\textit{Bombero 1} es el puesto con mayor cantidad de empleados, teniendo 78 servidores en este puesto. Seguidamente se encuentra \textit{Bombero 2}, con 42 de los mismos. En cambio, los puestos con menos trabajadores de esta entidad son \textit{Bombero 4} e \textit{Inspector de Brigada} con 6 y 1 servidores respectivamente.
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Manta}
@@ -1510,7 +1582,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Manta. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Manta. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1521,9 +1593,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Manta}
 \label{fig:iess_pir_bomberos_manta}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_manta.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Manta. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Manta. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El total de servidores públicos pertenecientes al Cuerpo de Bomberos de Manta, a marzo del 2022, es de 164; de los cuales el 12,20\% son mujeres y el 87,80\% son hombres. También, del total de empleados de esta entidad el 31,71\% corresponde a personas entre los 40 y 50 años.\\
 
 En la tabla \ref{tab:iess_bomberos_manta_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Manta, mientras que la figura \ref{fig:iess_bar_bomberos_manta} detalla la distribución por cargo de los mismos.
 
@@ -1541,9 +1615,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Manta. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Manta. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+Los cargos \textit{Bombero 2} e \textit{Inspector de Brigada} carecen de personal del género femenino.
 
 
 \begin{figure}[H]
@@ -1552,9 +1628,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Manta}
 \label{fig:iess_bar_bomberos_manta}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_manta.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Manta. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Manta. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+\textit{Administrativo} es el cargo que acumula una cantidad de trabajadores superior al resto de puestos, con 98 servidores públicos. Seguidamente se encuentra \textit{Bombero 1}, con 41 de los mismos. Por el contrario, el cargo con menor cantidad de empleados es \textit{Bombero 2}, con un servidor en este puesto. 
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Milagro}
@@ -1576,7 +1654,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Milagro. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Milagro. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1587,9 +1665,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Milagro}
 \label{fig:iess_pir_bomberos_milagro}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_milagro.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Milagro. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Milagro. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A marzo del 2022, el total de empleados de la presente entidad es de 94, de donde el 20,21\% son mujeres y el 79,79\% son hombres. Más aún, del total del personal, el 36,17\% se encuentra entre los 40 y 50 años.\\
 
 En la tabla \ref{tab:iess_bomberos_milagro_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Milagro, mientras que la figura \ref{fig:iess_bar_bomberos_milagro} detalla la distribución por cargo de los mismos.
 
@@ -1607,9 +1687,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Milagro. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Milagro. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+Se observa que en el cargo \textit{Subinspector de Estación} no existen trabajadores del género femenino.
 
 
 \begin{figure}[H]
@@ -1618,9 +1700,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Milagro}
 \label{fig:iess_bar_bomberos_milagro}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_milagro.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Milagro. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Milagro. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El puesto que contempla una mayor cantidad de servidores públicos es \textit{Bombero 1} con 57 empleados, seguido de \textit{Administrativo} con 22 de los mismos. En cambio, los cargos con menos empleados son \textit{Jefe de Bomberos} e \textit{Inspector de Brigada} con 2 y 6 servidores respectivamente.
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Riobamba}
@@ -1642,7 +1726,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Riobamba. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Riobamba. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1653,9 +1737,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Riobamba}
 \label{fig:iess_pir_bomberos_riobamba}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_riobamba.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Riobamba. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Riobamba. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+El total del personal del Cuerpo de Bomberos de Riobamba, a marzo del 2022, es de 96 servidores públicos, de los cuales el 23,96\% son mujeres y el 76,04\% son hombres. Adicionalmente, del total de empleados de esta entidad, el 50\% tiene entre 30 y 40 años.\\
 
 En la tabla \ref{tab:iess_bomberos_riobamba_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Riobamba, mientras que la figura \ref{fig:iess_bar_bomberos_riobamba} detalla la distribución por cargo de los mismos.
 
@@ -1673,9 +1759,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Riobamba. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Riobamba. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+Los cargos \textit{Bombero 2} y \textit{Jefe de Bomberos} carecen de personal del género femenino.
 
 
 \begin{figure}[H]
@@ -1684,9 +1772,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Riobamba}
 \label{fig:iess_bar_bomberos_riobamba}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_riobamba.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Riobamba. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Riobamba. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+Los puestos que abarcan la mayoría del personal de esta entidad son \text{Administrativo} y \textit{Bombero 1} con 40 empleados cada uno, en tanto que \textit{Inspector de Brigada} y \textit{Jefe de Bomberos} son los puestos con menor cantidad de trabajadores, con 3 y 2 respectivamente.
 
 %----------------------------------------------------------------------------------------
 \subsubsection{Santo Domingo}
@@ -1708,7 +1798,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Santo Domingo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Santo Domingo. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
@@ -1719,9 +1809,11 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \caption{Distribución por edad y sexo del personal del Cuerpo de Bomberos de Santo Domingo}
 \label{fig:iess_pir_bomberos_sto_dom}
 \includegraphics[scale=0.8]{graficos/iess_pir_bomberos_sto_dom.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Santo Domingo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Santo Domingo. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+A marzo del 2022, el total d trabajadores del Cuerpo de Bomberos de Santo Domingo es de 146, de los cuales el 25,34\% son mujeres y el 74,66\% son hombres. Más aún, del total del personal, el 49,32\% tiene entre 20 y 30 años.
 
 En la tabla \ref{tab:iess_bomberos_sto_dom_cargo} se muestra la distribución por cargo y sexo de las y los servidores públicos del Cuerpo de Bomberos de Santo Domingo, mientras que la figura \ref{fig:iess_bar_bomberos_sto_dom} detalla la distribución por cargo de los mismos.
 
@@ -1739,10 +1831,11 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
  
 \end{tabular}
 }
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Santo Domingo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Santo Domingo. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+En los cargos \textit{Bombero 3, Bombero 4} e \textit{Inspector de Brigada} no existe personal del género femenino.
 
 \begin{figure}[H]
 \centering
@@ -1750,6 +1843,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption{Distribución por cargo del personal del Cuerpo de Bomberos de Santo Domingo}
 \label{fig:iess_bar_bomberos_sto_dom}
 \includegraphics[scale=0.8]{graficos/iess_bar_bomberos_sto_dom.png}
-\caption*{\scriptsize {\bf Fuente:} Gobierno Autónomo Descentralizado de Santo Domingo. \\
+\caption*{\scriptsize {\bf Fuente:} Municipio de Santo Domingo. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
+Los cargos que abarcan la mayor cantidad de empleados de esta entidad son \textit{Bombero 1} y \textit{Administrativo} con 44 y 42 servidores respectivamente, mientras que los cargos con menos empleados son \textit{Jefe de Bomberos} con 4 y \textit{Bombero 3} con 2 de los mismos.
