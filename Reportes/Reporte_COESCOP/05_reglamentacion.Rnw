@@ -6,7 +6,7 @@
 \section{Constitución de la República del Ecuador}
 \label{chp_constitucion}
 
-Los artículos 368, 369 y 371 de la Constitución de la República del Ecuador, norma jurídica suprema vigente del Ecuador, indican lo siguiente:
+Los artículos 368, 369 y 371 de la Constitución de la República del Ecuador, norma jurídica suprema vigente del país, indican lo siguiente:
 
 \begin{quote}
 
@@ -25,7 +25,7 @@ Los artículos 368, 369 y 371 de la Constitución de la República del Ecuador, 
 \section{Ley de Seguridad Social}
 \label{chp_seguridadsocial}
 
-De acuerdo al Art.8 de la Ley de Seguridad Social, Sobre la cual la Dirección Actuarial, de Investigación y Estadística basa su trabajo se establece que:
+De acuerdo al Art.8 de la Ley de Seguridad Social, sobre la cual la Dirección Actuarial, de Investigación y Estadística basa su trabajo se establece que:
 
 \begin{quote}
 
@@ -197,3 +197,24 @@ Mediante Registro Oficial N°107, publicado el 24 de diciembre de 2019, se publi
         & & Asistente & Asistente & 6 & Servidor Público de Apoyo 4 & 733\\\hline
     \end{tabular}
 \end{table}
+
+A través del Oficio Nro. SENAE-DNH-2020-0478-OF, expedido el 12 de agosto del 2020, el Servicio Nacional de Aduana del Ecuador acoge la escala remunerativa propuesta por el Ministerio del Trabajo, la cual se detalla a continuación:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+         \hline
+         \textbf{Nro.} & \textbf{Denominación del Puesto / Grado} & \textbf{Grupo Ocupacional} & \textbf{Grado Ocupacional} & \textbf{RMU}\\\hline
+         1 & Prefecto Comandante & Servidor Público 12 & 18 & 2.408,00\\\hline
+         2 & Prefecto Jefe & Servidor Público 11 & 17 & 2.358,00\\\hline
+         3 & Prefecto. & Servidor Público 9 & 15 & 2.034,00\\\hline
+         4 & Subprefecto & Servidor Público 8 & 14 & 1.760,00\\\hline
+         5 & Inspector & Servidor Público 7 & 13 & 1.676,00\\\hline
+         6 & Supervisor de aduana 1°. & Servidor Público 6 & 12 & 1.412,00\\\hline
+         7 & Supervisor de aduana 2°. & Servidor Público 5 & 11 & 1.212,00\\\hline
+         8 & Vigilante de aduana 1°. & Servidor Público 4 & 10 & 1.086,00\\\hline
+         9 & Vigilante de aduana 2°. & Servidor Público 3 & 9 & 986,00\\\hline
+         10 & Vigilante de aduana 3°. & Servidor Público 2 & 8 & 901,00\\\hline
+         11 & Vigilante de aduana 4°. & Servidor Público 1 & 7 & 817,00\\\hline
+    \end{tabular}
+\end{table}
+
