@@ -104,6 +104,22 @@ print( aux_xtable,
                          command = c(paste("\\hline \n"))))
 
 
+#Tabla SNAI de cargos y salarios-------------------------------------------------------------------------
+message( '\tTabla de servidores publicos del SNAI de cargos y salarios, en marzo 2022' )
+
+aux  <- tabla_snai_salario[order(tabla_snai_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_snai_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+
 #Tabla SNMLCF rangos de edad y sexo------------------------------------------------------
 message( '\tTabla de servidores publicos del SNMLCF por rango de edad y sexo, en marzo 2022' )
 
@@ -193,6 +209,21 @@ print( aux_xtable,
        sanitize.text.function = identity,
        add.to.row = list(pos = list(nrow(aux_xtable)-1),
                          command = c(paste("\\hline \n"))))
+
+#Tabla SNMLF de cargos y salarios-------------------------------------------------------------------------
+message( '\tTabla de servidores publicos del SNMLCF de cargos y salarios, en marzo 2022' )
+
+aux  <- tabla_snmlcf_salario[order(tabla_snmlcf_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_snmlcf_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
 
 #Tabla METROPOLITANOS rangos de edad y sexo------------------------------------------------------
 message( '\tTabla de servidores publicos del Cuerpo de Agentes de Control Municipal o Metropolitano por rango de edad y sexo, en marzo 2022' )
@@ -954,6 +985,120 @@ print( aux_xtable,
        add.to.row = list(pos = list(nrow(aux_xtable)-1),
                          command = c(paste("\\hline \n"))))
 
+#Tabla METROPOLITANOS de cargos y salarios-------------------------------------------------------------------------
+message( '\tTabla de servidores publicos de METROPOLITANOS de cargos y salarios, en marzo 2022' )
+
+aux  <- tabla_metropolitanos_salario[order(tabla_metropolitanos_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+#Tabla METROPOLITANOS de cargos y salarios por ciudad-------------------------------------------------------------------------
+
+##Quito-----------------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_quito_salario[order(tabla_metropolitanos_quito_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_quito_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+##Ambato-----------------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_ambato_salario[order(tabla_metropolitanos_ambato_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_ambato_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+##Cuenca-----------------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_cuenca_salario[order(tabla_metropolitanos_cuenca_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_cuenca_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+##Guayaquil-----------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_gye_salario[order(tabla_metropolitanos_gye_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_gye_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+##Loja-----------------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_loja_salario[order(tabla_metropolitanos_loja_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_loja_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+##Machala---------------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_machala_salario[order(tabla_metropolitanos_machala_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_machala_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+##Portoviejo--------------------------------------------------------------------------------------------
+
+aux  <- tabla_metropolitanos_prtvj_salario[order(tabla_metropolitanos_prtvj_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_metropolitanos_prtvj_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
 
 
 #Tabla CTE rangos de edad y sexo------------------------------------------------------
@@ -1048,6 +1193,21 @@ print( aux_xtable,
        sanitize.text.function = identity,
        add.to.row = list(pos = list(nrow(aux_xtable)-1),
                          command = c(paste("\\hline \n"))))
+
+#Tabla CTE de cargos y salarios-------------------------------------------------------------------------
+message( '\tTabla de servidores publicos del CTE de cargos y salarios, en marzo 2022' )
+
+aux  <- tabla_cte_salario[order(tabla_cte_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_cte_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
 
 
 #Tabla BOMBEROS rangos de edad y sexo------------------------------------------------------
@@ -2252,6 +2412,190 @@ print( aux_xtable,
        add.to.row = list(pos = list(nrow(aux_xtable)-1),
                          command = c(paste("\\hline \n"))))
 
+#Tabla BOMBEROS de cargos y salarios-------------------------------------------------------------------------
+message( '\tTabla de servidores publicos de BOMBEROS de cargos y salarios, en marzo 2022' )
+
+aux  <- tabla_bomberos_salario[order(tabla_bomberos_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+##Tabla BOMBEROS   de cargos y salarios por ciudad-------------------------------------------------------------------------
+
+###Quito-----------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_quito_salario[order(tabla_bomberos_quito_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_quito_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Ambato-----------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_ambato_salario[order(tabla_bomberos_ambato_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_ambato_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Guayaquil---------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_gye_salario[order(tabla_bomberos_gye_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_gye_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Ibarra---------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_ibarra_salario[order(tabla_bomberos_ibarra_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_ibarra_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Machala----------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_machala_salario[order(tabla_bomberos_machala_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_machala_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Manta-----------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_manta_salario[order(tabla_bomberos_manta_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_manta_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Milagro---------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_milagro_salario[order(tabla_bomberos_milagro_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_milagro_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Portoviejo-------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_prtvj_salario[order(tabla_bomberos_prtvj_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_prtvj_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Riobamba-------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_riobamba_salario[order(tabla_bomberos_riobamba_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_riobamba_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Santo Domingo------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_sto_dom_salario[order(tabla_bomberos_sto_dom_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_sto_dom_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Loja------------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_loja_salario[order(tabla_bomberos_loja_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_loja_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
+
+###Cuenca----------------------------------------------------------------------------------------------
+
+aux  <- tabla_bomberos_cuenca_salario[order(tabla_bomberos_cuenca_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_bomberos_cuenca_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
 
 
 #Tabla ADUANEROS rangos de edad y sexo------------------------------------------------------
@@ -2343,6 +2687,21 @@ print( aux_xtable,
        sanitize.text.function = identity,
        add.to.row = list(pos = list(nrow(aux_xtable)-1),
                          command = c(paste("\\hline \n"))))
+
+#Tabla ADUANEROS de cargos y salarios-------------------------------------------------------------------------
+message( '\tTabla de servidores publicos de ADUANEROS de cargos y salarios, en marzo 2022' )
+
+aux  <- tabla_aduaneros_salario[order(tabla_aduaneros_salario$media),]
+aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'iess_aduaneros_cargo_salario', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow(aux),
+       sanitize.text.function = identity)
 
 
 #Limpiando memoria RAM------------------------------------------------------------------------------

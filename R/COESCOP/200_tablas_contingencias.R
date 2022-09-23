@@ -53,6 +53,22 @@ tabla_snai_cargo <- snai %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_snai_salario <- snai %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 #-----------------------------------------SNMLCF----------------------------------------------------
 
 tabla_snmlcf_edad_sexo <- snmlcf %>%
@@ -87,6 +103,22 @@ tabla_snmlcf_cargo <- snmlcf %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_snmlcf_salario <- snmlcf %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 #---------------------------------------METROPOLITANOS---------------------------------------------
 
 tabla_metropolitanos_edad_sexo <- metropolitanos %>%
@@ -120,6 +152,22 @@ tabla_metropolitanos_cargo <- metropolitanos %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_metropolitanos_salario <- metropolitanos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 
 tabla_metropolitanos_ciudad <-  metropolitanos %>%
@@ -174,6 +222,23 @@ tabla_metropolitanos_quito_cargo <- metropolitanos %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_metropolitanos_quito_salario <- metropolitanos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( ciudad =='Quito')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 tabla_metropolitanos_gye_edad_sexo <- metropolitanos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -208,6 +273,23 @@ tabla_metropolitanos_gye_cargo <- metropolitanos %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_metropolitanos_gye_salario <- metropolitanos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( ciudad =='Guayaquil')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
                                                   
 tabla_metropolitanos_cuenca_edad_sexo <- metropolitanos %>%
@@ -244,6 +326,23 @@ tabla_metropolitanos_cuenca_cargo <- metropolitanos%>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_metropolitanos_cuenca_salario <- metropolitanos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( ciudad =='Cuenca')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 tabla_metropolitanos_loja_edad_sexo <- metropolitanos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -278,6 +377,23 @@ tabla_metropolitanos_loja_cargo <- metropolitanos%>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_metropolitanos_loja_salario <- metropolitanos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( ciudad =='Loja')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 
 tabla_metropolitanos_prtvj_edad_sexo <- metropolitanos %>%
@@ -314,6 +430,23 @@ tabla_metropolitanos_prtvj_cargo <- metropolitanos%>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_metropolitanos_prtvj_salario <- metropolitanos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( ciudad =='Portoviejo')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 tabla_metropolitanos_machala_edad_sexo <- metropolitanos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -348,6 +481,23 @@ tabla_metropolitanos_machala_cargo <- metropolitanos %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_metropolitanos_machala_salario <- metropolitanos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( ciudad =='Machala')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 
 tabla_metropolitanos_ambato_edad_sexo <- metropolitanos %>%
@@ -384,6 +534,23 @@ tabla_metropolitanos_ambato_cargo <- metropolitanos %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_metropolitanos_ambato_salario <- metropolitanos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( ciudad =='Ambato')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 #-------------------------------------------CTE--------------------------------------------------
 
@@ -419,6 +586,22 @@ tabla_cte_cargo <- transito %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_cte_salario <- transito %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 #------------------------------------------BOMBEROS------------------------------------------------
 
@@ -453,6 +636,22 @@ tabla_bomberos_cargo <- bomberos %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_bomberos_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 tabla_bomberos_ciudad <-  bomberos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -504,6 +703,23 @@ tabla_bomberos_ambato_cargo <- bomberos %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_bomberos_ambato_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Ambato')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 tabla_bomberos_quito_edad_sexo <- bomberos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -538,6 +754,23 @@ tabla_bomberos_quito_cargo <- bomberos %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_bomberos_quito_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Quito')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 
 tabla_bomberos_riobamba_edad_sexo <- bomberos %>%
@@ -574,6 +807,23 @@ tabla_bomberos_riobamba_cargo <- bomberos %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_bomberos_riobamba_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Riobamba')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 tabla_bomberos_cuenca_edad_sexo <- bomberos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -608,6 +858,23 @@ tabla_bomberos_cuenca_cargo <- bomberos %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_bomberos_cuenca_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Cuenca')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 
 tabla_bomberos_machala_edad_sexo <- bomberos %>%
@@ -644,6 +911,23 @@ tabla_bomberos_machala_cargo <- bomberos %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_bomberos_machala_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Machala')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 tabla_bomberos_manta_edad_sexo <- bomberos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -678,6 +962,23 @@ tabla_bomberos_manta_cargo <- bomberos %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_bomberos_manta_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Manta')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 
 tabla_bomberos_gye_edad_sexo <- bomberos %>%
@@ -714,6 +1015,23 @@ tabla_bomberos_gye_cargo <- bomberos %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_bomberos_gye_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Guayaquil')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 tabla_bomberos_sto_dom_edad_sexo <- bomberos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -748,6 +1066,23 @@ tabla_bomberos_sto_dom_cargo <- bomberos %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_bomberos_sto_dom_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Santo Domingo')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 
 tabla_bomberos_ibarra_edad_sexo <- bomberos %>%
@@ -784,6 +1119,23 @@ tabla_bomberos_ibarra_cargo <- bomberos %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_bomberos_ibarra_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Ibarra')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 tabla_bomberos_loja_edad_sexo <- bomberos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -818,6 +1170,23 @@ tabla_bomberos_loja_cargo <- bomberos %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_bomberos_loja_salario <- bomberos %>%
+  filter( canton =='Loja')%>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 
 tabla_bomberos_milagro_edad_sexo <- bomberos %>%
@@ -854,6 +1223,23 @@ tabla_bomberos_milagro_cargo <- bomberos %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
 
+tabla_bomberos_milagro_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Milagro')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
+
 
 tabla_bomberos_prtvj_edad_sexo <- bomberos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -888,6 +1274,23 @@ tabla_bomberos_prtvj_cargo <- bomberos %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_bomberos_prtvj_salario <- bomberos %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  filter( canton =='Portoviejo')%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 
 #------------------------------------------ADUANEROS-----------------------------------------------
@@ -924,6 +1327,22 @@ tabla_aduaneros_cargo <- aduaneros %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, sexo,
                 frecuencia)
+
+tabla_aduaneros_salario <- aduaneros %>%
+  filter( !is.na(fecha_nacimiento)) %>%
+  filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
+  filter( !is.na(sueldo), sueldo > 0 ) %>%
+  mutate(edad = round(age_calc(fecha_nacimiento,
+                               enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                               units = "years",
+                               precise = TRUE ) )) %>%
+  filter( edad > 17, edad < 70)%>%
+  group_by(cargo_coescop) %>%
+  mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
+  ungroup() %>%
+  distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
+  dplyr::select(cargo_coescop, media)
 
 
 #Guardando en un Rdata todas las tablas-------------------------------------------------------------
@@ -980,7 +1399,32 @@ tablas <- c('tabla_snmlcf_edad_sexo',
             'tabla_bomberos_quito_cargo',
             'tabla_bomberos_sto_dom_cargo',
             'tabla_bomberos_loja_cargo',
-            'tabla_bomberos_cuenca_cargo')
+            'tabla_bomberos_cuenca_cargo',
+            'tabla_snmlcf_salario', 
+            'tabla_snai_salario', 
+            'tabla_metropolitanos_salario', 
+            'tabla_cte_salario', 
+            'tabla_bomberos_salario', 
+            'tabla_aduaneros_salario',
+            'tabla_bomberos_riobamba_salario',
+            'tabla_bomberos_ambato_salario',
+            'tabla_bomberos_gye_salario',
+            'tabla_bomberos_ibarra_salario',
+            'tabla_bomberos_machala_salario',
+            'tabla_bomberos_manta_salario',
+            'tabla_bomberos_milagro_salario',
+            'tabla_bomberos_prtvj_salario',
+            'tabla_bomberos_quito_salario',
+            'tabla_bomberos_sto_dom_salario',
+            'tabla_bomberos_loja_salario',
+            'tabla_bomberos_cuenca_salario',
+            'tabla_metropolitanos_quito_salario',
+            'tabla_metropolitanos_gye_salario',
+            'tabla_metropolitanos_cuenca_salario',
+            'tabla_metropolitanos_prtvj_salario',
+            'tabla_metropolitanos_machala_salario',
+            'tabla_metropolitanos_ambato_salario',
+            'tabla_metropolitanos_loja_salario')
             
 
 save(list = tablas , file = paste0( parametros$RData, 'IESS_tablas_contingencia.RData' ))
