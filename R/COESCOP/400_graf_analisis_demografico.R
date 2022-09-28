@@ -29,9 +29,9 @@ max_edad<-100
 min_edad<-15
 
 salto_y<-10
-salto_x<-0.01
-brks_y <- seq(-0.04,0.04,salto_x)
-lbls_y <- paste0(as.character(c(seq(0.04, 0, -salto_x)*100, seq(salto_x, 0.04, salto_x)*100)), "%")
+salto_x<-0.02
+brks_y <- seq(-0.1,0.1,salto_x)
+lbls_y <- paste0(as.character(c(seq(0.1, 0, -salto_x)*100, seq(salto_x, 0.1, salto_x)*100)), "%")
 brks_x <- seq(15,100,salto_y)
 lbls_x <- paste0(as.character(brks_x))
 
@@ -1307,8 +1307,8 @@ iess_bar_bomberos_gye <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
             position = position_dodge(0.9),  
             angle=0, 
             size=3.0) + 
-  labs(x = "Cargo COESCOP", y = "Número de Servidores")+
-  theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+  labs(x = "Cargo COESCOP", y = "Número de Servidores")#+
+  #theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
 
 
 ggsave( plot = iess_bar_bomberos_gye, 
@@ -1477,8 +1477,8 @@ iess_bar_bomberos_prtvj <- ggplot(aux, aes(x = cargo_coescop, y = N)) +
             position = position_dodge(0.9),  
             angle=0, 
             size=3.0) + 
-  labs(x = "Cargo COESCOP", y = "Número de Servidores")
-  #theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
+  labs(x = "Cargo COESCOP", y = "Número de Servidores")+
+  theme(axis.text.x = element_text(angle = 20, vjust =1, hjust=0.9))
 
 
 ggsave( plot = iess_bar_bomberos_prtvj, 

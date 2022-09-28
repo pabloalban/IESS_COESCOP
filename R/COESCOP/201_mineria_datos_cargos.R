@@ -20,8 +20,6 @@ bomberos$grado <- tolower(bomberos$grado) #transformar a minúsculas
 
 bomberos[grep("abogad", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
 bomberos[grep("asesor", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-
-
 bomberos[grep("administrativo", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
 bomberos[grep("secretaria", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
 bomberos[grep("conductor", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
@@ -61,17 +59,9 @@ bomberos[grep("mantenimiento", bomberos$cargo),]$cargo_coescop <- ('Administrati
 bomberos[grep("personal", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
 
 #Técnicos operativos
-bomberos[grep(c("cabo"), bomberos$cargo),]$cargo_coescop <- ('Bombero 1') #Bombero 1
-bomberos[grep(c("suboficial"), bomberos$cargo),]$cargo_coescop <- ('Bombero 2') #Bombero 2
-bomberos[grep(c("sargento"), bomberos$cargo),]$cargo_coescop <- ('Bombero 2') #Bombero 2
-bomberos[grep(c("sub oficial"), bomberos$cargo),]$cargo_coescop <- ('Bombero 2') #Bombero 2
-bomberos[grep(c("teniente coronel"), bomberos$cargo),]$cargo_coescop <- ('Inspector de Brigada') #inspector de brigada
-bomberos[grep(c("subteniente"), bomberos$cargo),]$cargo_coescop <- ('Bombero 3') #Bombero 3
-bomberos[grep(c("sub teniente"), bomberos$cargo),]$cargo_coescop <- ('Bombero 3') #Bombero 3
-bomberos[grep(c("teniente"), bomberos$cargo),]$cargo_coescop <- ('Bombero 4') #Bombero 4
-bomberos[grep(c("capitan"), bomberos$cargo),]$cargo_coescop <- ('Subinspector de Estación') #sub inspector de estacion
-bomberos[grep(c("mayor"), bomberos$cargo),]$cargo_coescop <- ('Subinspector de Estación') #sub inspector de estacion
-bomberos[grep(c("coronel"), bomberos$cargo),]$cargo_coescop <- ('Inspector de Brigada') #inspector de brigada
+bomberos[grep(c("jefe cuerpo"), bomberos$cargo),]$cargo_coescop <- ('Jefe de Bomberos') #inspector de brigada
+bomberos[grep(c("segundo"), bomberos$cargo),]$cargo_coescop <- ('Subjefe de Bomberos') #inspector de brigada
+
 
 bomberos[grep(c("bombero 1"), bomberos$cargo),]$cargo_coescop <- ('Bombero 1') #Bombero 1
 bomberos[grep(c("bombero 2"), bomberos$cargo),]$cargo_coescop <- ('Bombero 2') #Bombero 2
@@ -82,13 +72,6 @@ bomberos[grep(c("bomberil 1"), bomberos$cargo),]$cargo_coescop <- ('Bombero 1') 
 bomberos[grep(c("bomberil 2"), bomberos$cargo),]$cargo_coescop <- ('Bombero 2') #Bombero 1
 bomberos[grep(c("bomberil 3"), bomberos$cargo),]$cargo_coescop <- ('Bombero 3') #Bombero 1
 bomberos[grep(c("bomberil 4"), bomberos$cargo),]$cargo_coescop <- ('Bombero 4') #Bombero 1
-
-
-bomberos[grep(c("bomberil 1"), bomberos$grado),]$cargo_coescop <- ('Bombero 1') #Bombero 1
-bomberos[grep(c("bomberil 2"), bomberos$grado),]$cargo_coescop <- ('Bombero 2') #Bombero 1
-bomberos[grep(c("bomberil 3"), bomberos$grado),]$cargo_coescop <- ('Bombero 3') #Bombero 1
-bomberos[grep(c("bomberil 4"), bomberos$grado),]$cargo_coescop <- ('Bombero 4') #Bombero 1
-
 
 #Directivos
 bomberos[grep(c("subjefe"), bomberos$cargo),]$cargo_coescop <- ('Subjefe de Bomberos')
@@ -105,8 +88,21 @@ bomberos <- bomberos %>%
   mutate(cargo_coescop = ifelse( grepl("insp",cargo) & is.na(cargo_coescop), "Inspector de Brigada", cargo_coescop) )
 
 bomberos <- bomberos %>%
+  mutate(cargo_coescop = ifelse( grepl("cabo",cargo) & is.na(cargo_coescop), "Bombero 1", cargo_coescop) ) %>%
+  mutate(cargo_coescop = ifelse( grepl("suboficial",cargo) & is.na(cargo_coescop), "Bombero 2", cargo_coescop) ) %>%
+  mutate(cargo_coescop = ifelse( grepl("sargento",cargo) & is.na(cargo_coescop), "Bombero 2", cargo_coescop) ) %>%
+  mutate(cargo_coescop = ifelse( grepl("sub oficial",cargo) & is.na(cargo_coescop), "Bombero 2", cargo_coescop) ) %>%
+  mutate(cargo_coescop = ifelse( grepl("teniente coronel",cargo) & is.na(cargo_coescop), "Inspector de Brigada", cargo_coescop) ) %>%
+  mutate(cargo_coescop = ifelse( grepl("subteniente",cargo) & is.na(cargo_coescop), "Bombero 3", cargo_coescop) ) %>%
+  mutate(cargo_coescop = ifelse( grepl("sub teniente",cargo) & is.na(cargo_coescop), "Bombero 3", cargo_coescop) ) %>%
+  mutate(cargo_coescop = ifelse( grepl("teniente",cargo) & is.na(cargo_coescop), "Bombero 4", cargo_coescop) ) %>%
+  mutate(cargo_coescop = ifelse( grepl("capitan",cargo) & is.na(cargo_coescop), "Subinspector de Estación", cargo_coescop) ) %>%
+  mutate(cargo_coescop = ifelse( grepl("mayor",cargo) & is.na(cargo_coescop), "Subinspector de Estación", cargo_coescop) ) %>%
+  mutate(cargo_coescop = ifelse( grepl("coronel",cargo) & is.na(cargo_coescop), "Inspector de Brigada", cargo_coescop) )
+  
+bomberos <- bomberos %>%
   mutate(cargo_coescop = ifelse( grepl("bombero",cargo) & is.na(cargo_coescop), "Bombero 1", cargo_coescop) )
-
+  
 bomberos <- bomberos %>%
   mutate( cargo_coescop = ifelse(is.na( cargo_coescop ), "Administrativo", cargo_coescop ))
 

@@ -197,7 +197,7 @@ En el Registro Oficial N°11 - Suplemento, publicado el 5 de agosto de 2019, se 
 \end{table}
 
 
-Mediante Registro Oficial N°107, publicado el 24 de diciembre de 2019, se publica la resolución MDT-2019-190, la cual expide la escala de remuneraciones mensuales unificadas del Servicio Nacional de Medicina Legal y Ciencias Forences, según la siguiente tabla: 
+Mediante Registro Oficial N°107, publicado el 24 de diciembre de 2019, se publica la resolución MDT-2019-190, la cual expide la escala de remuneraciones mensuales unificadas del Servicio Nacional de Medicina Legal y Ciencias Forenses, según la siguiente tabla: 
 \begin{table}[H]
     \centering
     \begin{tabular}{|p{1.8cm}|p{2.2cm}|p{2cm}|c|c|p{2.3cm}|p{2.6cm}|}
