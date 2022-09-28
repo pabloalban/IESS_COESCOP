@@ -248,7 +248,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La tabla \ref{tab:iess_cte_cargo_salario} muestra los salarios promedio de cada cargo de la Comisión de Tránsito del Ecuador, se visibiliza que a excepción de \textit{Inspector}, los salarios promedio respetan la jerarquía propuesta en el COESCOP.
+La tabla \ref{tab:iess_cte_cargo_salario} muestra los salarios promedio de cada cargo de la Comisión de Tránsito del Ecuador ordenados de menor a mayor, se visibiliza que a excepción de \textit{Inspector}, los salarios promedio respetan la jerarquía propuesta en el COESCOP.
 
 \begin{table}[H]
 \centering
@@ -334,7 +334,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La tabla \ref{tab:iess_snai_cargo_salario} contiene los salarios promedio del Cuerpo de Vigilancia y Seguridad Penitenciaria, donde se observa que se respeta el grado reflejado en el COESCOP para esta entidad. Más aún, los salarios promedios son similares a los dispuestos en la resolución MDT-2019-185.
+La tabla \ref{tab:iess_snai_cargo_salario} contiene los salarios promedio del Cuerpo de Vigilancia y Seguridad Penitenciaria, donde se observa que se respeta el grado reflejado en el COESCOP para esta entidad. Más aún, los salarios promedio son similares a los dispuestos en la resolución MDT-2019-185.
 
 \begin{table}[H]
 \centering
@@ -420,7 +420,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La tabla \ref{tab:iess_metropolitanos_cargo_salario} muestra los salarios promedios de cada cargo del Cuerpo de Agentes de Control Municipal o Metropolitano, en ella se explicita que los rangos expuestos en el COESCOP son respetados.
+La tabla \ref{tab:iess_metropolitanos_cargo_salario} muestra los salarios promedio de cada cargo del Cuerpo de Agentes de Control Municipal o Metropolitano ordenados de menor a mayor, en ella se explicita que los rangos expuestos en el COESCOP son respetados.
 
 \begin{table}[H]
 \centering
@@ -497,7 +497,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-En la figura \ref{fig:iess_bar_metropolitanos_quito} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Metropolitano de Quito, dejando ver que el cargo que acapara la mayoría de servidores públicos pertenecientes a esta institución es \textit{Agente de Control Metropolitano 1} con 973 servidores, seguido por \textit{Administrativo} con 273 de los mismos. Por otro lado, los cargos con menor cantidad de miembros de esta entidad son \textit{Subjefe de Control Metropolitano} y \textit{Jefe de Control Metropolitano} con 15 y 2 servidores respectivamente.
+La figura \ref{fig:iess_bar_metropolitanos_quito} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Metropolitano de Quito, dejando ver que el cargo que acapara la mayoría de servidores públicos pertenecientes a esta institución es \textit{Agente de Control Metropolitano 1} con 973 servidores, seguido por \textit{Administrativo} con 273 de los mismos. Por otro lado, los cargos con menor cantidad de miembros de esta entidad son \textit{Subjefe de Control Metropolitano} y \textit{Jefe de Control Metropolitano} con 15 y 2 servidores respectivamente.
 
 \begin{figure}[H]
 \centering
@@ -528,6 +528,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Quito. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_metropolitanos_quito_cargo_salario} detalla los salarios promedio de cada uno de los cargos del Cuerpo de Agentes de Control Metropolitano de Quito ordenados de menor a mayor, en ella se evidencia que el rango explicitado en el COESCOP perdura en la mencionada entidad.
 
 \begin{table}[H]
 \centering
@@ -611,6 +613,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+La tabla \ref{tab:iess_metropolitanos_ambato_cargo_salario} contiene los salarios promedio de los cargos del Cuerpo de Agentes de Control Municipal de Ambato ordenados de menor a mayor, la información disponible\footnote{en la página del Municipio de Ambato} indica que el único cargo de esta institución es \textit{Agente de Control Municipal 1}.
+
 \begin{table}[H]
 \centering
 \captionsetup{justification=centering}
@@ -692,6 +696,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Cuenca. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_metropolitanos_cuenca_cargo_salario} detalla los salarios promedio de los cargos del Cuerpo de Agentes de Control Metropolitano de Cuenca ordenados de menor a mayor, en ella se observa que los rangos establecidos en el COESCOP se mantienen.
 
 \begin{table}[H]
 \centering
@@ -775,6 +781,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+La tabla \ref{tab:iess_metropolitanos_gye_cargo_salario} contiene los salarios promedio del Cuerpo de Agentes de Control Metropolitano de Guayaquil ordenados de menor a mayor, en la misma se visibiliza que el grado jerárquico impuesto por el COESCOP se mantiene.
+
 \begin{table}[H]
 \centering
 \captionsetup{justification=centering}
@@ -856,6 +864,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Loja. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_metropolitanos_loja_cargo_salario} detalla los salaios promedio de los cargos del Cuerpo de Agentes de Control Municipal de Loja ordenados de menor a mayor. Según la información obtenida\footnote{de la página del Municipio de Loja} el único cargo existente es \textit{Agente de Control Municipal 1}.
 
 \begin{table}[H]
 \centering
@@ -939,6 +949,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+La tabla \ref{tab:iess_metropolitanos_machala_cargo_salario} muestra los salarios promedio de los cargos del Cuerpo de Agentes de Control Municipal de Machala ordenados de menor a mayor. Según la información disponible\footnote{en la página del Municipio de Machala} el único cargo existente es \texti{Agente de Control Municipal 1}.
+
 \begin{table}[H]
 \centering
 \captionsetup{justification=centering}
@@ -1021,6 +1033,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+La tabla \ref{tab:iess_metropolitanos_prtvj_cargo_salario} corresponde a los salarios promedio de cada uno de los cargos del Cuerpo de Agentes de Control Municipal de Portoviejo ordenados de menor a mayor. Según la información disponible\footnote{en la página del Municipio de Portoviejo} el único cargo existente es \textit{Agente de Control Municipal 1}.
+
 \begin{table}[H]
 \centering
 \captionsetup{justification=centering}
@@ -1074,7 +1088,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-la figura \ref{fig:iess_bar_bomberos} detalla la distribución por cargo de las y los servidores públicos de los Cuerpos de Bomberos, mientras que En la tabla \ref{tab:iess_bomberos_cargo_sexo} se muestra la distribución por cargo y sexo de los mismos. En ambas se visualiza que el cargo que acumula a la mayoría de servidores públicos de esta institución es \textit{Administrativo} con un total de 1.452 servidores, seguido por \textit{Bombero 1} con 1.427 servidores. Por otra parte, los cargos que concentran la menor cantidad de trabajadores son \textit{Subinspector de Estación} y \textit{Subjefe de Bomberos}, con 13 y 1 servidores respectivamente. Además, en todos los cargos y en el total de hombres y mujeres se visibiliza una mayoría poblacional masculina.
+la figura \ref{fig:iess_bar_bomberos} detalla la distribución por cargo de las y los servidores públicos de los Cuerpos de Bomberos, mientras que En la tabla \ref{tab:iess_bomberos_cargo_sexo} se muestra la distribución por cargo y sexo de los mismos. En ambas se visualiza que el cargo que acumula a la mayoría de servidores públicos de esta institución es \textit{Bombero 1} con un total de 1.567 servidores, seguido por \textit{Administrativo} con 1.363 servidores. Por otra parte, los cargos que concentran la menor cantidad de trabajadores son \textit{Subinspector de Estación} y \textit{Subjefe de Bomberos}, con 12 y 2 servidores respectivamente. Además, en todos los cargos y en el total de hombres y mujeres se visibiliza una mayoría poblacional masculina.
 
 \begin{figure}[H]
 \centering
@@ -1085,6 +1099,7 @@ la figura \ref{fig:iess_bar_bomberos} detalla la distribución por cargo de las 
 \caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{figure}
+
 
 \begin{table}[H]
 \centering
@@ -1103,6 +1118,9 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de cada ciudad. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+
+La tabla \ref{tab:iess_bomberos_cargo_salario} contempla el salario promedio de cada cargo de los Cuerpos de Bomberos ordenados de menor a mayor. En ella se observa que los salarios promedio de \textit{Bombero 3} y \textit{4} son superiores a los de \textit{Subinspector de Estación} e \textit{Inspector de Brigada}. También, el salario promedio de \textit{Subjefe de Bomberos} es superior al de \textit{Jefe de Bomberos}, lo cual es inconsistente con la jerarquía expuesta en el COESCOP.
 
 \begin{table}[H]
 \centering
@@ -1178,7 +1196,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_quito} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos del Distrito Metropolitano de Quito, mientras que en la tabla \ref{tab:iess_bomberos_quito_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se visualiza que \textit{Bombero 1} es el puesto que abarca una cantidad mayoritaria de servidores públicos de esta entidad, con un total de 661 servidores. Seguidamente se encuentra \textit{Administrativo} con 531 de los mismos. Po otro lado, \textit{Inspector de Brigada} y \textit{Subjefe de Bomberos} son los cargos con menor cantidad de trabajadores, con 1 cada uno. Adicionalmente, los cargos \textit{Inspector de Brigada} y \textit{Subjefe de Bomberos} no presentan trabajadores del género femenino.
+La figura \ref{fig:iess_bar_bomberos_quito} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos del Distrito Metropolitano de Quito, mientras que en la tabla \ref{tab:iess_bomberos_quito_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se visualiza que \textit{Bombero 1} es el puesto que abarca una cantidad mayoritaria de servidores públicos de esta entidad, con un total de 767 servidores. Seguidamente se encuentra \textit{Administrativo} con 429 de los mismos. Por otro lado, \textit{Jefe de Bomberos} y \textit{Subjefe de Bomberos} son los cargos con menor cantidad de trabajadores con 11 y 1, respectivamente. Adicionalmente, los cargos \textit{Jefe de Bomberos} y \textit{Subjefe de Bomberos} no presentan trabajadores del género femenino.
 
 \begin{figure}[H]
 \centering
@@ -1190,6 +1208,7 @@ La figura \ref{fig:iess_bar_bomberos_quito} detalla la distribución por cargo d
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
+\vspace{-0.5cm}
 \begin{table}[H]
 \centering
 \captionsetup{justification=centering}
@@ -1207,6 +1226,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Quito. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_bomberos_quito_cargo_salario} detalla los salarios promedio de los cargos del Cuerpo de Bomberos de Quito ordenados de menor a mayor, en la cual se evidencia que el rango propuesto en el COESCOP es respetado a excepción de \textit{Subjefe de Bomberos}, que debería estar por debajo de \textit{Jefe de Bomberos}.
 
 \begin{table}[H]
 \centering
@@ -1230,7 +1251,7 @@ Cargo COESCOP & Salario Promedio\\
 \subsubsection{Cuerpo de Bomberos de Ambato}
 \label{chp_demog:bomberos_ambato}
 
-En la figura \ref{fig:iess_pir_bomberos_ambato} y la tabla \ref{tab:iess_bomberos_ambato_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. El total de miembros del Cuerpo de Bomberos de Ambato, a marzo del 2022, es de 168 servidores; donde el 14,29\% corresponde a trabajadores del género femenino y el 85,71\% al género masculino. Además, del total de los empleados de la presente entidad, el 56,55\% tiene entre 30 y 40 años.
+La figura \ref{fig:iess_pir_bomberos_ambato} y tabla \ref{tab:iess_bomberos_ambato_edad_sexo} muestran la distribución por edad y sexo de las y los trabajadores de esta entidad. El total de miembros del Cuerpo de Bomberos de Ambato, a marzo del 2022, es de 168 servidores; donde el 14,29\% corresponde a trabajadores del género femenino y el 85,71\% al género masculino. Además, del total de los empleados, el 56,55\% tiene entre 30 y 40 años.
 
 \begin{figure}[H]
 \centering
@@ -1260,7 +1281,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_ambato} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Ambato, mientras que en la tabla \ref{tab:iess_bomberos_ambato_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que el cargo que abarca una mayor candad de trabajadores de esta institución es \textit{Bombero 1} con 109 servidores, seguido de \textit{Administrativo}, con 28. En cambio, los cargos con la menor cantidad de trabajadores son \textit{Inspector de Brigada} y \textit{Bombero 4}, con 1 y 4 servidores respectivamente. Adicionalmente, \textit{Bombero 2, Bombero 4} e \textit{Inspector de Brigada} no cuentan con población femenina.
+La figura \ref{fig:iess_bar_bomberos_ambato} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Ambato, mientras que en la tabla \ref{tab:iess_bomberos_ambato_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que el cargo que abarca una mayor cantidad de trabajadores es \textit{Bombero 1} con 109 servidores, seguido de \textit{Administrativo}, con 33. En cambio, los cargos con la menor cantidad de empleados son \textit{Jefe} y \textit{Subjefe de Bomberos}, con 1 servidor cada uno. Adicionalmente, \textit{Bombero 2, 4, Jefe} y \textit{Subjefe de Bomberos} no cuentan con población femenina.
 
 \begin{figure}[H]
 \centering
@@ -1272,6 +1293,7 @@ La figura \ref{fig:iess_bar_bomberos_ambato} detalla la distribución por cargo 
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
+\vspace{-0.5cm}
 \begin{table}[H]
 \centering
 \captionsetup{justification=centering}
@@ -1289,6 +1311,9 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Ambato. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+\vspace{-0.5cm}
+La tabla \ref{tab:iess_bomberos_ambato_cargo_salario} contiene los salarios promedio de los cargos del Cuerpo de Bomberos de Ambato ordenados de menor a mayor. Se observa que la jerarquía impuesta en el COESCOP se mantiene.
 
 \begin{table}[H]
 \centering
@@ -1341,7 +1366,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_cuenca} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Cuenca, mientras que en la tabla \ref{tab:iess_bomberos_cuenca_cargo} se muestra la distribución por cargo y sexo de los mismos. Ellas reflejan que el cargo con mayor cantidad de trabajadores de la presente entidad es \textit{Administrativo} con 112 servidores, seguido de \textit{Bombero 1} con 49. Por otro lado, \textit{Inspector de Brigada} y \textit{Subinspector de Estación} son los puestos que acumulan la menor cantidad de empleados, con 2 cada uno. Más aún, en los cargos \textit{Inspector de Brigada} y \textit{Subinspector de Estación} no se encuentra población del género femenino.
+La figura \ref{fig:iess_bar_bomberos_cuenca} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Cuenca, mientras que en la tabla \ref{tab:iess_bomberos_cuenca_cargo} se muestra la distribución por cargo y sexo de los mismos. Ellas reflejan que el cargo con mayor cantidad de trabajadores de la presente entidad es \textit{Administrativo} con 119 servidores, seguido de \textit{Bombero 1} con 68. Por otro lado, \textit{Inspector de Brigada} y \textit{Subinspector de Estación} son los puestos que acumulan la menor cantidad de empleados, con 2 cada uno. Más aún, en los cargos \textit{Inspector de Brigada} y \textit{Jefe de Bomberos} no se encuentra población del género femenino.
 
 \begin{figure}[H]
 \centering
@@ -1370,6 +1395,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Cuenca. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_bomberos_cuenca_cargo_salario} hace referencia al salario promedio de cada uno de los cargos del Cuerpo de Bomberos de Cuenca ordenados de menor a mayor. Se evidencia que el rango explicitado en el COESCOP es respetado.
 
 \begin{table}[H]
 \centering
@@ -1422,7 +1449,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_gye} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Guayaquil, mientras que en la tabla \ref{tab:iess_bomberos_gye_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se observa que \textit{Administrativo} es el cargo que alberga a la mayor cantidad de servidores públicos, con 406 de ellos. Seguidamente se encuentra \textit{Bombero 1}, con 155 de los mismos. También, \textit{Bombero 2, Jefe de Bomberos} y \textit{Subinspecor de Estación} son los puestos con menos empleados de la presente entidad, el primero con 2 servidores y los dos últimos con 3 cada uno. Adicionalmente, en los cargos \textit{Bombero 1, Bombero 2} y \textit{Subinspector de Estación} no existen empleados del género femenino. 
+La figura \ref{fig:iess_bar_bomberos_gye} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Guayaquil, mientras que en la tabla \ref{tab:iess_bomberos_gye_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se observa que \textit{Administrativo} es el cargo que alberga a la mayor cantidad de servidores públicos, con 409 de ellos. Seguidamente se encuentra \textit{Bombero 1}, con 176 de los mismos. También, \textit{Bombero 2} es el puesto con menos empleados de la presente entidad, con 4 servidores. Adicionalmente, en los cargos \textit{Bombero 1} y \textit{Bombero 2} no existen empleados del género femenino. 
 
 \begin{figure}[H]
 \centering
@@ -1451,6 +1478,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Guayaquil. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_bomberos_gye_cargo_salario} detalla los salarios promedio de los cargos del Cuerpo de Bomberos de Guayaquil ordenados de menor a mayor, donde se observa que se cumple con la jerarquía estalecida en el COESCOP.
 
 \begin{table}[H]
 \centering
@@ -1503,7 +1532,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_loja} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Loja, mientras que en la tabla \ref{tab:iess_bomberos_loja_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que el cargo que contempla la mayor cantidad de empleados de esta entidad es \textit{Bombero 2} con 32 servidores, seguido de \textit{Bombero 1} con 30. En cambio, los puestos con menor cantidad de trabajadores son \textit{Subinspector de Estación, Bombero 3} y \textit{Jefe de Bomberos}, el primero con 1 empleado y los dos últimos con 2 empleados cada uno. Más aún, Los cargos \textit{Bombero 3} y \textit{Bombero 4} no presentan población del género femenino.
+La figura \ref{fig:iess_bar_bomberos_loja} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Loja, mientras que en la tabla \ref{tab:iess_bomberos_loja_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que el cargo que contempla la mayor cantidad de empleados de esta entidad es \textit{Administrativo} con 33 servidores, seguido de \textit{Bombero 2} con 32. En cambio, los puestos con menor cantidad de trabajadores son \textit{Inspector de Brigada} y \textit{Jefe de Bomberos}, con 1 empleado cada uno. Más aún, Los cargos \textit{Bombero 3, 4, Inspector y Subinspector de Brigada} y \textit{Jefe de Bomberos} no presentan población del género femenino.
 
 \begin{figure}[H]
 \centering
@@ -1532,6 +1561,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Loja. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_bomberos_loja_cargo_salario} contiene el salario promedio de cada cargo del Cuerpo de Bomberos de Loja ordenados de menor a mayor, donde observa que se mantiene el grado descrito en el COESCOP.
 
 \begin{table}[H]
 \centering
@@ -1584,7 +1615,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_machala} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Machala, mientras que en la tabla \ref{tab:iess_bomberos_machala_cargo} se muestra la distribución por cargo y sexo de los mismos. Éstas muestran que el cargo con mayor número de empleados de esta entidad es \textit{Bombero 1} con 74 servidores, seguido de \textit{Administrativo} con 26. Por su parte, \textit{Inspector de Brigada} y \textit{Jefe de Bomberos} son los cargos con menor cantidad de empleados, con 12 y 1 respectivamente. Además, el cargo \textit{Jefe de Bomberos} carece de personal femenino.
+La figura \ref{fig:iess_bar_bomberos_machala} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Machala, mientras que en la tabla \ref{tab:iess_bomberos_machala_cargo} se muestra la distribución por cargo y sexo de los mismos. Éstas muestran que el cargo con mayor número de empleados de esta entidad es \textit{Bombero 1} con 74 servidores, seguido de \textit{Administrativo} con 27. Por su parte, \textit{Inspector de Brigada} es el cargo con menor cantidad de empleados, con 12.
 
 \begin{figure}[H]
 \centering
@@ -1613,6 +1644,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Machala. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_bomberos_machala_cargo_salario} refleja los salarios promedio de los cargos del Cuerpo de Bomberos de Machala, en ella se visualiza que los grados explicitados en el COESCOP se mantienen.
 
 \begin{table}[H]
 \centering
@@ -1665,7 +1698,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_prtvj} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Portoviejo, mientras que en la tabla \ref{tab:iess_bomberos_prtvj_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se evidencia que \textit{Administrativo} es el puesto con mayor cantidad de empleados con 94 de ellos, al tanto que \textit{Jefe de Bomberos} es el puesto con menor cantidad de trabajadores, acumulando 8 de los mismos.
+La figura \ref{fig:iess_bar_bomberos_prtvj} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Portoviejo, mientras que en la tabla \ref{tab:iess_bomberos_prtvj_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se evidencia que \textit{Bombero 1} es el puesto con mayor cantidad de empleados con 80 de ellos, al tanto que \textit{Jefe de Bomberos} e \textit{Inspector de Brigada} son los puestos con menor cantidad de trabajadores, acumulando 1 cada uno.
 
 \begin{figure}[H]
 \centering
@@ -1694,6 +1727,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Portoviejo. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_bomberos_prtvj_cargo_salario} contiene el salario promedio de cada cargo del Cuerpo de Bomberos de Portoviejo ordenados de menor a mayor; en ella se visualiza que no se siguen los grados descritos en el COESCOP.
 
 \begin{table}[H]
 \centering
@@ -1776,6 +1811,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 {\bf Elaborado:} DAIE.}
 \end{table}
 
+La tabla \ref{tab:iess_bomberos_ibarra_cargo_salario} refleja los salarios promedio por cargo del Cuerpo de Bomberos de Ibarra ordenados de menor a mayor, ésta muestra que el rango jerárquico detallado en el COESCOP es respetado.
+
 \begin{table}[H]
 \centering
 \captionsetup{justification=centering}
@@ -1827,7 +1864,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_manta} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Manta, mientras que en la tabla \ref{tab:iess_bomberos_manta_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que \textit{Administrativo} es el cargo que acumula una cantidad de trabajadores superior al resto de puestos, con 98 servidores públicos. Seguidamente se encuentra \textit{Bombero 1}, con 41 de los mismos. Por el contrario, el cargo con menor cantidad de empleados es \textit{Bombero 2}, con un servidor en este puesto. Además, los cargos \textit{Bombero 2} e \textit{Inspector de Brigada} carecen de personal del género femenino.
+La figura \ref{fig:iess_bar_bomberos_manta} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Manta, mientras que en la tabla \ref{tab:iess_bomberos_manta_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que \textit{Administrativo} es el cargo que acumula una cantidad de trabajadores superior al resto de puestos, con 101 servidores públicos. Seguidamente se encuentra \textit{Bombero 1}, con 42 de los mismos. Por el contrario, el cargo con menor cantidad de empleados es \textit{Jefe de Bomberos}, con 10 servidores en este puesto. Además, el cargo \textit{Inspector de Brigada} carece de personal del género femenino.
 
 \begin{figure}[H]
 \centering
@@ -1856,6 +1893,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Manta. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_bomberos_manta_cargo_salario} muestra el salario promedio de cada uno de los cargos del Cuerpo de Bomberos de Manta ordenados de menor a mayor. Se visibiliza que se mantiene la jerarquía expuesta en el COESCOP.
 
 \begin{table}[H]
 \centering
@@ -1908,7 +1947,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_milagro} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Milagro, mientras que en la tabla \ref{tab:iess_bomberos_milagro_cargo} se muestra la distribución por cargo y sexo de los mismos. En éstas se visualiza que el puesto que contempla una mayor cantidad de servidores públicos es \textit{Bombero 1} con 57 empleados, seguido de \textit{Administrativo} con 22 de los mismos. En cambio, los cargos con menos empleados son \textit{Jefe de Bomberos} e \textit{Inspector de Brigada} con 2 y 6 servidores respectivamente. También, se observa que en el cargo \textit{Subinspector de Estación} no existen trabajadores del género femenino.
+La figura \ref{fig:iess_bar_bomberos_milagro} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Milagro, mientras que en la tabla \ref{tab:iess_bomberos_milagro_cargo} se muestra la distribución por cargo y sexo de los mismos. En éstas se visualiza que el puesto que contempla una mayor cantidad de servidores públicos es \textit{Bombero 1} con 64 empleados, seguido de \textit{Administrativo} con 24 de los mismos. En cambio, los cargos con menos empleados son \textit{Jefe de Bomberos} e \textit{Inspector de Brigada} con 1 y 5 servidores respectivamente. También, se observa que en el cargo \textit{Jefe de Bomberos} no existen trabajadores del género femenino.
 
 \begin{figure}[H]
 \centering
@@ -1937,6 +1976,8 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 \caption*{\scriptsize {\bf Fuente:} Municipio de Milagro. \\
 {\bf Elaborado:} DAIE.}
 \end{table}
+
+La tabla \ref{tab:iess_bomberos_milagro_cargo_salario} detalla los salarios promedio de los cargos del Cuerpo de Bombros de Milagro ordenados de menor a mayor, donde se muestra que el rango expuesto en el COESCOP es respetado.
 
 \begin{table}[H]
 \centering

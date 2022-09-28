@@ -16,9 +16,62 @@ bomberos["cargo_coescop"] <- NA
 bomberos$cargo <- tolower(bomberos$cargo) #transformar a minúsculas
 bomberos$grado <- tolower(bomberos$grado) #transformar a minúsculas
 
+#Administrativos
+
+bomberos[grep("abogad", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("asesor", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+
+
+bomberos[grep("administrativo", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("secretaria", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("conductor", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("contador", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("talento", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("prevencion", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("analista", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("financier", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("asistente", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("tecnico", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("juridico", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("comunicador", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("conductor", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("auxiliar", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("limpieza", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("maquinista", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("radio", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("conserje", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("tesorer", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("servicio", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("social", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("compras", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("académico ", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("guar ", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("guuar ", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("presupuesto", bomberos$grado),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("comunicacion", bomberos$grado),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("public", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("chof", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("mecanico", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("recauda", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("contratacion", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("central", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("desarrollo", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("imagen", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("mantenimiento", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos[grep("personal", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+
 #Técnicos operativos
 bomberos[grep(c("cabo"), bomberos$cargo),]$cargo_coescop <- ('Bombero 1') #Bombero 1
-bomberos[grep(c("sargento"), bomberos$cargo),]$cargo_coescop <- ('Bombero 1') #Bombero 1
+bomberos[grep(c("suboficial"), bomberos$cargo),]$cargo_coescop <- ('Bombero 2') #Bombero 2
+bomberos[grep(c("sargento"), bomberos$cargo),]$cargo_coescop <- ('Bombero 2') #Bombero 2
+bomberos[grep(c("sub oficial"), bomberos$cargo),]$cargo_coescop <- ('Bombero 2') #Bombero 2
+bomberos[grep(c("teniente coronel"), bomberos$cargo),]$cargo_coescop <- ('Inspector de Brigada') #inspector de brigada
+bomberos[grep(c("subteniente"), bomberos$cargo),]$cargo_coescop <- ('Bombero 3') #Bombero 3
+bomberos[grep(c("sub teniente"), bomberos$cargo),]$cargo_coescop <- ('Bombero 3') #Bombero 3
+bomberos[grep(c("teniente"), bomberos$cargo),]$cargo_coescop <- ('Bombero 4') #Bombero 4
+bomberos[grep(c("capitan"), bomberos$cargo),]$cargo_coescop <- ('Subinspector de Estación') #sub inspector de estacion
+bomberos[grep(c("mayor"), bomberos$cargo),]$cargo_coescop <- ('Subinspector de Estación') #sub inspector de estacion
+bomberos[grep(c("coronel"), bomberos$cargo),]$cargo_coescop <- ('Inspector de Brigada') #inspector de brigada
 
 bomberos[grep(c("bombero 1"), bomberos$cargo),]$cargo_coescop <- ('Bombero 1') #Bombero 1
 bomberos[grep(c("bombero 2"), bomberos$cargo),]$cargo_coescop <- ('Bombero 2') #Bombero 2
@@ -36,63 +89,23 @@ bomberos[grep(c("bomberil 2"), bomberos$grado),]$cargo_coescop <- ('Bombero 2') 
 bomberos[grep(c("bomberil 3"), bomberos$grado),]$cargo_coescop <- ('Bombero 3') #Bombero 1
 bomberos[grep(c("bomberil 4"), bomberos$grado),]$cargo_coescop <- ('Bombero 4') #Bombero 1
 
-bomberos <- bomberos %>%
-  mutate(cargo_coescop = ifelse( grepl("bomberil 1",cargo) & is.na(cargo_coescop), "Bombero 1", cargo_coescop) ) %>%
-  mutate(cargo_coescop = ifelse( grepl("bomberil 2",cargo) & is.na(cargo_coescop), "Bombero 2", cargo_coescop) ) %>%
-  mutate(cargo_coescop = ifelse( grepl("bomberil 3",cargo) & is.na(cargo_coescop), "Bombero 3", cargo_coescop) ) %>%
-  mutate(cargo_coescop = ifelse( grepl("bomberil 4",cargo) & is.na(cargo_coescop), "Bombero 4", cargo_coescop) ) 
-
-bomberos <- bomberos %>%
-  mutate(cargo_coescop = ifelse( grepl("bombero",cargo) & (sueldo < 900) & is.na(cargo_coescop), "Bombero 1", cargo_coescop) )  %>%
-  mutate(cargo_coescop = ifelse( grepl("bombero",cargo) & (sueldo < 1110) & is.na(cargo_coescop) , "Bombero 2", cargo_coescop) )  %>%
-  mutate(cargo_coescop = ifelse( grepl("bombero",cargo) & (sueldo < 1212) & is.na(cargo_coescop) , "Bombero 3", cargo_coescop) )  %>%
-  mutate(cargo_coescop = ifelse( grepl("bombero",cargo) & (sueldo < 1400) & is.na(cargo_coescop) , "Bombero 4", cargo_coescop) ) 
-
 
 #Directivos
-bomberos[grep(c("jefe"), bomberos$cargo),]$cargo_coescop <- ('Jefe de Bomberos')
-bomberos[grep(c("coronel"), bomberos$cargo),]$cargo_coescop <- ('Jefe de Bomberos')
-bomberos[grep(c("director"), bomberos$cargo),]$cargo_coescop <- ('Jefe de Bomberos')
-
 bomberos[grep(c("subjefe"), bomberos$cargo),]$cargo_coescop <- ('Subjefe de Bomberos')
-bomberos[grep(c("inspector"), bomberos$cargo),]$cargo_coescop <- ('Inspector de Brigada')
-bomberos[grep(c("ins"), bomberos$cargo),]$cargo_coescop <- ('Inspector de Brigada')
-bomberos[grep(c("supervisor"), bomberos$cargo),]$cargo_coescop <- ('Subinspector de Estación')
+bomberos[grep(c("sub jefe"), bomberos$cargo),]$cargo_coescop <- ('Subjefe de Bomberos')
+bomberos[grep(c("sub inspector"), bomberos$cargo),]$cargo_coescop <- ('Subinspector de Estación')
 
+bomberos <- bomberos %>%
+  mutate(cargo_coescop = ifelse( grepl("jefe",cargo) & is.na(cargo_coescop), "Jefe de Bomberos", cargo_coescop) )
 
-#Administrativos
-bomberos[grep("administrativo", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("secretaria", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("conductor", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("contador", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("digitador", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("tesorero", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("analista", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("financiero", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("asistente", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("tecnico", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("chofer", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("comunicador", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("conductor", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("auxiliar", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("limpieza", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("maquinista", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("radio", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("conserje", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("tesorer", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("social", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("social", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("compras", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("académico ", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("guar ", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("guuar ", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("administrativo", bomberos$grado),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("administrativos", bomberos$grado),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("n/a", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("chof", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("mecanico", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("recauda", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
-bomberos[grep("conso", bomberos$cargo),]$cargo_coescop <- ('Administrativo')
+bomberos <- bomberos %>%
+  mutate(cargo_coescop = ifelse( grepl("inspector",cargo) & is.na(cargo_coescop), "Inspector de Brigada", cargo_coescop) )
+
+bomberos <- bomberos %>%
+  mutate(cargo_coescop = ifelse( grepl("insp",cargo) & is.na(cargo_coescop), "Inspector de Brigada", cargo_coescop) )
+
+bomberos <- bomberos %>%
+  mutate(cargo_coescop = ifelse( grepl("bombero",cargo) & is.na(cargo_coescop), "Bombero 1", cargo_coescop) )
 
 bomberos <- bomberos %>%
   mutate( cargo_coescop = ifelse(is.na( cargo_coescop ), "Administrativo", cargo_coescop ))
