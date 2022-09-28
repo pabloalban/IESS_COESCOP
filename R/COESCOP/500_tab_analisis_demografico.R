@@ -1199,6 +1199,8 @@ message( '\tTabla de servidores publicos del CTE de cargos y salarios, en marzo 
 
 aux  <- tabla_cte_salario[order(tabla_cte_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_cte_cargo_salario', '.tex' ),
        type = 'latex',
@@ -1844,9 +1846,6 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
-
-aux_xtable <- tildes_a_latex(aux_xtable)
-
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_cargo_sexo', '.tex' ),
        type = 'latex',
@@ -1891,6 +1890,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_quito_cargo', '.tex' ),
        type = 'latex',
@@ -1933,6 +1933,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_ambato_cargo', '.tex' ),
        type = 'latex',
@@ -1975,6 +1976,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_gye_cargo', '.tex' ),
        type = 'latex',
@@ -2017,6 +2019,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_ibarra_cargo', '.tex' ),
        type = 'latex',
@@ -2059,6 +2062,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_machala_cargo', '.tex' ),
        type = 'latex',
@@ -2101,6 +2105,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_manta_cargo', '.tex' ),
        type = 'latex',
@@ -2143,6 +2148,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_milagro_cargo', '.tex' ),
        type = 'latex',
@@ -2311,6 +2317,8 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_loja_cargo', '.tex' ),
        type = 'latex',
@@ -2353,6 +2361,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_cuenca_cargo', '.tex' ),
        type = 'latex',
@@ -2399,6 +2408,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
 
 aux_xtable <- tildes_a_latex(aux_xtable)
+aux_xtable <- tildes_a_latex(aux_xtable)
 
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_ciudad', '.tex' ),
@@ -2417,6 +2427,7 @@ message( '\tTabla de servidores publicos de BOMBEROS de cargos y salarios, en ma
 
 aux  <- tabla_bomberos_salario[order(tabla_bomberos_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2433,6 +2444,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_quito_salario[order(tabla_bomberos_quito_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_quito_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2447,6 +2459,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_ambato_salario[order(tabla_bomberos_ambato_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_ambato_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2461,6 +2474,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_gye_salario[order(tabla_bomberos_gye_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_gye_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2475,6 +2489,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_ibarra_salario[order(tabla_bomberos_ibarra_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_ibarra_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2489,6 +2504,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_machala_salario[order(tabla_bomberos_machala_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_machala_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2503,6 +2519,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_manta_salario[order(tabla_bomberos_manta_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_manta_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2517,6 +2534,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_milagro_salario[order(tabla_bomberos_milagro_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_milagro_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2531,6 +2549,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_prtvj_salario[order(tabla_bomberos_prtvj_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_prtvj_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2545,6 +2564,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_riobamba_salario[order(tabla_bomberos_riobamba_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_riobamba_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2559,6 +2579,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_sto_dom_salario[order(tabla_bomberos_sto_dom_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_sto_dom_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2573,6 +2594,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_loja_salario[order(tabla_bomberos_loja_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_loja_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2587,6 +2609,7 @@ print( aux_xtable,
 
 aux  <- tabla_bomberos_cuenca_salario[order(tabla_bomberos_cuenca_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_cuenca_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2633,6 +2656,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_aduaneros_edad_sexo', '.tex' ),
        type = 'latex',
@@ -2676,6 +2700,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_aduaneros_cargo_sexo', '.tex' ),
        type = 'latex',
@@ -2693,6 +2718,7 @@ message( '\tTabla de servidores publicos de ADUANEROS de cargos y salarios, en m
 
 aux  <- tabla_aduaneros_salario[order(tabla_aduaneros_salario$media),]
 aux_xtable <- xtable( aux, digits = c(2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_aduaneros_cargo_salario', '.tex' ),
        type = 'latex',
@@ -2708,3 +2734,4 @@ print( aux_xtable,
 message( paste( rep('-', 100 ), collapse = '' ) )
 rm( list = ls()[ !( ls() %in% c( 'parametros' ) ) ] )
 gc()
+
