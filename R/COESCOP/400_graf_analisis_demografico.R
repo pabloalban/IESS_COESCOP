@@ -18,7 +18,7 @@ load( file = paste0( parametros$RData, 'IESS_tablas_contingencia.RData' ) )
 message( '\tGraficando pirámide poblacional SNAI' )
 aux<-( tabla_snai_edad_sexo %>% 
        select( sexo, edad, n:= frecuencia) ) %>%
-       group_by( sexo ) %>%
+       #group_by( sexo ) %>%
        mutate( N = sum( n, na.rm = TRUE) ) %>%
        mutate( n = n/N) %>%
        ungroup() %>%
@@ -94,7 +94,7 @@ ggsave( plot = iess_bar_snai,
 message( '\tGraficando pirámide poblacional SNMLCF' )
 aux<-( tabla_snmlcf_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-         group_by( sexo ) %>%
+         #group_by( sexo ) %>%
          mutate( N = sum( n, na.rm = TRUE) ) %>%
          mutate( n = n/N) %>%
          ungroup() %>%
@@ -161,7 +161,7 @@ ggsave( plot = iess_bar_snmlcf,
 message( '\tGraficando pirámide poblacional metropolitanos' )
 aux<-( tabla_metropolitanos_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-         group_by( sexo ) %>%
+         #group_by( sexo ) %>%
          mutate( N = sum( n, na.rm = TRUE) ) %>%
          mutate( n = n/N) %>%
          ungroup() %>%
@@ -195,7 +195,7 @@ ggsave( plot = iess_pir_metropolitanos,
 message( '\tGraficando pirámide poblacional metropolitanos Quito' )
 aux<-( tabla_metropolitanos_quito_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -227,7 +227,7 @@ ggsave( plot = iess_pir_metropolitanos_quito,
 message( '\tGraficando pirámide poblacional metropolitanos Ambato' )
 aux<-( tabla_metropolitanos_ambato_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -259,7 +259,7 @@ ggsave( plot = iess_pir_metropolitanos_ambato,
 message( '\tGraficando pirámide poblacional metropolitanos Cuenca' )
 aux<-( tabla_metropolitanos_cuenca_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -291,7 +291,7 @@ ggsave( plot = iess_pir_metropolitanos_cuenca,
 message( '\tGraficando pirámide poblacional metropolitanos Guayaquil' )
 aux<-( tabla_metropolitanos_gye_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -323,7 +323,7 @@ ggsave( plot = iess_pir_metropolitanos_gye,
 message( '\tGraficando pirámide poblacional metropolitanos Loja' )
 aux<-( tabla_metropolitanos_loja_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -355,7 +355,7 @@ ggsave( plot = iess_pir_metropolitanos_loja,
 message( '\tGraficando pirámide poblacional metropolitanos Machala' )
 aux<-( tabla_metropolitanos_machala_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -387,7 +387,7 @@ ggsave( plot = iess_pir_metropolitanos_machala,
 message( '\tGraficando pirámide poblacional metropolitanos Portoviejo' )
 aux<-( tabla_metropolitanos_prtvj_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -695,7 +695,7 @@ ggsave( plot = iess_bar_metropolitanos_prtvj,
 message( '\tGraficando pirámide poblacional CTE' )
 aux<-( tabla_cte_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-         group_by( sexo ) %>%
+         #group_by( sexo ) %>%
          mutate( N = sum( n, na.rm = TRUE) ) %>%
          mutate( n = n/N) %>%
          ungroup() %>%
@@ -763,7 +763,7 @@ ggsave( plot = iess_bar_cte,
 message( '\tGraficando pirámide poblacional BOMBEROS' )
 aux<-( tabla_bomberos_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-         group_by( sexo ) %>%
+         #group_by( sexo ) %>%
          mutate( N = sum( n, na.rm = TRUE) ) %>%
          mutate( n = n/N) %>%
          ungroup() %>%
@@ -797,7 +797,7 @@ ggsave( plot = iess_pir_bomberos,
 message( '\tGraficando pirámide poblacional BOMBEROS de Quito' )
 aux<-( tabla_bomberos_quito_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -829,7 +829,7 @@ ggsave( plot = iess_pir_bomberos_quito,
 message( '\tGraficando pirámide poblacional BOMBEROS de Ambato' )
 aux<-( tabla_bomberos_ambato_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -861,7 +861,7 @@ ggsave( plot = iess_pir_bomberos_ambato,
 message( '\tGraficando pirámide poblacional BOMBEROS de Guayaquil' )
 aux<-( tabla_bomberos_gye_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -893,7 +893,7 @@ ggsave( plot = iess_pir_bomberos_gye,
 message( '\tGraficando pirámide poblacional BOMBEROS de Ibarra' )
 aux<-( tabla_bomberos_ibarra_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -925,7 +925,7 @@ ggsave( plot = iess_pir_bomberos_ibarra,
 message( '\tGraficando pirámide poblacional BOMBEROS de Machala' )
 aux<-( tabla_bomberos_machala_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -957,7 +957,7 @@ ggsave( plot = iess_pir_bomberos_machala,
 message( '\tGraficando pirámide poblacional BOMBEROS de Manta' )
 aux<-( tabla_bomberos_manta_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -989,7 +989,7 @@ ggsave( plot = iess_pir_bomberos_manta,
 message( '\tGraficando pirámide poblacional BOMBEROS de Milagro' )
 aux<-( tabla_bomberos_milagro_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -1021,7 +1021,7 @@ ggsave( plot = iess_pir_bomberos_milagro,
 message( '\tGraficando pirámide poblacional BOMBEROS de Portoviejo' )
 aux<-( tabla_bomberos_prtvj_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -1053,7 +1053,7 @@ ggsave( plot = iess_pir_bomberos_prtvj,
 message( '\tGraficando pirámide poblacional BOMBEROS de Riobamba' )
 aux<-( tabla_bomberos_riobamba_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -1085,7 +1085,7 @@ ggsave( plot = iess_pir_bomberos_riobamba,
 message( '\tGraficando pirámide poblacional BOMBEROS de Santo Domingo' )
 aux<-( tabla_bomberos_sto_dom_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -1117,7 +1117,7 @@ ggsave( plot = iess_pir_bomberos_sto_dom,
 message( '\tGraficando pirámide poblacional BOMBEROS de Loja' )
 aux<-( tabla_bomberos_loja_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -1149,7 +1149,7 @@ ggsave( plot = iess_pir_bomberos_loja,
 message( '\tGraficando pirámide poblacional BOMBEROS de Cuenca' )
 aux<-( tabla_bomberos_cuenca_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-  group_by( sexo ) %>%
+  #group_by( sexo ) %>%
   mutate( N = sum( n, na.rm = TRUE) ) %>%
   mutate( n = n/N) %>%
   ungroup() %>%
@@ -1626,7 +1626,7 @@ ggsave( plot = iess_bar_bomberos_cuenca,
 message( '\tGraficando pirámide poblacional aduaneros' )
 aux<-( tabla_aduaneros_edad_sexo %>% 
          select( sexo, edad, n:= frecuencia) ) %>%
-         group_by( sexo ) %>%
+         #group_by( sexo ) %>%
          mutate( N = sum( n, na.rm = TRUE) ) %>%
          mutate( n = n/N) %>%
          ungroup() %>%

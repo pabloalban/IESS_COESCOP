@@ -3,18 +3,18 @@ message(paste(rep("-", 100), collapse = ""))
 message("\tCargando servidores COESCOP")
 
 # Carga de bases------------------------------------------------------------------------------------
-load(paste0(parametros$RData, "COESCOP_bomberos.RData")) #bomberos
-load(paste0(parametros$RData, "COESCOP_cte.RData")) #cte
-load(paste0(parametros$RData, "COESCOP_snai.RData")) #snai
-load(paste0(parametros$RData, "COESCOP_snmlcf.RData")) #snmlcf
-load(paste0(parametros$RData, "COESCOP_metropolitanos.RData")) #metropolitanos
-load(paste0(parametros$RData, "COESCOP_aduaneros.RData")) #aduaneros
+load(paste0(parametros$RData, "COESCOP_bomberos.RData")) #bomberos 3936
+load(paste0(parametros$RData, "COESCOP_cte.RData")) #cte 5108
+load(paste0(parametros$RData, "COESCOP_snai.RData")) #snai 2979
+load(paste0(parametros$RData, "COESCOP_snmlcf.RData")) #snmlcf 189 
+load(paste0(parametros$RData, "COESCOP_metropolitanos.RData")) #metropolitanos 6789
+load(paste0(parametros$RData, "COESCOP_aduaneros.RData")) #aduaneros 1670
 
-
-#-------------------------------------BOMBEROS------------------------------------------------------
+#Bomberos-------------------------------------------------------------------------------------------
 bomberos["cargo_coescop"] <- NA
 bomberos$cargo <- tolower(bomberos$cargo) #transformar a minúsculas
 bomberos$grado <- tolower(bomberos$grado) #transformar a minúsculas
+bomberos$cargo_coescop <- as.character( bomberos$cargo_coescop )
 
 #Administrativos
 
@@ -116,7 +116,7 @@ save( bomberos,
       file = paste0( parametros$RData, 'COESCOP_bomberos_cargos.RData' ) )
 
 
-#-------------------------------------------CTE-----------------------------------------------------
+#CTE------------------------------------------------------------------------------------------------
 
 transito["cargo_coescop"] <- NA
 transito$cargo <- tolower(transito$cargo) #transformar a minúsculas
@@ -143,7 +143,7 @@ transito <- transito %>%
 save( transito,
       file = paste0( parametros$RData, 'COESCOP_cte_cargos.RData' ) )
 
-#-------------------------------------------SNAI----------------------------------------------------
+#SNAI-----------------------------------------------------------------------------------------------
 
 snai["cargo_coescop"] <- NA
 snai$cargo <- tolower(snai$cargo) #transformar a minúsculas
@@ -163,10 +163,11 @@ save( snai,
       file = paste0( parametros$RData, 'COESCOP_snai_cargos.RData' ) )
 
 
-#-------------------------------------------SNMLCF----------------------------------------------------
+#SNMLCF---------------------------------------------------------------------------------------------
 
 snmlcf["cargo_coescop"] <- NA
 snmlcf$cargo <- tolower(snmlcf$cargo) #transformar a minúsculas
+snmlcf$cargo_coescop <- as.character( snmlcf$cargo_coescop )
 
 snmlcf[grep(c("perito"), snmlcf$cargo),]$cargo_coescop <- ('Analista 2') #Analista 2
 snmlcf[grep(c("medico legal 1"), snmlcf$cargo),]$cargo_coescop <- ('Analista 1') #Analista 1
@@ -188,10 +189,12 @@ snmlcf <- snmlcf %>%
 save( snmlcf,
       file = paste0( parametros$RData, 'COESCOP_snmlcf_cargos.RData' ) )
 
-#----------------------------------------METROPOLITANOS------------------------------------------------
+#-Metropolitanos------------------------------------------------------------------------------------
 
 metropolitanos["cargo_coescop"] <- NA
 metropolitanos$cargo <- tolower(metropolitanos$cargo) #transformar a minúsculas
+metropolitanos$cargo_coescop <- as.character(metropolitanos$cargo_coescop)
+
 
 metropolitanos[grep(c("agente de control metropolitano 1"), metropolitanos$cargo),]$cargo_coescop <- ('Agente de Control Metropolitano 1') #Agente de Control Metropolitano 1
 metropolitanos[grep(c("agente de control metropolitano 2"), metropolitanos$cargo),]$cargo_coescop <- ('Agente de Control Metropolitano 2') #Agente de Control Metropolitano 2
@@ -210,6 +213,7 @@ metropolitanos[grep(c("inspector 1"), metropolitanos$cargo),]$cargo_coescop <- (
 metropolitanos[grep(c("inspector 2"), metropolitanos$cargo),]$cargo_coescop <- ('Subjefe de Control Metropolitano') #Subjefe de Control Metropolitano
 metropolitanos[grep(c("inspector 3"), metropolitanos$cargo),]$cargo_coescop <- ('Jefe de Control Metropolitano') #jefe de Control Metropolitano
 
+metropolitanos[grep(c("agente transito 1"), metropolitanos$cargo),]$cargo_coescop <- ('Agente de Control Metropolitano 1') #Agente de Control Metropolitano 1
 
 metropolitanos <- metropolitanos %>%
   mutate(cargo_coescop = ifelse( grepl("agente de control municipal",cargo) & is.na( cargo_coescop ), "Agente de Control Municipal 1", cargo_coescop) )
@@ -224,7 +228,7 @@ metropolitanos <- metropolitanos %>%
 save( metropolitanos,
       file = paste0( parametros$RData, 'COESCOP_metropolitanos_cargos.RData' ) )
 
-#-------------------------------------------ADUANEROS------------------------------------------------
+#Adueneros------------------------------------------------------------------------------------------
 
 aduaneros["cargo_coescop"] <- NA
 aduaneros$cargo <- tolower(aduaneros$cargo) #transformar a minúsculas

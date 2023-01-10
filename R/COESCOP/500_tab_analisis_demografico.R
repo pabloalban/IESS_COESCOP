@@ -1846,6 +1846,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+aux_xtable <- tildes_a_latex( aux_xtable )
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_cargo_sexo', '.tex' ),
        type = 'latex',
@@ -2191,6 +2192,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+aux_xtable <- tildes_a_latex( aux_xtable )
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_prtvj_cargo', '.tex' ),
        type = 'latex',
@@ -2233,6 +2235,7 @@ aux <- aux %>% mutate(T_ben=M_ben+F_ben,
                       T_dist=M_dist+F_dist)
 
 aux_xtable <- xtable( aux, digits = c( 0, 0, 0, 2, 0 , 2, 0, 2) )
+aux_xtable <- tildes_a_latex(aux_xtable)
 print( aux_xtable,
        file = paste0( parametros$resultado_tablas, 'iess_bomberos_riobamba_cargo', '.tex' ),
        type = 'latex',
