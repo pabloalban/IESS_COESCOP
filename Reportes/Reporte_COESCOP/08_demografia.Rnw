@@ -190,7 +190,7 @@ Cargo COESCOP & Salario Promedio\\
 \label{chp_demog:cte}
 
 %---------------------------------------------------------------------------------------------------
-Para el presente estudio se considera el número de servidores públicos de la Comisión de Tránsito del Ecuador (CTE) a marzo del 2022, que es de 1.527 servidores. En la figura \ref{fig:iess_pir_cte} y tabla \ref{tab:iess_cte_edad_sexo} se muestra la distribución por edad y sexo de las y los servidores públicos de la mencionada entidad. En ellas se visualiza que el 10,41\% del personal son mujeres y el 89,59\% son hombres. Además, el 47,09\% de la población total de empleados de esta entidad tiene entre 30 y 40 años.
+Para el presente estudio se considera el número de servidores públicos de la Comisión de Tránsito del Ecuador (CTE) a marzo del 2022, que es de 5.107 servidores. En la figura \ref{fig:iess_pir_cte} y tabla \ref{tab:iess_cte_edad_sexo} se muestra la distribución por edad y sexo de las y los servidores públicos de la mencionada entidad. En ellas se visualiza que el 10,41\% del personal son mujeres y el 89,59\% son hombres. Además, el 47,09\% de la población total de empleados de esta entidad tiene entre 30 y 40 años.
 
 \begin{figure}[H]
 \centering
@@ -372,9 +372,9 @@ Cargo COESCOP & Salario Promedio\\
 \label{chp_demog:metropolitanos}
 
 %---------------------------------------------------------------------------------------------------
-Para el presente estudio se considera el número de servidores públicos del Cuerpo de Agentes de Control Municipal o Metropolitano a marzo del 2022, que es de 5.580 servidores. Adicionalmente, para la realización de este análisis se tomaron en cuenta las ciudades: Quito, Ambato, Cuenca, Guayaquil, Loja, Machala y Portoviejo. 
+Para el presente estudio se considera el número de servidores públicos del Cuerpo de Agentes de Control Municipal o Metropolitano a marzo del 2022, que es de 6.804 servidores. Adicionalmente, para la realización de este análisis se tomaron en cuenta las ciudades: Quito, Ambato, Cuenca, Guayaquil, Loja, Machala y Portoviejo. 
 
-En la figura \ref{fig:iess_pir_metropolitanos} y tabla \ref{tab:iess_metropolitanos_edad_sexo} se muestra la distribución por edad y sexo de las y los servidores públicos de la mencionada entidad. En ellas se evidencia que el 28,01\% del total del personal de esta institución son mujeres y el 71,99\% son hombres. Más aún, el 34,96\% de los mismos se encuentran entre los 30 y 40 años.
+En la figura \ref{fig:iess_pir_metropolitanos} y tabla \ref{tab:iess_metropolitanos_edad_sexo} se muestra la distribución por edad y sexo de las y los servidores públicos de la mencionada entidad. En ellas se evidencia que el 28,16\% del total del personal de esta institución son mujeres y el 71,84\% son hombres. Más aún, el 34,96\% de los mismos se encuentran entre los 30 y 40 años.
 
 
 \begin{table}[H]
@@ -405,7 +405,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-La figura \ref{fig:iess_bar_metropolitanos} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal o Metropolitano, y refleja que \textit{Administrativo} es el cargo con mayor cantidad de empleados de esta institución, con 3.346 de ellos; a continuación se encuentra \textit{Agente de Control Metropolitano 1} con un total de 1.577 servidores. En cuanto a los cargos con menor cantidad de empleados, se encuentran \textit{Jefe de Control Metropolitano} y \textit{Subjefe de Control Metropolitano} con 2 y 15 respectivamente.
+La figura \ref{fig:iess_bar_metropolitanos} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal o Metropolitano, y refleja que \textit{Administrativo} es el cargo con mayor cantidad de empleados de esta institución, con 3.980 de ellos; a continuación se encuentra \textit{Agente de Control Metropolitano 1} con un total de 1.838 servidores. En cuanto a los cargos con menor cantidad de empleados, se encuentran \textit{Jefe de Control Metropolitano} y \textit{Subjefe de Control Metropolitano} con 2 y 15 respectivamente.
 
 \begin{figure}[H]
 \centering
@@ -456,7 +456,7 @@ Cargo COESCOP & Salario Promedio\\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-A continuación, en la tabla \ref{tab:iess_metropolitanos_ciudad} se muestra la cantidad y porcentaje de hombres y mujeres que forman parte del Cuerpo de Control Municipal o Metropolitano de cada ciudad, donde se pone en evidencia que la ciudad que alberga la mayoría del personal de esta entidad es \textit{Quito}, con 1.329 servidores. Por otro lado, la ciudad con la menor cantidad de servidores de este ente es \textit{Loja} con 24 de los mismos.
+A continuación, en la tabla \ref{tab:iess_metropolitanos_ciudad} se muestra la cantidad y porcentaje de hombres y mujeres que forman parte del Cuerpo de Control Municipal o Metropolitano de cada ciudad, donde se pone en evidencia que la ciudad que alberga la mayoría del personal de esta entidad es \textit{Quito}, con 1.544rvidores. Por otro lado, la ciudad con la menor cantidad de servidores de este ente es \textit{Loja} con 285 de los mismos.
 
 \begin{table}[H]
 \centering
@@ -484,7 +484,7 @@ Seguidamente, se procede a realizar un análisis demográfico por ciudad.
 \label{chp_demog:metropolitanos_quito}
 
 En la figura \ref{fig:iess_pir_metropolitanos_quito} y la tabla \ref{tab:iess_metropolitanos_quito_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. 
-A agosto del 2019\footnote{documentación más actualizada respecto al literal c) de la Ley de Transparencia disponible en la página oficial del Cuerpo de Agentes de Control Quito.} el total de servidores públicos pertenecientes al Cuerpo de Agentes Metropolitanos de Quito es de 1.329, de los cuales el 18,28\% son mujeres y el 81,72\% son hombres. Adicionalmente, el 40,78\% del personal de la presente entidad tiene entre 30 y 40 años.
+A agosto del 2019\footnote{documentación más actualizada respecto al literal c) de la Ley de Transparencia disponible en la página oficial del Cuerpo de Agentes de Control Quito.} el total de servidores públicos pertenecientes al Cuerpo de Agentes Metropolitanos de Quito es de 1.544, de los cuales el 18,20\% son mujeres y el 81,80\% son hombres. Adicionalmente, el 40,78\% del personal de la presente entidad tiene entre 30 y 40 años.
 
 \begin{figure}[H]
 \centering
@@ -514,7 +514,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_metropolitanos_quito} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Metropolitano de Quito, dejando ver que el cargo que acapara la mayoría de los servidores públicos pertenecientes a esta institución es \textit{Agente de Control Metropolitano 1} con 973 servidores, seguido por \textit{Administrativo} con 273 de los mismos. Por otro lado, los cargos con menor cantidad de miembros de esta entidad son \textit{Subjefe de Control Metropolitano} y \textit{Jefe de Control Metropolitano} con 15 y 2 servidores respectivamente.
+La figura \ref{fig:iess_bar_metropolitanos_quito} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Metropolitano de Quito, dejando ver que el cargo que acapara la mayoría de los servidores públicos pertenecientes a esta institución es \textit{Agente de Control Metropolitano 1} con 1.134 servidores, seguido por \textit{Administrativo} con 316 de los mismos. Por otro lado, los cargos con menor cantidad de miembros de esta entidad son \textit{Subjefe de Control Metropolitano} y \textit{Jefe de Control Metropolitano} con 15 y 2 servidores respectivamente.
 
 \begin{figure}[H]
 \centering
@@ -570,7 +570,7 @@ Cargo COESCOP & Salario Promedio\\
 \subsubsection{Cuerpo de Agentes de Control Municipal de Ambato}
 \label{chp_demog:metropolitanos_ambato}
 
-En la figura \ref{fig:iess_pir_metropolitanos_ambato} y la tabla \ref{tab:iess_metropolitanos_ambato_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. A marzo del 2022, el total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Municipal de Ambato es de 1.068, de los cuales el 41,20\% son mujeres y el 58,80\% son hombres. Además, del total de empleados de esta entidad, el 41,67\% tienen entre 30 y 40 años. 
+En la figura \ref{fig:iess_pir_metropolitanos_ambato} y la tabla \ref{tab:iess_metropolitanos_ambato_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. A marzo del 2022, el total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Municipal de Ambato es de 1.293, de los cuales el 42,07\% son mujeres y el 57,93\% son hombres. Además, del total de empleados de esta entidad, el 41,20\% tienen entre 30 y 40 años. 
 
 \begin{table}[H]
 \centering
@@ -600,7 +600,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-La figura \ref{fig:iess_bar_metropolitanos_ambato} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal de Ambato y pone en evidencia que el cargo que alberga la gran mayoría de trabajadores de la presente entidad es \textit{Administrativo} con un total de 1035 servidores, mientras que \textit{Agente de Control Municipal 1} posee apenas 33. En cambio, en la tabla \ref{tab:iess_metropolitanos_ambato_cargo} se muestra la distribución por cargo y sexo de los mismos.
+La figura \ref{fig:iess_bar_metropolitanos_ambato} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal de Ambato y pone en evidencia que el cargo que alberga la gran mayoría de trabajadores de la presente entidad es \textit{Administrativo} con un total de 1.293 servidores, mientras que \textit{Agente de Control Municipal 1} posee apenas 33. En cambio, en la tabla \ref{tab:iess_metropolitanos_ambato_cargo} se muestra la distribución por cargo y sexo de los mismos.
 
 \begin{figure}[H]
 \centering
@@ -654,7 +654,7 @@ Cargo COESCOP & Salario Promedio\\
 \subsubsection{Cuerpo de Agentes de Control Metropolitano de Cuenca}
 \label{chp_demog:metropolitanos_cuenca}
 
-En la figura \ref{fig:iess_pir_metropolitanos_cuenca} y la tabla \ref{tab:iess_metropolitanos_cuenca_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. A marzo del 2022 el total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Metropolitano de Cuenca es de 315, de los cuales el 21,27\% son mujeres y el 78,73\% son hombres. También, del total del personal de esta entidad el 51,43\% tiene entre 20 y 30 años.
+En la figura \ref{fig:iess_pir_metropolitanos_cuenca} y la tabla \ref{tab:iess_metropolitanos_cuenca_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. A marzo del 2022 el total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Metropolitano de Cuenca es de 349, de los cuales el 20,34\% son mujeres y el 79,66\% son hombres. También, del total del personal de esta entidad el 53,01\% tiene entre 20 y 30 años.
 
 \begin{table}[H]
 \centering
@@ -675,7 +675,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \end{table}
 
 
-La figura \ref{fig:iess_bar_metropolitanos_cuenca} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal o Metropolitano de Cuenca, mientras que en la tabla \ref{tab:iess_metropolitanos_cuenca_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se evidencia que el cargo que representa la mayor parte del total de trabajadores de esta entidad es \textit{Agente de Control Metropolitano 1} con 239 servidores, en tanto que \textit{Agente de Control Metropolitano 2} es el cargo con menor número de servidores, los cuales suman 34. Y, además, existe una mayoría de trabajadores del género masculino sobre el género femenino en todos los cargos.
+La figura \ref{fig:iess_bar_metropolitanos_cuenca} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal o Metropolitano de Cuenca, mientras que en la tabla \ref{tab:iess_metropolitanos_cuenca_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se evidencia que el cargo que representa la mayor parte del total de trabajadores de esta entidad es \textit{Agente de Control Metropolitano 1} con 271 servidores, en tanto que \textit{Agente de Control Metropolitano 2} es el cargo con menor número de servidores, los cuales suman 35 Y, además, existe una mayoría de trabajadores del género masculino sobre el género femenino en todos los cargos.
 
 \begin{figure}[H]
 \centering
@@ -740,7 +740,7 @@ Cargo COESCOP & Salario Promedio\\
 \subsubsection{Cuerpo de Agentes de Control Metropolitano de Guayaquil}
 \label{chp_demog:metropolitanos_gye}
 
-En la figura \ref{fig:iess_pir_metropolitanos_gye} y la tabla \ref{tab:iess_metropolitanos_gye_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. El total de servidores públicos trabajando en ésta a marzo del 2022 es de 654, de los cuales el 10,24\% son mujeres y el 89,76\% son hombres. Además, el 41,44\% del total de trabajadores de esta entidad tienen entre 20 y 30 años.
+En la figura \ref{fig:iess_pir_metropolitanos_gye} y la tabla \ref{tab:iess_metropolitanos_gye_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. El total de servidores públicos trabajando en ésta a marzo del 2022 es de 756, de los cuales el 10,58\% son mujeres y el 89,42\% son hombres. Además, el 42,33\% del total de trabajadores de esta entidad tienen entre 20 y 30 años.
 
 \begin{table}[H]
 \centering
@@ -761,7 +761,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 \end{table}
 
 
-La figura \ref{fig:iess_bar_metropolitanos_gye} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal o Metropolitano de Guayaquil, mientras que en la tabla \ref{tab:iess_metropolitanos_gye_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se visualiza que \textit{Agente de Control Metropolitano 1} es el cargo que concentra la mayor cantidad de trabajadores en esta institución con 365 de ellos, seguido de \textit{Agente de Control Metropolitano 3}, con 170 de los mismos. Por otro lado, \textit{Agente de Control Metropolitano 4} y \textit{Administrativo} son los cargos con menor personal de esta entidad, con 21 y 1 servidores respectivamente. Finalmente, los cargos \textit{Agente de Control Metropolitano 3} y \textit{Agente de Control Metropolitano 4} tienen un porcentaje de 0\% en cuanto a servidoras públicas, al tiempo que \textit{Administrativo} no cuenta con servidores públicos del género masculino.
+La figura \ref{fig:iess_bar_metropolitanos_gye} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal o Metropolitano de Guayaquil, mientras que en la tabla \ref{tab:iess_metropolitanos_gye_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se visualiza que \textit{Agente de Control Metropolitano 1} es el cargo que concentra la mayor cantidad de trabajadores en esta institución con 433 de ellos, seguido de \textit{Agente de Control Metropolitano 3}, con 193 de los mismos. Por otro lado, \textit{Agente de Control Metropolitano 4} y \textit{Administrativo} son los cargos con menor personal de esta entidad, con 22 y 1 servidores respectivamente. Finalmente, los cargos \textit{Agente de Control Metropolitano 3} y \textit{Agente de Control Metropolitano 4} tienen un porcentaje de 0\% en cuanto a servidoras públicas, al tiempo que \textit{Administrativo} no cuenta con servidores públicos del género masculino.
 
 \begin{figure}[H]
 \centering
@@ -826,7 +826,7 @@ Cargo COESCOP & Salario Promedio\\
 \subsubsection{Cuerpo de Agentes de Control Municipal de Loja}
 \label{chp_demog:metropolitanos_loja}
 
-En la figura \ref{fig:iess_pir_metropolitanos_loja} y la tabla \ref{tab:iess_metropolitanos_loja_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. A marzo del 2022, el total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Municipal de Loja es de 24, de los cuales el 41,67\% son mujeres y el 58,33\% son hombres. También, el 54,17\% del total de empleados de esta entidad está entre los 30 y 40 años.
+En la figura \ref{fig:iess_pir_metropolitanos_loja} y la tabla \ref{tab:iess_metropolitanos_loja_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. A marzo del 2022, el total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Municipal de Loja es de 285, de los cuales el 17,54\% son mujeres y el 82,46\% son hombres. También, el 42,46\% del total de empleados de esta entidad está entre los 30 y 40 años.
 
 \begin{table}[H]
 \centering
@@ -856,7 +856,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-La figura \ref{fig:iess_bar_metropolitanos_loja} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal de Loja, mientras que en la tabla \ref{tab:iess_metropolitanos_loja_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se puede visibilizar que el cargo \textit{Agente de Control Municipal 1 } presenta la mayoría de los servidores públicos de la presente entidad, con 21 de ellos, en tanto que \textit{Administrativo} concentra 3 de los mismos.
+La figura \ref{fig:iess_bar_metropolitanos_loja} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal de Loja, mientras que en la tabla \ref{tab:iess_metropolitanos_loja_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se puede visibilizar que el cargo \textit{Agente de Control Municipal 1} presenta la mayoría de los servidores públicos de la presente entidad, con 282 de ellos, en tanto que \textit{Administrativo} concentra 3 de los mismos.
 
 \begin{figure}[H]
 \centering
@@ -910,7 +910,7 @@ Cargo COESCOP & Salario Promedio\\
 \subsubsection{Cuerpo de Agentes de Control Municipal de Machala}
 \label{chp_demog:metropolitanos_machala}
 
-En la figura \ref{fig:iess_pir_metropolitanos_machala} y la tabla \ref{tab:iess_metropolitanos_machala_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. El total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Municipal de Machala, a marzo del 2022, es de 1.047, de los cuales el 46,99\% son mujeres y el 53,01\% son hombres. Más aún, del total de empleados de la presente entidad tienen entre 30 y 40 años.
+En la figura \ref{fig:iess_pir_metropolitanos_machala} y la tabla \ref{tab:iess_metropolitanos_machala_edad_sexo} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. El total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Municipal de Machala, a marzo del 2022, es de 1.237, de los cuales el 48,59\% son mujeres y el 51,41\% son hombres. Más aún, del total de empleados de la presente entidad tienen entre 30 y 40 años.
 
 \begin{table}[H]
 \centering
@@ -940,7 +940,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-La figura \ref{fig:iess_bar_metropolitanos_machala} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal de Machala, mientras que en la tabla \ref{tab:iess_metropolitanos_machala_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se verifica que el cargo con mayor cantidad de servidores públicos de la presente entidad es \textit{Administrativo} con 936, al tiempo que \textit{Agente de Control Municipal 1} tiene apenas 111 servidores.
+La figura \ref{fig:iess_bar_metropolitanos_machala} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal de Machala, mientras que en la tabla \ref{tab:iess_metropolitanos_machala_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se verifica que el cargo con mayor cantidad de servidores públicos de la presente entidad es \textit{Administrativo} con 1.113, al tiempo que \textit{Agente de Control Municipal 1} tiene apenas 124 servidores.
 
 \begin{figure}[H]
 \centering
@@ -994,7 +994,7 @@ Cargo COESCOP & Salario Promedio\\
 \subsubsection{Cuerpo de Agentes de Control Municipal de Portoviejo}
 \label{chp_demog:metropolitanos_prtvj}
 
-En la tabla \ref{tab:iess_metropolitanos_prtvj_edad_sexo} y la figura \ref{fig:iess_pir_metropolitanos_prtvj} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. A marzo del 2022, el total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Municipal de Portoviejo es de 1.143, de los cuales el 21,35\% son mujeres y el 78,65\% son hombres. Además, del total del personal de esta entidad, el 28,35\% está entre los 40 y 50 años.
+En la tabla \ref{tab:iess_metropolitanos_prtvj_edad_sexo} y la figura \ref{fig:iess_pir_metropolitanos_prtvj} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. A marzo del 2022, el total de servidores públicos pertenecientes al Cuerpo de Agentes de Control Municipal de Portoviejo es de 1.340, de los cuales el 21,57\% son mujeres y el 78,43\% son hombres. Además, del total del personal de esta entidad, el 28,13\% está entre los 40 y 50 años.
 
 \begin{table}[H]
 \centering
@@ -1024,7 +1024,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-La figura \ref{fig:iess_bar_metropolitanos_prtvj} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal de Portoviejo, mientras que en la tabla \ref{tab:iess_metropolitanos_prtvj_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se observa que \textit{Administrativo} abarca gran parte de los servidores públicos de esta entidad, con 1.056 de los mismos, en tanto que \textit{Agente de Control Municipal 1} cuenta con 87 servidores.
+La figura \ref{fig:iess_bar_metropolitanos_prtvj} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Agentes de Control Municipal de Portoviejo, mientras que en la tabla \ref{tab:iess_metropolitanos_prtvj_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se observa que \textit{Administrativo} abarca gran parte de los servidores públicos de esta entidad, con 1.244 de los mismos, en tanto que \textit{Agente de Control Municipal 1} cuenta con 96 servidores.
 
 \begin{figure}[H]
 \centering
@@ -1079,7 +1079,7 @@ Cargo COESCOP & Salario Promedio\\
 \label{chp_demog:bomberos}
 
 %---------------------------------------------------------------------------------------------------
-Para el presente estudio se considera el número de servidores públicos de los Cuerpos de Bomberos a marzo del 2022, que es de 3.390 servidores. Adicionalmente, para la realización de este análisis se tomaron en cuenta las ciudades: Quito, Ambato, Cuenca, Guayaquil, Loja, Machala, Portoviejo, Ibarra, Manta, Milagro, Riobamba y Santo Domingo. En la figura \ref{fig:iess_pir_bomberos} y tabla \ref{tab:iess_bomberos_edad_sexo} se muestra la distribución por edad y sexo de las y los servidores públicos de la mencionada entidad. En ellas se evidencia que, del total del personal de esta institución, el 21,30\% son mujeres y el 78,70\% son hombres. Además, el 39,44\% de los mismos tienen entre 30 y 40 años.
+Para el presente estudio se considera el número de servidores públicos de los Cuerpos de Bomberos a marzo del 2022, que es de 3.935 servidores. Adicionalmente, para la realización de este análisis se tomaron en cuenta las ciudades: Quito, Ambato, Cuenca, Guayaquil, Loja, Machala, Portoviejo, Ibarra, Manta, Milagro, Riobamba y Santo Domingo. En la figura \ref{fig:iess_pir_bomberos} y tabla \ref{tab:iess_bomberos_edad_sexo} se muestra la distribución por edad y sexo de las y los servidores públicos de la mencionada entidad. En ellas se evidencia que, del total del personal de esta institución, el 21,30\% son mujeres y el 78,70\% son hombres. Además, el 39,47\% de los mismos tienen entre 30 y 40 años.
 
 \begin{table}[H]
 \centering
@@ -1109,7 +1109,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-la figura \ref{fig:iess_bar_bomberos} detalla la distribución por cargo de las y los servidores públicos de los Cuerpos de Bomberos, mientras que En la tabla \ref{tab:iess_bomberos_cargo_sexo} se muestra la distribución por cargo y sexo de los mismos. En ambas se visualiza que el cargo que acumula a la mayoría de los servidores públicos de esta institución es \textit{Administrativo} con un total de 1.525 servidores, seguido por \textit{Bombero 1} con 1.435 servidores. Por otra parte, los cargos que concentran la menor cantidad de trabajadores son \textit{Subinspector de Estación} y \textit{Subjefe de Bomberos}, con 11 y 6 servidores respectivamente. Además, en todos los cargos y en el total de hombres y mujeres se visibiliza una mayoría poblacional masculina.
+la figura \ref{fig:iess_bar_bomberos} detalla la distribución por cargo de las y los servidores públicos de los Cuerpos de Bomberos, mientras que En la tabla \ref{tab:iess_bomberos_cargo_sexo} se muestra la distribución por cargo y sexo de los mismos. En ambas se visualiza que el cargo que acumula a la mayoría de los servidores públicos de esta institución es \textit{Administrativo} con un total de 1.729 servidores, seguido por \textit{Bombero 1} con 1.840 servidores. Por otra parte, los cargos que concentran la menor cantidad de trabajadores son \textit{Subinspector de Estación} y \textit{Bombero 4}, con 10 y 8 servidores respectivamente. Además, en todos los cargos y en el total de hombres y mujeres se visibiliza una mayoría poblacional masculina.
 
 \begin{figure}[H]
 \centering
@@ -1161,7 +1161,7 @@ Cargo COESCOP & Salario Promedio\\
 \end{table}
 
 
-A continuación, en la tabla \ref{tab:iess_bomberos_ciudad} se muestra la cantidad y porcentaje de hombres y mujeres que forman parte del Cuerpo de Bomberos de cada ciudad. Se observa que la ciudad que alberga la mayoría del personal de esta entidad es \textit{Quito}, con 1.378 servidores. Por otro lado, la ciudad con la menor cantidad de servidores de este ente es \textit{Milagro} con 94 de los mismos.
+A continuación, en la tabla \ref{tab:iess_bomberos_ciudad} se muestra la cantidad y porcentaje de hombres y mujeres que forman parte del Cuerpo de Bomberos de cada ciudad. Se observa que la ciudad que alberga la mayoría del personal de esta entidad es \textit{Quito}, con 1.600 servidores. Por otro lado, la ciudad con la menor cantidad de servidores de este ente es \textit{Milagro} con 109 de los mismos.
 
 {\fontsize{11}{13}\selectfont
 \begin{longtable}[H]{lrrrrrr}
@@ -1206,7 +1206,7 @@ En la figura \ref{fig:iess_pir_bomberos_quito} y la tabla \ref{tab:iess_bomberos
 {\bf Elaborado:} DAIE.}
 \end{figure}
 
-La figura \ref{fig:iess_bar_bomberos_quito} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos del Distrito Metropolitano de Quito, mientras que en la tabla \ref{tab:iess_bomberos_quito_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se visualiza que \textit{Bombero 1} es el puesto que abarca una cantidad mayoritaria de servidores públicos de esta entidad, con un total de 639 servidores. Seguidamente se encuentra \textit{Administrativo} con 591 de los mismos. Por otro lado, \textit{Bombero 4} y \textit{Subjefe de Bomberos} son los cargos con menor cantidad de trabajadores con 1, cada uno. Adicionalmente, los cargos \textit{Bombero 4} y \textit{Subjefe de Bomberos} no presentan trabajadores del género femenino.
+La figura \ref{fig:iess_bar_bomberos_quito} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos del Distrito Metropolitano de Quito, mientras que en la tabla \ref{tab:iess_bomberos_quito_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se visualiza que \textit{Bombero 1} es el puesto que abarca una cantidad mayoritaria de servidores públicos de esta entidad, con un total de 639 servidores. Seguidamente se encuentra \textit{Administrativo} con 586 de los mismos. Por otro lado, \textit{Bombero 4} con menor cantidad de trabajadores con 1. Adicionalmente, los cargos \textit{Bombero 4} y \textit{Subjefe de Bomberos} no presentan trabajadores del género femenino.
 
 
 \begin{table}[H]
@@ -1281,7 +1281,7 @@ Cargo COESCOP & Salario Promedio\\
 \subsubsection{Cuerpo de Bomberos de Ambato}
 \label{chp_demog:bomberos_ambato}
 
-La figura \ref{fig:iess_pir_bomberos_ambato} y tabla \ref{tab:iess_bomberos_ambato_edad_sexo} muestran la distribución por edad y sexo de las y los trabajadores de esta entidad. El total de miembros del Cuerpo de Bomberos de Ambato, a marzo del 2022, es de 168 servidores; donde el 14,29\% corresponde a trabajadores del género femenino y el 85,71\% al género masculino. Además, del total de los empleados, el 56,55\% tiene entre 30 y 40 años.
+La figura \ref{fig:iess_pir_bomberos_ambato} y tabla \ref{tab:iess_bomberos_ambato_edad_sexo} muestran la distribución por edad y sexo de las y los trabajadores de esta entidad. El total de miembros del Cuerpo de Bomberos de Ambato, a marzo del 2022, es de 179 servidores; donde el 13,41\% corresponde a trabajadores del género femenino y el 86,59\% al género masculino. Además, del total de los empleados, el 57,54\% tiene entre 30 y 40 años.
 
 \begin{figure}[H]
 \centering
@@ -1311,7 +1311,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_ambato} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Ambato, mientras que en la tabla \ref{tab:iess_bomberos_ambato_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que el cargo que abarca una mayor cantidad de trabajadores es \textit{Bombero 1} con 109 servidores, seguido de \textit{Administrativo}, con 33. En cambio, los cargos con la menor cantidad de empleados son \textit{Jefe} y \textit{Subjefe de Bomberos}, con 1 servidor cada uno. Adicionalmente, \textit{Bombero 2, 4, Jefe} y \textit{Subjefe de Bomberos} no cuentan con población femenina.
+La figura \ref{fig:iess_bar_bomberos_ambato} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Ambato, mientras que en la tabla \ref{tab:iess_bomberos_ambato_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que el cargo que abarca una mayor cantidad de trabajadores es \textit{Bombero 1} con 133 servidores, seguido de \textit{Administrativo}, con 33. En cambio, los cargos con la menor cantidad de empleados son \textit{Jefe} y \textit{Subjefe de Bomberos}, con 2 servidor cada uno. Adicionalmente, \textit{Jefe de bomberos} y \textit{Subjefe de Bomberos} no cuentan con población femenina.
 
 \begin{figure}[H]
 \centering
@@ -1396,7 +1396,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_cuenca} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Cuenca, mientras que en la tabla \ref{tab:iess_bomberos_cuenca_cargo} se muestra la distribución por cargo y sexo de los mismos. Ellas reflejan que el cargo con mayor cantidad de trabajadores de la presente entidad es \textit{Administrativo} con 119 servidores, seguido de \textit{Bombero 1} con 68. Por otro lado, \textit{Inspector de Brigada} y \textit{Jefe de Bomberos} son los puestos que acumulan la menor cantidad de empleados, con 2 cada uno. Más aún, en los cargos \textit{Inspector de Brigada} y \textit{Jefe de Bomberos} no se encuentra población del género femenino.
+La figura \ref{fig:iess_bar_bomberos_cuenca} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Cuenca, mientras que en la tabla \ref{tab:iess_bomberos_cuenca_cargo} se muestra la distribución por cargo y sexo de los mismos. Ellas reflejan que el cargo con mayor cantidad de trabajadores de la presente entidad es \textit{Administrativo} con 114 servidores, seguido de \textit{Bombero 1} con 68. Por otro lado, \textit{Inspector de Brigada} y \textit{Jefe de Bomberos} son los puestos que acumulan la menor cantidad de empleados, con 2 y 7, respectivamente. Más aún, en los cargos \textit{Inspector de Brigada} y \textit{Jefe de Bomberos} no se encuentra población del género femenino.
 
 \begin{figure}[H]
 \centering
@@ -1479,7 +1479,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_gye} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Guayaquil, mientras que en la tabla \ref{tab:iess_bomberos_gye_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se observa que \textit{Administrativo} es el cargo que alberga a la mayor cantidad de servidores públicos, con 409 de ellos. Seguidamente se encuentra \textit{Bombero 1}, con 176 de los mismos. También, \textit{Bombero 2} es el puesto con menos empleados de la presente entidad, con 4 servidores. Adicionalmente, en los cargos \textit{Bombero 1} y \textit{Bombero 2} no existen empleados del género femenino. 
+La figura \ref{fig:iess_bar_bomberos_gye} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Guayaquil, mientras que en la tabla \ref{tab:iess_bomberos_gye_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se observa que \textit{Administrativo} es el cargo que alberga a la mayor cantidad de servidores públicos, con 406 de ellos. Seguidamente se encuentra \textit{Bombero 1}, con 158 de los mismos. También, \textit{Jefe de Bomberos} es el puesto con menos empleados de la presente entidad, con 6 servidores. Adicionalmente, en el cargo \textit{Inspector de Brigada} no existen empleados del género femenino. 
 
 \begin{figure}[H]
 \centering
@@ -1562,7 +1562,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_loja} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Loja, mientras que en la tabla \ref{tab:iess_bomberos_loja_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que el cargo que contempla la mayor cantidad de empleados de esta entidad es \textit{Administrativo} con 33 servidores, seguido de \textit{Bombero 2} con 32. En cambio, los puestos con menor cantidad de trabajadores son \textit{Inspector de Brigada} y \textit{Jefe de Bomberos}, con 1 empleado cada uno. Más aún, Los cargos \textit{Bombero 3, 4, Inspector y Subinspector de Brigada} y \textit{Jefe de Bomberos} no presentan población del género femenino.
+La figura \ref{fig:iess_bar_bomberos_loja} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Loja, mientras que en la tabla \ref{tab:iess_bomberos_loja_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que el cargo que contempla la mayor cantidad de empleados de esta entidad es \textit{Administrativo} con 29 servidores, seguido de \textit{Bombero 1} con 71. En cambio, los puestos con menor cantidad de trabajadores son \textit{Inspector de Brigada} y \textit{Jefe de Bomberos}, con 5 y 3, respectivamente.
 
 \begin{figure}[H]
 \centering
@@ -1645,7 +1645,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_machala} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Machala, mientras que en la tabla \ref{tab:iess_bomberos_machala_cargo} se muestra la distribución por cargo y sexo de los mismos. Éstas muestran que el cargo con mayor número de empleados de esta entidad es \textit{Bombero 1} con 74 servidores, seguido de \textit{Administrativo} con 27. Por su parte, \textit{Inspector de Brigada} es el cargo con menor cantidad de empleados, con 12.
+La figura \ref{fig:iess_bar_bomberos_machala} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Machala, mientras que en la tabla \ref{tab:iess_bomberos_machala_cargo} se muestra la distribución por cargo y sexo de los mismos. Éstas muestran que el cargo con mayor número de empleados de esta entidad es \textit{Bombero 1} con 74 servidores, seguido de \textit{Administrativo} con 26. Por su parte, \textit{Inspector de Brigada} es el cargo con menor cantidad de empleados, con 12 y \textit{Jefe de Bomberos} con 1.
 
 {\fontsize{11}{13}\selectfont
 \begin{longtable}[H]{lrrrrrr}
@@ -1735,7 +1735,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_prtvj} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Portoviejo, mientras que en la tabla \ref{tab:iess_bomberos_prtvj_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se evidencia que \textit{Bombero 1} es el puesto con mayor cantidad de empleados con 80 de ellos, al tanto que \textit{Jefe de Bomberos} e \textit{Inspector de Brigada} son los puestos con menor cantidad de trabajadores, acumulando 1 cada uno.
+La figura \ref{fig:iess_bar_bomberos_prtvj} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Portoviejo, mientras que en la tabla \ref{tab:iess_bomberos_prtvj_cargo} se muestra la distribución por cargo y sexo de los mismos. En ellas se evidencia que \textit{Bombero 1} es el puesto con mayor cantidad de empleados con 80 de ellos, al tanto que \textit{Jefe de Bomberos} e \textit{Inspector de Brigada} son los puestos con menor cantidad de trabajadores con 2 y 6, respectivemente.
 
 \begin{table}[H]
 \centering
@@ -1818,7 +1818,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_ibarra} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Ibarra, mientras que en la tabla \ref{tab:iess_bomberos_ibarra_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se visualiza que \textit{Bombero 1} es el puesto con mayor cantidad de empleados, teniendo 78 servidores en este puesto. Seguidamente se encuentra \textit{Bombero 2}, con 42 de los mismos. En cambio, los puestos con menos trabajadores de esta institución son \textit{Bombero 4} e \textit{Inspector de Brigada} con 6 y 1 servidores respectivamente. Adicionalmente, el cargo \textit{Inspector de Brigada} no posee empleados del género femenino.
+La figura \ref{fig:iess_bar_bomberos_ibarra} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Ibarra, mientras que en la tabla \ref{tab:iess_bomberos_ibarra_cargo} se muestra la distribución por cargo y sexo de los mismos. En ambas se visualiza que \textit{Bombero 1} es el puesto con mayor cantidad de empleados, teniendo 126 servidores en este puesto. Seguidamente se encuentra \textit{Administrativos}, con 25 de los mismos. En cambio, los puestos con menos trabajadores de esta institución son \textit{Inspector de Brigada} con 1 servidor. Adicionalmente, el cargo \textit{Inspector de Brigada} no posee empleados del género femenino.
 
 \begin{table}[H]
 \centering
@@ -1901,7 +1901,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_manta} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Manta, mientras que en la tabla \ref{tab:iess_bomberos_manta_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que \textit{Administrativo} es el cargo que acumula una cantidad de trabajadores superior al resto de puestos, con 101 servidores públicos. Seguidamente se encuentra \textit{Bombero 1}, con 42 de los mismos. Por el contrario, el cargo con menor cantidad de empleados es \textit{Jefe de Bomberos}, con 10 servidores en este puesto. Además, el cargo \textit{Inspector de Brigada} carece de personal del género femenino.
+La figura \ref{fig:iess_bar_bomberos_manta} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Manta, mientras que en la tabla \ref{tab:iess_bomberos_manta_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas reflejan que \textit{Administrativo} es el cargo que acumula una cantidad de trabajadores superior al resto de puestos, con 91 servidores públicos. Seguidamente se encuentra \textit{Bombero 1}, con 43 de los mismos. Por el contrario, el cargo con menor cantidad de empleados es \textit{Jefe de Bomberos}, con 19 servidores en este puesto. Además, el cargo \textit{Inspector de Brigada} carece de personal del género femenino.
 
 {\fontsize{11}{13}\selectfont
 \begin{longtable}[H]{lrrrrrr}
@@ -1991,7 +1991,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_milagro} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Milagro, mientras que en la tabla \ref{tab:iess_bomberos_milagro_cargo} se muestra la distribución por cargo y sexo de los mismos. En éstas se visualiza que el puesto que contempla una mayor cantidad de servidores públicos es \textit{Bombero 1} con 60 empleados, seguido de \textit{Administrativo} con 24 de los mismos. En cambio, los cargos con menos empleados son \textit{Jefe de Bomberos} y \textit{Subjefe de Bomberos} con 1 y 4 servidores respectivamente. También, se observa que en los cargos \textit{Jefe} y \textit{Subjefe de Bomberos} no existen trabajadores del género femenino.
+La figura \ref{fig:iess_bar_bomberos_milagro} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Milagro, mientras que en la tabla \ref{tab:iess_bomberos_milagro_cargo} se muestra la distribución por cargo y sexo de los mismos. En éstas se visualiza que el puesto que contempla una mayor cantidad de servidores públicos es \textit{Bombero 1} con 64 empleados, seguido de \textit{Administrativo} con 22 de los mismos. En cambio, los cargos con menos empleados son \textit{Jefe de Bomberos} y \textit{Subjefe de Bomberos} con 3 y 5 servidores respectivamente. También, se observa que en los cargos \textit{Jefe} y \textit{Subjefe de Bomberos} no existen trabajadores del género femenino.
 
 {\fontsize{11}{13}\selectfont
 \begin{longtable}[H]{lrrrrrr}
@@ -2165,7 +2165,7 @@ Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La figura \ref{fig:iess_bar_bomberos_sto_dom} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Santo Domingo, mientras que en la tabla \ref{tab:iess_bomberos_sto_dom_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas muestran que los cargos que abarcan la mayor cantidad de empleados de esta institución son \textit{Administrativo} y \textit{Bombero 1} con 45 y 44 servidores respectivamente, mientras que los cargos con menos empleados son \textit{Jefe de Bomberos} con 1 y \textit{Bombero 3} con 2 de los mismos. También, en los cargos \textit{Bombero 3, Bombero 4, Inspector de Brigada} y \textit{Jefe de Bomberos} no existe personal del género femenino.
+La figura \ref{fig:iess_bar_bomberos_sto_dom} detalla la distribución por cargo de las y los servidores públicos del Cuerpo de Bomberos de Santo Domingo, mientras que en la tabla \ref{tab:iess_bomberos_sto_dom_cargo} se muestra la distribución por cargo y sexo de los mismos. Ambas muestran que los cargos que abarcan la mayor cantidad de empleados de esta institución son \textit{Administrativo} y \textit{Bombero 1} con 45 y 94 servidores respectivamente, mientras que los cargos con menos empleados son \textit{Jefe de Bomberos} con 1. También, en los cargos \textit{Inspector de Brigada} y \textit{Jefe de Bomberos} no existe personal del género femenino.
 
 \begin{figure}[H]
 \centering

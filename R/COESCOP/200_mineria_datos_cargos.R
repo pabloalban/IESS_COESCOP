@@ -138,7 +138,9 @@ transito <- transito %>%
   mutate(cargo_coescop = ifelse( grepl("inspector",cargo) & is.na(cargo_coescop) , "Inspector", cargo_coescop) )
 
 transito <- transito %>%
-  mutate( cargo_coescop = ifelse(is.na( cargo_coescop ), "Administrativo", cargo_coescop ))
+  mutate( cargo_coescop = if_else(is.na( cargo_coescop ),
+                                  "Administrativo", 
+                                  cargo_coescop ) )
 
 save( transito,
       file = paste0( parametros$RData, 'COESCOP_cte_cargos.RData' ) )

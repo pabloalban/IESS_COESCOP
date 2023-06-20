@@ -34,7 +34,7 @@ bo <- bomberos %>%
                  cargo,
                  sueldo,
                  cargo_coescop,
-                 ciudad ) %>%
+                 ciudad:=canton ) %>%
   mutate( tipo = "bombero")
 
 
@@ -98,8 +98,8 @@ coescop <- rbind( ad,
 
 
 #Guardar en Rdata-----------------------------------------------------------------------------------
-save( reporte_resp_patronal,
-      file = paste0( parametros$RData_seg, 'IESS_RTR_tablas_rp.RData' ) )
+save( coescop,
+      file = paste0( parametros$RData, 'IESS_consolidado_coescop.RData' ) )
 
 # #-------------------------------------------------------------------------------------------------
 message( paste( rep('-', 100 ), collapse = '' ) )
