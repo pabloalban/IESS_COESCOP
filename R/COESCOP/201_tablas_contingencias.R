@@ -510,10 +510,10 @@ tabla_bomberos_edad_sexo <- bomberos %>%
                                enddate = as.Date("31/03/2022","%d/%m/%Y"),
                                units = "years",
                                precise = TRUE ) )) %>%
-  group_by( edad, sexo ) %>%
+  group_by( edad, sexo, canton, cargo_coescop) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
-  distinct( edad, sexo, .keep_all = TRUE ) %>%
+  distinct( edad, sexo, canton, cargo_coescop, .keep_all = TRUE ) %>%
   dplyr::select(sexo,
                 edad,
                 frecuencia,
@@ -559,8 +559,8 @@ tabla_bomberos_ciudad <-  tabla_bomberos_edad_sexo %>%
                 frecuencia) 
 ##Bomberos por ciudad--------------------------------------------------------------------------------
 
-tabla_bomberos_ambato_edad_sexo <- tabla_bomberos_edad_sexo
-  filter( canton == 'Ambato')%>%
+tabla_bomberos_ambato_edad_sexo <- tabla_bomberos_edad_sexo %>%
+  filter( ciudad == 'Ambato') %>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -570,7 +570,7 @@ tabla_bomberos_ambato_edad_sexo <- tabla_bomberos_edad_sexo
                 frecuencia) %>%
   arrange( sexo, edad ) %>%
   mutate( frecuencia = round(frecuencia * 
-                               nrow(bomberos %>% filter( canton=='Ambato'))/sum(frecuencia),0 ) )
+                               nrow(bomberos %>% filter( ciudad=='Ambato'))/sum(frecuencia),0 ) )
 
 tabla_bomberos_ambato_cargo <- bomberos %>%
   filter( !is.na(fecha_nacimiento)) %>%
@@ -580,7 +580,7 @@ tabla_bomberos_ambato_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Ambato')%>%
+  filter( ciudad =='Ambato')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -598,7 +598,7 @@ tabla_bomberos_ambato_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Ambato')%>%
+  filter( ciudad =='Ambato')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
@@ -614,7 +614,7 @@ tabla_bomberos_quito_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Quito')%>%
+  filter( ciudad == 'Quito')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -632,7 +632,7 @@ tabla_bomberos_quito_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Quito')%>%
+  filter( ciudad =='Quito')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -650,7 +650,7 @@ tabla_bomberos_quito_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Quito')%>%
+  filter( ciudad =='Quito')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
@@ -666,7 +666,7 @@ tabla_bomberos_riobamba_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Riobamba')%>%
+  filter( ciudad == 'Riobamba')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -684,7 +684,7 @@ tabla_bomberos_riobamba_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Riobamba')%>%
+  filter( ciudad =='Riobamba')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -702,7 +702,7 @@ tabla_bomberos_riobamba_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Riobamba')%>%
+  filter( ciudad =='Riobamba')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
@@ -718,7 +718,7 @@ tabla_bomberos_cuenca_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Cuenca')%>%
+  filter( ciudad == 'Cuenca')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -736,7 +736,7 @@ tabla_bomberos_cuenca_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Cuenca')%>%
+  filter( ciudad =='Cuenca')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -754,7 +754,7 @@ tabla_bomberos_cuenca_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Cuenca')%>%
+  filter( ciudad =='Cuenca')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
@@ -770,7 +770,7 @@ tabla_bomberos_machala_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Machala')%>%
+  filter( ciudad == 'Machala')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -788,7 +788,7 @@ tabla_bomberos_machala_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Machala')%>%
+  filter( ciudad =='Machala')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -806,7 +806,7 @@ tabla_bomberos_machala_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Machala')%>%
+  filter( ciudad =='Machala')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
@@ -822,7 +822,7 @@ tabla_bomberos_manta_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Manta')%>%
+  filter( ciudad == 'Manta')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -840,7 +840,7 @@ tabla_bomberos_manta_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Manta')%>%
+  filter( ciudad =='Manta')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -858,7 +858,7 @@ tabla_bomberos_manta_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Manta')%>%
+  filter( ciudad =='Manta')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
@@ -874,7 +874,7 @@ tabla_bomberos_gye_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Guayaquil')%>%
+  filter( ciudad == 'Guayaquil')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -892,7 +892,7 @@ tabla_bomberos_gye_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Guayaquil')%>%
+  filter( ciudad =='Guayaquil')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -910,7 +910,7 @@ tabla_bomberos_gye_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Guayaquil')%>%
+  filter( ciudad =='Guayaquil')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
@@ -926,7 +926,7 @@ tabla_bomberos_sto_dom_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Santo Domingo')%>%
+  filter( ciudad == 'Santo Domingo')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -944,7 +944,7 @@ tabla_bomberos_sto_dom_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Santo Domingo')%>%
+  filter( ciudad =='Santo Domingo')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -962,7 +962,7 @@ tabla_bomberos_sto_dom_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Santo Domingo')%>%
+  filter( ciudad =='Santo Domingo')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
@@ -978,7 +978,7 @@ tabla_bomberos_ibarra_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Ibarra')%>%
+  filter( ciudad == 'Ibarra')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -996,7 +996,7 @@ tabla_bomberos_ibarra_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Ibarra')%>%
+  filter( ciudad =='Ibarra')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -1014,7 +1014,7 @@ tabla_bomberos_ibarra_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Ibarra')%>%
+  filter( ciudad =='Ibarra')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
@@ -1030,7 +1030,7 @@ tabla_bomberos_loja_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Loja')%>%
+  filter( ciudad == 'Loja')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -1048,7 +1048,7 @@ tabla_bomberos_loja_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Loja')%>%
+  filter( ciudad =='Loja')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -1057,7 +1057,7 @@ tabla_bomberos_loja_cargo <- bomberos %>%
                 frecuencia)
 
 tabla_bomberos_loja_salario <- bomberos %>%
-  filter( canton =='Loja')%>%
+  filter( ciudad =='Loja')%>%
   filter( !is.na(fecha_nacimiento)) %>%
   filter( fecha_nacimiento < as.Date("31/03/2022","%d/%m/%Y") ) %>%
   mutate( sueldo = as.numeric( sueldo ) ) %>%
@@ -1082,7 +1082,7 @@ tabla_bomberos_milagro_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Milagro')%>%
+  filter( ciudad == 'Milagro')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -1100,7 +1100,7 @@ tabla_bomberos_milagro_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Milagro')%>%
+  filter( ciudad =='Milagro')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -1118,7 +1118,7 @@ tabla_bomberos_milagro_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Milagro')%>%
+  filter( ciudad =='Milagro')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
@@ -1134,7 +1134,7 @@ tabla_bomberos_prtvj_edad_sexo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton == 'Portoviejo')%>%
+  filter( ciudad == 'Portoviejo')%>%
   group_by( edad, sexo ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -1152,7 +1152,7 @@ tabla_bomberos_prtvj_cargo <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Portoviejo')%>%
+  filter( ciudad =='Portoviejo')%>%
   group_by( sexo, cargo_coescop ) %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
@@ -1170,7 +1170,7 @@ tabla_bomberos_prtvj_salario <- bomberos %>%
                                units = "years",
                                precise = TRUE ) )) %>%
   filter( edad > 17, edad < 70)%>%
-  filter( canton =='Portoviejo')%>%
+  filter( ciudad =='Portoviejo')%>%
   group_by(cargo_coescop) %>%
   mutate( media = mean(sueldo, na.rm = TRUE) ) %>%
   ungroup() %>%
