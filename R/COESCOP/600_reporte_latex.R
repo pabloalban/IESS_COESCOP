@@ -6,7 +6,7 @@ source( 'R/400_preparar_reporte.R', encoding = 'UTF-8', echo = FALSE )
 
 
 #Mineria de datos-----------------------------------------------------------------------------------
-source( 'R/COESCOP/106_lectura_metropolitanos.R', encoding = 'UTF-8', echo = FALSE )
+#source( 'R/COESCOP/106_lectura_metropolitanos.R', encoding = 'UTF-8', echo = FALSE )
 #source( 'R/COESCOP/200_mineria_datos_cargos.R', encoding = 'UTF-8', echo = FALSE )
 
 # Gráficos específicas de COESCOP ------------------------------------------------------------------

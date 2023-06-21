@@ -3,12 +3,13 @@ message(paste(rep("-", 100), collapse = ""))
 message("\tCargando servidores COESCOP")
 
 # Carga de bases------------------------------------------------------------------------------------
-load(paste0(parametros$RData, "COESCOP_bomberos_cargos.RData")) #bomberos
-load(paste0(parametros$RData, "COESCOP_cte_cargos.RData")) #cte
-load(paste0(parametros$RData, "COESCOP_snai_cargos.RData")) #snai
-load(paste0(parametros$RData, "COESCOP_snmlcf_cargos.RData")) #snmlcf
-load(paste0(parametros$RData, "COESCOP_metropolitanos_cargos.RData")) #metropolitanos
-load(paste0(parametros$RData, "COESCOP_aduaneros_cargos.RData")) #aduaneros
+load( paste0( parametros$RData, "COESCOP_bomberos_cargos.RData" )) #bomberos
+load( paste0( parametros$RData, "COESCOP_cte_cargos.RData") ) #cte
+load( paste0( parametros$RData, "COESCOP_snai_cargos.RData") ) #snai
+load( paste0( parametros$RData, "COESCOP_snmlcf_cargos.RData") ) #snmlcf
+load( paste0( parametros$RData, "COESCOP_metropolitanos_cargos.RData") ) #metropolitanos
+load( paste0( parametros$RData, "COESCOP_aduaneros_cargos.RData") ) #aduaneros
+load( paste0( parametros$RData, "IESS_imposiciones_2022_12.RData") ) 
 
 
 
@@ -86,6 +87,10 @@ cte <- transito %>%
   mutate( tipo = "cte")
 
 
+#Factor de correción--------------------------------------------------------------------------------
+
+factor <- 10561 / 6606
+
 #Consolidación en una sola tabla--------------------------------------------------------------------
 
 coescop <- rbind( ad,
@@ -94,11 +99,19 @@ coescop <- rbind( ad,
                   snai,
                   sn,
                   cte) %>%
-  filter(cargo_coescop!="Administrativo" )
+  filter(cargo_coescop!="Administrativo" ) %>%
+  left_join( ., imposiciones, by = 'cedula') %>%
+  filter( !is.na(cedula) & fecha_nacimiento > as.Date('1950-01-01') & !is.na( numimp ) & fecha_nacimiento < as.Date('2004-01-01') ) %>%
+  mutate( edad = round(age_calc(fecha_nacimiento,
+                                enddate = as.Date("31/03/2022","%d/%m/%Y"),
+                                units = "years",
+                                precise = TRUE ) ) ) %>%
+  filter( numimp > 5 )
 
 
 #Guardar en Rdata-----------------------------------------------------------------------------------
 save( coescop,
+      factor,
       file = paste0( parametros$RData, 'IESS_consolidado_coescop.RData' ) )
 
 # #-------------------------------------------------------------------------------------------------
