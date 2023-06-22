@@ -1,48 +1,36 @@
 message(paste(rep("-", 100), collapse = ""))
 
 message("\tCargando datos para la reserva matmática")
-load(paste0(parametros$RData, "IESS_beneficiarios.RData"))
-load(paste0( parametros$RData, 'IESS_actualizacion_pensiones.RData'))
+load(paste0(parametros$RData, "IESS_proy_coescop.RData"))
 load(paste0( parametros$RData, 'IESS_tabla_mortalidad.RData'))
-load(paste0( parametros$RData, 'IESS_fallecidos.RData'))
-load(paste0( parametros$RData, 'IESS_nomina_concesiones.RData'))
-
+load(paste0( parametros$RData, 'ISSPOL_coeficientes.RData'))
 
 message("\tCalculando reserva matemática")
 
 #Pensionistas con derecho a IVM al corte------------------------------------------------------------
-aux_1 <- beneficiarios %>%
-  dplyr::select( cedula, fecha_derecho_ivm, edad_derecho_ivm, edad, ric, ric_ivm, sexo, n, k )
 
-aux_2 <- fallecidos %>%
-  dplyr::select( cedula, fecha_derecho_ivm, edad_derecho_ivm, edad, ric, ric_ivm, sexo, n, k )
-
-aux <- rbind( aux_1,
-              aux_2 )
-derecho_ivm <- nomina %>%
-  left_join(., aux, by =c('cedula')) %>%
-  filter( edad_derecho_ivm <= edad ) %>%
-  group_by( cedula ) %>%
-  filter( periodo == max(periodo)) %>%
-  distinct( cedula, .keep_all = TRUE ) %>%
-  ungroup() %>%
-  mutate( coef = ric_ivm / ric ) %>%
-  mutate( coef = ifelse( coef > 1, 1, coef ) ) %>%
-  dplyr::select( id,
-                 cedula,
-                 sexo,
-                 ric,
-                 fecha_derecho_ivm,
-                 edad_derecho_ivm,
-                 coef,
-                 edad,
-                 pension_aumentos,
-                 n, 
-                 k) %>%
+derecho_ivm <- malla_coescop %>%
+  filter( a_d_ivm == 0 ) %>%
+  left_join(., coeficientes, by = c('anios_imp'='anio') ) %>%
+  mutate( coef = coef_isspol - coef_iess ) %>%
+  mutate( n = edad + a_d_ivm + 1,
+          k = n - edad ) %>%
+  mutate( ric = coef_isspol * salario ) %>%
   left_join(., tabla_mortalidad, by=c('edad','sexo'='g')) %>%
-  mutate( reserva_matematica = a_x * (1-coef) * pension_aumentos  * 13 ) %>%
-  mutate( renta_ivm = coef * pension_aumentos,
-          renta_ce = ( 1-coef ) * pension_aumentos )
+  mutate( reserva_matematica = a_x * (coef) * ric  * 13 ) %>%
+  dplyr::select( cedula,
+                 sueldo,
+                 salario,
+                 coef,
+                 coef_isspol,
+                 coef_iess,
+                 n,
+                 k,
+                 ric,
+                 a_x,
+                 N_x,
+                 D_x,
+                 reserva_matematica  )
 
 
 #Pensionistas sin derecho a IVM al corte------------------------------------------------------------
