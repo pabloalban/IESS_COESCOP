@@ -18,16 +18,16 @@ moderado, dentro del contexto económico y financiero general descrito en el cap
 y considerando las condiciones particulares internas del \Sexpr{REP_seg}.
 
 %---------------------------------------------------------------------------------------------------
-\section{Estructura actuarial}
-\label{chp_hipotesis:sisfinact}
-
-Como base fundamental de este estudio adoptamos la estructura actuarial descrita y sustentada 
-en la sección \ref{chp_modelo:actu}, esto es:
-\begin{description}
-\item[Sistema de financiamiento:] reparto con capitalización parcial a prima media nivelada,
-\item[Esquema de prestaciones:] beneficio definido (o prestaciones definidas), y
-\item[Régimen demográfico:] grupo abierto.
-\end{description}
+% \section{Estructura actuarial}
+% \label{chp_hipotesis:sisfinact}
+% 
+% Como base fundamental de este estudio adoptamos la estructura actuarial descrita y sustentada 
+% en la sección \ref{chp_modelo:actu}, esto es:
+% \begin{description}
+% \item[Sistema de financiamiento:] reparto con capitalización parcial a prima media nivelada,
+% \item[Esquema de prestaciones:] beneficio definido (o prestaciones definidas), y
+% \item[Régimen demográfico:] grupo abierto.
+% \end{description}
 
 %---------------------------------------------------------------------------------------------------
 \section{Gastos administrativos}
@@ -35,24 +35,24 @@ en la sección \ref{chp_modelo:actu}, esto es:
 
 Para efectos de este estudio se considera que el financiamiento de los gastos administrativos  se lo realiza con el 0,03\% de la materia gravada de los afiliados al Seguro General, tal como lo establece en el artículo 6 de la \legalcite{ResIESS_CD101}. 
 %---------------------------------------------------------------------------------------------------
-\section{Parámetros generales}
-\label{chp_hipotesis:paramgen}
-
-En todos los escenarios de análisis, consideramos el horizonte de proyección y fecha de corte que se
-muestran en la tabla \ref{tab:paramgen}.
-\begin{table}[H]
-\caption{Parámetros generales}
-\label{tab:paramgen}
-\centering
-\begin{tabular}{lr}
-\toprule
-\multicolumn{1}{l}{\textbf{Parámetros}} & \multicolumn{1}{c}{\textbf{Escenario}} \\
-\midrule
-Fecha de corte & 2021-12-31 \\
-Horizonte de proyección & 40 años \\
-\bottomrule
-\end{tabular}
-\end{table}
+% \section{Parámetros generales}
+% \label{chp_hipotesis:paramgen}
+% 
+% En todos los escenarios de análisis, consideramos el horizonte de proyección y fecha de corte que se
+% muestran en la tabla \ref{tab:paramgen}.
+% \begin{table}[H]
+% \caption{Parámetros generales}
+% \label{tab:paramgen}
+% \centering
+% \begin{tabular}{lr}
+% \toprule
+% \multicolumn{1}{l}{\textbf{Parámetros}} & \multicolumn{1}{c}{\textbf{Escenario}} \\
+% \midrule
+% Fecha de corte & 2021-12-31 \\
+% Horizonte de proyección & 40 años \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
 
 % %---------------------------------------------------------------------------------------------------
 % \section{Tasa de rendimiento de las inversiones??}
@@ -105,10 +105,10 @@ de cada año, en la misma proporción que la inflación promedio anual del año 
 % \label{chp_hipotesis:paramecfin:iact}
 
 %---------------------------------------------------------------------------------------------------
-\section{Fondo inicial}
-\label{chp_hipotesis:paramecfin:fondoini}
-
-La reserva inicial del \Sexpr{REP_seg} empleada para el cálculo de la reserva en términos corrientes, $V_t^{cap}$ (ver ecuación \ref{eq:balance}), y la reserva en valor presente, $V_t$ (ver ecuación \ref{eq:balance_act}), corresponde al patrimonio al 31 de diciembre de 2020 (ver tabla \ref{tab:iess_patrimonio_fondo_rtr}), el cual asciende a USD \Sexpr{REP$cap_ini}.
+% \section{Fondo inicial}
+% \label{chp_hipotesis:paramecfin:fondoini}
+% 
+% La reserva inicial del \Sexpr{REP_seg} empleada para el cálculo de la reserva en términos corrientes, $V_t^{cap}$ (ver ecuación \ref{eq:balance}), y la reserva en valor presente, $V_t$ (ver ecuación \ref{eq:balance_act}), corresponde al patrimonio al 31 de diciembre de 2020 (ver tabla \ref{tab:iess_patrimonio_fondo_rtr}), el cual asciende a USD \Sexpr{REP$cap_ini}.
 
 %---------------------------------------------------------------------------------------------------
 \section{Aportes y beneficios}
@@ -167,19 +167,19 @@ obteniendo un referente promedio de las mismas.
 
  
 %---------------------------------------------------------------------------------------------------
-\section{Hipótesis demográficas}
-\label{chp_hipotesis:nuevosact}
-
-Las hipótesis demográficas que se adoptan para los nuevos asegurados toman en cuenta las 
-expectativas de evolución de la PEA nacional tomada de las proyecciones de población proporcionadas 
-por CEPAL y la evolución y del empleo.  Las principales 
-hipótesis observadas en la demografía son: la tasa de incremento anual de asegurados, la densidad 
-de cotización y la observación de nuevos ingresos de afiliados.
-
-Respecto a la incorporación de nuevos afiliados, se proyecta que mantendrán una tasa de entrada 
-con respecto a la evolución de la PEA para cada edad y sexo, tomando como base su evolución 
-histórica. En cuanto a la transición del afiliado activo a pensionista por vejez o invalidez se 
-determinaron unas tasas constantes por edad y sexo en función del comportamiento observado. Para el caso de montepíos por viudedad y orfandad se tomó en cuenta la adopción de nuevas nupcias, la muerte y 
-el cumplimiento de la mayoría de edad, respectivamente; considerando un ratio entre los pensionistas 
-de vejez y los de montepío.
+% \section{Hipótesis demográficas}
+% \label{chp_hipotesis:nuevosact}
+% 
+% Las hipótesis demográficas que se adoptan para los nuevos asegurados toman en cuenta las 
+% expectativas de evolución de la PEA nacional tomada de las proyecciones de población proporcionadas 
+% por CEPAL y la evolución y del empleo.  Las principales 
+% hipótesis observadas en la demografía son: la tasa de incremento anual de asegurados, la densidad 
+% de cotización y la observación de nuevos ingresos de afiliados.
+% 
+% Respecto a la incorporación de nuevos afiliados, se proyecta que mantendrán una tasa de entrada 
+% con respecto a la evolución de la PEA para cada edad y sexo, tomando como base su evolución 
+% histórica. En cuanto a la transición del afiliado activo a pensionista por vejez o invalidez se 
+% determinaron unas tasas constantes por edad y sexo en función del comportamiento observado. Para el caso de montepíos por viudedad y orfandad se tomó en cuenta la adopción de nuevas nupcias, la muerte y 
+% el cumplimiento de la mayoría de edad, respectivamente; considerando un ratio entre los pensionistas 
+% de vejez y los de montepío.
 

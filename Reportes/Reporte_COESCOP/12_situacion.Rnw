@@ -1,335 +1,183 @@
 %---------------------------------------------------------------------------------------------------
 \chapter{Valuación actuarial del \Sexpr{REP_seg}}
 \label{chp_valuacionactu}
+En el presente capítulo, se presenta el esquema pensional para los trabajadores sujetos al COESCOP, publicado en el Registro Oficial el 21 de junio de 2017. En el esquema pensional se abordará los requisitos en años de aportes para acceder a la prestación, financiamiento y cuantía de la pensión. Para establecer el financiamiento adecuado, se elaboran las respectivas proyecciones actuariales a 20 años, en el período comprendido entre 2023 a 2042, siguiendo las hipótesis actuariales definidas en el capítulo \ref{chp_hipotesis}.
 
-Tomando en cuenta el modelo actuarial presentado en el capítulo \ref{chp_modelo} y las hipótesis
-actuariales definidas en el capítulo \ref{chp_hipotesis}, en esta sección se presentan los
-resultados que reflejan la situación actuarial y financiera del \Sexpr{REP_seg}, generados bajo
-diferentes escenarios de proyección. A partir de esos balances, en cada escenario se puede apreciar
-la situación actuarial y financiera del \Sexpr{REP_seg} de forma dinámica, para cada año desde la
-fecha de corte y hasta el horizonte de estudio ($T = \Sexpr{REP_hor}$ años).   
+% Esquema pensional --------------------------------------------------------------------------------------
+\section{Esquema pensional}
+\label{chp_valuacion:esquema}
+Después de escuchar a los diferentes representantes de los trabajadores sujetos al COESCOP y los colaboradores del IESS, mediante reuniones de trabajo en las oficinas de la Dirección Actuarial, de Investigación y Estadística, y la Dirección del Seguro General de Riesgos del Trabajo, se pudo llegar a la conclusión, que la aspiración de este grupo de trabajadores es obtener una jubilación anticipada, con las mismas características de las jubilaciones de retiro entregadas por ISSPOL. Con este propósito, se propone el siguiente sistema pensional para los trabajadores bajo el COESCOP:
 
-Para el análisis se han definido cuatro escenarios: 
-\begin{enumerate}[itemsep=1mm, topsep=5pt]
-\item \textbf{Escenario Base:} Constituye el escenario más verosímil, aplicando parámetros
-financieros conservadores y realistas, en base a valores proyectados promedio. En este escenario 
-se supone: tasa actuarial \Sexpr{REP$tasa_act_esc_1}\%, tasa de crecimiento salarial de 2,1540\%
-y tasa de crecimiento de pensiones igual a 1,8261\%. Además, supone que el aporte estatal
-promedio para los próximos años es igual a 28\% (porcentaje recibido en los primeros meses del 
-2019) y toma en cuenta el cese del aporte del 2,76\% de los pensionistas.
+\textbf{1. Requisitos:}
+Acredita un mínimo de veinte (20) años de servicio activo y efectivo, sin considerar abonos por tiempo de servicio, riesgos profesionales y otras compensaciones, en entidades sujetas al Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público.
+
+\textbf{2. Financiamiento:}
+
+2.1. Subir la tasa de aportación personal al Seguro de IVM de 11,06\% a 12,90\%, dejando las mismas tasas de aportación para el resto de los seguros especializados del IESS, según la siguiente tabla:
+
+{\fontsize{10}{11}\selectfont
+\begin{longtable}[H]{lrrr}
+\caption{Porcentaje de aportación a los trabajadores del COESCOP}\\
+\label{tab:coescop_tab_tasa} \\
+\toprule
+Seguro:	&
+Personal &
+Patronal &
+Total \\
+\midrule
+\endfirsthead
+
+\toprule
+Seguro:	&
+Personal &
+Patronal &
+Total \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{4}{r}{continúa...} \\
+\endfoot
+
+%\bottomrule
+\endlastfoot
+\input{tablas/coescop_tab_tasa.tex}
+\end{longtable}
+}
 
 
-% Por último, se analiza el escenario base con la prima original (0,50\%) citada en la Ley de
-% Seguridad Social de 2001 reformado en la Resolución No. C.D. 261 y 501, el 0,25\% es destinado a
-% pago de prestaciones, 0,25\% a prestaciones mésdicas y 0,05\% para contingencias. El 70\% de los
-% ingresos por aportaciones de esta nueva prima se destinarán para financiar el pago de
-% prestaciones médico asistenciales del \Sexpr{REP_seg}.
-\end{enumerate}
+2.2. Con el fin de proteger el bolsillo de los trabajadores de las entidades de seguridad ciudadana y orden público, en el momento de la jubilación, la entidad o entidades donde haya laborado deberán transferir al IESS una reserva matemática con los valores faltantes para garantizar el pago de la pensión vitalicia, décimas, montepío y auxilio de funerales.
 
-% Los parámetros que definen cada escenario\footnote{Nota: La tasa de aportación de afiliados 
-% ($\pi^{2}$) se define a continuación en el detalle de parámetros de cada escenario.} se presentan 
-% en la tabla \ref{tab:par_escenarios}.
-% 
-% \noindent
-% {\fontsize{8}{10}\selectfont
-% \begin{longtable}[H]{L{5cm}C{2.0cm}}
-% \caption{Escenarios de análisis}\\
-% \label{tab:par_escenarios} \\
-% \toprule
-% \multirow{3}{*}{Parámetros:} 
-% & \multicolumn{1}{c}{Escenario 1} 
-% \\
-% & \multicolumn{1}{c}{Base} 
-% \\
-% & \multicolumn{1}{c}{(\%)}  
-%  \\
-% \midrule
-% \endfirsthead
-% 
-% \toprule
-% \multirow{3}{*}{Parámetros:} 
-% & \multicolumn{1}{c}{Escenario 1} 
-% \\
-% & \multicolumn{1}{c}{Base} 
-% \\
-% & \multicolumn{1}{c}{(\%)}   
-% } \\
-% \midrule
-% \endhead
-% 
-% \bottomrule
-% \multicolumn{2}{r}{continúa...} \\
-% \endfoot
-% 
-% \bottomrule \\
-% \caption*{Elaborado: \scriptsize DAIE.}
-% \endlastfoot
-% 
-% \input{tablas/iess_tab_conf_escenarios.tex}
-% 
-% \end{longtable}
-% }
+\textbf{3. Prestaciones:}
+El pensionista de retiro de vejez se calculará de acuerdo con la siguiente escala: El setenta por ciento (70\%) del sueldo imponible del beneficiario, por veinte (20) años completos de servicio activo y efectivo en la Policía Nacional, más el tres por ciento (3\%) del sueldo imponible por cada año adicional completo de servicio, hasta llegar al máximo del cien por ciento (100\%) del sueldo imponible a quien acredite treinta (30) o más años de servicio de acuerdo con la siguiente tabla:
 
-%En todos los escenarios, 
+{\fontsize{10}{10}\selectfont
+\begin{longtable}[H]{C{2cm}R{2.5cm}}
+\caption{Cuantía de la pensión por retiro en porcentajes del sueldo imponible, según el tiempo de servicio}\\
+\label{tab:coescop_tab_coeficientes} \\
+\toprule
+Tiempo de servicio:
+& Porcentaje del sueldo imponible
+\\
+\midrule
+\endfirsthead
 
-Se consideró la misma estructura actuarial del \Sexpr{REP_seg}, definida
-por un sistema de financiamiento de reparto con prima media nivelada, un esquema de prestaciones de
-beneficio definido y un régimen demográfico en grupo abierto, acorde a lo expuesto en la sección
-\ref{chp_modelo:actu}. 
+\toprule
+Tiempo de servicio:
+& Porcentaje del sueldo imponible
+\\
+\midrule
+\endhead
 
-% También se consideró el fallo de la corte constitucional sobre el cese de los aportes del 2,76\%
-% por parte de los pensionistas para financiar auxilio de funerales y décimas.
+\bottomrule
+\multicolumn{2}{r}{continúa...} \\
+\endfoot
 
-Solo se considera el 28\% (no el 40\%) del aporte del Estado a las pensiones, puesto que ese fue el
-porcentaje que el Estado aporta en el año 2019. Además, en los tres primeros escenarios, aplicamos
-los porcentajes de aportación dispuestos por la resolución No. C.D. 515, mientras que el cuarto y
-último escenario es una propuesta de la Dirección Actuarial, de Investigación y Estadística para
-financiar el pago de prestaciones médico asistenciales del \Sexpr{REP_seg}, las cuales en este
-momento financia el Seguro General de Salud Individual y Familiar.
-\clearpage
+%\bottomrule
+\endlastfoot
+\input{tablas/coescop_tab_coeficientes.tex}
+\end{longtable}
+}
 
-% Escenario 1 --------------------------------------------------------------------------------------
-\section{Valuación actuarial bajo el escenario base}
-\label{chp_valuacion:esc_base}
+% Balance --------------------------------------------------------------------------------------
+\section{Valuación actuarial}
+\label{chp_valuacion:balance}
 
-El escenario base es el más probable o verosímil. En este escenario se utilizan las siguientes
-hipótesis: tasa actuarial, 6,25\%; tasa de crecimiento de los salarios, 2,15\%; y tasa de
-crecimiento del salario básico unificado 2,53\%. Además, se establece que los gastos
-administrativos son igual al \Sexpr{REP$tasa_porcentaje_gasto_esc_1}\% de la masa salarial.
-
-Este escenario considera las siguientes fuentes de financiamiento: la tasa de aportación de los
-afiliados activos igual a \Sexpr{REP$tasa_aporte_esc_1_2020}\% hasta el 2020 y 
-0,38\% a partir del 2021, establecido en la Resolución No. C.D.
-515; la tasa de aportación del estado \Sexpr{REP$apo_est_esc_1}\% (basado en la aportación promedio
-realizada en 2019); y el aporte de los pensionistas de incapacidad permanente total, absoluta y
-parcial, y los beneficiarios de montepío, $\pi^{9,13,14,15}$, igual a
-\Sexpr{REP$tasa_apo_jub_esc_1}\%.
 
 %---------------------------------------------------------------------------------------------------
-\subsection{Balance actuarial para el escenario base}
-\label{chp_valuacionactu:esc_1:balactu}
 
-La tabla \ref{tab:iess_bal_act_vap_escenario_1} presenta el balance actuarial para el año 2058 del
-escenario base. El escenario 1 presenta un superávit igual a USD \Sexpr{REP$bal_act_esc_1}, en
-términos actuariales, en el año 2058, el cual se obtiene de la diferencia entre su activo actuarial
-(USD \Sexpr{REP$bal_sum_act_1}) y su pasivo actuarial (USD \Sexpr{REP$bal_sum_pas_1}), en valor
-presente. Por último, su prima suficiente alcanza el \Sexpr{REP$pri_med_niv_esc_1}\%.
-\begin{table}[H]
-\centering
-\caption{Balance actuarial en el escenario base}
-\label{tab:iess_bal_act_vap_escenario_1}
-\caption*{Fecha de valuación: al \Sexpr{REP_fec_fin}}
-{\fontsize{10}{12}\selectfont
-\begin{tabular}{lr}
-\toprule
-Componente:	& Valor (USD) \\
-\midrule
-% el comando \csname es para evitar un error cuando el input comienza con \multicolumn
- \csname @@input\endcsname tablas/iess_bal_act_vap_escenario_1.tex
-\bottomrule
-\end{tabular}
-}
-\end{table}
-
-% Escenario 1 balance actuarial dinámico -----------------------------------------------------------
-La tabla \ref{tab:bal_act_tot_esc_1} y la figura \ref{graf:bal_vap_esc_1} presentan la evolución del
-balance actuarial dinámico para horizontes $T \in \{0,\ldots,40\}$. En la tabla
-\ref{tab:bal_ben_esc_1}, se observa el detalle de los beneficios por pago de prestaciones; en
-cambio, en la tabla \ref{tab:iess_bal_act_vap_escenario_1}, se presenta la reserva, $V_t$, del
-\Sexpr{REP_seg} para cada año hasta el 2058. El gráfico \ref{graf:apo_ben_bal_din_esc_1} presenta la
-comparación entre los aportes (línea azul) y los beneficios (línea verde).
-\begin{figure}[H]
-\caption{Escenario base: evolución del balance actuarial $V_T$}
-\label{graf:bal_vap_esc_1}
-\centering
-\includegraphics[scale=1]{graficos/iess_balance_vap_rv_escenario_1.png}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Escenario base: aportes y beneficios del balance actuarial $V_T$}
-\label{graf:apo_ben_bal_din_esc_1}
-\centering
-\includegraphics[scale=1]{graficos/iess_apo_ben_bal_dinamico_escenario_1.png}
-\end{figure}
+\subsection{Balance corriente}
+\label{chp_valuacionactu:balcorr}
+Teniendo en cuenta el esquema pensional mostrado en la sección \ref{chp_valuacion:esquema}, se elaboran las respectivas proyecciones actuariales a 20 años, en el período comprendido entre 2023 a 2042, siguiendo las hipótesis actuariales definidas en el capítulo \ref{chp_hipotesis}. En el presente balances se estima el gasto prestacional con el costo de su reserva matemática vitalicia; es decir, los valores necesarios para pagar pensiones desde la fecha de derecho hasta la fecha de defunción del pensionista y el posible pago de montepío a su conyugue o huérfanos menores de dieciocho años (18), según la normativa vigente del IESS. Se opta por esta forma de registrar el gasto prestacional, debido a que, según el esquema pensional propuesto, las entidades de seguridad ciudadana y orden público deberán transferir al Fondo del Seguro de IVM el valor de una reserva matemática por el pago de las pensiones futuras, sustraído los aportes personales (12,90\%) y patronales (3,82\%). En la tabla \ref{tab:iess_balance_cap}, se presenta el balance en términos corrientes, el cual presenta las proyecciones de nuevos pensionistas y los valores a transferir por cada entidad cada año.
 
 \begin{landscape}
-{\fontsize{10}{12}\selectfont
-\begin{longtable}[H]{L{1cm}R{1cm}*{6}{R{2.5cm}}}
-\caption{Escenario base: balance actuarial dinámico}\\
-\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$, 
-aporte de salud $\pi^{sal} = \Sexpr{REP$tasa_aporte_salud_esc_1}\%$ y horizontes de proyección 
-$T \in \{0,\ldots,40\}$}
-\label{tab:bal_act_tot_esc_1} \\
+
+{\fontsize{10}{14}\selectfont
+\begin{longtable}[H]{R{0.5cm}R{1cm}R{2cm}R{2.5cm}R{2cm}*{4}{R{2.5cm}R{2cm}R{2cm}}}
+\caption{Balance Corriente}\\
+\label{tab:iess_balance_cap} \\
 \toprule
-Año 
-& Horizonte 
-& Aportes
-& Aporte estatal
-& Beneficios
-& Gasto administrativo
-& Reserva inicial
-& Balance actuarial\\
-& $T$
-& $\sum\limits_{t=0}^T v^t A_t$ 
-& $\sum\limits_{t=0}^T v^t A^{est}_t$
-& $\sum\limits_{t=0}^T v^t B_t$ 
-& $\sum\limits_{t=0}^T v^t G_t$
-& $V_0$
-& $V_T$ \\
+Año:
+& Nuevos jubilados
+& Aporte 16,72\%
+& Reserva a pagar por instituciones
+& Ingresos Totales
+& Reserva matemática para prestaciones
+& Montepío
+& Gastos Administrativos
+& Egresos Totales
+& Balance Corriente
+& Balance Capitalizado
+\\
 \midrule
 \endfirsthead
 
 \toprule
-Año 
-& Horizonte
-& Aportes
-& Aporte estatal
-& Beneficios
-& Gasto administrativo
-& Reserva inicial 
-& Balance actuarial\\
-& $T$
-& $\sum\limits_{t=0}^T v^t A_t$ 
-& $\sum\limits_{t=0}^T v^t A^{est}_t$
-& $\sum\limits_{t=0}^T v^t B_t$
-& $\sum\limits_{t=0}^T v^t G_t$
-& $V_0$
-& $V_T$ \\
+Año:
+& Nuevos jubilados
+& Aporte 16,72\%
+& Reserva a pagar por instituciones
+& Ingresos Totales
+& Reserva matemática para prestaciones
+& Montepío
+& Gastos Administrativos
+& Egresos Totales
+& Balance Corriente
+& Balance Capitalizado
+\\
 \midrule
 \endhead
 
 \bottomrule
-\multicolumn{8}{r}{continúa...} \\
+\multicolumn{11}{r}{continúa...} \\
 \endfoot
 
 %\bottomrule
 \endlastfoot
-\input{tablas/iess_balance_actuarial_escenario_1.tex}
+\input{tablas/iess_balance_cap.tex}
 \end{longtable}
 }
+
 \end{landscape}
 
-% Escenario 1 tabla aportes dinámico ---------------------------------------------------------------
-\begin{landscape}
-{\fontsize{10}{12}\selectfont
-\begin{longtable}[H]{R{0.5cm}R{0.7cm}*{8}{R{2.5cm}}}
-\caption{Escenario base: aportes balance dinámico}\\
-\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$, 
-aporte de salud $\pi^{sal} = \Sexpr{REP$tasa_aporte_salud_esc_1}\%$ y horizontes de proyección 
-$T \in \{0,\ldots,40\}$}
-\label{tab:bal_apo_esc_1}\\
 
+
+\begin{landscape}
+
+\subsection{Balance actuarial}
+\label{chp_valuacionactu:balactu}
+
+{\fontsize{10}{14}\selectfont
+\begin{longtable}[H]{R{0.5cm}R{1cm}R{2cm}R{2.5cm}R{2cm}*{4}{R{2.5cm}R{2cm}}}
+\caption{Balance Actuarial}\\
+\label{tab:iess_balance_vap} \\
 \toprule
-Año 
-& Horizonte & Activos
-& Pensionistas de incapacidad permanente absoluta y total
-& Pensionistas de incapacidad permanente parcial 
-& Pensionistas de montepío orfandad
-& Pensionistas de montepío viudedad 
-& Aporte de afiliados y pensionistas               
-& Aporte estatal                
-& Aporte total \\
-& $T$       
-& $\sum\limits_{t=0}^T v^t A^2_t$ 
-& $\sum\limits_{t=0}^T v^t A^9_t$
-& $\sum\limits_{t=0}^T v^t A^{15}_t$
-& $\sum\limits_{t=0}^T v^t A^{13}_t$
-& $\sum\limits_{t=0}^T v^t A^{14}_t$
-& $\sum\limits_{t=0}^T v^t A_t$ 
-& $\sum\limits_{t=0}^T v^t A^{est}_t$ 
-& $\sum\limits_{t=0}^T v^t A^{tot}_t$ \\
+Año:
+& Nuevos jubilados
+& Aporte 16,72\%
+& Valores a pagar por entidades
+& Ingresos Totales
+& Reserva matemática para prestaciones
+& Montepío
+& Gastos Administrativos
+& Egresos Totales
+& Balance Capitalizado
+\\
 \midrule
 \endfirsthead
 
 \toprule
-Año 
-& Horizonte & Activos
-& Pensionistas de incapacidad permanente absoluta y total
-& Pensionistas de incapacidad permanente parcial 
-& Pensionistas de montepío orfandad
-& Pensionistas de montepío viudedad 
-& Aporte de afiliados y pensionistas               
-& Aporte estatal                
-& Aporte total \\
-& $T$       
-& $\sum\limits_{t=0}^T v^t A^2_t$ 
-& $\sum\limits_{t=0}^T v^t A^9_t$
-& $\sum\limits_{t=0}^T v^t A^{15}_t$
-& $\sum\limits_{t=0}^T v^t A^{13}_t$
-& $\sum\limits_{t=0}^T v^t A^{14}_t$
-& $\sum\limits_{t=0}^T v^t A_t$ 
-& $\sum\limits_{t=0}^T v^t A^{est}_t$ 
-& $\sum\limits_{t=0}^T v^t A^{tot}_t$ \\
-\midrule
-\endhead
-
-\bottomrule
-\multicolumn{10}{r}{continúa...} \\ 
-\endfoot
-
-%\bottomrule
-\endlastfoot
-
-\input{tablas/iess_balance_aportes_vap_escenario_1.tex}
-
-\end{longtable}
-}
-\end{landscape}
-%\clearpage
-
-% Escenario 1 tabla beneficios dinámico ------------------------------------------------------------
-\begin{landscape}
-{\fontsize{10}{12}\selectfont
-\begin{longtable}[H]{R{0.5cm}R{0.7cm}*{8}{R{2.5cm}}}
-\caption{Escenario base: beneficios balance dinámico}\\
-\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$, 
-aporte de salud $\pi^{sal} = \Sexpr{REP$tasa_aporte_salud_esc_1}\%$ y horizontes de proyección 
-$T \in \{0,\ldots,40\}$}
-\label{tab:bal_ben_esc_1}\\
-
-\toprule
-Año 
-& $T$
-& Beneficios de incapacidad permanente absoluta y total 
-& Beneficios de incapacidad permanente parcial
-& Beneficios por indemnizaciones
-& Beneficios de orfandad 
-& Beneficios de viudedad  
-& Beneficios por subsidios
-& Beneficios prestaciones médico asistenciales 
-& Beneficios totales \\
-&
-& $\sum\limits_{t=0}^T v^t B^9_t$
-& $\sum\limits_{t=0}^T v^t B^{15}_t$
-& $\sum\limits_{t=0}^T v^t B^{10}_t$
-& $\sum\limits_{t=0}^T v^t B^{13}_t$
-& $\sum\limits_{t=0}^T v^t B^{14}_t$
-& $\sum\limits_{t=0}^T v^t B^{11}_t$
-& $\sum\limits_{t=0}^T v^t B^{sal}_t$
-& $\sum\limits_{t=0}^T v^t B_t$ \\
-\midrule
-\endfirsthead
-
-\toprule
-Año 
-& $T$
-& Beneficios de incapacidad permanente absoluta y total 
-& Beneficios de incapacidad permanente parcial
-& Beneficios por indemnizaciones
-& Beneficios de orfandad 
-& Beneficios de viudedad  
-& Beneficios por subsidios
-& Beneficios prestaciones médico asistenciales 
-& Beneficios totales \\
-&
-& $\sum\limits_{t=0}^T v^t B^9_t$
-& $\sum\limits_{t=0}^T v^t B^{15}_t$
-& $\sum\limits_{t=0}^T v^t B^{10}_t$
-& $\sum\limits_{t=0}^T v^t B^{13}_t$
-& $\sum\limits_{t=0}^T v^t B^{14}_t$
-& $\sum\limits_{t=0}^T v^t B^{11}_t$
-& $\sum\limits_{t=0}^T v^t B^{sal}_t$
-& $\sum\limits_{t=0}^T v^t B_t$ \\
+Año:
+& Nuevos jubilados
+& Aporte 16,72\%
+& Valores a pagar por entidades
+& Ingresos Totales
+& Reserva matemática para prestaciones
+& Montepío
+& Gastos Administrativos
+& Egresos Totales
+& Balance Capitalizado
+\\
 \midrule
 \endhead
 
@@ -339,216 +187,92 @@ Año
 
 %\bottomrule
 \endlastfoot
-
-\input{tablas/iess_balance_beneficios_vap_escenario_1.tex}
-
+\input{tablas/iess_balance_vap.tex}
 \end{longtable}
 }
+
 \end{landscape}
 
-%---------------------------------------------------------------------------------------------------
-\subsection{Balance corriente y evolución de la reserva para el escenario base}
-\label{chp_valuacionactu:esc_1:balcorr}
 
-La tabla \ref{tab:bal_corr_tot_esc_1} y la figura \ref{graf:bal_cap_esc_1} presentan la evolución
-del balance corriente y evolución de la reserva para horizontes $T \in \{0,\ldots,40\}$. En la
-tabla \ref{tab:bal_corr_ben_esc_1}, se observa el detalle de los beneficios. El gráfico 
-\ref{graf:apo_ben_bal_cap_esc_1} presenta la evolución de los aportes (línea azul) y la evolución 
-de los beneficios (línea verde).
+De los resultados de la valuación actuarial, se concluye que durante el período 2023 a 2042: se recaudará USD \Sexpr{REP$aporte_coescop_vap} aportes al Fondo de retiro (aporte personal (12,90\% ) y patronal (3,82\%) y las entidades de seguridad ciudadana y orden público deberán transferir USD \Sexpr{REP$reserva_a_pagar_vap}, para cubrir los egresos por las prestaciones por pensiones, montepío y gastos administrativos por USD \Sexpr{REP$egreso_total_vap}. Los valores que debe transferir cada entidad por esta jubilación anticipada se detallan en la tabla \ref{tab:iess_valor_a_pagar_ins}.
 
-% Escenario 1 balance corriente  -------------------------------------------------------------------
-\begin{figure}[H]
-\caption{Escenario base: la reserva $V^{cap}_t$}
-\label{graf:bal_cap_esc_1}
-\centering
-\includegraphics[scale=0.95]{graficos/iess_balance_capitalizado_rv_escenario_1.png}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Escenario base: aportes y beneficios del balance capitalizado}
-\label{graf:apo_ben_bal_cap_esc_1}
-\centering
-\includegraphics[scale=0.95]{graficos/iess_apo_ben_bal_capitalizado_escenario_1.png}
-\end{figure}
-
-\begin{landscape}
-{\fontsize{10}{12}\selectfont
-\begin{longtable}[H]{R{0.5cm}*{5}{R{2.5cm}}}
-\caption{Escenario base: balance corriente}\\
-\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$ 
-y aporte de salud $\pi^{sal} = \Sexpr{REP$tasa_aporte_salud_esc_1}\%$}
-\label{tab:bal_corr_tot_esc_1} \\
+{\fontsize{10}{14}\selectfont
+\begin{longtable}[H]{L{9cm}R{4.5cm}}
+\caption{Valores que las entidades de seguridad ciudadana y orden público entre 2023 a 2042 van a cancelar por las jubilaciones de retiro anticipadas}\\
+\label{tab:iess_valor_a_pagar_ins} \\
 \toprule
-Año 
-& Aportes 
-& Beneficios 
-& Gasto administrativo 
-& Balance corriente 
-& Balance capitalizado \\
-$t$ 
-& $A_t$ 
-& $B_t$ 
-& $G_t$ 
-& $V^{cor}_t$ 
-& $V^{cap}_t$ \\
+Entidad:
+& Valores a transferir al Fondo del Seguro de IVM (USD)
+\\
 \midrule
 \endfirsthead
 
 \toprule
-Año 
-& Aportes 
-& Beneficios 
-& Gasto administrativo 
-& Balance corriente 
-& Balance capitalizado \\
-$t$ 
-& $A_t$ 
-& $B_t$ 
-& $G_t$ 
-& $V^{cor}_t$ 
-& $V^{cap}_t$ \\
+Entidad:
+& Valores a transferir al Fondo del Seguro de IVM (USD)
+\\
 \midrule
 \endhead
 
 \bottomrule
-\multicolumn{6}{r}{continúa...} \\
+\multicolumn{2}{r}{continúa...} \\
 \endfoot
 
 %\bottomrule
 \endlastfoot
-
-\input{tablas/iess_balance_corriente_escenario_1.tex}
-
+\input{tablas/iess_valor_a_pagar_ins.tex}
 \end{longtable}
 }
-\end{landscape}
 
-% Escenario 1 aportes balance corriente ------------------------------------------------------------
-\begin{landscape}
-{\fontsize{10}{12}\selectfont
-\begin{longtable}[H]{R{0.5cm}*{8}{R{2.5cm}}}
-\caption{Escenario base: aportes balance corriente}\\
-\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$ 
-y aporte de salud $\pi^{sal} = \Sexpr{REP$tasa_aporte_salud_esc_1}\%$}
-\label{tab:bal_corr_apo_esc_1}\\
 
+% Impacto --------------------------------------------------------------------------------------
+\section{Valores dejados de percibir por años aportes al IESS}
+\label{chp_valuacion:impacto}
+
+Además de los valores antes descritos, el Fondo de IVM del IESS dejará de percibir USD \Sexpr{REP$aporte_ivm_vap} por el cese de pago aportes a este seguro por 10 años menos, al tratarse de una jubilación anticipada, sin límite de edad, y no cumplir con los requisitos de edad de entrega de prestaciones de las jubilaciones de vejez del IESS de 60 años y 30 años de imposiciones, lo cual engrosaría el déficit actuarial de este Seguro. También, el Seguro General de Salud Individual y Familiar del IESS dejara de percibir aportes de 10 años por USD \Sexpr{REP$aporte_salud_vap}.
+
+{\fontsize{10}{14}\selectfont
+\begin{longtable}[H]{R{0.5cm}R{2.0cm}R{2.0cm}R{2.0cm}R{2.0cm}R{2.0cm}R{2.0cm}}
+\caption{Valores dejados de percibir por años aportes al IESS por jubilación anticipada}\\
+\label{tab:iess_balance_vap} \\
 \toprule
-Año  
-& Activos
-& Pensionistas de incapacidad permanente absoluta y total 
-& Pensionistas de incapacidad permanente parcial 
-& Pensionistas de montepío orfandad 
-& Pensionistas de montepío viudedad 
-& Aporte de afiliados y pensionistas
-& Aporte estatal
-& Aporte total \\
-& $A^2_t$
-& $A^9_t$
-& $A^{15}_t$
-& $A^{13}_t$
-& $A^{14}_t$
-& $A_t$
-& $A^{est}_t$
-& $A^{tot}_t$ \\
+\multicolumn{1}{l}{\multirow{2}{*}{Año:}} & 
+\multicolumn{3}{c}{En términos corientes} &
+\multicolumn{3}{c}{Valor a tiempo presente} &
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+\\
+& Aportes al Seguro de IVM
+& Aporte a Salud
+& Total valores
+& Aportes al Seguro de IVM
+& Aporte a Salud
+& Total valores
+\\
 \midrule
 \endfirsthead
 
 \toprule
-Año  
-& Activos
-& Pensionistas de incapacidad permanente absoluta y total 
-& Pensionistas de incapacidad permanente parcial 
-& Pensionistas de montepío orfandad 
-& Pensionistas de montepío viudedad 
-& Aporte de afiliados y pensionistas
-& Aporte estatal
-& Aporte total \\
-& $A^2_t$
-& $A^9_t$
-& $A^{15}_t$
-& $A^{13}_t$
-& $A^{14}_t$
-& $A_t$
-& $A^{est}_t$
-& $A^{tot}_t$ \\
+\multicolumn{1}{l}{\multirow{2}{*}{Año:}} & 
+\multicolumn{3}{c}{En términos corientes} &
+\multicolumn{3}{c}{Valor a tiempo presente} &
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+\\
+& Aportes al Seguro de IVM
+& Aporte a Salud
+& Total valores
+& Aportes al Seguro de IVM
+& Aporte a Salud
+& Total valores
+\\
 \midrule
 \endhead
 
 \bottomrule
-\multicolumn{9}{r}{continúa...} \\ 
+\multicolumn{7}{r}{continúa...} \\
 \endfoot
 
 %\bottomrule
 \endlastfoot
-
-\input{tablas/iess_balance_aportes_escenario_1.tex}
-
+\input{tablas/iess_impacto.tex}
 \end{longtable}
 }
-\end{landscape}
-
-\clearpage
-
-% Escenario 1 tabla beneficios balance corriente ---------------------------------------------------
-\begin{landscape}
-{\fontsize{10}{12}\selectfont
-\begin{longtable}[H]{R{0.5cm}*{8}{R{2.5cm}}}
-\caption{Escenario base: beneficios balance corriente}\\
-\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$ 
-y aporte de salud $\pi^{sal} = \Sexpr{REP$tasa_aporte_salud_esc_1}\%$}
-\label{tab:bal_corr_ben_esc_1}\\
-
-\toprule
-Año 
-& Beneficios de incapacidad permanente absoluta y total 
-& Beneficios de incapacidad permanente parcial
-& Beneficios por indemnizaciones
-& Beneficios de orfandad 
-& Beneficios de viudedad  
-& Beneficios por subsidios
-& Beneficios prestaciones médico asistenciales 
-& Beneficios totales \\
-     
-& $B^9_t$ 
-& $B^{15}_t$ 
-& $B^{10}_t$ 
-& $B^{13}_t$ 
-& $B^{14}_t$ 
-& $B^{11}_t$ 
-& $B^{sal}_t$ 
-& $B_t$ \\
-\midrule
-\endfirsthead
-
-\toprule
-Año 
-& Beneficios de incapacidad permanente absoluta y total 
-& Beneficios de incapacidad permanente parcial
-& Beneficios por indemnizaciones
-& Beneficios de orfandad 
-& Beneficios de viudedad  
-& Beneficios por subsidios
-& Beneficios prestaciones médico asistenciales 
-& Beneficios totales \\
-     
-& $B^9_t$ 
-& $B^{15}_t$ 
-& $B^{10}_t$ 
-& $B^{13}_t$ 
-& $B^{14}_t$ 
-& $B^{11}_t$ 
-& $B^{sal}_t$ 
-& $B_t$ \\
-\midrule
-\endhead
-
-\bottomrule
-\multicolumn{9}{r}{continúa...} \\
-\endfoot
-
-%\bottomrule
-\endlastfoot
-\input{tablas/iess_balance_beneficios_escenario_1.tex}
-\end{longtable}
-}
-\end{landscape}

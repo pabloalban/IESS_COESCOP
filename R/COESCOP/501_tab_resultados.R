@@ -8,6 +8,7 @@ source( 'R/503_tildes_a_latex.R', encoding = 'UTF-8', echo = FALSE )
 #Carga de datos-------------------------------------------------------------------------------------
 load(paste0(parametros$RData, "IESS_balance.RData"))
 load( file = paste0( parametros$RData, 'IESS_macro_estudio.RData' ) )
+load( file = paste0( parametros$RData, 'COESCOP_esquema_pensional.RData' ) )
 
 #Tabla del impacto al IVM y Salud-------------------------------------------------------------------
 
@@ -152,6 +153,44 @@ print( xtb_aux,
        format.args = list( decimal.mark = ',', big.mark = '.' ), 
        only.contents = TRUE, 
        hline.after = NULL, sanitize.text.function = identity )
+
+#Tabla de la tasa de aportación---------------------------------------------------------------------
+
+aux <- tab_tasa
+
+aux_xtable <- xtable( aux, digits = c(0, 0, rep(0, 3 ) ) )
+
+aux_xtable <- tildes_a_latex(aux_xtable)
+
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'coescop_tab_tasa', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = c( nrow(aux) - 1,
+                        nrow(aux) ),
+       sanitize.text.function = identity)
+
+
+#Tabla de la tasa de aportación---------------------------------------------------------------------
+
+aux <- tab_coeficientes
+
+aux_xtable <- xtable( aux, digits = c(0, 0, 0 ) )
+
+aux_xtable <- tildes_a_latex(aux_xtable)
+
+print( aux_xtable,
+       file = paste0( parametros$resultado_tablas, 'coescop_tab_coeficientes', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE,
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = c( nrow(aux) ),
+       sanitize.text.function = identity)
 
 #Limpiando memoria RAM------------------------------------------------------------------------------
 message( paste( rep('-', 100 ), collapse = '' ) )

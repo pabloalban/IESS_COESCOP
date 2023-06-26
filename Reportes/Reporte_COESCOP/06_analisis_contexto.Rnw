@@ -23,7 +23,7 @@ Por las razones antes señaladas, esta Dirección considera que lo más apropiad
 
 Una de las hipótesis importantes a considerar en los modelos matemáticos – actuariales es la inflación, que mide el aumento generalizado y sostenido de los precios de bienes y servicios en un país, cuya medición consiste en el cálculo de los incrementos que presenta el Índice de Precios al Consumidor (IPC). Es por ello que se pone especial atención en dicho fenómeno económico en razón de que este afecta tanto a las tasas de interés como al incremento salarial, que es la base del crecimiento de las reservas y del crecimiento salarial en el tiempo, referente tanto de aportes como de beneficios.
 
-La información presentada se descargó de la pagina\footnote{\url{https://www.ecuadorencifras.gob.ec/indice-de-precios-al-consumidor/}} oficial del Instituto Nacional de Estadística y Censos (INEC). A continuación, se muestra la evolución histórica del índice de precios en la tabla \ref{tab:iess_inflacion} y la figura \ref{fig:iess_inflacion}.
+La información presentada se descargó de la página\footnote{\url{https://www.ecuadorencifras.gob.ec/indice-de-precios-al-consumidor/}} oficial del Instituto Nacional de Estadística y Censos (INEC). A continuación, se muestra la evolución histórica del índice de precios en la tabla \ref{tab:iess_inflacion} y la figura \ref{fig:iess_inflacion}.
 
 {\setlength{\tabcolsep}{5pt}
 {\fontsize{11}{14}\selectfont

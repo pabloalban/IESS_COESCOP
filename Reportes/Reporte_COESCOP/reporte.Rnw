@@ -47,9 +47,9 @@
 % Cuerpo del estudio
 %\mainmatter
 
-% # <<cap03, child='03_resumen_ejecutivo.Rnw'>>=
-% # @
-% #  
+<<cap03, child='03_resumen_ejecutivo.Rnw'>>=
+@
+  
 <<cap04, child='04_introduccion.Rnw'>>=
 @
 
@@ -64,25 +64,16 @@
 
 <<cap08, child='08_demografia.Rnw'>>=
 @
-%   
+  
 % <<cap09, child='09_metodologia.Rnw'>>=
 % @
 %   
 <<cap10, child='10_hipotesis.Rnw'>>=
 @ 
-%   
-% <<cap11, child='11_riesgos.Rnw'>>=
-% @
-%  
-% <<cap12, child='12_situacion.Rnw'>>=
-% @
-% 
-% <<cap13, child='13_sensibilidad.Rnw'>>=
-% @
-% 
-% <<cap14, child='14_conclusion.Rnw'>>=
-% @
-% 
+
+<<cap11, child='14_conclusion.Rnw'>>=
+@
+
 % <<cap15, child='15_opinion_actuarial.Rnw'>>=
 % @
 

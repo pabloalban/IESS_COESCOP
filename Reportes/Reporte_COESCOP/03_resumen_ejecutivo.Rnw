@@ -3,10 +3,136 @@
 \label{chp_res_ejec}
 
 %---------------------------------------------------------------------------------------------------
-\section{Definición clara del objeto del estudio}
+\section{Objetivo del estudio}
 \label{chp_res_ejec:objeto}
-El presente estudio actuarial abarca al Seguro General de Riesgos del Trabajo con fecha de corte 31
-de diciembre de 2018, un horizonte de 40 años, cuyo objetivo es evaluar la capacidad del Fondo para
-que cumpla con las obligaciones futuras causadas por las contingencias de accidentes de trabajo y 
-enfermedades profesionales u ocupacionales en los escenarios económicos, financieros y demográficos 
-q
+
+Con la finalidad de cumplir con la Disposición Transitoria Segunda del Código Orgánico de
+las Entidades de Seguridad Ciudadana y Orden Público, se emite el presente estudio actuarial, con fecha de corte 31 de diciembre de 2022, un horizonte de 20 años.
+
+%---------------------------------------------------------------------------------------------------
+\section{Código Orgánico de las Entidades de Seguridad Ciudadana y Orden Público}
+\label{chp_res_ejec:descripcion}
+
+En concordancia con la Disposición Transitoria Segunda del Código Orgánico de las Entidades de Seguridad Ciudadana y Orden Público - COESCOP, la cual declara que:
+
+\begin{quote}
+
+\textit{``El Ministerio rector en materia laboral y el Instituto Ecuatoriano de Seguridad Social realizarán los estudios técnicos y actuariales con el objetivo de detectar particularidades laborales respecto de las funciones que cumplen los servidores sujetos a este Código, en un plazo no mayor a trescientos sesenta días. De determinarse pertinente, las condiciones prestacionales para este grupo se otorgarán siempre que se encuentren debidamente financiadas por el empleador y el servidor, y se modificarán mediante la reforma de la normativa correspondiente''}
+
+\end{quote}
+
+%---------------------------------------------------------------------------------------------------
+\section{Hipótesis y supuestos claves del estudio}
+\label{chp_res_ejec:hipotesis}
+A manera de resumen, se describen las principales hipótesis de este estudio: 
+
+ \begin{table}[H]
+ \centering
+ \caption{Promedio de los valores estimados de tasas de variación}
+ \label{tab:iess_hip_macro}
+ \begin{tabular}{lr}
+ \toprule
+ Ítem & Tasa (\%)\\
+ \midrule
+ \input{tablas/iess_hip_macro.tex}
+ %\bottomrule
+ \end{tabular}
+ \caption*{\scriptsize {\bf Elaborado:} DAIE}
+ \end{table}
+
+
+%---------------------------------------------------------------------------------------------------
+\section{Esquema pensional}
+\label{chp_valuacion:esquema}
+Después de escuchar a los diferentes representantes de los trabajadores sujetos al COESCOP y los colaboradores del IESS, mediante reuniones de trabajo en las oficinas de la Dirección Actuarial, de Investigación y Estadística, y la Dirección del Seguro General de Riesgos del Trabajo, se pudo llegar a la conclusión, que la aspiración de este grupo de trabajadores es obtener una jubilación anticipada, con las mismas características de las jubilaciones de retiro entregadas por ISSPOL. Con este propósito, se propone el siguiente sistema pensional para los trabajadores bajo el COESCOP:
+
+\textbf{1. Requisitos:}
+
+Acredita un mínimo de veinte (20) años de servicio activo y efectivo, sin considerar abonos por tiempo de servicio, riesgos profesionales y otras compensaciones, en entidades sujetas al Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público.
+
+\textbf{2. Financiamiento:}
+
+2.1. Subir la tasa de aportación personal al Seguro de IVM de 11,06\% a 12,90\%, dejando las mismas tasas de aportación para el resto de los seguros especializados del IESS, según la siguiente tabla:
+
+{\fontsize{10}{11}\selectfont
+\begin{longtable}[H]{lrrr}
+\caption{Porcentaje de aportación a los trabajadores del COESCOP}\\
+\label{tab:coescop_tab_tasa} \\
+\toprule
+Seguro:	&
+Personal &
+Patronal &
+Total \\
+\midrule
+\endfirsthead
+
+\toprule
+Seguro:	&
+Personal &
+Patronal &
+Total \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{4}{r}{continúa...} \\
+\endfoot
+
+%\bottomrule
+\endlastfoot
+\input{tablas/coescop_tab_tasa.tex}
+\end{longtable}
+}
+
+
+2.2. Con el fin de proteger el bolsillo de los trabajadores de las entidades de seguridad ciudadana y orden público, en el momento de la jubilación, la entidad o entidades donde haya laborado deberán transferir al IESS una reserva matemática con los valores faltantes para garantizar el pago de la pensión vitalicia, décimas, montepío y auxilio de funerales.
+
+\textbf{3. Prestaciones:}
+
+El pensionista de retiro de vejez se calculará de acuerdo con la siguiente escala: El setenta por ciento (70\%) del sueldo imponible del beneficiario, por veinte (20) años completos de servicio activo y efectivo en la Policía Nacional, más el tres por ciento (3\%) del sueldo imponible por cada año adicional completo de servicio, hasta llegar al máximo del cien por ciento (100\%) del sueldo imponible a quien acredite treinta (30) o más años de servicio de acuerdo con la siguiente tabla:
+
+{\fontsize{10}{10}\selectfont
+\begin{longtable}[H]{C{2cm}R{2.5cm}}
+\caption{Cuantía de la pensión por retiro en porcentajes del sueldo imponible, según el tiempo de servicio}\\
+\label{tab:coescop_tab_coeficientes} \\
+\toprule
+Tiempo de servicio:
+& Porcentaje del sueldo imponible
+\\
+\midrule
+\endfirsthead
+
+\toprule
+Tiempo de servicio:
+& Porcentaje del sueldo imponible
+\\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{2}{r}{continúa...} \\
+\endfoot
+
+%\bottomrule
+\endlastfoot
+\input{tablas/coescop_tab_coeficientes.tex}
+\end{longtable}
+}
+%---------------------------------------------------------------------------------------------------
+
+
+%--------------------------------------------------------------------------------------------------
+\section{Principales conclusiones y recomendaciones.}
+\label{chp_res_ejec:conclusiones}
+Del presente estudio se obtienen las siguientes conclusiones:
+\begin{enumerate}[itemsep=0mm, topsep=0pt]
+\item Al subir la tasa de aportación personal al Seguro de IVM de 11,06\% a 12,90\%, y recibiendo la transferencia de USD \Sexpr{REP$reserva_a_pagar_vap} de las entidades de seguridad ciudadana y orden público, se podría entregar una jubilación anticipada a los trabajadores que acrediten un mínimo de veinte (20) años de servicio activo y efectivo, sin considerar abonos por tiempo de servicio, riesgos profesionales y otras compensaciones, en entidades sujetas al Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público.
+
+\item En caso de entregar la jubilación anticipada, el Fondo de IVM del IESS dejará de percibir USD \Sexpr{REP$aporte_ivm_vap} por el cese de pago aportes a este seguro, al tratarse de una jubilación anticipada, sin límite de edad, y no cumplir con los requisitos de edad de entrega de prestaciones de las jubilaciones de vejez del IESS de 60 años y 30 años de imposiciones, lo cual engrosaría el déficit actuarial de este Seguro. También, el Seguro General de Salud Individual y Familiar del IESS dejará de percibir aportes de 10 años por USD \Sexpr{REP$aporte_salud_vap}.
+
+\end{enumerate}
+%--------------------------------------------------------------------------------------------------
+Las principales recomendaciones de esta Dirección son:
+\begin{enumerate}
+\item Se recomienda entregar una jubilación anticipada a los trabajadores sujetos al Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público que hayan alcanzado un mínimo de veinte (20) años de servicio activo, siempre y cuando, se eleve su tasa de aportación personal al Seguro de IVM a 12,90\% y las entidades sujetas al Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público transfieran durante los próximos 20 años el valor de USD \Sexpr{REP$reserva_a_pagar_vap} al Fondo del Seguro de IVM.
+\end{enumerate}

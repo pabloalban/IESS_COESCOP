@@ -13,7 +13,6 @@ load(paste0( parametros$RData, 'IESS_tabla_mortalidad.RData'))
 #er^{s}_{g,x,t} : Probability of leaving the active contributing population for any reason other than death or disability in the interval from t to t+1, for an individual of group g of sex s and age x at time t
 #qi^{s}_{g,x,t} :  Probability of death in the interval from t to t+1 for an inactive contributor, an old-age pensioner or a disability pensioner of sex s and age x at time t.
 
-
 #Parámetros-----------------------------------------------------------------------------------------
 req_derecho_coescop <- 20
 
@@ -94,7 +93,7 @@ malla_ivm <- coescop %>%
   mutate( i_p_acu = cumprod( i_p ) ) %>%
   ungroup( ) %>%
   mutate( salario = sueldo * (1 + 0.0253)^contador ) %>%
-  mutate( aporte_ivm = 0.1096 * i_p_acu * 12 * salario * factor,
+  mutate( aporte_ivm = 0.1106 * i_p_acu * 12 * salario * factor,
           aporte_salud = 0.0516 * i_p_acu * 12 * salario * factor) %>%
   mutate( aporte_ivm = if_else( anio >= anio_derecho_coescop,
                                 aporte_ivm ,
@@ -103,7 +102,7 @@ malla_ivm <- coescop %>%
                                 aporte_salud,
                                 0 ) ) %>%
   mutate( aporte_coescop = if_else( anio >= anio_derecho_coescop,
-                                    0.1290 * 12 * salario * i_p_acu * factor,
+                                    0.1672 * 12 * salario * i_p_acu * factor,
                                     0 ) )
   
 

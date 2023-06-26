@@ -70,7 +70,7 @@ y su misión:
 
 \begin{quote}
 
-\textit{"(...) Preparar los balances actuariales de cada uno de los regímenes de protección del Seguro Obligatorio, la elaboración de los estudios técnicos y los informes periódicos sobre la situación de dichos regímenes y sus proyecciones  para mantener el equilibrio financiero de los seguros administrados por el IESS; realizarninvestigaciones y estudios en el campo de la seguridad social; y, preparar de manera sistemática, periódica y oportuna la memoria estadística del IESS en los términos establecidos en la Ley (...)"}
+\textit{"(...) Preparar los balances actuariales de cada uno de los regímenes de protección del Seguro Obligatorio, la elaboración de los estudios técnicos y los informes periódicos sobre la situación de dichos regímenes y sus proyecciones  para mantener el equilibrio financiero de los seguros administrados por el IESS; realizar investigaciones y estudios en el campo de la seguridad social; y, preparar de manera sistemática, periódica y oportuna la memoria estadística del IESS en los términos establecidos en la Ley (...)"}
 
 \end{quote}
 

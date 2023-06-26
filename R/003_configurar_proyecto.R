@@ -58,14 +58,14 @@ parametros$calcular_balance <- FALSE
 
 
 # Configuraciones particulares por seguro ----------------------------------------------------------
-parametros$fec_fin <- ymd( '2021-12-31' )
-parametros$anio_ini <- 2021
-parametros$anio <- 2021 # Año del estudio
+parametros$fec_fin <- ymd( '2022-12-31' )
+parametros$anio_ini <- 2022
+parametros$anio <- 2022 # Año del estudio
 parametros$edad_max <- 105
 
 # Incluir casos según corresponda
-  parametros$horizonte <- 40 # en años
-  parametros$anio_ini <- 2021 # Año inicial de la proyección
+  parametros$horizonte <- 20 # en años
+  parametros$anio_ini <- 2022 # Año inicial de la proyección
   parametros$anio_fin <- parametros$anio + parametros$horizonte  # Año fin de la proyección
   parametros$edad_max <- 105
 
