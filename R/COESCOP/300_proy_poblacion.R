@@ -14,24 +14,33 @@ load(paste0( parametros$RData, 'IESS_tabla_mortalidad.RData'))
 #qi^{s}_{g,x,t} :  Probability of death in the interval from t to t+1 for an inactive contributor, an old-age pensioner or a disability pensioner of sex s and age x at time t.
 
 
+#Parámetros-----------------------------------------------------------------------------------------
+req_derecho_coescop <- 20
+
 #Probabilidad de salida por muerte, incapacidad y inactividad---------------------------------------
 
-i_p <- q %>%
-  left_join( ., ir, by = c( 't', 'sexo', 'x' ) ) %>%
-  left_join( ., er, by = c( 't', 'sexo', 'x' ) ) %>%
-  mutate( i_p = (1-q/10 )* (1-ir) ) %>%
-  dplyr::select(-q, -ir, -er) %>%
-  mutate( sexo = if_else( sexo == 'M',
-                          'F',
-                          'M' ) )
+i_p <- tabla_mortalidad %>%
+  left_join( ., ir %>%
+               filter( t == '2020') %>%
+               mutate( sexo = if_else( sexo == 'M',
+                                       'F',
+                                       'M' ) ), by = c( 'sexo', 'edad'='x' ) ) %>%
+  left_join( ., er %>%
+               filter( t == '2020') %>%
+               mutate( sexo = if_else( sexo == 'M',
+                                       'F',
+                                       'M' ) ), by = c( 'sexo', 'edad'='x' ) ) %>%
+  mutate_if( is.numeric , replace_na, replace = 0) %>%
+  mutate( i_p = ( 1-q_x )* (1-ir) * (1 - er / 10 ) ) %>%
+  dplyr::select(edad, sexo, i_p) 
 
 #Fecha de derecho-----------------------------------------------------------------------------------
 
 coescop <- coescop %>%
   mutate( anios_imp = floor(numimp/12) ) %>%
-  mutate( a_d_coescop = if_else( anios_imp > 20,
+  mutate( a_d_coescop = if_else( anios_imp > req_derecho_coescop,
           0,
-          20 - anios_imp ) ) %>%
+          req_derecho_coescop - anios_imp ) ) %>%
   mutate( anio_derecho_coescop = 2023 + a_d_coescop ) %>%
   mutate( a_d_ivm = NA ) %>%
   mutate( a_d_ivm = ifelse(  anios_imp >= 30  & edad >= 60,
@@ -65,8 +74,8 @@ coescop <- coescop %>%
                              0,
                              a_d_ivm ) ) %>%
   mutate( anio_derecho_ivm = 2023 + a_d_ivm ) %>%
-  mutate(across('sueldo', str_replace, ',', '')) %>%
-  mutate( sueldo = as.numeric( sueldo )) %>%
+  mutate( across('sueldo', str_replace, ',', '')) %>%
+  mutate( sueldo = as.numeric( sueldo ) ) %>%
   filter( sueldo > 400 )
 
 #Generar malla para IVM-----------------------------------------------------------------------------
@@ -79,22 +88,22 @@ malla_ivm <- coescop %>%
   mutate( contador = 1:n() ) %>%
   mutate( anio = contador + anio_f1 - 1 ) %>%
   ungroup() %>%
-  mutate( edad_i = edad + contador - 1) %>%
-  left_join(., i_p, by = c( 'anio'='t', 'edad_i'='x', 'sexo'='sexo' ) ) %>%
+  mutate( edad_i = edad + contador ) %>%
+  left_join(., i_p, by = c( 'edad_i'='edad', 'sexo'='sexo' ) ) %>%
   group_by( cedula ) %>%
   mutate( i_p_acu = cumprod( i_p ) ) %>%
   ungroup( ) %>%
   mutate( salario = sueldo * (1 + 0.0253)^contador ) %>%
-  mutate( aporte_ivm = 0.1096 * salario,
-          aporte_salud = 0.0516 * salario ) %>%
-  mutate( aporte_ivm = if_else( anio > anio_derecho_coescop,
-                                aporte_ivm * i_p_acu,
+  mutate( aporte_ivm = 0.1096 * i_p_acu * 12 * salario * factor,
+          aporte_salud = 0.0516 * i_p_acu * 12 * salario * factor) %>%
+  mutate( aporte_ivm = if_else( anio >= anio_derecho_coescop,
+                                aporte_ivm ,
                                 0 ) ) %>%
-  mutate( aporte_salud = if_else( anio > anio_derecho_coescop,
-                                aporte_salud * i_p_acu,
+  mutate( aporte_salud = if_else( anio >= anio_derecho_coescop,
+                                aporte_salud,
                                 0 ) ) %>%
-  mutate( aporte_coescop = if_else( anio > anio_derecho_coescop,
-                                    0.1290 * salario * i_p_acu,
+  mutate( aporte_coescop = if_else( anio >= anio_derecho_coescop,
+                                    0.1290 * 12 * salario * i_p_acu * factor,
                                     0 ) )
   
 
@@ -109,7 +118,7 @@ malla_coescop <- coescop %>%
   mutate( anio = contador + anio_f1 - 1 ) %>%
   ungroup() %>%
   mutate( edad_i = edad + contador - 1) %>%
-  left_join(., i_p, by = c( 'anio'='t', 'edad_i'='x', 'sexo'='sexo' ) ) %>%
+  left_join(., i_p, by = c( 'edad_i'='edad', 'sexo'='sexo' ) ) %>%
   group_by( cedula ) %>%
   mutate( i_p_acu = cumprod( i_p ) ) %>%
   ungroup( ) %>%

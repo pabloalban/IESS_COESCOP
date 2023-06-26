@@ -56,8 +56,8 @@
 <<cap05, child='05_reglamentacion.Rnw'>>=
 @
  
-%<<cap06, child='06_analisis_contexto.Rnw'>>=
-%@
+<<cap06, child='06_analisis_contexto.Rnw'>>=
+@
   
 % <<cap07, child='07_analisis_financiero.Rnw'>>=
 % @
@@ -68,8 +68,8 @@
 % <<cap09, child='09_metodologia.Rnw'>>=
 % @
 %   
-% <<cap10, child='10_hipotesis.Rnw'>>=
-% @ 
+<<cap10, child='10_hipotesis.Rnw'>>=
+@ 
 %   
 % <<cap11, child='11_riesgos.Rnw'>>=
 % @

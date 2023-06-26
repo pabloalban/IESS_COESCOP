@@ -33,7 +33,7 @@ en la sección \ref{chp_modelo:actu}, esto es:
 \section{Gastos administrativos}
 \label{chp_hipotesis:gastoadm}
 
-Como se explica en la sección \ref{chp_reglamentacion:egresos:gadmin}, para efectos de este estudio se considera que el financiamiento de los gastos administrativos  se lo realiza con el \Sexpr{REP$tasa_por_gas_esc_1}\% de la materia gravada de los afiliados al Seguro General, tal como lo establece en el artículo 6 de la Resolución No. C.D. 101. 
+Para efectos de este estudio se considera que el financiamiento de los gastos administrativos  se lo realiza con el 0,03\% de la materia gravada de los afiliados al Seguro General, tal como lo establece en el artículo 6 de la \legalcite{ResIESS_CD101}. 
 %---------------------------------------------------------------------------------------------------
 \section{Parámetros generales}
 \label{chp_hipotesis:paramgen}
@@ -48,7 +48,7 @@ muestran en la tabla \ref{tab:paramgen}.
 \toprule
 \multicolumn{1}{l}{\textbf{Parámetros}} & \multicolumn{1}{c}{\textbf{Escenario}} \\
 \midrule
-Fecha de corte & 2020-12-31 \\
+Fecha de corte & 2021-12-31 \\
 Horizonte de proyección & 40 años \\
 \bottomrule
 \end{tabular}
@@ -116,7 +116,7 @@ La reserva inicial del \Sexpr{REP_seg} empleada para el cálculo de la reserva e
 
 A lo largo de este estudio suponemos que la tasa de aportación para el \Sexpr{REP_seg} continuará conforme a lo determinado en la Resolución No. C.D. 501 del 13 de noviembre de 2015, reformada por la Resolución No. C.D. 515 del 30 de marzo de 2016. 
 
-En cuanto a los beneficios, el presente estudio supone que se concederán bajo la normativa actual vigente (ver sección \ref{chap_Intro:prestaciones}).
+En cuanto a los beneficios, el presente estudio supone que se concederán bajo la normativa actual vigente.
 
 %---------------------------------------------------------------------------------------------------
 \section{Dolarización}
@@ -131,18 +131,18 @@ sistema de dolarización de la economía se mantendrá vigente en todo el horizo
 \label{chp_hipotesis:paramecfin:resumparam}
 
 En la tabla \ref{tab:iess_hip_macro} se presentan los promedios de los valores estimados de tasas de
-variación, período 2021--2060, el detalle de los cálculos se encuentra en el capítulo \ref{chp_contexto}. 
+variación, período 2022 a 2061, el detalle de los cálculos se encuentra en el capítulo \ref{chp_contexto}. 
 
  \begin{table}[H]
  \centering
- \caption{Promedio de los valores estimados de tasas de variación (período 2019--2058)}
+ \caption{Promedio de los valores estimados de tasas de variación}
  \label{tab:iess_hip_macro}
  \begin{tabular}{lr}
  \toprule
  Ítem & Tasa (\%)\\
  \midrule
- \input{tablas/iess_hip_macro}
- \bottomrule
+ \input{tablas/iess_hip_macro.tex}
+ %\bottomrule
  \end{tabular}
  \caption*{\scriptsize {\bf Elaborado:} DAIE}
  \end{table}
