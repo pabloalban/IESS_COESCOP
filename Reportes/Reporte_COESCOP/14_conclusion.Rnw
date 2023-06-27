@@ -7,6 +7,7 @@
 \label{chp_conclusion:conclusiones}
 Del presente estudio se obtienen las siguientes conclusiones:
 \begin{enumerate}[itemsep=0mm, topsep=0pt]
+
 \item Al subir la tasa de aportación personal al Seguro de IVM de 11,06\% a 12,90\%, y recibiendo la transferencia de USD \Sexpr{REP$reserva_a_pagar_vap} de las entidades de seguridad ciudadana y orden público, se podría entregar una jubilación anticipada a los trabajadores que acrediten un mínimo de veinte (20) años de servicio activo y efectivo, sin considerar abonos por tiempo de servicio, riesgos profesionales y otras compensaciones, en entidades sujetas al Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público.
 
 \item En caso de entregar la jubilación anticipada, el Fondo de IVM del IESS dejará de percibir USD \Sexpr{REP$aporte_ivm_vap} por el cese de pago aportes a este seguro, al tratarse de una jubilación anticipada, sin límite de edad, y no cumplir con los requisitos de edad de entrega de prestaciones de las jubilaciones de vejez del IESS de 60 años y 30 años de imposiciones, lo cual engrosaría el déficit actuarial de este Seguro. También, el Seguro General de Salud Individual y Familiar del IESS dejará de percibir aportes de 10 años por USD \Sexpr{REP$aporte_salud_vap}.

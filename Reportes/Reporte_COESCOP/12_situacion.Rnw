@@ -238,32 +238,28 @@ Además de los valores antes descritos, el Fondo de IVM del IESS dejará de perc
 \toprule
 \multicolumn{1}{l}{\multirow{2}{*}{Año:}} & 
 \multicolumn{3}{c}{En términos corientes} &
-\multicolumn{3}{c}{Valor a tiempo presente} &
+\multicolumn{3}{c}{Valor a tiempo presente} \\
 \cmidrule(lr){2-4} \cmidrule(lr){5-7}
-\\
 & Aportes al Seguro de IVM
 & Aporte a Salud
 & Total valores
 & Aportes al Seguro de IVM
 & Aporte a Salud
-& Total valores
-\\
+& Total valores \\
 \midrule
 \endfirsthead
 
 \toprule
 \multicolumn{1}{l}{\multirow{2}{*}{Año:}} & 
 \multicolumn{3}{c}{En términos corientes} &
-\multicolumn{3}{c}{Valor a tiempo presente} &
+\multicolumn{3}{c}{Valor a tiempo presente}\\
 \cmidrule(lr){2-4} \cmidrule(lr){5-7}
-\\
 & Aportes al Seguro de IVM
 & Aporte a Salud
 & Total valores
 & Aportes al Seguro de IVM
 & Aporte a Salud
-& Total valores
-\\
+& Total valores \\
 \midrule
 \endhead
 

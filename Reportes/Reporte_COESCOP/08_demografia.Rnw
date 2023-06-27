@@ -970,7 +970,7 @@ Cargo COESCOP & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total
 {\bf Elaborado:} DAIE.}
 \end{table}
 
-La tabla \ref{tab:iess_metropolitanos_machala_cargo_salario} muestra los salarios promedio de los cargos del Cuerpo de Agentes de Control Municipal de Machala ordenados de menor a mayor. Según la información disponible\footnote{en la página del Municipio de Machala} el único cargo existente es \texti{Agente de Control Municipal 1}.
+La tabla \ref{tab:iess_metropolitanos_machala_cargo_salario} muestra los salarios promedio de los cargos del Cuerpo de Agentes de Control Municipal de Machala ordenados de menor a mayor. Según la información disponible\footnote{en la página del Municipio de Machala} el único cargo existente es \textit{Agente de Control Municipal 1}.
 
 \begin{table}[H]
 \centering

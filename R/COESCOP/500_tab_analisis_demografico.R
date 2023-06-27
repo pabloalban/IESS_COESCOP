@@ -12,10 +12,10 @@ load(paste0(parametros$RData, "IESS_tablas_contingencia.RData"))
 message( '\tTabla de servidores publicos del SNAI por rango de edad y sexo, en marzo 2022' )
 
 cortes_edad<-c(17,seq(20,70,10) )
-etiquetas_edad<-c(paste0( "\\left[", formatC( c(18,seq(20,60,10)), 
+etiquetas_edad<-c(paste0( "(", formatC( c(18,seq(20,60,10)), 
                                           digits = 0, format = 'f', big.mark = '.', decimal.mark = ',' ),
-                          "-",formatC( c(seq(20,70,10)), 
-                                          digits = 0, format = 'f', big.mark = '.', decimal.mark = ',' ),"\\right]"))
+                          " - ",formatC( c(seq(20,70,10)), 
+                                          digits = 0, format = 'f', big.mark = '.', decimal.mark = ',' ),"]"))
 aux  <- tabla_snai_edad_sexo %>%
         mutate(rango_edad=cut(edad, breaks = cortes_edad,
                                labels = etiquetas_edad,
