@@ -1,5 +1,5 @@
 %---------------------------------------------------------------------------------------------------
-\chapter{Valuación actuarial del \Sexpr{REP_seg}}
+\chapter{Valuación actuarial}
 \label{chp_valuacionactu}
 En el presente capítulo, se presenta el esquema pensional para los trabajadores sujetos al COESCOP, publicado en el Registro Oficial el 21 de junio de 2017. En el esquema pensional se abordará los requisitos en años de aportes para acceder a la prestación, financiamiento y cuantía de la pensión. Para establecer el financiamiento adecuado, se elaboran las respectivas proyecciones actuariales a 20 años, en el período comprendido entre 2023 a 2042, siguiendo las hipótesis actuariales definidas en el capítulo \ref{chp_hipotesis}.
 
@@ -88,7 +88,9 @@ Tiempo de servicio:
 
 \subsection{Balance corriente}
 \label{chp_valuacionactu:balcorr}
-Teniendo en cuenta el esquema pensional mostrado en la sección \ref{chp_valuacion:esquema}, se elaboran las respectivas proyecciones actuariales a 20 años, en el período comprendido entre 2023 a 2042, siguiendo las hipótesis actuariales definidas en el capítulo \ref{chp_hipotesis}. En el presente balances se estima el gasto prestacional con el costo de su reserva matemática vitalicia; es decir, los valores necesarios para pagar pensiones desde la fecha de derecho hasta la fecha de defunción del pensionista y el posible pago de montepío a su conyugue o huérfanos menores de dieciocho años (18), según la normativa vigente del IESS. Se opta por esta forma de registrar el gasto prestacional, debido a que, según el esquema pensional propuesto, las entidades de seguridad ciudadana y orden público deberán transferir al Fondo del Seguro de IVM el valor de una reserva matemática por el pago de las pensiones futuras, sustraído los aportes personales (12,90\%) y patronales (3,82\%). En la tabla \ref{tab:iess_balance_cap}, se presenta el balance en términos corrientes, el cual presenta las proyecciones de nuevos pensionistas y los valores a transferir por cada entidad cada año.
+Teniendo en cuenta el esquema pensional mostrado en la sección \ref{chp_valuacion:esquema}, se elaboran las respectivas proyecciones actuariales a 20 años, en el período comprendido entre 2023 a 2042, siguiendo las hipótesis actuariales definidas en el capítulo \ref{chp_hipotesis}. En el presente balances se estima el gasto prestacional con el costo de su reserva matemática vitalicia; es decir, los valores necesarios para pagar pensiones desde la fecha de derecho hasta la fecha de defunción del pensionista y el posible pago de montepío a su conyugue o huérfanos menores de dieciocho años (18), según la normativa vigente del IESS. 
+
+Se opta por esta forma de registrar el gasto prestacional, debido a que, según el esquema pensional propuesto, las entidades de seguridad ciudadana y orden público deberán transferir al Fondo del Seguro de IVM el valor de una reserva matemática por el pago de las pensiones futuras, sustraído los aportes personales (12,90\%) y patronales (3,82\%). En la tabla \ref{tab:iess_balance_cap}, se presenta el balance en términos corrientes, el cual presenta las proyecciones de nuevos pensionistas y los valores a transferir por cada entidad cada año.
 
 \begin{landscape}
 

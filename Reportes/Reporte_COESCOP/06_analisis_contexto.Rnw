@@ -2,11 +2,8 @@
 \chapter{Análisis del contexto económico}
 \label{chp_contexto}
 % %------------------------------------------------------------------------------
-El artículo 7 del CAPÍTULO II:``REQUISITOS TÉCNICOS PARA LA ELABORACIÓN, PRESENTACIÓN, APROBACIÓN Y REVISIÓN DE LOS ESTUDIOS ACTUARIALES DE LAS ENTIDADES DE SEGURIDAD SOCIAL'' del TÍTULO IV del LIBRO II, NORMAS DE CONTROL PARA LAS ENTIDADES DEL SISTEMA DE SEGURIDAD SOCIAL, establece en su literal B, lo siguiente:
 
-``\textit{iv. Evolución y tendencia económica de al menos los últimos cinco (5) años: inflación, tasa de interés financiero, incremento de salarios y pensiones, entre otros}''.
-
-En concordancia a la normativa antes señalada, en el presente capítulo se presenta un análisis del contexto económico del Ecuador, en el cual se abordarán: la evolución histórica desde la dolarización, predicciones en futuro de la condición económica del país, un breve análisis de la situación actual y prevista del mercado de inversiones en el Ecuador y un análisis de las tendencias demográficas de la población total del Ecuador y su población económicamente activa para dentro de 20 y 40 años.
+En el presente capítulo se presenta un análisis del contexto económico del Ecuador, en el cual se abordarán: la evolución histórica desde la dolarización, predicciones en futuro de la condición económica del país, un breve análisis de la situación actual y prevista del mercado de inversiones en el Ecuador y un análisis de las tendencias demográficas de la población total del Ecuador y su población económicamente activa para dentro de 20 y 40 años.
 
 \section{Análisis de las tasas históricas relevantes para el estudio}
 % 
