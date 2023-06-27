@@ -40,8 +40,8 @@ parametros$time_zone <- "America/Guayaquil"
 parametros$iess_blue <- rgb( 0, 63, 138, maxColorValue = 255 )
 parametros$iess_green <- rgb( 0, 116, 53, maxColorValue = 255 )
 parametros$iess_total <- rgb( 138, 5, 81, maxColorValue = 255 )
-parametros$female <- rgb( 220, 20, 60, maxColorValue = 255 )
-parametros$male <- rgb( 0, 139, 139, maxColorValue = 255 )
+parametros$female <- rgb( 255, 105, 180, maxColorValue = 255 )
+parametros$male <- rgb( 51, 153, 255, maxColorValue = 255 )
 # Calcular balance
 # parametros$calcular_balance <- FALSE
 
