@@ -196,35 +196,35 @@ Año:
 \end{landscape}
 
 
-De los resultados de la valuación actuarial, se concluye que durante el período 2023 a 2042: se recaudará USD \Sexpr{REP$aporte_coescop_vap} aportes al Fondo de retiro (aporte personal (12,90\% ) y patronal (3,82\%) y las entidades de seguridad ciudadana y orden público deberán transferir USD \Sexpr{REP$reserva_a_pagar_vap}, para cubrir los egresos por las prestaciones por pensiones, montepío y gastos administrativos por USD \Sexpr{REP$egreso_total_vap}. Los valores que debe transferir cada entidad por esta jubilación anticipada se detallan en la tabla \ref{tab:iess_valor_a_pagar_ins}.
+De los resultados de la valuación actuarial, se concluye que durante el período 2023 a 2042: se recaudará USD \Sexpr{REP$aporte_coescop_vap} aportes al Fondo de retiro (aporte personal (12,90\% ) y patronal (3,82\%) y las entidades de seguridad ciudadana y orden público deberán transferir USD \Sexpr{REP$reserva_a_pagar_vap}, para cubrir los egresos por las prestaciones por pensiones, montepío y gastos administrativos por USD \Sexpr{REP$egreso_total_vap}. %Los valores que debe transferir cada entidad por esta jubilación anticipada se detallan en la tabla \ref{tab:iess_valor_a_pagar_ins}.
 
-{\fontsize{10}{14}\selectfont
-\begin{longtable}[H]{L{9cm}R{4.5cm}}
-\caption{Valores que las entidades de seguridad ciudadana y orden público entre 2023 a 2042 van a cancelar por las jubilaciones de retiro anticipadas}\\
-\label{tab:iess_valor_a_pagar_ins} \\
-\toprule
-Entidad:
-& Valores a transferir al Fondo del Seguro de IVM (USD)
-\\
-\midrule
-\endfirsthead
-
-\toprule
-Entidad:
-& Valores a transferir al Fondo del Seguro de IVM (USD)
-\\
-\midrule
-\endhead
-
-\bottomrule
-\multicolumn{2}{r}{continúa...} \\
-\endfoot
-
-%\bottomrule
-\endlastfoot
-\input{tablas/iess_valor_a_pagar_ins.tex}
-\end{longtable}
-}
+% {\fontsize{10}{14}\selectfont
+% \begin{longtable}[H]{L{9cm}R{4.5cm}}
+% \caption{Valores que las entidades de seguridad ciudadana y orden público entre 2023 a 2042 van a cancelar por las jubilaciones de retiro anticipadas}\\
+% \label{tab:iess_valor_a_pagar_ins} \\
+% \toprule
+% Entidad:
+% & Valores a transferir al Fondo del Seguro de IVM (USD)
+% \\
+% \midrule
+% \endfirsthead
+% 
+% \toprule
+% Entidad:
+% & Valores a transferir al Fondo del Seguro de IVM (USD)
+% \\
+% \midrule
+% \endhead
+% 
+% \bottomrule
+% \multicolumn{2}{r}{continúa...} \\
+% \endfoot
+% 
+% %\bottomrule
+% \endlastfoot
+% \input{tablas/iess_valor_a_pagar_ins.tex}
+% \end{longtable}
+% }
 
 
 % Impacto --------------------------------------------------------------------------------------
