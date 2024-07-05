@@ -1074,6 +1074,102 @@ Cargo COESCOP & Salario Promedio\\
 \end{table}
 
 
+
+
+
+
+%%------------------------------------------------------------------------------------
+
+\subsubsection{Policías Municipales de La Concordia}
+\label{chp_demog:metropolitanos_concordia}
+
+En la tabla \ref{tab:iess_metropolitanos_concordia_edad_sexo} y la figura \ref{fig:iess_pir_metropolitanos_concordia} se muestran la distribución por edad y sexo de las y los trabajadores de la presente entidad. A junio del 2022, el total de policías municipales de La Concordia es de 23, de los cuales el 21,74\% son mujeres y el 78,26\% son hombres. Además, del total del personal de esta entidad, el 60,87\% no sobrepasa los 40 años. La edad promedio en los hombres es 39,10 años y 42,2 años en las mujeres.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo policías municipales de La Concordia}
+\label{tab:iess_metropolitanos_concordia_edad_sexo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Rango Edad & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+\midrule
+\input{tablas/iess_concordia_edad_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Municipio de La Concordia \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por edad y sexo de los policías municipales de La Concordia}
+\label{fig:iess_pir_metropolitanos_concordia}
+\includegraphics[scale=1]{graficos/iess_pir_concordia.png}
+\caption*{\scriptsize {\bf Fuente:} Municipio de La Concordia \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo policías municipales de La Concordia}
+\label{fig:iess_bar_metropolitanos_concordia}
+\includegraphics[scale=0.8]{graficos/iess_bar_concordia.png}
+\caption*{\scriptsize {\bf Fuente:} Municipio de La Concordia \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribución por cargo y sexo de los policías municipales de La Concordia}
+\label{tab:iess_metropolitanos_concordia_cargo}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo institucional & Hombres & Hombres (\%) & Mujeres  & Mujeres (\%) & Total & Total (\%)\\  
+%\midrule
+\input{tablas/iess_concordia_cargo_sexo.tex}
+ 
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Municipio de La Concordia \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+Como se observa en la figura \ref{fig:iess_bar_metropolitanos_concordia} y en la tabla \ref{tab:iess_metropolitanos_concordia_cargo} todos los policías de La Concordia tienen el mismo cargo institucional "Policía Municipal". La tabla \ref{tab:iess_metropolitanos_concordia_cargo_salario} corresponde a los salarios promedio los policías municipales de La Concordia por sexo. El salario promedio en los hombres es USD 584,39 y USD 581 en las mujeres, en total el salario promedio de un policía municipal de La Concordia es USD 583,65.
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Salario promedio por cargo del personal del Cuerpo de Agentes de Control Municipal de La Concordia}
+\label{tab:iess_metropolitanos_concordia_cargo_salario}
+\scalebox{0.8}{
+\begin{tabular}{*{7}{r}}
+\toprule
+Cargo COESCOP & Salario Promedio\\  
+\midrule
+\input{tablas/iess_concordia_cargo_salario.tex}
+\end{tabular}
+}
+\caption*{\scriptsize {\bf Fuente:} Municipio de La Concordia  \\
+{\bf Elaborado:} DAIE.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\caption{Salarios promedios por edad y sexo de los policías municiapales de La Concordia}
+\label{fig:iess_pir_salarios_concordia}
+\includegraphics[scale=1]{graficos/iess_pir_salarios_concordia.png}
+\caption*{\scriptsize {\bf Fuente:} Municipio de La Concordia \\
+{\bf Elaborado:} DAIE.}
+\end{figure}
+
 % %---------------------------------------------------------------------------------------------------
 \subsection{Cuerpos de Bomberos}
 \label{chp_demog:bomberos}
