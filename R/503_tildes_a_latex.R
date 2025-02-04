@@ -36,3 +36,11 @@ cod_utf_win <- function( xtb_aux ) {
   
   return( xtb_aux )
 }
+
+#Función para convertir la primera letra a mayúscula------------------------------------------------
+
+firstup <- function( x ) {
+  x <- tolower( x )
+  substr( x, 1, 1) <- toupper(substr( x, 1, 1 ) )
+  x
+}

@@ -1,10 +1,10 @@
 message(paste(rep("-", 100), collapse = ""))
 
 message("\tCargando datos para la reserva matmática")
-load(paste0(parametros$RData, "IESS_proy_coescop.RData"))
-load(paste0( parametros$RData, 'IESS_tabla_mortalidad.RData'))
-load(paste0( parametros$RData, 'ISSPOL_coeficientes.RData'))
-
+load( paste0( parametros$RData, "IESS_proy_coescop.RData" ) )
+load( paste0( parametros$RData, 'IESS_tabla_mortalidad.RData' ) )
+load( paste0( parametros$RData, 'ISSPOL_coeficientes.RData' ) )
+#load( paste0( parametros$RData, 'IESS_consolidado_coescop.RData' ) )
 message("\tCalculando reserva matemática")
 
 #Pensionistas con derecho a IVM al corte------------------------------------------------------------
@@ -23,6 +23,7 @@ derecho_ivm <- malla_coescop %>%
   mutate( reserva_matematica = factor * i_p_acu * a_x * coef * salario  * 13 ) %>%
   dplyr::select( anio,
                  tipo,
+                 ciudad,
                  cedula,
                  edad,
                  sexo,
@@ -85,6 +86,7 @@ sin_derecho_ivm <- sin_derecho_ivm %>%
   left_join(., aux_2, by = c('sexo'='sexo', 'x_mas_k'='edad')) %>%
   dplyr::select( anio,
                  tipo,
+               ciudad,
                cedula,
                edad,
                sexo,
@@ -118,7 +120,7 @@ sin_derecho_ivm <- sin_derecho_ivm %>%
 #Reserva matemática---------------------------------------------------------------------------------
 
 sin_derecho_ivm <- sin_derecho_ivm %>%
-  mutate( res_mat_temporal =  factor * i_p_acu * a_x_n * 13 * coef * ( salario + 425 ) )   %>%
+  mutate( res_mat_temporal =  factor * i_p_acu * a_x_n * 13 * coef_isspol * ( salario + 425 ) )   %>%
   mutate( res_mat_diferida = factor * i_p_acu * a_n_w * (  coef * 13 * salario ) ) %>%
   mutate( reserva_matematica = res_mat_temporal + res_mat_diferida ) %>%
   mutate( reserva_ivm = factor * coef_iess * i_p_acu * a_x * salario  * 13 )

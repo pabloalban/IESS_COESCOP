@@ -25,6 +25,7 @@ parametros$hostname <- Sys.info()[[4]]
 
 #Servidor de datos
 parametros$data_server <- 'Y:/IESS_COESCOP/'
+#parametros$data_server <- 'D:/OneDrive - Instituto Ecuatoriano de Seguridad Social/IESS_COESCOP/'
 
 # local
 #parametros$data_server <- paste0( getwd(), '/' )

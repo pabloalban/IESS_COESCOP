@@ -29,9 +29,9 @@ i_p <- tabla_mortalidad %>%
                mutate( sexo = if_else( sexo == 'M',
                                        'F',
                                        'M' ) ), by = c( 'sexo', 'edad'='x' ) ) %>%
-  mutate_if( is.numeric , replace_na, replace = 0) %>%
-  mutate( i_p = ( 1-q_x )* (1-ir) * (1 - er / 10 ) ) %>%
-  dplyr::select(edad, sexo, i_p) 
+  mutate_if( is.numeric , replace_na, replace = 0 ) %>%
+  mutate( i_p = ( 1 - q_x )* ( 1-ir ) * ( 1 - er / 10 ) ) %>%
+  dplyr::select( edad, sexo, i_p ) 
 
 #Fecha de derecho-----------------------------------------------------------------------------------
 
@@ -40,6 +40,10 @@ coescop <- coescop %>%
   mutate( a_d_coescop = if_else( anios_imp > req_derecho_coescop,
           0,
           req_derecho_coescop - anios_imp ) ) %>%
+  mutate( a_d_coescop = round( runif( nrow( . ), min = 0, max = 3 ) ) + a_d_coescop ) %>% 
+  mutate( a_d_coescop = if_else( a_d_coescop > 20,
+                                 20,
+                                 a_d_coescop ) ) %>%
   mutate( anio_derecho_coescop = 2023 + a_d_coescop ) %>%
   mutate( a_d_ivm = NA ) %>%
   mutate( a_d_ivm = ifelse(  anios_imp >= 30  & edad >= 60,
@@ -51,40 +55,40 @@ coescop <- coescop %>%
   mutate( a_d_ivm = if_else( anios_imp>=10 & anios_imp<=14 & edad >= 70,
                              0,
                              a_d_ivm ) ) %>%
-  mutate( a = 60-edad,
-          b = 30-anios_imp ) %>%
+  mutate( a = 60 - edad,
+          b = 30 - anios_imp ) %>%
   mutate( a = if_else( a<0,
                        0,
-                       a),
+                       a ),
           b = if_else( b<0,
                        0,
                        b ) ) %>%
-  rowwise() %>%
+  rowwise( ) %>%
   mutate( a_d_ivm = if_else( is.na( a_d_ivm ),
-                             max(a,b),
+                             max( a, b ),
                              a_d_ivm ) ) %>%
-  mutate( a_d_ivm = if_else( edad + a_d_ivm >= 65 & (a_d_ivm + anios_imp) >= 15,
+  mutate( a_d_ivm = if_else( edad + a_d_ivm >= 65 & ( a_d_ivm + anios_imp ) >= 15,
                              65 - edad,
                              a_d_ivm ) ) %>%
-  mutate( a_d_ivm = if_else( edad + a_d_ivm >= 65 & (a_d_ivm + anios_imp) < 10,
+  mutate( a_d_ivm = if_else( edad + a_d_ivm >= 65 & ( a_d_ivm + anios_imp ) < 10,
                              70 - edad,
                              a_d_ivm ) ) %>%
   mutate( a_d_ivm = if_else( a_d_ivm < 0,
                              0,
                              a_d_ivm ) ) %>%
   mutate( anio_derecho_ivm = 2023 + a_d_ivm ) %>%
-  mutate( across('sueldo', str_replace, ',', '')) %>%
+  mutate( across('sueldo', str_replace, ',', '') ) %>%
   mutate( sueldo = as.numeric( sueldo ) ) %>%
-  filter( sueldo > 400 )
+  filter( sueldo > 400 ) 
 
 #Generar malla para IVM-----------------------------------------------------------------------------
 
 malla_ivm <- coescop %>%
   mutate( anio_f1 = 2023 ) %>%
-  mutate( i = a_d_ivm + 1) %>%
-  dplyr::slice(rep( 1 : n(), i ) ) %>%
+  mutate( i = a_d_ivm + 1 ) %>%
+  dplyr::slice(rep( 1 : n( ), i ) ) %>%
   group_by(cedula) %>%
-  mutate( contador = 1:n() ) %>%
+  mutate( contador = 1:n( ) ) %>%
   mutate( anio = contador + anio_f1 - 1 ) %>%
   ungroup() %>%
   mutate( edad_i = edad + contador ) %>%
@@ -92,9 +96,9 @@ malla_ivm <- coescop %>%
   group_by( cedula ) %>%
   mutate( i_p_acu = cumprod( i_p ) ) %>%
   ungroup( ) %>%
-  mutate( salario = sueldo * (1 + 0.0253)^contador ) %>%
+  mutate( salario = sueldo * ( 1 + 0.0253 )^contador ) %>%
   mutate( aporte_ivm = 0.1106 * i_p_acu * 12 * salario * factor,
-          aporte_salud = 0.0516 * i_p_acu * 12 * salario * factor) %>%
+          aporte_salud = 0.0516 * i_p_acu * 12 * salario * factor ) %>%
   mutate( aporte_ivm = if_else( anio >= anio_derecho_coescop,
                                 aporte_ivm ,
                                 0 ) ) %>%
@@ -111,17 +115,17 @@ malla_ivm <- coescop %>%
 malla_coescop <- coescop %>%
   mutate( anio_f1 = 2023 ) %>%
   mutate( i = a_d_coescop + 1) %>%
-  dplyr::slice(rep( 1 : n(), i ) ) %>%
-  group_by(cedula) %>%
-  mutate( contador = 1:n() ) %>%
+  dplyr::slice( rep( 1 : n( ), i ) ) %>%
+  group_by( cedula ) %>%
+  mutate( contador = 1:n( ) ) %>%
   mutate( anio = contador + anio_f1 - 1 ) %>%
-  ungroup() %>%
+  ungroup( ) %>%
   mutate( edad_i = edad + contador - 1) %>%
   left_join(., i_p, by = c( 'edad_i'='edad', 'sexo'='sexo' ) ) %>%
   group_by( cedula ) %>%
   mutate( i_p_acu = cumprod( i_p ) ) %>%
   ungroup( ) %>%
-  mutate( salario = sueldo * (1 + 0.0253)^contador ) %>%
+  mutate( salario = sueldo * ( 1 + 0.0253 )^contador ) %>%
   filter( anio == anio_derecho_coescop )
 
 #Guardar en Rdata-----------------------------------------------------------------------------------

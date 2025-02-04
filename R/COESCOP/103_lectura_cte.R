@@ -7,20 +7,20 @@ file<-paste0(parametros$Data, 'COESCOP_cte.xlsx' )
 
 
 #Carga del cte------------------------------------------------------------------
-transito <- read_excel(file,
-                       sheet = 1,
-                       col_names = TRUE,
-                       col_types = NULL,
-                       na = "",
-                       skip = 0) %>% clean_names()
+transito <- read_excel( file,
+                        sheet = 1,
+                        col_names = TRUE,
+                        col_types = NULL,
+                        na = "",
+                        skip = 0 ) %>% clean_names( )
 
 #Cargando base del RC-------------------------------------------------------------------------------
 
-load(paste0(parametros$RData, "IESS_Reg_Civil.RData"))
+load( paste0( parametros$RData, "IESS_Reg_Civil.RData" ) )
 
 #Cruce con base del Registro civil------------------------------------------------------------------
 
-transito <- left_join( transito , rc, by = c("nombre"="nombre") )
+transito <- left_join( transito , rc, by = c( "nombre"="nombre" ) )
 
 #Guardando en un Rdata----------------------------------------------------------
 message( '\tGuardando en data.frame' )

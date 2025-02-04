@@ -51,7 +51,7 @@ suppressPackageStartupMessages( library( fields ) )
 suppressPackageStartupMessages( library( magick ) )
 suppressPackageStartupMessages( library( forcats ) )
 suppressPackageStartupMessages( library( ggforce ) )
-suppressPackageStartupMessages( library( maptools ) )
+#suppressPackageStartupMessages( library( maptools ) )
 suppressPackageStartupMessages( library( plotrix ) )
 suppressPackageStartupMessages( library( psych ) )
 

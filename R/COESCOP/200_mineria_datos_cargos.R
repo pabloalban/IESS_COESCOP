@@ -141,8 +141,9 @@ transito <- transito %>%
   mutate( cargo_coescop = if_else(is.na( cargo_coescop ),
                                   "Administrativo", 
                                   cargo_coescop ) )
+cte <- transito
 
-save( transito,
+save( cte,
       file = paste0( parametros$RData, 'COESCOP_cte_cargos.RData' ) )
 
 #SNAI-----------------------------------------------------------------------------------------------

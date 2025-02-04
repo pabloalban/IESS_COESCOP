@@ -7,11 +7,11 @@ load( paste0( parametros$RData, "COESCOP_bomberos_cargos.RData" )) #bomberos
 load( paste0( parametros$RData, "COESCOP_cte_cargos.RData") ) #cte
 load( paste0( parametros$RData, "COESCOP_snai_cargos.RData") ) #snai
 load( paste0( parametros$RData, "COESCOP_snmlcf_cargos.RData") ) #snmlcf
-load( paste0( parametros$RData, "COESCOP_metropolitanos_cargos.RData") ) #metropolitanos
+#load( paste0( parametros$RData, "COESCOP_metropolitanos_cargos.RData") ) #metropolitanos
+load( paste0( parametros$RData, 'COESCOP_control.RData' ) ) #control
+load( paste0( parametros$RData, 'COESCOP_transito.RData' ) ) #tránsito
 load( paste0( parametros$RData, "COESCOP_aduaneros_cargos.RData") ) #aduaneros
 load( paste0( parametros$RData, "IESS_imposiciones_2022_12.RData") ) 
-
-
 
 #Selección de variables-----------------------------------------------------------------------------
 
@@ -39,16 +39,28 @@ bo <- bomberos %>%
   mutate( tipo = "bombero")
 
 
-me <- metropolitanos %>%
+control <- control %>% 
   dplyr::select( cedula,
                  fecha_nacimiento,
                  sexo,
                  nombre,
-                 cargo,
-                 sueldo,
-                 cargo_coescop,
-                 ciudad) %>%
-  mutate( tipo = "metropolitano")
+                 cargo := puesto,
+                 sueldo := remuneracion,
+                 cargo_coescop := puesto,
+                 ciudad ) %>%
+  mutate( tipo = "control")
+
+
+transito <- transito %>% 
+  dplyr::select( cedula,
+                 fecha_nacimiento,
+                 sexo,
+                 nombre,
+                 cargo := puesto,
+                 sueldo := remuneracion,
+                 cargo_coescop := puesto,
+                 ciudad ) %>%
+  mutate( tipo = "transito")
 
 
 snai <- snai %>%
@@ -75,7 +87,7 @@ sn <- snmlcf %>%
   mutate( tipo = "snmlcf")
 
 
-cte <- transito %>%
+cte <- cte %>%
   dplyr::select( cedula,
                  fecha_nacimiento,
                  sexo,
@@ -89,24 +101,24 @@ cte <- transito %>%
 
 #Factor de correción--------------------------------------------------------------------------------
 
-factor <- 10561 / 6596
+factor <- 1 #10561 / 6596
 
 #Consolidación en una sola tabla--------------------------------------------------------------------
 
 coescop <- rbind( ad,
                   bo,
-                  me,
+                  control,
+                  transito,
                   snai,
                   sn,
-                  cte) %>%
-  filter(cargo_coescop!="Administrativo" ) %>%
+                  cte ) %>%
+  filter( cargo_coescop != "Administrativo" ) %>%
   left_join( ., imposiciones, by = 'cedula') %>%
-  filter( !is.na(cedula) & fecha_nacimiento > as.Date('1950-01-01') & !is.na( numimp ) & fecha_nacimiento < as.Date('2004-01-01') ) %>%
-  mutate( edad = round(age_calc(fecha_nacimiento,
-                                enddate = as.Date("31/03/2022","%d/%m/%Y"),
-                                units = "years",
-                                precise = TRUE ) ) ) %>%
-  filter( numimp > 5 )
+  filter( !is.na( cedula ) & fecha_nacimiento > as.Date( '1950-01-01' ) & !is.na( numimp ) & fecha_nacimiento < as.Date('2004-01-01') ) %>%
+  mutate( edad = round( age_calc( fecha_nacimiento,
+                                  enddate = as.Date( "31/03/2022","%d/%m/%Y" ),
+                                  units = "years",
+                                  precise = TRUE ) ) )
 
 
 #Guardar en Rdata-----------------------------------------------------------------------------------
