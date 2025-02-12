@@ -118,8 +118,10 @@ coescop <- rbind( ad,
   mutate( edad = round( age_calc( fecha_nacimiento,
                                   enddate = as.Date( "31/03/2022","%d/%m/%Y" ),
                                   units = "years",
-                                  precise = TRUE ) ) )
-
+                                  precise = TRUE ) ) ) %>%
+  mutate( cedula = if_else( ciudad == 'Latacunga' & tipo == 'transito',
+                            paste0( cedula, '0' ),
+                            cedula ) )
 
 #Guardar en Rdata-----------------------------------------------------------------------------------
 save( coescop,

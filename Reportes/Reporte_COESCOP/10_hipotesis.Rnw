@@ -77,7 +77,7 @@ La tasa actuarial se considera en los modelos matemáticos para determinar el va
 significativas, si mantiene el poder adquisitivo de la reserva frente a los fenómenos económicos, 
 comprobando si las reservas son suficientes para garantizar el pago de las pensiones a los actuales y futuros pensionistas.
 
-Es necesario considerar que la tasa actuarial del estudio, representa la tasa mínima (en términos duros) de rendimiento
+Es necesario considerar que la tasa actuarial del estudio representa la tasa mínima (en términos duros) de rendimiento
 financiero que debe generar el portafolio de inversiones para mantener la validez de los resultados.
 
 

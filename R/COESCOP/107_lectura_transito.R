@@ -40,7 +40,7 @@ cuenca <- cod_utf_win( cuenca ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 'cuenca' )
+  mutate( ciudad = 'Cuenca' )
 
 cuenca <- cuenca %>% 
   filter( grepl( "gente Civil Control De Transporte" , puesto ) | 
@@ -49,7 +49,7 @@ cuenca <- cuenca %>%
                                 'Agente de tránsito',
                                 puesto ) ) %>% 
   mutate( puesto = if_else( grepl( 'Gerente Control Transporte Y Transito', puesto ),
-                                'Prefecto Comandante',
+                                'Gerente de Tránsito',
                                 puesto ) )
 
 # 2.Duran-------------------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ duran <- cod_utf_win( duran ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion )  %>% 
-  mutate( ciudad = 'duran') %>% 
+  mutate( ciudad = 'Duran') %>% 
   mutate( puesto = firstup( puesto ) )
 
 duran <- duran %>%
@@ -104,7 +104,7 @@ esmeraldas <- cod_utf_win( esmeraldas ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 'esmeraldas')  %>% 
+  mutate( ciudad = 'Esmeraldas')  %>% 
   mutate( puesto = firstup( puesto ) )
 
 esmeraldas <- esmeraldas %>%
@@ -118,7 +118,7 @@ esmeraldas <- esmeraldas %>%
                             'Inspector de tránsito',
                             puesto ) ) %>% 
   mutate( puesto = if_else( grepl( 'Director de operaciones de transito', puesto ),
-                            'Prefecto Comandante',
+                            'Director de tránsito',
                             puesto ) )
 
 # 4. Guayaquil--------------------------------------------------------------------------------------
@@ -141,7 +141,7 @@ guayaquil <- cod_utf_win( guayaquil ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 'guayaquil')  %>% 
+  mutate( ciudad = 'Guayaquil')  %>% 
   mutate( puesto = firstup( puesto ) )
 
 
@@ -156,13 +156,13 @@ guayaquil <- guayaquil  %>%
                             'Inspector de tránsito',
                             puesto ) ) %>% 
   mutate( puesto = if_else( grepl( 'Jefe de operaciones de control de transito', puesto ),
-                            'Prefecto Jefe',
+                            'Jefe de tránsito',
                             puesto ) ) %>% 
   mutate( puesto = if_else( grepl( 'Director de control  de transito', puesto ),
-                            'Prefecto Comandante',
+                            'Director de control de tránsito',
                             puesto ) )
 
-# 5. ibarra-----------------------------------------------------------------------------------------
+# 5. Ibarra-----------------------------------------------------------------------------------------
 file <- paste0( parametros$Data, '/transito/ibarra_octubre_2023.xlsx' )
 
 ibarra <- read_excel( file,
@@ -182,7 +182,7 @@ ibarra <- cod_utf_win( ibarra ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 'ibarra') %>% 
+  mutate( ciudad = 'Ibarra') %>% 
   mutate( puesto = firstup( puesto ) )
 
 ibarra <- ibarra %>% 
@@ -195,18 +195,18 @@ ibarra <- ibarra %>%
                                'Sub-inspector',
                                puesto ) ) %>% 
   mutate( puesto = ifelse( grepl( 'Gerente de operaciones de transito', puesto ),
-                               'Prefecto Comandante ',
+                               'Gerente de tránsito',
                                puesto ) ) %>% 
   na.omit( . ) %>% 
   distinct( nombre, .keep_all = TRUE )
 
-# 6. latacunga--------------------------------------------------------------------------------------
+# 6. Latacunga--------------------------------------------------------------------------------------
 file <- paste0( parametros$Data, '/transito/latacunga_marzo_2022.xlsx' )
 
 latacunga <- ibarra %>% 
   filter( puesto == 'Agente de tránsito' ) %>% 
   head( ., 152 ) %>% 
-  mutate( ciudad = 'latacunga' )
+  mutate( ciudad = 'Latacunga' ) 
 
 # 7. Machala----------------------------------------------------------------------------------------
 file<-paste0( parametros$Data, '/transito/machala_octubre_2023.xlsx' )
@@ -228,7 +228,7 @@ machala <- cod_utf_win( machala ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 'machala') %>% 
+  mutate( ciudad = 'Machala') %>% 
   mutate( puesto = firstup( puesto ) )
 
 machala <- machala  %>% 
@@ -241,12 +241,8 @@ machala <- machala  %>%
                            'Sub-inspector',
                            puesto ) ) %>% 
   mutate( puesto = ifelse( grepl( 'Gerente de operaciones de transito', puesto ),
-                           'Prefecto Comandante',
-                           puesto ) ) %>% 
-  mutate( sexo = if_else( is.na( sexo ),
-                          'M',
-                          sexo ),
-          fecha_nacimiento = mean( fecha_nacimiento, na.rm = TRUE ) ) 
+                           'Gerente de tránsito',
+                           puesto ) )
 
 # 9. Portoviejo-------------------------------------------------------------------------------------
 file <- paste0( parametros$Data, '/transito/portoviejo_febrero_2022.xlsx' )
@@ -268,7 +264,7 @@ portoviejo <- cod_utf_win( portoviejo ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 'portoviejo') %>% 
+  mutate( ciudad = 'Portoviejo') %>% 
   mutate( puesto = firstup( puesto ) )
 
 portoviejo <- portoviejo  %>% 
@@ -276,19 +272,14 @@ portoviejo <- portoviejo  %>%
             grepl( "Director control operativo transito", puesto ) |
             grepl( "Supervisor de transito", puesto ) ) %>% 
   mutate( puesto = if_else( grepl( 'Director control operativo transito', puesto ),
-                            'Prefecto Comandante',
+                            'Director de tránsito',
                             puesto ) ) %>% 
   mutate( puesto = if_else( grepl( 'Agente', puesto ),
                             'Agente de tránsito',
                             puesto ) ) %>% 
   mutate( puesto = ifelse( grepl( 'Supervisor de transito', puesto ),
                            'Sub-inspector de tránsito',
-                           puesto ) ) %>% 
-  mutate( sexo = if_else( is.na( sexo ),
-                          'M',
-                          sexo ),
-          fecha_nacimiento = mean( fecha_nacimiento, na.rm = TRUE ) ) 
-
+                           puesto ) )
 
 # 10. Quito-------------------------------------------------------------------------------------
 file <- paste0( parametros$Data, '/transito/quito_agosto_2022.xlsx' )
@@ -310,7 +301,7 @@ quito <- cod_utf_win( quito ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 'quito')  %>% 
+  mutate( ciudad = 'Quito')  %>% 
   mutate( puesto = firstup( puesto ) )
 
 quito <- quito  %>% 
@@ -318,18 +309,14 @@ quito <- quito  %>%
             grepl( "Director control operativo transito", puesto ) |
             grepl( "Supervisor de transito", puesto ) ) %>% 
   mutate( puesto = if_else( grepl( 'Director control operativo transito', puesto ),
-                            'Prefecto Comandante',
+                            'Director de tránsito',
                             puesto ) ) %>% 
   mutate( puesto = if_else( grepl( 'Agente', puesto ),
                             'Agente de tránsito',
                             puesto ) ) %>% 
   mutate( puesto = ifelse( grepl( 'Supervisor de transito', puesto ),
                            'Sub-inspector de tránsito',
-                           puesto ) ) %>% 
-  mutate( sexo = if_else( is.na( sexo ),
-                          'M',
-                          sexo ),
-          fecha_nacimiento = mean( fecha_nacimiento, na.rm = TRUE ) ) 
+                           puesto ) )
 
 # 11. Santo Domingo---------------------------------------------------------------------------------
 
@@ -352,7 +339,7 @@ s_domingo <- cod_utf_win( s_domingo ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 's_domingo') %>% 
+  mutate( ciudad = 'Santo Domingo') %>% 
   mutate( puesto = firstup( puesto ) )
 
 s_domingo <- s_domingo %>% 
@@ -362,13 +349,12 @@ s_domingo <- s_domingo %>%
   mutate( puesto = if_else( grepl( 'Agente', puesto ),
                                 'Agente de tránsito',
                                 NA ) ) %>% 
-  mutate( puesto = ifelse( grepl( 'Especialista', puesto ),
-                               'Especialista',
+  mutate( puesto = ifelse( grepl( "Director control operativo transito", puesto ),
+                           'Director de tránsito',
                            puesto ) ) %>% 
-  mutate( sexo = if_else( is.na( sexo ),
-                          'M',
-                          sexo ),
-          fecha_nacimiento = mean( fecha_nacimiento, na.rm = TRUE ) ) 
+  mutate( puesto = ifelse( grepl( "Supervisor de transito", puesto ),
+                           'Sub-inspector de tránsito',
+                           puesto ) )
 
 # 12. Ambato----------------------------------------------------------------------------------------
 file <- paste0( parametros$Data, '/GAD/ambato_marzo_2022.xlsx' )
@@ -394,7 +380,7 @@ ambato <- cod_utf_win( ambato ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 'ambato') %>% 
+  mutate( ciudad = 'Ambato') %>% 
   mutate( puesto = firstup( puesto ) )
 
 
@@ -432,7 +418,7 @@ riobamba <- cod_utf_win( riobamba ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 'riobamba') %>% 
+  mutate( ciudad = 'Riobamba') %>% 
   mutate( puesto = firstup( puesto ) )%>% 
   filter( grepl( 'tránsito', puesto ) )
 
@@ -471,7 +457,7 @@ loja <- cod_utf_win( loja ) %>%
                  fecha_nacimiento,
                  puesto,
                  remuneracion ) %>% 
-  mutate( ciudad = 'loja') %>% 
+  mutate( ciudad = 'Loja') %>% 
   mutate( puesto = firstup( puesto ) )%>% 
   filter( grepl( 'trans', puesto ) )
 
@@ -508,7 +494,9 @@ transito <- rbind( cuenca,
   mutate( sexo = if_else( is.na( sexo ),
                           'M',
                           sexo ),
-          fecha_nacimiento = mean( fecha_nacimiento, na.rm = TRUE ) ) %>% 
+          fecha_nacimiento = if_else( is.na( fecha_nacimiento ),
+                                      mean( fecha_nacimiento, na.rm = TRUE ),
+                                      fecha_nacimiento ) ) %>% 
   filter( remuneracion > 0 )
 
 #Guardando en un Rdata------------------------------------------------------------------------------

@@ -1690,8 +1690,6 @@ ggsave(  plot = iess_bar_aduaneros,
         filename = paste0(  parametros$resultado_graficos, 'iess_bar_aduaneros', parametros$graf_ext  ),
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
-
-
 # Limpiar Memoria RAM--------------------------------------------------------------------------------
 message(  paste(  rep( '-', 100  ), collapse = ''  )  )
 rm(  list = ls(  )[ !(  ls(  ) %in% c(  'parametros'  )  ) ]  )

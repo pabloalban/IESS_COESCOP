@@ -36,11 +36,19 @@ i_p <- tabla_mortalidad %>%
 #Fecha de derecho-----------------------------------------------------------------------------------
 
 coescop <- coescop %>%
-  mutate( anios_imp = floor(numimp/12) ) %>%
+  mutate( anios_imp = floor( numimp/12 ) ) %>%
+  # mutate( anios_imp = if_else( anios_imp > 9,
+  #                              anios_imp +  round( runif( nrow( . ), min = -9, max = 9 ) ),
+  #                              anios_imp ) ) %>%
   mutate( a_d_coescop = if_else( anios_imp > req_derecho_coescop,
           0,
           req_derecho_coescop - anios_imp ) ) %>%
-  mutate( a_d_coescop = round( runif( nrow( . ), min = 0, max = 3 ) ) + a_d_coescop ) %>% 
+  mutate( a_d_coescop = if_else( a_d_coescop < 6,
+                                 round( runif( nrow( . ), min = 0, max = 5 ) ) + a_d_coescop,
+                                 a_d_coescop ) ) %>%
+  # mutate( a_d_coescop = if_else( a_d_coescop > 10 & a_d_coescop < 20,
+  #                                round( runif( nrow( . ), min = 0, max = 10 ) ) + a_d_coescop,
+  #                                a_d_coescop ) ) %>% 
   mutate( a_d_coescop = if_else( a_d_coescop > 20,
                                  20,
                                  a_d_coescop ) ) %>%

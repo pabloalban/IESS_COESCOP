@@ -28,7 +28,7 @@ A manera de resumen, se describen las principales hipótesis de este estudio:
 
  \begin{table}[H]
  \centering
- \caption{Promedio de los valores estimados de tasas de variación}
+ \caption{Hipótesis actuariales}
  \label{tab:iess_hip_macro}
  \begin{tabular}{lr}
  \toprule
@@ -44,7 +44,7 @@ A manera de resumen, se describen las principales hipótesis de este estudio:
 %---------------------------------------------------------------------------------------------------
 \section{Esquema pensional}
 \label{chp_valuacion:esquema}
-Después de escuchar a los diferentes representantes de los trabajadores sujetos al COESCOP y los colaboradores del IESS, mediante reuniones de trabajo en las oficinas de la Dirección Actuarial, de Investigación y Estadística, y la Dirección del Seguro General de Riesgos del Trabajo, se pudo llegar a la conclusión, que la aspiración de este grupo de trabajadores es obtener una jubilación anticipada, con las mismas características de las jubilaciones de retiro entregadas por ISSPOL. Con este propósito, se propone el siguiente sistema pensional para los trabajadores bajo el COESCOP:
+Después de escuchar a los diferentes representantes de los trabajadores sujetos al COESCOP y los colaboradores del IESS, mediante reuniones de trabajo en las oficinas de la Dirección Actuarial, de Investigación y Estadística, y la Dirección del Seguro General de Riesgos del Trabajo, se llegó al consenso que la aspiración de este grupo de trabajadores es obtener una jubilación anticipada, con las mismas características de las jubilaciones de retiro entregadas por ISSPOL o el ISSFA. Con este propósito, se propone el siguiente sistema pensional para los trabajadores regidos por el COESCOP:
 
 \textbf{1. Requisitos:}
 
@@ -85,11 +85,11 @@ Total \\
 }
 
 
-2.2. Con el fin de proteger el bolsillo de los trabajadores de las entidades de seguridad ciudadana y orden público, en el momento de la jubilación, la entidad o entidades donde haya laborado deberán transferir al IESS una reserva matemática con los valores faltantes para garantizar el pago de la pensión vitalicia, décimas, montepío y auxilio de funerales.
+2.2. Con el fin de proteger la economía de los trabajadores de las entidades de seguridad ciudadana y orden público, en el momento de la jubilación, la entidad o entidades donde haya laborado deberán transferir al IESS una reserva matemática, tanto por tiempo faltante para cumplir requisitos, como para cumplir tiempos de aporte, de conformidad con los requisitos exigidos por la \legalcite{ResIESS_CD100} de la jubilación de vejez.
 
 \textbf{3. Prestaciones:}
 
-El pensionista de retiro de vejez se calculará de acuerdo con la siguiente escala: El setenta por ciento (70\%) del sueldo imponible del beneficiario, por veinte (20) años completos de servicio activo y efectivo en la Policía Nacional, más el tres por ciento (3\%) del sueldo imponible por cada año adicional completo de servicio, hasta llegar al máximo del cien por ciento (100\%) del sueldo imponible a quien acredite treinta (30) o más años de servicio de acuerdo con la siguiente tabla:
+El pensionista de retiro de vejez se calculará de acuerdo con la siguiente escala: El setenta por ciento (70\%) del sueldo imponible del beneficiario, por veinte (20) años completos de servicio activo y efectivo en la Policía Nacional, más el tres por ciento (3\%) del sueldo imponible por cada año adicional completo de servicio, hasta llegar al máximo del cien por ciento (100\%) del sueldo imponible a quien acredite treinta (30) o más años de servicio, de acuerdo con la siguiente tabla:
 
 {\fontsize{10}{10}\selectfont
 \begin{longtable}[H]{C{2cm}R{2.5cm}}
@@ -118,6 +118,7 @@ Tiempo de servicio:
 \input{tablas/coescop_tab_coeficientes.tex}
 \end{longtable}
 }
+El beneficio no depende de la edad, sino del tiempo aportado.
 %---------------------------------------------------------------------------------------------------
 
 
@@ -127,14 +128,15 @@ Tiempo de servicio:
 Del presente estudio se obtienen las siguientes conclusiones:
 \begin{enumerate}[itemsep=0mm, topsep=0pt]
 
-\item La creación de una nueva jubilación anticipada para los trabajadores que acrediten un mínimo de veinte (20) años de servicio en las entidades regidas por el COESCOP, con una pensión igual al setenta por ciento (70\%) del sueldo imponible del beneficiario, por veinte (20) años completos de servicio activo, más el tres por ciento (3\%) del sueldo imponible por cada año adicional completo de servicio, hasta llegar al máximo del cien por ciento (100\%) del sueldo imponible a quien acredite treinta (30) o más años de servicio, estaría debidamente financiada en el caso de que se suba la tasa de aportación personal al Seguro de IVM de 11,06\% a 12,90\% a los trabajadores sujetos del COESCOP, y las entidades de seguridad ciudadana y orden público deberán transferir al Fondo del Seguro de IVM del IESS valores iguales a USD \Sexpr{REP$reserva_a_pagar_vap} para completar el financiamiento de pensiones de mayor cuantía y por mayor tiempo y; además, se deberían transferir USD \Sexpr{REP$aporte_ivm_vap} por el cese de pago aportes por diez (10) años al Seguro de IVM del IESS y USD \Sexpr{REP$aporte_salud_vap} de aportes al Seguro General de Salud Individual y Familiar del IESS, al tratarse de una jubilación anticipada que se entregaría el beneficio diez (10) años antes de lo establecido en la jubilación de vejez del IESS.
+\item La creación de una nueva jubilación anticipada para los trabajadores que acrediten un mínimo de veinte (20) años de servicio en las entidades regidas por el COESCOP, con una pensión igual al setenta por ciento (70\%) del sueldo imponible del beneficiario, por veinte (20) años completos de servicio activo, más el tres por ciento (3\%) del sueldo imponible por cada año adicional completo de servicio, hasta llegar al máximo del cien por ciento (100\%) del sueldo imponible a quien acredite treinta (30) o más años de servicio, estaría debidamente financiada en el caso de que se suba la tasa de aportación personal al Seguro de IVM de 11,06\% a 12,90\% a los trabajadores sujetos del COESCOP, y las entidades de seguridad ciudadana y orden público deberán transferir al Fondo del Seguro de IVM del IESS valores por USD \Sexpr{REP$reserva_a_pagar_vap} para completar el financiamiento de pensiones de mayor cuantía y por mayor tiempo y; además, se deberían transferir USD \Sexpr{REP$aporte_ivm_vap} por el cese de pago aportes por diez (10) años al Seguro de IVM del IESS y USD \Sexpr{REP$aporte_salud_vap} de aportes al Seguro General de Salud Individual y Familiar del IESS, al tratarse de una jubilación anticipada que se entregaría el beneficio diez (10) años antes de lo establecido en la jubilación de vejez del IESS.
 
-\item En caso de que la creación de esta nueva prestación no esté debidamente financiada, según como lo establece el artículo 369 de la Constitución, el perjuicio al IESS sería igual a USD 530.968.385,59, de los cuales USD 494.398.736,39 sería en perjuicio al Seguro de IVM; es decir, el déficit actuarial del Fondo del Seguro de IVM (USD 4.551 millones de dólares), crecería en USD 494 millones de dólares por el cese de aportes de 10 años y el pago de prestaciones más altas a pensionistas que se jubilaran con 20 años de servicio. Y, USD \Sexpr{REP$aporte_salud_vap} sería el perjuicio al Seguro de Salud General Individual y Familiar del IESS por el cese de aportes de diez (10) años que dejaría de percibir.
-
+\item En caso de que la creación de esta nueva prestación no esté debidamente financiada, según como lo establece el artículo 369 de la Constitución, el perjuicio al IESS sería igual a USD \Sexpr{REP$impacto}, de los cuales USD \Sexpr{REP$aporte_ivm_vap} sería en perjuicio al Seguro de IVM; es decir, el déficit actuarial del Fondo del Seguro de IVM (USD 4.551 millones de dólares), crecería en USD \Sexpr{REP$aporte_ivm_vap_millones} millones de dólares por el cese de aportes de 10 años y el pago de prestaciones más altas a pensionistas que se jubilaran con 20 años de servicio. Y, USD \Sexpr{REP$aporte_salud_vap} sería el perjuicio al Seguro de Salud General Individual y Familiar del IESS por el cese de aportes de diez (10) años que dejaría de percibir.
 \end{enumerate}
 %--------------------------------------------------------------------------------------------------
 Las principales recomendaciones de esta Dirección son:
 \begin{enumerate}
+\item Se recomienda entregar una jubilación anticipada a los trabajadores sujetos al Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público, siempre y cuando se encuentre debidamente financiada de acuerdo al artículo 369 de la \legalcite{ConsEcu:2008}, amparado en estudios actuariales, en conformidad al artículo 233 de la \ref{LeySS} y deberá contar previamente con el dictamen presupuestario favorable por parte del ente rector de la política pública de economía y finanzas, conforme al artículo 2 de la.\legalcite{reformaLSS24}.
+
 \item Se recomienda entregar una jubilación anticipada a los trabajadores sujetos al Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público que hayan alcanzado un mínimo de veinte (20) años de servicio activo en las entidades regidas por el COESCOP, con una pensión igual al setenta por ciento (70\%) del sueldo imponible del beneficiario, por veinte (20) años completos de servicio activo, más el tres por ciento (3\%) del sueldo imponible por cada año adicional completo de servicio, hasta llegar al máximo del cien por ciento (100\%) del sueldo imponible a quien acredite treinta (30) o más años de servicio, siempre y cuando, se eleve su tasa de aportación personal al Seguro de IVM a 12,90\% a los trabajadores sujetos del COESCOP y las entidades sujetas al Código Orgánico de Entidades de Seguridad Ciudadana y Orden Público transfieran durante los próximos 20 años el valor de USD \Sexpr{REP$reserva_a_pagar_vap} al Fondo del Seguro de IVM para el pago de jubilaciones más altas y por más tiempo; y, además, se deberían transferir USD \Sexpr{REP$aporte_ivm_vap} por el cese de pago aportes por diez (10) años al Seguro de IVM del IESS y USD \Sexpr{REP$aporte_salud_vap} de aportes al Seguro General de Salud Individual y Familiar del IESS, al tratarse de una jubilación anticipada que se entregaría el beneficio diez (10) años antes de lo establecido en la jubilación de vejez del IESS.
 
 \item	En el caso que hubiera el debido financiamiento para la entrega de esta prestación, se recomienda crear un nuevo Fondo, formado exclusivamente con los valores recaudados por esta jubilación reducida, el cual poseerá su propia contabilidad, gastos administrativos y portafolio de inversiones. Y, para la entrega de esta prestación, se recomienda el cálculo de la reserva matemática por la diferencia de 20 a 30 años de aportes y la diferencia de edad entre la edad de derecho y los 60 años.

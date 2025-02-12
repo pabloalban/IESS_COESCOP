@@ -92,8 +92,10 @@ Teniendo en cuenta el esquema pensional mostrado en la sección \ref{chp_valuaci
 
 Se opta por esta forma de registrar el gasto prestacional, debido a que, según el esquema pensional propuesto, las entidades de seguridad ciudadana y orden público deberán transferir al Fondo del Seguro de IVM el valor de una reserva matemática por el pago de las pensiones futuras, sustraído los aportes personales (12,90\%) y patronales (3,82\%). En la tabla \ref{tab:iess_balance_cap}, se presenta el balance en términos corrientes, el cual presenta las proyecciones de nuevos pensionistas y los valores a transferir por cada entidad cada año.
 
-\begin{landscape}
+\newpage 
 
+\begin{landscape}
+\vspace*{\fill}
 {\fontsize{10}{14}\selectfont
 \begin{longtable}[H]{R{0.5cm}R{1cm}R{2cm}R{2.5cm}R{2cm}*{4}{R{2.5cm}R{2cm}R{2cm}}}
 \caption{Balance Corriente}\\
@@ -139,15 +141,258 @@ Año:
 \input{tablas/iess_balance_cap.tex}
 \end{longtable}
 }
+\vspace*{\fill}
+\end{landscape}
 
+
+\newpage 
+
+\begin{landscape}
+
+\vspace*{\fill}
+{\setlength{\tabcolsep}{3pt}
+{\fontsize{9}{12}\selectfont
+\begin{longtable}[H]{lrrrrrrrrrrrr}
+\caption{Ingresos por reservas matemáticas en valores corrientes}\\
+\caption*{Valores que los GAD municipales y metropolitanos deberían transferir al IESS por la jubilación de los Cuerpos de Agentes Civiles de Tránsito por ciudad y año}
+\label{tab:coescop_tab_reservas_transito} \\
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Año:}}  &
+    \multicolumn{1}{c}{Cuenca} &
+    \multicolumn{1}{c}{Durán} &
+    \multicolumn{1}{c}{Esmeraldas} &
+    \multicolumn{1}{c}{Guayaquil} &
+    \multicolumn{1}{c}{Ibarra} &
+    \multicolumn{1}{c}{Latacunga} &
+    \multicolumn{1}{c}{Machala} &
+    \multicolumn{1}{c}{Quito} &
+    \multicolumn{1}{c}{Santo Domingo} &
+    \multicolumn{1}{c}{Ambato} &
+    \multicolumn{1}{c}{Riobamba} &
+    \multicolumn{1}{c}{Loja} \\
+ &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} \\
+\midrule
+\endfirsthead
+
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Año:}}  &
+    \multicolumn{1}{c}{Cuenca} &
+    \multicolumn{1}{c}{Durán} &
+    \multicolumn{1}{c}{Esmeraldas} &
+    \multicolumn{1}{c}{Guayaquil} &
+    \multicolumn{1}{c}{Ibarra} &
+    \multicolumn{1}{c}{Latacunga} &
+    \multicolumn{1}{c}{Machala} &
+    \multicolumn{1}{c}{Quito} &
+    \multicolumn{1}{c}{Santo Domingo} &
+    \multicolumn{1}{c}{Ambato} &
+    \multicolumn{1}{c}{Riobamba} &
+    \multicolumn{1}{c}{Loja} \\
+ &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{13}{r}{continúa...} \\
+\endfoot
+%\hline
+\caption*{\scriptsize Elaborado: DAIE}
+%\bottomrule
+\endlastfoot
+\input{tablas/coescop_tab_reservas_transito.tex}
+\end{longtable}
+}
+}
+\vspace*{\fill}
+\end{landscape}
+
+
+\newpage 
+
+\begin{landscape}
+\vspace*{\fill}
+{\setlength{\tabcolsep}{6pt}
+{\fontsize{11}{13}\selectfont
+\begin{longtable}[H]{lrrrrrrrrrrrr}
+\caption{Ingresos por reservas matemáticas en valores corrientes}\\
+\caption*{Valores que los GAD municipales y metropolitanos deberían transferir al IESS por la jubilación de los Cuerpos de Agentes de Control por ciudad y año}
+\label{tab:coescop_tab_reservas_control} \\
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Año:}}  &
+    \multicolumn{1}{c}{Ambato} &
+    \multicolumn{1}{c}{Durán} &
+    \multicolumn{1}{c}{Esmeraldas} &
+    \multicolumn{1}{c}{Guayaquil} &
+    \multicolumn{1}{c}{Latacunga} &
+    \multicolumn{1}{c}{Machala} &
+    \multicolumn{1}{c}{Quito} &
+    \multicolumn{1}{c}{Santo Domingo} \\
+ &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} \\
+\midrule
+\endfirsthead
+
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Año:}}  &
+    \multicolumn{1}{c}{Ambato} &
+    \multicolumn{1}{c}{Durán} &
+    \multicolumn{1}{c}{Esmeraldas} &
+    \multicolumn{1}{c}{Guayaquil} &
+    \multicolumn{1}{c}{Latacunga} &
+    \multicolumn{1}{c}{Machala} &
+    \multicolumn{1}{c}{Quito} &
+    \multicolumn{1}{c}{Santo Domingo} \\
+ &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{9}{r}{continúa...} \\
+\endfoot
+%\hline
+\caption*{\scriptsize Elaborado: DAIE}
+%\bottomrule
+\endlastfoot
+\input{tablas/coescop_tab_reservas_control.tex}
+\end{longtable}
+}
+}
+\vspace*{\fill}
+\end{landscape}
+
+
+\newpage 
+
+\begin{landscape}
+\vspace*{\fill}
+{\setlength{\tabcolsep}{3pt}
+{\fontsize{9.5}{12}\selectfont
+\begin{longtable}[H]{lrrrrrrrrrrrr}
+\caption{Ingresos por reservas matemáticas en valores corrientes}\\
+\caption*{Valores que los GAD municipales y metropolitanos deberían transferir al IESS por la jubilación de los Cuerpos de Bomberos por ciudad y año}
+\label{tab:coescop_tab_reservas_bombero} \\
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Año:}}  &
+    \multicolumn{1}{c}{Ambato} &
+    \multicolumn{1}{c}{Cuenca} &
+    \multicolumn{1}{c}{Guayaquil} &
+    \multicolumn{1}{c}{Ibarra} &
+    \multicolumn{1}{c}{Loja} &
+    \multicolumn{1}{c}{Machala} &
+    \multicolumn{1}{c}{Manta} &
+    \multicolumn{1}{c}{Milagro} &
+    \multicolumn{1}{c}{Portoviejo} &
+    \multicolumn{1}{c}{Quito} &
+    \multicolumn{1}{c}{Riobamba} &
+    \multicolumn{1}{c}{Santo Domingo} \\
+ &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} & 
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} \\
+\midrule
+\endfirsthead
+
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Año:}}  &
+    \multicolumn{1}{c}{Ambato} &
+    \multicolumn{1}{c}{Cuenca} &
+    \multicolumn{1}{c}{Guayaquil} &
+    \multicolumn{1}{c}{Ibarra} &
+    \multicolumn{1}{c}{Loja} &
+    \multicolumn{1}{c}{Machala} &
+    \multicolumn{1}{c}{Manta} &
+    \multicolumn{1}{c}{Milagro} &
+    \multicolumn{1}{c}{Portoviejo} &
+    \multicolumn{1}{c}{Quito} &
+    \multicolumn{1}{c}{Riobamba} &
+    \multicolumn{1}{c}{Santo Domingo} \\
+ &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} & 
+    \multicolumn{1}{c}{(USD)} &
+    \multicolumn{1}{c}{(USD)} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{13}{r}{continúa...} \\
+\endfoot
+%\hline
+\caption*{\scriptsize Elaborado: DAIE}
+%\bottomrule
+\endlastfoot
+\input{tablas/coescop_tab_reservas_bombero.tex}
+\end{longtable}
+}
+}
+\vspace*{\fill}
 \end{landscape}
 
 
 
-\begin{landscape}
+\newpage
 
+
+\begin{landscape}
 \subsection{Balance actuarial}
 \label{chp_valuacionactu:balactu}
+\vspace*{\fill}
 
 {\fontsize{10}{14}\selectfont
 \begin{longtable}[H]{R{0.5cm}R{1cm}R{2cm}R{2.5cm}R{2cm}*{4}{R{2.5cm}R{2cm}}}
@@ -192,8 +437,9 @@ Año:
 \input{tablas/iess_balance_vap.tex}
 \end{longtable}
 }
-
+\vspace*{\fill}
 \end{landscape}
+
 
 
 De los resultados de la valuación actuarial, se concluye que durante el período 2023 a 2042: se recaudará USD \Sexpr{REP$aporte_coescop_vap} aportes al Fondo de retiro (aporte personal (12,90\% ) y patronal (3,82\%) y las entidades de seguridad ciudadana y orden público deberán transferir USD \Sexpr{REP$reserva_a_pagar_vap}, para cubrir los egresos por las prestaciones por pensiones, montepío y gastos administrativos por USD \Sexpr{REP$egreso_total_vap}. %Los valores que debe transferir cada entidad por esta jubilación anticipada se detallan en la tabla \ref{tab:iess_valor_a_pagar_ins}.
@@ -226,6 +472,114 @@ De los resultados de la valuación actuarial, se concluye que durante el períod
 % \end{longtable}
 % }
 
+\vspace*{\fill}
+{\setlength{\tabcolsep}{5pt}
+{\fontsize{11}{13}\selectfont
+\begin{longtable}[H]{lr}
+\caption{Ingresos por reservas matemáticas en valor presente }\\
+\caption*{Valores que los GAD municipales y metropolitanos deberían transferir en 20 años, en total, al IESS por la jubilación de los Cuerpos de Agentes Civiles de Tránsito por ciudad y año}
+\label{tab:coescop_tab_transito_resumen} \\
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Ciudad:}}  &
+    \multicolumn{1}{c}{Valores a transferir al IESS} \\
+ &
+    \multicolumn{1}{c}{(USD)}\\
+\midrule
+\endfirsthead
+
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Ciudad:}}  &
+    \multicolumn{1}{c}{Valores a transferir al IESS} \\
+ &
+    \multicolumn{1}{c}{(USD)}\\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{2}{r}{continúa...} \\
+\endfoot
+%\hline
+\caption*{\scriptsize Elaborado: DAIE}
+%\bottomrule
+\endlastfoot
+\input{tablas/coescop_tab_transito_resumen.tex}
+\end{longtable}
+}
+}
+\vspace*{\fill}
+
+
+{\setlength{\tabcolsep}{5pt}
+{\fontsize{11}{13}\selectfont
+\begin{longtable}[H]{lr}
+\caption{Ingresos por reservas matemáticas en valor presente}\\
+\caption*{Valores que los GAD municipales y metropolitanos deberían transferir en 20 años, en total, al IESS por la jubilación de los Cuerpos de Control Municipal o Metropolitano por ciudad y año}
+\label{tab:coescop_tab_control_resumen} \\
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Ciudad:}}  &
+    \multicolumn{1}{c}{Valores a transferir al IESS} \\
+ &
+    \multicolumn{1}{c}{(USD)}\\
+\midrule
+\endfirsthead
+
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Ciudad:}}  &
+    \multicolumn{1}{c}{Valores a transferir al IESS} \\
+ &
+    \multicolumn{1}{c}{(USD)}\\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{2}{r}{continúa...} \\
+\endfoot
+%\hline
+\caption*{\scriptsize Elaborado: DAIE}
+%\bottomrule
+\endlastfoot
+\input{tablas/coescop_tab_control_resumen.tex}
+\end{longtable}
+}
+}
+\vspace*{\fill}
+
+\newpage
+
+{\setlength{\tabcolsep}{5pt}
+{\fontsize{11}{13}\selectfont
+\begin{longtable}[H]{lr}
+\caption{Ingresos por reservas matemáticas en valor presente}\\
+\caption*{Valores que los GAD municipales y metropolitanos deberían transferir en 20 años, en total, al IESS por la jubilación de los Cuerpos
+de Bomberos por ciudad y año}
+\label{tab:coescop_tab_bombero_resumen} \\
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Ciudad:}}  &
+    \multicolumn{1}{c}{Valores a transferir al IESS} \\
+ &
+    \multicolumn{1}{c}{(USD)}\\
+\midrule
+\endfirsthead
+
+\toprule
+    \multicolumn{1}{c}{\multirow{2}[2]{*}{Ciudad:}}  &
+    \multicolumn{1}{c}{Valores a transferir al IESS} \\
+ &
+    \multicolumn{1}{c}{(USD)}\\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{2}{r}{continúa...} \\
+\endfoot
+%\hline
+\caption*{\scriptsize Elaborado: DAIE}
+%\bottomrule
+\endlastfoot
+\input{tablas/coescop_tab_bombero_resumen.tex}
+\end{longtable}
+}
+}
 
 % Impacto --------------------------------------------------------------------------------------
 \section{Valores dejados de percibir por años aportes al IESS}
@@ -239,7 +593,7 @@ Además de los valores antes descritos, el Fondo de IVM del IESS dejará de perc
 \label{tab:iess_balance_vap} \\
 \toprule
 \multicolumn{1}{l}{\multirow{2}{*}{Año:}} & 
-\multicolumn{3}{c}{En términos corientes} &
+\multicolumn{3}{c}{En términos corrientes} &
 \multicolumn{3}{c}{Valor a tiempo presente} \\
 \cmidrule(lr){2-4} \cmidrule(lr){5-7}
 & Aportes al Seguro de IVM
@@ -253,7 +607,7 @@ Además de los valores antes descritos, el Fondo de IVM del IESS dejará de perc
 
 \toprule
 \multicolumn{1}{l}{\multirow{2}{*}{Año:}} & 
-\multicolumn{3}{c}{En términos corientes} &
+\multicolumn{3}{c}{En términos corrientes} &
 \multicolumn{3}{c}{Valor a tiempo presente}\\
 \cmidrule(lr){2-4} \cmidrule(lr){5-7}
 & Aportes al Seguro de IVM

@@ -1,23 +1,22 @@
-
 message( paste( rep('-', 100 ), collapse = '' ) )
 
 message( '\tLectura de los población COESCOP' )
 
 #Cargando población de beneficiarios----------------------------------------------------------------
 
-load(paste0(parametros$RData, "COESCOP_snai_cargos.RData")) #snai
-load(paste0(parametros$RData, "COESCOP_snmlcf_cargos.RData")) #snmlcf
-load(paste0(parametros$RData, "COESCOP_metropolitanos_cargos.RData")) #metropolitanos
-load(paste0(parametros$RData, "COESCOP_cte_cargos.RData")) #cte
-load(paste0(parametros$RData, "COESCOP_bomberos_cargos.RData")) #bomberos
-load(paste0(parametros$RData, "COESCOP_aduaneros_cargos.RData")) #aduaneros
-
+load( paste0( parametros$RData, "COESCOP_snai_cargos.RData" ) ) #snai
+load( paste0( parametros$RData, "COESCOP_snmlcf_cargos.RData" ) ) #snmlcf
+load( paste0( parametros$RData, "COESCOP_metropolitanos_cargos.RData" ) ) #metropolitanos
+load( paste0( parametros$RData, "COESCOP_cte_cargos.RData" ) ) #cte
+load( paste0( parametros$RData, "COESCOP_bomberos_cargos.RData" ) ) #bomberos
+load( paste0( parametros$RData, "COESCOP_aduaneros_cargos.RData" ) ) #aduaneros
+load( paste0( parametros$RData, 'COESCOP_transito.RData' ) ) #trásito
+load( paste0( parametros$RData, 'COESCOP_control.RData' ) ) #control
 
 #Tablas de contingencia por edad y sexo-------------------------------------------------------------
 message( paste( rep('-', 100 ), collapse = '' ) )
 
 message( '\tResumiendo información en tablas de contingencia' )
-
 
 #SNAI-----------------------------------------------------------------------------------------------
 
@@ -483,10 +482,10 @@ tabla_cte_cargo <- transito %>%
   mutate( frecuencia = n() ) %>%
   ungroup() %>%
   distinct( sexo, cargo_coescop, .keep_all = TRUE ) %>%
-  dplyr::select(cargo_coescop, sexo,
+  dplyr::select( cargo_coescop, sexo,
                 frecuencia) %>%
-  mutate( frecuencia = round(frecuencia * 
-nrow(transito)/sum(frecuencia),0 ) )
+  mutate( frecuencia = round( frecuencia * 
+nrow( transito )/sum( frecuencia ),0 ) )
 
 tabla_cte_cargo[1,3] <- tabla_cte_cargo[1,3] + 0
 
@@ -1229,7 +1228,6 @@ tabla_aduaneros_salario <- aduaneros %>%
   distinct( cargo_coescop, media, .keep_all = TRUE ) %>%
   dplyr::select(cargo_coescop, media)
 
-
 #Guardando en un Rdata todas las tablas-------------------------------------------------------------
 message( '\tGuardando en data.frame' )
 
@@ -1312,7 +1310,7 @@ tablas <- c('tabla_snmlcf_edad_sexo',
             'tabla_metropolitanos_loja_salario')
             
 
-save(list = tablas , file = paste0( parametros$RData, 'IESS_tablas_contingencia.RData' ))
+save(list = tablas , file = paste0( parametros$RData, 'IESS_tablas_contingencia.RData' ) )
 
 #Borrando data.frames-------------------------------------------------------------------------------
 message( paste( rep('-', 100 ), collapse = '' ) )

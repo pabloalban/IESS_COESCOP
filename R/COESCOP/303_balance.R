@@ -54,6 +54,34 @@ aportes_transito <- malla_ivm %>%
                  aporte_salud,
                  aporte_coescop )
 
+aportes_control <- malla_ivm %>%
+  filter( anio >= 2023 & anio <= 2042, tipo == 'control' ) %>%
+  group_by( anio, ciudad ) %>%
+  mutate( aporte_ivm = sum( aporte_ivm, na.rm = TRUE ),
+          aporte_salud = sum( aporte_salud, na.rm = TRUE ),
+          aporte_coescop = sum(aporte_coescop, na.rm = TRUE ) ) %>%
+  ungroup( ) %>%
+  distinct(., ciudad, anio, .keep_all = TRUE ) %>%
+  dplyr::select( anio, 
+                 ciudad,
+                 aporte_ivm,
+                 aporte_salud,
+                 aporte_coescop )
+
+aportes_bomberos <- malla_ivm %>%
+  filter( anio >= 2023 & anio <= 2042, tipo == 'bombero' ) %>%
+  group_by( anio, ciudad ) %>%
+  mutate( aporte_ivm = sum( aporte_ivm, na.rm = TRUE ),
+          aporte_salud = sum( aporte_salud, na.rm = TRUE ),
+          aporte_coescop = sum(aporte_coescop, na.rm = TRUE ) ) %>%
+  ungroup( ) %>%
+  distinct(., ciudad, anio, .keep_all = TRUE ) %>%
+  dplyr::select( anio, 
+                 ciudad,
+                 aporte_ivm,
+                 aporte_salud,
+                 aporte_coescop )
+
 
 jubilados_ins <- malla_coescop %>%
   filter( anio >= 2023 & anio <= 2042 ) %>%
@@ -107,6 +135,31 @@ reserva_transito <- reserva_matematica %>%
   dplyr::select( anio, ciudad, n_old, reserva_matematica, montepio, gastos_administrativos, egreso_total ) %>% 
   arrange( ciudad, anio )
 
+reserva_control <- reserva_matematica %>% 
+  filter( tipo == 'control' ) %>% 
+  group_by( anio, ciudad ) %>% 
+  mutate( reserva_matematica = sum( reserva_matematica, na.rm = TRUE ),
+          montepio = sum( montepio, na.rm = TRUE ),
+          gastos_administrativos = sum( gastos_administrativos, na.rm = TRUE ),
+          egreso_total = sum( reserva_total, na.rm = TRUE ) ) %>% 
+  mutate( n_old = sum( i_p_acu, na.rm = TRUE ) ) %>%
+  ungroup( ) %>% 
+  distinct( anio, ciudad, .keep_all = TRUE ) %>% 
+  dplyr::select( anio, ciudad, n_old, reserva_matematica, montepio, gastos_administrativos, egreso_total ) %>% 
+  arrange( ciudad, anio )
+
+reserva_bombero <- reserva_matematica %>% 
+  filter( tipo == 'bombero' ) %>% 
+  group_by( anio, ciudad ) %>% 
+  mutate( reserva_matematica = sum( reserva_matematica, na.rm = TRUE ),
+          montepio = sum( montepio, na.rm = TRUE ),
+          gastos_administrativos = sum( gastos_administrativos, na.rm = TRUE ),
+          egreso_total = sum( reserva_total, na.rm = TRUE ) ) %>% 
+  mutate( n_old = sum( i_p_acu, na.rm = TRUE ) ) %>%
+  ungroup( ) %>% 
+  distinct( anio, ciudad, .keep_all = TRUE ) %>% 
+  dplyr::select( anio, ciudad, n_old, reserva_matematica, montepio, gastos_administrativos, egreso_total ) %>% 
+  arrange( ciudad, anio )
 
 reserva_matematica_ins <- reserva_matematica %>%
   group_by( anio, tipo ) %>%
@@ -313,7 +366,7 @@ valor_a_pagar_ins <- data.frame( tipo = c('Cuerpo de Vigilancia Aduanera',
                                           'Cuerpos de Bomberos',
                                           'Comisión de Tránsito del Ecuador',
                                           'Cuerpo de Agentes de Control Municipal o Metropolitano',
-                                          'Cuerpos de Agentes Civiles de Transito',
+                                          'Cuerpos de Agentes Civiles de Tránsito',
                                           'Servicio Nacional de Medicina Legal y Ciencias Forenses'),
                                  reserva_a_pagar_vap = rbind( b_adu,
                                                               b_bom,
@@ -332,12 +385,12 @@ balance_control <- fun_balance_anual(aux, 'control') %>% filter( anio == 2042) %
 balance_transito <- fun_balance_anual(aux, 'transito')
 balance_snmlcf <- fun_balance_anual(aux, 'snmlcf') %>% filter( anio == 2042) %>% dplyr::select( reserva_a_pagar_vap  )
 
-#Valor a pagar por ciudad en Cuerpos de Agentes Civiles de Transito---------------------------------
+#4. Valor a pagar por ciudad en Cuerpos de Agentes Civiles de Transito---------------------------------
 
 aux <- aportes_transito %>%
   left_join( ., reserva_transito, by = c('anio', 'ciudad') )
 
-fun_balance_anual_transito <- function(.data, ciudad ) {
+fun_balance_anual <- function(.data, ciudad ) {
   
   a <- data.frame( anio = c(2023:2042) ) %>% 
     left_join(., aux, by = 'anio' ) %>%
@@ -378,10 +431,163 @@ fun_balance_anual_transito <- function(.data, ciudad ) {
 }
 
 
+balance_cuenca <- fun_balance_anual( aux, c( 'Cuenca' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_duran <- fun_balance_anual( aux, c( 'Duran' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_esmeraldas <- fun_balance_anual( aux, c( 'Esmeraldas' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_guayaquil <- fun_balance_anual( aux, c( 'Guayaquil' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_ibarra <- fun_balance_anual( aux, c( 'Ibarra' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_latacunga <- fun_balance_anual( aux, c( 'Latacunga' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_machala <- fun_balance_anual( aux, c( 'Machala' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_quito <- fun_balance_anual( aux, c( 'Quito' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_s_domingo <- fun_balance_anual( aux, c( 'Santo Domingo' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_ambato <- fun_balance_anual( aux, c( 'Ambato' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_riobamba <- fun_balance_anual( aux, c( 'Riobamba' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_loja <- fun_balance_anual( aux, c( 'Loja' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+
+balance_transito_corriente <- rbind( balance_cuenca,
+                           balance_duran,
+                           balance_esmeraldas,
+                           balance_guayaquil,
+                           balance_ibarra,
+                           balance_latacunga,
+                           balance_machala,
+                           balance_quito,
+                           balance_s_domingo,
+                           balance_ambato,
+                           balance_riobamba,
+                           balance_loja ) %>% 
+  dplyr::select( anio, ciudad, reserva_a_pagar ) %>% 
+  mutate( reserva_a_pagar = if_else( reserva_a_pagar < 0,
+                                     0,
+                                     reserva_a_pagar ) ) %>% 
+  pivot_wider( names_from = ciudad, values_from = reserva_a_pagar, names_prefix = "" )
+
+#Resumen Valor a pagar por ciudad en Cuerpos de Agentes Civiles de Transito
+
+valor_transferir_transito_vap <- rbind( balance_cuenca,
+                                        balance_duran,
+                                        balance_esmeraldas,
+                                        balance_guayaquil,
+                                        balance_ibarra,
+                                        balance_latacunga,
+                                        balance_machala,
+                                        balance_quito,
+                                        balance_s_domingo,
+                                        balance_ambato,
+                                        balance_riobamba,
+                                        balance_loja ) %>% 
+  filter( anio == '2042' ) %>% 
+  dplyr::select( ciudad, reserva_a_pagar_vap )  %>%
+  rbind( ., c( "Total", as.character( sum( .[,2], na.rm =TRUE ) ) ) ) %>% 
+  mutate_at( c( 2:ncol( . ) ), as.numeric ) 
+
+#5. Valor a pagar por ciudad en Cuerpos de Control--------------------------------------------------
+
+aux <- aportes_control %>%
+  left_join( ., reserva_control, by = c('anio', 'ciudad') )
+
+#balance_cuenca <- fun_balance_anual( aux, c( 'Cuenca' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_ambato <- fun_balance_anual( aux, c( 'Ambato' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_duran <- fun_balance_anual( aux, c( 'Duran' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_esmeraldas <- fun_balance_anual( aux, c( 'Esmeraldas' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_guayaquil <- fun_balance_anual( aux, c( 'Guayaquil' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+#balance_ibarra <- fun_balance_anual( aux, c( 'Ibarra' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_latacunga <- fun_balance_anual( aux, c( 'Latacunga' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_machala <- fun_balance_anual( aux, c( 'Machala' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_quito <- fun_balance_anual( aux, c( 'Quito' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_s_domingo <- fun_balance_anual( aux, c( 'Santo Domingo' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+#balance_riobamba <- fun_balance_anual( aux, c( 'Riobamba' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+#balance_loja <- fun_balance_anual( aux, c( 'Loja' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+
+balance_control_corriente <- rbind( balance_ambato,
+                                    balance_duran,
+                                     balance_esmeraldas,
+                                     balance_guayaquil,
+                                     #balance_ibarra,
+                                     balance_latacunga,
+                                     balance_machala,
+                                     balance_quito,
+                                     balance_s_domingo ) %>% 
+  dplyr::select( anio, ciudad, reserva_a_pagar ) %>% 
+  mutate( reserva_a_pagar = if_else( reserva_a_pagar < 0,
+                                     0,
+                                     reserva_a_pagar ) ) %>% 
+  pivot_wider( names_from = ciudad, values_from = reserva_a_pagar, names_prefix = "" )
 
 
-balance_ambato <- fun_balance_anual_transito( aux, 'ambato') %>%  dplyr::select( anio, ciudad, reserva_a_pagar_vap  )
+valor_transferir_control_vap <-  rbind( balance_ambato,
+                                        balance_duran,
+                                        balance_esmeraldas,
+                                        balance_guayaquil,
+                                        #balance_ibarra,
+                                        balance_latacunga,
+                                        balance_machala,
+                                        balance_quito,
+                                        balance_s_domingo ) %>% 
+  filter( anio == '2042' ) %>% 
+  dplyr::select( ciudad, reserva_a_pagar_vap )  %>%
+  rbind( ., c( "Total", as.character( sum( .[,2], na.rm =TRUE ) ) ) ) %>% 
+  mutate_at( c( 2:ncol( . ) ), as.numeric )
 
+
+#6. Valor a pagar por ciudad en Cuerpos de Bomberos-------------------------------------------------
+
+aux <- aportes_bomberos %>%
+  left_join( ., reserva_bombero, by = c('anio', 'ciudad') )
+
+
+balance_ambato <- fun_balance_anual( aux, c( 'Ambato' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_cuenca <- fun_balance_anual( aux, c( 'Cuenca' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+#balance_duran <- fun_balance_anual( aux, c( 'Duran' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+#balance_esmeraldas <- fun_balance_anual( aux, c( 'Esmeraldas' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_guayaquil <- fun_balance_anual( aux, c( 'Guayaquil' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_ibarra <- fun_balance_anual( aux, c( 'Ibarra' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_loja <- fun_balance_anual( aux, c( 'Loja' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+#balance_latacunga <- fun_balance_anual( aux, c( 'Latacunga' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_machala <- fun_balance_anual( aux, c( 'Machala' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_manta <- fun_balance_anual( aux, c( 'Manta' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_milagro <- fun_balance_anual( aux, c( 'Milagro' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_p_viejo <- fun_balance_anual( aux, c( 'Portoviejo' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_quito <- fun_balance_anual( aux, c( 'Quito' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_riobamba <- fun_balance_anual( aux, c( 'Riobamba' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+balance_s_domingo <- fun_balance_anual( aux, c( 'Santo Domingo' ) ) %>%  dplyr::select( anio, ciudad, reserva_a_pagar, reserva_a_pagar_vap )
+
+balance_bombero_corriente <- rbind( balance_ambato,
+                                    balance_cuenca,
+                                    balance_guayaquil,
+                                    balance_ibarra,
+                                    balance_loja,
+                                    balance_machala,
+                                    balance_manta,
+                                    balance_milagro,
+                                    balance_p_viejo,
+                                    balance_quito,
+                                    balance_riobamba,
+                                    balance_s_domingo ) %>% 
+  dplyr::select( anio, ciudad, reserva_a_pagar ) %>% 
+  mutate( reserva_a_pagar = if_else( reserva_a_pagar < 0,
+                                     0,
+                                     reserva_a_pagar ) ) %>% 
+  pivot_wider( names_from = ciudad, values_from = reserva_a_pagar, names_prefix = "" )
+
+
+valor_transferir_bombero_vap <-  rbind( balance_ambato,
+                                        balance_cuenca,
+                                        balance_guayaquil,
+                                        balance_ibarra,
+                                        balance_loja,
+                                        balance_machala,
+                                        balance_manta,
+                                        balance_milagro,
+                                        balance_p_viejo,
+                                        balance_quito,
+                                        balance_riobamba,
+                                        balance_s_domingo ) %>% 
+  filter( anio == '2042' ) %>% 
+  dplyr::select( ciudad, reserva_a_pagar_vap )  %>%
+  rbind( ., c( "Total", as.character( sum( .[,2], na.rm =TRUE ) ) ) ) %>% 
+  mutate_at( c( 2:ncol( . ) ), as.numeric )
+# Balance por institución---------------------------------------------------------------------------
 
 balance_anual_ins <- expand.grid( anio = c( 2023:2042 ),
                                  tipo = c( 'aduanero',
@@ -429,52 +635,21 @@ balance_anual_ins <- expand.grid( anio = c( 2023:2042 ),
           V = v *  V_cap ) %>% 
   ungroup( )
 
-
-#Valor a pagar por ciudad en Cuerpos de Agentes Civiles de Transito---------------------------------
-aux <- aportes_transito %>%
-  left_join( ., reserva_transito, by = c('anio', 'ciudad') )
-
-a <- data.frame( anio = c(2023:2042) ) %>% 
-  left_join(., aux, by = 'anio' ) %>% 
-  filter( tipo == 'aduanero' ) %>% 
-  #filter( tipo == 'aduanero' ) %>% 
-  mutate_if( is.numeric , replace_na, replace = 0) %>%
-  mutate( reserva_a_pagar = egreso_total - aporte_coescop ) %>%
-  mutate( ingresos_total =  aporte_coescop + reserva_a_pagar ) %>%
-  mutate( V_cor = ingresos_total - egreso_total ) %>%
-  dplyr::select( anio,
-                 n_old,
-                 aporte_coescop,
-                 reserva_a_pagar,
-                 ingresos_total,
-                 reserva_matematica,
-                 montepio,
-                 gastos_administrativos,
-                 egreso_total,
-                 V_cor ) %>%
-  mutate( r = 1 + i_a ) %>%
-  mutate( r = if_else( anio == '2023',
-                       1, 
-                       r ) ) %>%
-  mutate( r = cumprod( r ) ) %>%
-  mutate( v = 1 / r ) %>%
-  mutate( aporte_coescop_vap = cumsum( v * aporte_coescop  ),
-          reserva_a_pagar_vap = cumsum( v * reserva_a_pagar  ),
-          ingresos_total_vap = cumsum( v * ingresos_total  ),
-          reserva_matematica_vap = cumsum( v * reserva_matematica   ),
-          montepio_vap = cumsum( v * montepio   ),
-          gastos_administrativos_vap = cumsum( v * gastos_administrativos   ),
-          egreso_total_vap = cumsum( v * egreso_total  ),
-          V_cap = r * cumsum( v * V_cor ),
-          V = v *  V_cap )
-
-
 #Guardar en Rdata-----------------------------------------------------------------------------------
 message( '\tGuardando balance' )
 
 save( impacto,
       balance_anual,
       valor_a_pagar_ins,
+      balance_transito_corriente,
+      valor_transferir_transito_vap,
+      balance_control_corriente,
+      valor_transferir_control_vap,
+      balance_control_corriente,
+      valor_transferir_control_vap,
+      balance_bombero_corriente,
+      valor_transferir_bombero_vap,
+      balance_anual_ins,
       file = paste0( parametros$RData, 'IESS_balance.RData' ) )
 
 # Borrar elementos restantes -----------------------------------------------------------------------
